@@ -1,61 +1,43 @@
 <?php  $title = 'WM4'; $header = 'full'; include 'header.php'; ?>
 
-<section id="pagepiling">
-
-    <main id="home">
-        <div class="span-3 flap l">
-            <div class="bloque_wrapper">
-                <div id="left-flap" class="bloque">&nbsp;</div>
-            </div>
-        </div>
-        <div class="span-6">
-            <div class="bloque_wrapper">
-                <section class="bloque">
+    <main id="home" class="section container">
+        <div class="bloque_ppal">
+            <div class="span-2">&nbsp;</div>
+            <section class="span-8">
+                <div class="row">
+                    <figure class="main_logo">
+                        <img src="img/wm4.png" class="modal-trigger">
+                    </figure>
+                </div>
+                <div id="cycle" class="row">
+                    <h3 id="cycling">&nbsp;</h3>
+                </div>
+                <div id="unidades">
                     <div class="row">
-                        <figure class="main_logo">
-                            <img src="img/wm4.png" class="modal-trigger">
-                        </figure>
+                        <article class="span-4 unidades tooltip-item">
+                            <a href="marketing-digital.php"><h1>Marketing<br /> Digital</h1></a>
+                            <div class="tooltip">
+                                <p>Ayudamos a las marcas a cumplir objetivos de negocio en internet</p>
+                            </div>
+                        </article>
+                        <article class="span-4 unidades tooltip-item">
+                            <h1>Marketing<br /> Político</h1>
+                            <div class="tooltip">
+                                <p>Trabajamos con figuras y entidades para incrementar su presencia pública y operaciones digitales</p>
+                            </div>
+                        </article>
+                        <article class="span-4 omega unidades tooltip-item">
+                            <h1>Marketing<br /> Digital</h1>
+                            <div class="tooltip">
+                                <p>Desarrollamos grandes marcas para grandes equipos</p>
+                            </div>
+                        </article>
                     </div>
-                    <div id="cycle" class="row">
-                        <h3 id="cycling">&nbsp;</h3>
-                    </div>
-                    <div id="unidades">
-                        <div class="row">
-                            <article class="span-4 unidades tooltip-item">
-                                <a href="marketing-digital.php"><h1>Marketing<br /> Digital</h1></a>
-                                <div class="tooltip">
-                                    <p>Ayudamos a las marcas a cumplir objetivos de negocio en internet</p>
-                                </div>
-                            </article>
-                            <article class="span-4 unidades tooltip-item">
-                                <h1>Marketing<br /> Político</h1>
-                                <div class="tooltip">
-                                    <p>Trabajamos con figuras y entidades para incrementar su presencia pública y operaciones digitales</p>
-                                </div>
-                            </article>
-                            <article class="span-4 omega unidades tooltip-item">
-                                <h1>Marketing<br /> Digital</h1>
-                                <div class="tooltip">
-                                    <p>Desarrollamos grandes marcas para grandes equipos</p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-        <div class="span-3 flap r omega">
-            <div class="bloque_wrapper">
-                <div id="right-flap" class="bloque">&nbsp;</div>
-            </div>
+                </div>
+            </section>
         </div>
     </main>
-   
-    <div id="welcome-splash" class="section" style="background-color:white;"></div>
-    <div id="mkt-digital" class="section" style="background-image:url(img/stock/business-mobile-devices.jpeg)"></div>
-    <div id="mkt-politico" class="section" style="background-image:url(img/stock/bow-tie-businessman-fashion-man.jpg)"></div>
-    <div id="mkt-deportivo" class="section" style="background-image:url(img/stock/baseball-stadium-top.jpeg)"></div>
-</section>    
+
 <!-- The Modal -->
 <div id="modal_contacto" class="modal">
 
