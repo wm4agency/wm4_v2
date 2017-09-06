@@ -1,12 +1,13 @@
 <?php  $title = 'WM4'; $header = 'full'; include 'header.php'; ?>
 
 <section id="pagepiling">
-    <span class="flap l">
-    </span>
-    <main id="home" class="bloque_ppal span-6">
-        <div class="l">
-            <div class="span-2">&nbsp;</div>
-            <section class="span-8">
+
+    <main id="home">
+        <div class="span-3 flap l">
+            <div id="left-flap" class="bloque">&nbsp;</div>
+        </div>
+        <div class="span-6">
+            <section class="bloque">
                 <div class="row">
                     <figure class="main_logo">
                         <img src="img/wm4.png" class="modal-trigger">
@@ -39,9 +40,15 @@
                 </div>
             </section>
         </div>
+        <div class="span-3 flap r omega">
+            <div id="right-flap" class="bloque">&nbsp;</div>
+        </div>
     </main>
-
-    <div id="mkt-digital" class="section"></div>
+   
+    <div id="welcome-splash" class="section" style="background-color:white;"></div>
+    <div id="mkt-digital" class="section" style="background-image:url(img/stock/business-mobile-devices.jpeg)"></div>
+    <div id="mkt-politico" class="section"></div>
+    <div id="mkt-deportivo" class="section"></div>
 </section>    
 <!-- The Modal -->
 <div id="modal_contacto" class="modal">

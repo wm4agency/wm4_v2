@@ -49,7 +49,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
                 <li class="nav-link"><a href="javascript:void(0)"><span class="fa fa-phone"></span></a></li>
                 <li class="nav-link"><a href="mailto:contacto@wm4.mx"><span class="fa fa-envelope"></span></a></li>
                 <li class="nav-link logo">
-                    <a href="index.php" class="logo">
+                    <a class="logo">
                         <div id="contacto_head"><span>contacto</span></div>
                     </a>
                 </li>
