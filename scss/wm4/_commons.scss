@@ -1,0 +1,100 @@
+@mixin josefin{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+@mixin roboto{
+    font-family: 'Roboto Slab', serif;
+}
+
+@mixin hexagon ($width,$height) {
+    position: relative;
+    width: $height; 
+    height: 36.64px;
+    background-color: #000;
+    margin: 17.32px 0;
+//    top:30px;
+    
+    &:before{
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        
+        bottom: 100%;
+        border-bottom: 17.32px solid #000;
+        left: 0;
+    }
+    
+    &:after{
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        
+        top: 100%;
+        width: 0;
+        border-top: 17.32px solid #000;
+        left: 0;
+    }
+}
+
+body{
+    @include roboto;
+}
+
+form{
+    fieldset{
+        background: none;
+        
+        label{
+            @include roboto;
+            font-size: 0.75em;
+            font-weight: 300;
+        }
+        
+        input{
+            border: none;
+        }
+    }
+}
+
+ul.hex {
+    list-style: none;
+    padding: 0 1em;
+
+    li {
+        @include josefin;
+        padding-left: 1em;
+        position: relative;
+        border-color: rgba(0,0,0, 1);
+        line-height: 1em;
+        font-size: .8Sem;
+        padding-bottom: .75em;
+        
+        &:before, &:after{
+            position: absolute;
+            content: "";
+            left: 0%;
+            top: .45em;
+            border-color: transparent;
+            border-style: solid;
+            width: 11px;
+            height: 5px;
+            border-width: 0px 3px;
+        }
+        
+        &:before {
+            margin-top: -5px;
+            border-bottom: 5px solid;
+            border-bottom-color: inherit;
+        }
+        
+        &:after {
+            margin-top: 0px;
+            border-top: 5px solid;
+            border-top-color: inherit;
+        }
+    }
+}

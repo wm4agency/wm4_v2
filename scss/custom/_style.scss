@@ -1,0 +1,22 @@
+
+
+.container {
+	@include outer-container;
+	//set width of your choice
+	max-width: $w1150;
+}
+
+// Those are for demonstration, you can remove it
+//.span-3,.span-4,.span-5,.span-6,.span-7,.span-8,.span-9,.span-10,.span-11,.span-12 {
+//	margin-top: 10px;
+//	padding: 10px;
+//	background: $pink;
+//	color: $w;
+//	text-align: center;
+//	text-transform: uppercase;
+//	a {color: $w;}
+//	&:hover {
+//		background: $orange;
+//		cursor: defaut;
+//	}
+//}

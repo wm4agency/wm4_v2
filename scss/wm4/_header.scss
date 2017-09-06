@@ -1,0 +1,88 @@
+.centered-navigation{
+//    background: rgba(0,0,0,.1);
+    position: absolute;
+    z-index: 999;
+    
+    nav{
+        #contacto_head{
+            @include hexagon(60px,60px);
+            
+            span{
+                display: block;
+                font-size: .75em;
+                color: $w;
+                line-height: 30px;
+                text-align: center;
+                margin: 0 auto;
+            }
+            
+            @include transition(background-color .125s .25s);
+            
+            &:after, &:before{
+                @include transition(border-color .125s .25s);
+            }
+            
+            &:hover{
+                background-color: $action-color;
+                
+                &:before{
+                    border-bottom-color: $action-color;
+                }
+                
+                &:after{
+                    border-top-color: $action-color;
+                }
+            }
+        }
+        
+        .tooltip{
+            width:12em;
+        }
+    }
+}
+
+.minimal-navigation{
+    display: block;
+    height: 6em;
+    position: relative;
+    top:0;
+    
+    div.container{
+        width: 100%;
+        @include outer-container;
+        max-width: $w1150;
+        display: block;
+        position: relative;
+        height: 100%;
+    }
+    
+    .logo {
+        float: right;
+
+        img{
+            position: absolute;
+            height: 2em;
+            width: auto;
+            top:50%;
+            transform: translateY(-50%); 
+            right: 0;
+            
+            @include max-width($w1150){
+                padding-right: 2em;
+            } 
+        }
+    }
+    
+    .hexa-tip-right{
+        position: absolute;
+        height: 2em;
+        width: 1em;
+        top:50%;
+        transform: translateY(-100%);       
+        right: 1em !important;
+        float: right;
+        padding-left: 1em;
+        
+        figure{@include hexagon(1em,1em);}
+    }
+}

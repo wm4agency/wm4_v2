@@ -1,0 +1,184 @@
+// colors
+$w: #fff;
+$b: #000;
+$charcoal: #444;
+$pink: #ff2965;
+$orange: #ff5b3d;
+
+// typo
+$helvetica: Helvetica, sans-serif;
+$serif: serif;
+$fa: 'FontAwesome';
+
+// fontface example - https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
+@include font-face('Samplino', fonts/Samplino);
+@include font-face('Samplina Neue', fonts/SamplinaNeue, bold, italic);
+
+// width
+$w1150: 	1150px;
+$w1000: 	1000px;
+$w900: 	900px;
+$desktop:	$w1000;
+$tablet:		768px;
+$mobile: 	480px;
+
+body{
+    top: 0;
+    left: 0;
+    min-height: 100%;
+}
+
+// for mobile/tablet
+body, p, li, small, blockquote {
+  @include max-width($tablet) {
+    font-weight: 300;
+  }
+}
+
+.fullwidth{
+    width:100%!important;
+}
+.row{
+    @include clearfix;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5em;
+}
+
+// no margin and padding - use @include zero; and @include zero-list;
+@mixin zero {
+  margin: 0;
+  padding: 0
+}
+
+@mixin zero-list {
+  @extend .zero;
+  list-style: none;
+}
+
+// smooth - use @include smooth-text;
+@mixin smooth-text {
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: antialiased !important;
+  font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility;
+}
+
+// Display content in mobile only (using block class)
+.mobile {
+  display: none !important;
+  @include max-width($mobile) {
+    display: block !important;
+  }
+}
+
+// Display content in tablet and below only (using block class)
+.tablet {
+  display: none !important;
+  @include max-width($tablet) {
+    display: block !important;
+  }
+}
+
+// Display content in desktop and above only (using block class)
+.desktop {
+  display: block !important;
+  @include max-width($desktop) {
+    display: none !important;
+  }
+}
+
+// Display content in desktop and above only (using inline-block class)
+.mobile-inline {
+  display: none !important;
+  @include max-width(480px) {
+    display: inline-block !important;
+  }
+}
+
+// Display content in tablet and above only (using inline-block class)
+.tablet-inline {
+  display: none !important;
+  @include max-width(768px) {
+    display: inline-block !important;
+  }
+}
+
+// Display content in mobile and above only (using inline-block class)
+.desktop-inline {
+  display: inline-block !important;
+  @include max-width(768px) {
+    display: none !important;
+  }
+}
+
+// highlight
+::selection { background:$action-color; color:$w; text-shadow:none }
+::-moz-selection { background:$pink; color:$w; text-shadow:none }
+::-webkit-selection { background:$pink; color:$w; text-shadow:none }
+
+// transition mixin
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+@mixin transition-property($property...) {
+    -moz-transition-property:    $property;
+    -o-transition-property:      $property;
+    -webkit-transition-property: $property;
+    transition-property:         $property;
+}
+@mixin transition-duration($duration...) {
+    -moz-transition-property:    $duration;
+    -o-transition-property:      $duration;
+    -webkit-transition-property: $duration;
+    transition-property:         $duration;
+}
+@mixin transition-timing-function($timing...) {
+    -moz-transition-timing-function:    $timing;
+    -o-transition-timing-function:      $timing;
+    -webkit-transition-timing-function: $timing;
+    transition-timing-function:         $timing;
+}
+@mixin transition-delay($delay...) {
+    -moz-transition-delay:    $delay;
+    -o-transition-delay:      $delay;
+    -webkit-transition-delay: $delay;
+    transition-delay:         $delay;
+}
+
+// highlight
+::selection { background:$b; color:$w; text-shadow:none; font-weight: 100; }
+::-moz-selection { background:$b; color:$w; text-shadow:none }
+::-webkit-selection { background:$b; color:$w; text-shadow:none }
+
+.wrapper{
+    display: block;
+    position: relative;
+    padding: 0!important;
+    margin: 0!important;
+}
+
+.img_box{
+    background: rgba(0,0,0,0.25) no-repeat center;
+    background-size: cover;
+}
+
+@mixin img_box{
+    background: $action-color no-repeat center;
+    background-size: cover;
+
+    &:before{
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+        position: absolute;
+    }
+}
+
+.hidden{
+    display: none!important;
+}

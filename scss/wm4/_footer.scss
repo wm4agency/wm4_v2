@@ -1,0 +1,21 @@
+footer{
+    background-color: $b;
+    
+    nav#footer-icons{
+        ul{
+            li{
+                float: right;
+                padding: 0 .5em;  
+                
+                a{
+                    color: $w;
+                    transition: all 0.2s ease-in-out;
+
+                    &:hover{
+                        color:$action-color;
+                    }
+                }
+            }
+        }
+    }
+}
