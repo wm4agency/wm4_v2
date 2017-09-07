@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -37,10 +36,6 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
     <?php  if ($header == 'full'): ?>
     <header class="centered-navigation" role="banner">
     <div class="centered-navigation-wrapper">
-        <a href="javascript:void(0)" class="mobile-logo">
-            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="Logo image">
-        </a>
-        <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
         <nav role="navigation">
             <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
                 <li class="nav-link">

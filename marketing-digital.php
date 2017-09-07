@@ -2,7 +2,7 @@
     $title = 'Marketing Digital'; 
     $header = 'minimal'; 
     $role = 'portada-seccion'; 
-    include 'header.php'; 
+    include 'header-desktop.php'; 
 ?>
 
 <main class="<?php echo $role; ?> container row">
