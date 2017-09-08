@@ -48,7 +48,6 @@ var span = document.getElementsByClassName("close")[0];
 
 function modalInit(){
     if(!modal || modal == null) return;
-    console.log(modal);
     
     // When the user clicks on the button, open the modal 
     btn.onclick = function() {

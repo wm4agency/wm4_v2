@@ -33,13 +33,13 @@ include 'header-desktop.php';
                                 </div>
                             </article>
                             <article class="span-4 unidades tooltip-item">
-                                <h1>Marketing<br /> Político</h1>
+                                <a href="marketing-politico.php"><h1>Marketing<br /> Político</h1></a>
                                 <div class="tooltip">
                                     <p>Trabajamos con figuras y entidades para incrementar su presencia pública y operaciones digitales</p>
                                 </div>
                             </article>
                             <article class="span-4 omega unidades tooltip-item">
-                                <h1>Marketing<br /> Digital</h1>
+                                <a href="marketing-deportivo.php"><h1>Marketing<br /> Deportivo</h1></a>
                                 <div class="tooltip">
                                     <p>Desarrollamos grandes marcas para grandes equipos</p>
                                 </div>

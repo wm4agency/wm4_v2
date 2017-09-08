@@ -36,6 +36,11 @@ main#home{
             &:last-child{
                 border:none;   
             }
+            
+            a{
+                text-decoration: none;
+                color: inherit;
+            }
         }
     }
     
@@ -73,6 +78,7 @@ main#home{
             h1{
                 font-size: .75em;
             }
+            
         }
         
         .span-6{
