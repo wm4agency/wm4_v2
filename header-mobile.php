@@ -31,7 +31,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 })();
 </script>
 </head>
-<body>
+    <body <?php $localScripts.indexOf('pagepiling')>0? echo "class='pagepiled'":exit; ?>>
 
     <?php  if ($header == 'full'): ?>
     <header class="centered-navigation" role="banner">

@@ -1,6 +1,7 @@
 $(document).ready(function($){
     cycle();
     pagepilingInit();
+    modalInit();
 });
                   
                   
@@ -46,9 +47,10 @@ var btn = document.getElementById("contacto_head");
 var span = document.getElementsByClassName("close")[0];
 
 function modalInit(){
-    if(!$(".modal")){
-        console.log("no modal");
-    }else{// When the user clicks on the button, open the modal 
+    if(!modal || modal == null) return;
+    console.log(modal);
+    
+    // When the user clicks on the button, open the modal 
     btn.onclick = function() {
         modal.style.display = "block";
     }
@@ -64,12 +66,13 @@ function modalInit(){
             modal.style.display = "none";
         }
     }
-    }
 }
  
 function pagepilingInit(){
-    if(!!$("#pagepiling")) return;
-    console.log("pagepiling!");
+    var e = document.getElementById("pagepiling");
+    if(!e || e == null) return;
+    
+    $('html').addClass('pagepiled');
     
     $('#pagepiling').pagepiling({
         direction: 'horizontal',
@@ -162,6 +165,6 @@ function cycle(){
 
 function binds(){
     $('#anchor').on('click',function(e){
-        e.preventDefault();
+        //e.preventDefault();
     });
 }

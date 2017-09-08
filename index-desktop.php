@@ -63,7 +63,6 @@ include 'header-desktop.php';
 </section>    
 <!-- The Modal -->
 <div id="modal_contacto" class="modal">
-
     <!-- Modal content -->
     <div id="#contactWrapper" class="modal-content">
         <span class="close">&times;</span>

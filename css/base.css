@@ -4091,7 +4091,7 @@ body {
 * Copyright (C) 2016 alvarotrigo.com - A project by Alvaro Trigo
 */
 /* line 9, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_pagePilling.scss */
-html, body {
+html.pagepiled, html.pagepiled body {
   overflow: hidden;
   margin: 0;
   padding: 0;
