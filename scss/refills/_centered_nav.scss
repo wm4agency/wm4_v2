@@ -51,9 +51,9 @@
         text-decoration: none;
         text-transform: uppercase;
 
-        @include media ($horizontal-bar-mode) {
+//        @include media ($horizontal-bar-mode) {
             display: none;
-        }
+  //      }
 
         &:focus,
         &:hover {
@@ -86,20 +86,20 @@
             display: block;
         }
 
-        @include media ($horizontal-bar-mode) {
+//        @include media ($horizontal-bar-mode) {
             display: block;
             text-align: center;
-        }
+//        }
     }
 
 
     // The nav items
 
     .nav-link:first-child {
-        @include media($horizontal-bar-mode) {
+//       @include media($horizontal-bar-mode) {
             margin-left: $centered-navigation-item-nudge;
         }
-    }
+//    }
 
     ul li.nav-link {
         background: $centered-navigation-background;
@@ -110,6 +110,11 @@
         text-align: right;
         width: 100%;
         z-index: 9999;
+        
+        //desktop-centric styles
+        background: transparent;
+        display: inline;
+        line-height: $centered-navigation-height;
 
         a {
             color: $centered-navigation-color;
@@ -117,13 +122,14 @@
             outline: none;
             text-decoration: none;
 
+
             &:focus,
             &:hover {
                 color: $centered-navigation-color-hover;
             }
         }
 
-        @include media($horizontal-bar-mode) {
+//        @include media($horizontal-bar-mode) {
             background: transparent;
             display: inline;
             line-height: $centered-navigation-height;
@@ -131,16 +137,17 @@
             a {
                 padding-right: $centered-navigation-item-padding;
             }
-        }
+//        }
     }
 
     li.logo.nav-link {
         display: none;
         line-height: 0;
 
-        @include media($horizontal-bar-mode) {
+
+//        @include media($horizontal-bar-mode) {
             display: inline;
-        }
+//        }
     }
 
     .logo {
@@ -211,42 +218,46 @@
         &:hover > .submenu {
             display: block;
         }
+        
+        //desktop-centric styles
+        padding-right: $centered-navigation-submenu-padding;
+        position: relative;
 
-        @include media($horizontal-bar-mode) {
-            padding-right: $centered-navigation-submenu-padding;
-            position: relative;
-        }
+//        @include media($horizontal-bar-mode) {
+//            padding-right: $centered-navigation-submenu-padding;
+//            position: relative;
+//        }
     }
 
     ul.submenu {
         display: none;
         padding-left: 0;
 
-        @include media($horizontal-bar-mode) {
+ //       @include media($horizontal-bar-mode) {
             left: -$centered-navigation-submenu-padding;
             position: absolute;
             top: 1.5em;
-        }
+ //       }
 
         .submenu.fly-out-right {
-            @include media($horizontal-bar-mode) {
+  //          @include media($horizontal-bar-mode) {
                 left: $centered-navigation-submenu-width - 0.2em;
                 top: 0;
-            }
+   //         }
         }
 
         .submenu.fly-out-left {
-            @include media($horizontal-bar-mode) {
+    //        @include media($horizontal-bar-mode) {
                 left: -$centered-navigation-submenu-width + 0.2em;
                 top: 0;
-            }
+   //         }
         }
 
         li {
             display: block;
             padding-right: 0;
 
-            @include media($horizontal-bar-mode) {
+   //         @include media($horizontal-bar-mode) {
                 line-height: $centered-navigation-height / 1.3;
 
                 &:first-child > a {
@@ -259,7 +270,7 @@
                     border-bottom-right-radius: $base-border-radius;
                     padding-bottom: 0.7em;
                 }
-            }
+   //         }
 
             a {
                 background-color: darken($centered-navigation-background, 3%);
@@ -268,12 +279,12 @@
                 text-decoration: none;
                 width: 100%;
 
-                @include media($horizontal-bar-mode) {
+//                @include media($horizontal-bar-mode) {
                     background-color: $centered-navigation-background;
                     padding-left: $centered-navigation-submenu-padding;
                     text-align: left;
                     width: $centered-navigation-submenu-width;
-                }
+//                }
             }
         }
     }

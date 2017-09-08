@@ -4,9 +4,9 @@ require_once 'php/Mobile_Detect.php';
 $detect = new Mobile_Detect;
 
 if ( $detect->isMobile() ) {
-    echo "is mobile!";
+    require 'index-mobile.php';
 }elseif ( $detect->isTablet() ){
-    echo "is tablet, I think";
+    require 'index-mobile.php';
 }else{
     require 'index-desktop.php' ;
 }
