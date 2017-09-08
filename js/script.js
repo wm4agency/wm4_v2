@@ -1,14 +1,85 @@
 $(document).ready(function($){
     cycle();
+    pagepilingInit();
+});
+                  
+                  
+//$(window).on("load resize",function(e) {
+//    var more = document.getElementById("js-centered-more");
+//
+//    if ($(more).length > 0) {
+//        var windowWidth = $(window).width();
+//        var moreLeftSideToPageLeftSide = $(more).offset().left;
+//        var moreLeftSideToPageRightSide = windowWidth - moreLeftSideToPageLeftSide;
+//
+//        if (moreLeftSideToPageRightSide < 330) {
+//            $("#js-centered-more .submenu .submenu").removeClass("fly-out-right");
+//            $("#js-centered-more .submenu .submenu").addClass("fly-out-left");
+//        }
+//
+//        if (moreLeftSideToPageRightSide > 330) {
+//            $("#js-centered-more .submenu .submenu").removeClass("fly-out-left");
+//            $("#js-centered-more .submenu .submenu").addClass("fly-out-right");
+//        }
+//    }
+//
+//    var menuToggle = $("#js-centered-navigation-mobile-menu").unbind();
+//    $("#js-centered-navigation-menu").removeClass("show");
+//
+//    menuToggle.on("click", function(e) {
+//        e.preventDefault();
+//        $("#js-centered-navigation-menu").slideToggle(function(){
+//            if($("#js-centered-navigation-menu").is(":hidden")) {
+//                $("#js-centered-navigation-menu").removeAttr("style");
+//            }
+//        });
+//    });
+//}); 
+
+// Get the modal
+var modal = document.getElementById('modal_contacto');
+
+// Get the button that opens the modal
+var btn = document.getElementById("contacto_head");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+function modalInit(){
+    if(!$(".modal")){
+        console.log("no modal");
+    }else{// When the user clicks on the button, open the modal 
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    }
+}
+ 
+function pagepilingInit(){
+    if(!!$("#pagepiling")) return;
+    console.log("pagepiling!");
+    
     $('#pagepiling').pagepiling({
         direction: 'horizontal',
         verticalCentered: true,
         loopBottom: true,
-        
+
         afterRender: function(){
-//            alert("The resulting DOM structure is ready");
+            //            alert("The resulting DOM structure is ready");
         },
-        
+
         anchors: ['welcome-splash', 'mkt-digital', 'mkt-politico', 'mkt-deportivo'],
 
         afterLoad: function(anchorLink){
@@ -27,7 +98,7 @@ $(document).ready(function($){
                         "<li>Producción de contenido</li>\n"+
                         "</ul>";
                     break;
-                    
+
                 case 'mkt-politico':
                     var lFlapContent = "<p>Ofrecemos consultoría en marketing y comunicación política</p>";
 
@@ -38,7 +109,7 @@ $(document).ready(function($){
                         "<li>Jurídico electoral</li>\n"+
                         "</ul>";
                     break;
-                
+
                 case 'mkt-deportivo':
                     var lFlapContent = "<p>Construimos proyectos específicos que responden a sus necesidades, cualesquiera que sean.</p>";
 
@@ -52,7 +123,7 @@ $(document).ready(function($){
                         "<li>Social Media Marketing</li>\n"+
                         "</ul>";
                     break;
-                    
+
                 default:
                     var lFlapContent ="&nbsp;";
                     var rFlapContent ="&nbsp;";
@@ -62,68 +133,7 @@ $(document).ready(function($){
             $('#right-flap').html(rFlapContent);
         }
     });
-});
-                  
-                  
-$(window).on("load resize",function(e) {
-    var more = document.getElementById("js-centered-more");
-
-    if ($(more).length > 0) {
-        var windowWidth = $(window).width();
-        var moreLeftSideToPageLeftSide = $(more).offset().left;
-        var moreLeftSideToPageRightSide = windowWidth - moreLeftSideToPageLeftSide;
-
-        if (moreLeftSideToPageRightSide < 330) {
-            $("#js-centered-more .submenu .submenu").removeClass("fly-out-right");
-            $("#js-centered-more .submenu .submenu").addClass("fly-out-left");
-        }
-
-        if (moreLeftSideToPageRightSide > 330) {
-            $("#js-centered-more .submenu .submenu").removeClass("fly-out-left");
-            $("#js-centered-more .submenu .submenu").addClass("fly-out-right");
-        }
-    }
-
-    var menuToggle = $("#js-centered-navigation-mobile-menu").unbind();
-    $("#js-centered-navigation-menu").removeClass("show");
-
-    menuToggle.on("click", function(e) {
-        e.preventDefault();
-        $("#js-centered-navigation-menu").slideToggle(function(){
-            if($("#js-centered-navigation-menu").is(":hidden")) {
-                $("#js-centered-navigation-menu").removeAttr("style");
-            }
-        });
-    });
-}); 
-
-// Get the modal
-var modal = document.getElementById('modal_contacto');
-
-// Get the button that opens the modal
-var btn = document.getElementById("contacto_head");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
 }
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
- 
-
 
 function cycle(){
     var mensaje = [

@@ -1,11 +1,11 @@
 <?php  
 $title = 'WM4'; 
+$localScripts = 'pagepiling';
 $header = 'full'; 
 include 'header-mobile.php'; 
 ?>
 
 <section id="pagepiling">
-
     <main id="home">
         <div class="span-3 flap l">
             <div class="bloque_wrapper">
@@ -108,4 +108,4 @@ include 'header-mobile.php';
 
 </div>
 
-<?php include("footer.php"); ?>
+<?php include "footer.php"; ?>

@@ -1,14 +1,14 @@
-<?php if ($footer == "full"): ?>
+<?php if ($footer == "full"): echo "full footer";?>
 <footer class="fullwidth">
     <div class="container">
     </div>
 </footer>
-<?php elseif($footer =="minimal"): ?>
+<?php elseif($footer =="minimal"): echo "minimal footer" ?>
 <footer class="fullwidth">
     <div class="container">
         <div class="span-4">
             <figure class="span-4 logo"> <img src="img/wm4.png"></figure>
-            <nav class="span-4">
+            <nav class="span-4">:
             </nav>
             <nav class="span-4 omega">
             </nav>
@@ -29,9 +29,10 @@
         </nav>
     </div>
 </footer>
-<?php endif;?>
-
-<?php include("scripts.php"); ?>
+<?php   
+    endif;
+    include 'scripts.php'; 
+?>
 
 </body>
 </html>

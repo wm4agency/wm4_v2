@@ -1,5 +1,6 @@
 <?php  
     $title = 'Marketing Digital'; 
+    $localScripts = 'slideout';
     $header = 'minimal'; 
     $role = 'portada-seccion'; 
     include 'header-desktop.php'; 

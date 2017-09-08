@@ -1,5 +1,6 @@
 <?php  
 $title = 'WM4'; 
+$localScripts = 'pagepiling';
 $header = 'full'; 
 include 'header-desktop.php'; 
 ?>
@@ -108,4 +109,4 @@ include 'header-desktop.php';
 
 </div>
 
-<?php include("footer.php"); ?>
+<?php include 'footer.php'; ?>
