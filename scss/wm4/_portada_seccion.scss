@@ -11,7 +11,25 @@ main.portada-seccion{
         text-transform: uppercase;
         font-weight: 700;
         font-size: 3em;
-        line-height:.85em;
+        line-height:1.5em;
+    }
+    
+    @include max-width($mobile) {
+        p{
+          font-size: .85em; 
+            border: none;
+            border-bottom: 1px dashed $b;
+            padding-bottom: 1em;
+        }
+        h1{
+            font-size: 2em;
+            line-height: 1em;
+        }
+        
+        ul.hex li{
+            line-height: .95em;
+            padding-bottom: .5em;
+        }
     }
 }
 
@@ -27,6 +45,18 @@ section.portada-seccion{
             text-transform: uppercase;
             font-weight: 100;
         }
+        
+        @include max-width($mobile) {
+            li{
+                font-size: 1.5em;
+                line-height: .85em;
+            }
+            
+            span{
+                
+            }
+        }
+
     }
     
     &#portfolio{
@@ -84,6 +114,10 @@ section.portada-seccion{
             font-size: 2em;
             line-height:.85em;
         }
+    }
+    
+    @include max-width($mobile) {
+        
     }
 }
 
