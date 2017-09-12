@@ -98,3 +98,25 @@ ul.hex {
         }
     }
 }
+
+.arrow{
+    @include clearfix();
+    
+    &.right{
+        display: block;
+        position: relative;
+        float: right;
+        right:0.5em;
+
+        &:after{
+            font-family: 'FontAwesome';
+            content: "\f061";
+            display: block;
+        }
+    }
+    
+    &:hover,&:focus,&:active{
+        color: $action-color;
+        cursor: pointer;
+    }
+}

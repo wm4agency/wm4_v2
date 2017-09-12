@@ -8,6 +8,22 @@
     -webkit-overflow-scrolling: touch;
     z-index: 0;
     display: none;
+    background: black;
+    color:white;
+    
+    &::-webkit-scrollbar{
+        width: 5px;
+        background-color: black;
+    }
+    
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: none;
+        background-color: black;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #F5F5F5;
+        border: none;
+    }
 }
 
 .slideout-menu-left {

@@ -2,6 +2,7 @@ $(document).ready(function($){
     cycle();
     pagepilingInit();
     modalInit();
+    slideoutInit();
 });
                   
                   
@@ -166,4 +167,66 @@ function binds(){
     $('#anchor').on('click',function(e){
         //e.preventDefault();
     });
+}
+
+function slideoutInit(){
+    var e = document.getElementById("slideout");
+    if(!e || e == null) return;
+    
+    var triggers = document.querySelectorAll('.slideout-trigger');
+    var panel =  document.getElementById('slideout');
+    var menus = [];
+    var slideout = [];
+    
+    for (var i = 0, len = triggers.length; i < len; i++){
+        var menuid = triggers[i].getAttribute('data-slideout-menu');
+        var menu = document.getElementById(menuid);
+        var arrowid = '#'+menuid+' > .arrow';
+        var toggleElement = $(arrowid);
+        slideout[i] = new Slideout({
+            'panel': panel,
+            'menu': menu,
+            'padding': 260,
+            'tolerance': 70
+        });
+        menu.classList.remove("hidden");
+        triggers[i].addEventListener('click', bindClick(i));
+        toggleElement[0].addEventListener('click', bindClick(i));
+    }
+    function bindClick(i) {
+        return function(){
+            slideout[i].on('beforeopen', function() {
+                for (var x = 0, len = triggers.length; x < len; x++){
+                    slideout[x].menu.style.zIndex = '0';
+                }
+                slideout[i].menu.style.zIndex = '1';
+            });
+            slideout[i].toggle();
+            
+            /*var fixed = document.querySelector('.centered-navigation');
+
+            slideout[i].on('translate', function(translated) {
+                fixed.style.transform = 'translateX(' + translated + 'px)';
+            });
+
+            slideout[i].on('beforeopen', function () {
+                fixed.style.transition = 'transform 300ms ease';
+                fixed.style.transform = 'translateX(256px)';
+            });
+
+            slideout[i].on('beforeclose', function () {
+                fixed.style.transition = 'transform 300ms ease';
+                fixed.style.transform = 'translateX(0px)';
+            });
+
+            slideout[i].on('open', function () {
+                fixed.style.transition = '';
+            });
+
+            slideout[i].on('close', function () {
+                fixed.style.transition = '';
+            });
+            */
+        };
+    }
 }

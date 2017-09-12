@@ -1,34 +1,18 @@
 <?php  
 $title = 'WM4'; 
-$localScripts = 'slideout';
+$localScripts = 'pagepiling';
 $header = 'full'; 
 include 'header-mobile.php'; 
 ?>
 
 <section id="slideout">
-    <header class="centered-navigation" role="banner">
-        <div class="centered-navigation-wrapper">
-            <nav role="navigation">
-                <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
-                    <li class="nav-link">
-                        <a href="https://www.google.com.mx/maps/place/Vito+Alessio+Robles+101,+Agr%C3%ADcola,+Chimalistac,+01030+Ciudad+de+M%C3%A9xico,+CDMX/@19.3511402,-99.1850127,17z/data=!4m5!3m4!1s0x85d1fff0e0e33ca7:0x4355e17e0a3580dd!8m2!3d19.351135!4d-99.182824?hl=en"><span class="fa fa-map-marker"></span></a>
-                    </li>
-                    <li class="nav-link"><a href="javascript:void(0)"><span class="fa fa-phone"></span></a></li>
-                    <li class="nav-link"><a href="mailto:contacto@wm4.mx"><span class="fa fa-envelope"></span></a></li>
-                    <li class="nav-link logo">
-                        <a class="logo">
-                            <div id="contacto_head"><span>contacto</span></div>
-                        </a>
-                    </li>
-                    <li class="nav-link"><a href="https://twitter.com/wm4mx"><span class="fa fa-twitter"></span></a></li>
-                    <li class="nav-link"><a href="https://www.facebook.com/webmedia4/?fref=ts"><span class="fa fa-facebook"></span></a></li>
-                    <li class="nav-link"><a href="https://www.instagram.com/wm4agency/"><span class="fa fa-instagram"></span></a></li>
-                </ul>
-            </nav>
+    <main id="home">
+        <div class="span-3 flap l">
+            <div class="bloque_wrapper">
+                <div id="left-flap" class="bloque">&nbsp;</div>
+            </div>
         </div>
-
-    </header><!--/.container-->
-    <main id="home" class="mobile">
+        <div class="span-6">
             <div class="bloque_wrapper">
                 <section class="bloque">
                     <div class="row">
@@ -41,33 +25,41 @@ include 'header-mobile.php';
                     </div>
                     <div id="unidades">
                         <div class="row">
-                            <article class="span-4 unidades">
-                                <h1 class="slideout-trigger" data-slideout-menu="mkt-digital">Marketing<br /> Digital</h1>
+                            <article class="span-4 unidades tooltip-item">
+                                <a href="marketing-digital.php"><h1>Marketing<br /> Digital</h1></a>
+                                <div class="tooltip">
+                                    <p>Ayudamos a las marcas a cumplir objetivos de negocio en internet</p>
+                                </div>
                             </article>
-                            <article class="span-4 unidades">
-                                <h1 class="slideout-trigger" data-slideout-menu="mkt-politico">Marketing<br /> Político</h1>
+                            <article class="span-4 unidades tooltip-item">
+                                <h1>Marketing<br /> Político</h1>
+                                <div class="tooltip">
+                                    <p>Trabajamos con figuras y entidades para incrementar su presencia pública y operaciones digitales</p>
+                                </div>
                             </article>
-                            <article class="span-4 omega unidades">
-                                <h1 class="slideout-trigger" data-slideout-menu="mkt-deportivo">Marketing<br /> Deportivo</h1>
+                            <article class="span-4 omega unidades tooltip-item">
+                                <h1>Marketing<br /> Digital</h1>
+                                <div class="tooltip">
+                                    <p>Desarrollamos grandes marcas para grandes equipos</p>
+                                </div>
                             </article>
                         </div>
                     </div>
                 </section>
             </div>
+        </div>
+        <div class="span-3 flap r omega">
+            <div class="bloque_wrapper">
+                <div id="right-flap" class="bloque">&nbsp;</div>
+            </div>
+        </div>
     </main>
-</section>
-
-<section id="mkt-digital" class="hidden">
-    <span class="arrow right"></span>
-    <h1>Marketing<br>Digital</h1>
-</section>
-<section id="mkt-politico" class="hidden">
-    <span class="arrow right"></span>
-    <h1>Marketing<br>Político</h1></section>
-<section id="mkt-deportivo" class="hidden">
-    <span class="arrow right"></span>
-    <h1>Marketing<br>Deportivo</h1></section>
-    
+   
+    <div id="welcome-splash" class="section" style="background-color:white;"></div>
+    <div id="mkt-digital" class="section" style="background-image:url(img/stock/business-mobile-devices.jpeg)"></div>
+    <div id="mkt-politico" class="section" style="background-image:url(img/stock/bow-tie-businessman-fashion-man.jpg)"></div>
+    <div id="mkt-deportivo" class="section" style="background-image:url(img/stock/baseball-stadium-top.jpeg)"></div>
+</section>    
 <!-- The Modal -->
 <div id="modal_contacto" class="modal">
     <!-- Modal content -->
