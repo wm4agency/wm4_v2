@@ -4235,11 +4235,11 @@ html.pagepiled, html.pagepiled body {
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 256px;
+  width: 360px;
   min-height: 100vh;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-  z-index: 0;
+  z-index: -1;
   display: none;
   background: black;
   color: white; }
@@ -4349,10 +4349,10 @@ ul.hex {
   /* line 111, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_commons.scss */
   .arrow.right:after {
     font-family: 'FontAwesome';
-    content: "\f061";
+    content: '\f054';
     display: block; }
 
-/* line 118, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_commons.scss */
+/* line 119, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_commons.scss */
 .arrow:hover, .arrow:focus, .arrow:active {
   color: #477dca;
   cursor: pointer; }

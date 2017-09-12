@@ -110,10 +110,11 @@ ul.hex {
 
         &:after{
             font-family: 'FontAwesome';
-            content: "\f061";
+            content: '\f054';
             display: block;
         }
     }
+    
     
     &:hover,&:focus,&:active{
         color: $action-color;

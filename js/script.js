@@ -186,8 +186,10 @@ function slideoutInit(){
         slideout[i] = new Slideout({
             'panel': panel,
             'menu': menu,
-            'padding': 260,
-            'tolerance': 70
+            'padding': 400,
+            'tolerance': 70,
+            'easing' : 'ease',
+            'duration' : 300
         });
         menu.classList.remove("hidden");
         triggers[i].addEventListener('click', bindClick(i));
@@ -195,13 +197,14 @@ function slideoutInit(){
     }
     function bindClick(i) {
         return function(){
-            slideout[i].on('beforeopen', function() {
-                for (var x = 0, len = triggers.length; x < len; x++){
-                    slideout[x].menu.style.zIndex = '0';
-                }
-                slideout[i].menu.style.zIndex = '1';
-            });
+            slideout[i].menu.style.zIndex = '0';
             slideout[i].toggle();
+            
+            slideout[i].on('close', function() {
+                slideout[i].menu.style.zIndex = '-1';
+            });
+                    
+            
             
             /*var fixed = document.querySelector('.centered-navigation');
 
