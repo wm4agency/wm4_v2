@@ -4572,7 +4572,7 @@ main#home {
     /* line 7, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
     main#home {
       background-color: rgba(255, 255, 255, 0.5);
-      padding-top: 10vh;
+      padding: 70px 50px 0 0;
       font-weight: 300; }
       /* line 70, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
       main#home .span-4.unidades {
@@ -4589,36 +4589,60 @@ main#home {
       main#home .span-6 {
         float: none;
         position: absolute;
-        margin-top: 150px; }
-      /* line 90, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+        margin-top: 3em;
+        padding-right: 50px; }
+      /* line 91, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
       main#home .span-3 {
         float: right;
-        width: 50% !important;
+        width: 100% !important;
         margin: 0;
         padding: 1em !important;
         bottom: 0 !important;
         position: absolute;
         min-height: 30%;
         font-size: .75em; }
-      /* line 101, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+      /* line 102, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
       main#home .flap.r {
         right: 0 !important; }
-      /* line 105, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+      /* line 106, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+      main#home .flap.l {
+        display: none; }
+      /* line 110, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
       main#home .bloque_wrapper {
-        min-height: 30vh; } }
+        min-height: 30vh; }
+        /* line 113, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+        main#home .bloque_wrapper .row {
+          padding: .5em; } }
 
-/* line 111, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+/* line 118, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
 #pagepiling .section {
   background: white no-repeat center center;
   background-size: cover; }
-  /* line 115, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+  /* line 122, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   #pagepiling .section#welcome-splash {
     background-color: white; }
 
 @media only screen and (max-width: 480px) {
-  /* line 120, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+  /* line 127, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   .centered-navigation ul li.nav-link {
     padding-right: 0; } }
+
+@media only screen and (max-width: 480px) {
+  /* line 135, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+  html.pagepiled header {
+    padding-right: 50px; }
+  /* line 139, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+  html.pagepiled .centered-navigation .nav-link:first-child {
+    margin-left: .5em; }
+  /* line 142, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+  html.pagepiled .centered-navigation ul li.nav-link a {
+    padding-right: .65em; }
+  /* line 146, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+  html.pagepiled ul.hex li {
+    padding-left: 1.5em;
+    font-size: 1.25em;
+    padding-bottom: 0.2em;
+    font-weight: 400; } }
 
 /* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_portada_seccion.scss */
 main.portada-seccion {

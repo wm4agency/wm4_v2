@@ -64,7 +64,7 @@ main#home{
     
     @include max-width($mobile) {
         background-color: rgba(255,255,255,.5);    
-        padding-top: 10vh;
+        padding: 70px 50px 0 0;
         font-weight: 300;
         
         .span-4.unidades{
@@ -84,12 +84,13 @@ main#home{
         .span-6{
             float: none;
             position: absolute;
-            margin-top: 150px;
+            margin-top: 3em;
+            padding-right: 50px;
         }
         
         .span-3{
             float: right;
-            width: 50%!important;
+            width: 100%!important;
             margin: 0;
             padding: 1em!important;
             bottom: 0!important;
@@ -102,8 +103,14 @@ main#home{
             right: 0!important;
         }
         
+        .flap.l{
+            display:none;
+        }
+        
         .bloque_wrapper{
             min-height: 30vh;
+            
+            .row{ padding: .5em}
         }
     }
 }
@@ -120,5 +127,27 @@ main#home{
 .centered-navigation ul li.nav-link{
     @include max-width($mobile) {
         padding-right: 0;
+    }
+}
+
+html.pagepiled{
+    @include max-width($mobile){
+        header{ 
+            padding-right: 50px;
+        }
+        
+        .centered-navigation .nav-link:first-child{
+            margin-left: .5em;
+        }
+        .centered-navigation ul li.nav-link a{
+            padding-right: .65em;
+        }
+        
+        ul.hex li{
+            padding-left: 1.5em;
+            font-size: 1.25em;
+            padding-bottom: 0.2em;
+            font-weight: 400;
+        }
     }
 }

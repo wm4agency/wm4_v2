@@ -59,7 +59,7 @@ include 'header-desktop.php';
     <div id="welcome-splash" class="section" style="background-color:white;"></div>
     <div id="mkt-digital" class="section" style="background-image:url(img/stock/business-mobile-devices.jpeg)"></div>
     <div id="mkt-politico" class="section" style="background-image:url(img/stock/bow-tie-businessman-fashion-man.jpg)"></div>
-    <div id="mkt-deportivo" class="section" style="background-image:url(img/stock/baseball-stadium-top.jpeg)"></div>
+    <div id="mkt-deportivo" class="section" style="background-image:url(img/stock/sports_back.jpg)"></div>
 </section>    
 <!-- The Modal -->
 <div id="modal_contacto" class="modal">
