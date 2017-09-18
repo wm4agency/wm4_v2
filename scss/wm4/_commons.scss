@@ -121,3 +121,25 @@ ul.hex {
         cursor: pointer;
     }
 }
+
+.modal{
+    @include max-width($mobile) {
+    
+        .modal-content{
+            padding: 10px;
+            margin-top: 120px;
+            
+            fieldset{
+                margin: 0;
+                padding: 0;
+                max-width: 100%;
+                overflow: hidden;
+                font-size: .75em;
+                
+                input, select, textarea{
+                    max-width: 80%;
+                }
+            }
+        }
+    }
+}

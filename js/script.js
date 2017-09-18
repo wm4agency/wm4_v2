@@ -100,6 +100,7 @@ function pagepilingInit(){
                         "<li>Social Marketing</li>\n"+
                         "<li>Producción de contenido</li>\n"+
                         "</ul>";
+                    var selected = $('#u_mkt_digital');
                     break;
 
                 case 'mkt-politico':
@@ -111,6 +112,7 @@ function pagepilingInit(){
                         "<li>Finanzas públicas y transparencia</li>\n"+
                         "<li>Jurídico electoral</li>\n"+
                         "</ul>";
+                    var selected = $('#u_mkt_politico');
                     break;
 
                 case 'mkt-deportivo':
@@ -125,6 +127,7 @@ function pagepilingInit(){
                         "<li>Content Marketing</li>\n"+
                         "<li>Social Media Marketing</li>\n"+
                         "</ul>";
+                    var selected = $('#u_mkt_deportivo');
                     break;
 
                 default:
@@ -134,6 +137,13 @@ function pagepilingInit(){
                               }
             $('#left-flap').html(lFlapContent);
             $('#right-flap').html(rFlapContent);
+            if(selected){
+                console.log(selected);
+                $('.unidades').removeClass('selected');
+                selected.addClass('selected');
+            }else{
+                $('.unidades').removeClass('selected');
+            };
         }
     });
 }
