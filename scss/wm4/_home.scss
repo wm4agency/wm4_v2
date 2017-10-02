@@ -73,8 +73,11 @@ main#home{
     
     @include max-width($mobile) {
         background-color: rgba(255,255,255,.5);    
-        padding: 90px 50px 0 0;
+        padding-top:120px;
         font-weight: 300;
+        position: relative;
+        
+        .main_logo{max-width: 75%;}
         
         .unidades{
             width:33.3%!important; 
@@ -169,3 +172,72 @@ html.pagepiled{
         }
     }
 }
+
+section#unidades_negocio{
+    .section-header{
+        background-color: black;
+        color: white;
+        text-transform: uppercase;
+        font-size: .75em;
+        text-align: center;
+    }
+    
+    .unidades{
+        text-transform: uppercase;
+        border-right: 1px solid black;
+        border-radius: 0;
+        padding: 1em;
+
+        &:last-child{
+            border:none;   
+        }
+
+        &.selected{
+            color:$action-color;
+            font-weight: 700;
+            border: 1px solid $action-color;
+            background-color: rgba(255,255,255,.5);
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+    
+    article{
+        margin:0;
+        width: 33.33%;
+        float:left;
+        padding: .15em;
+        overflow: hidden;
+        display: block;
+        max-height: 200px;
+        
+        h1{
+            width: 100%;
+            font-size: 2.5em;
+            line-height: .95em;
+        }
+        
+        &:after{
+            content: " ";
+            padding-bottom: 100%;
+            display: block;
+        }
+        
+        &#digital{
+            background-color: #1797cd;
+            h1{color:#8bcbe6;}
+        }
+        &#politico{
+            background-color: #cdc200;
+            h1{color:#e6e080;}
+        }
+        &#deportivo{
+            background-color: #d53d0e;
+            h1{color:#ea9e86;}
+        }
+    }
+}
+

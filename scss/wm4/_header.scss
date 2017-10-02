@@ -38,6 +38,34 @@
         .tooltip{
             width:12em;
         }
+        
+        @include max-width($mobile){
+            span.contacto-icon{font-size: 1em!important; line-height: 20px;}
+            #contacto_head{
+                width: 30px;
+                height: 18px;
+                
+                &:before{ 
+                    border-left: 15px solid transparent;
+                    border-right: 15px solid transparent;
+                    border-bottom: 8.66px solid #000;
+                }
+                
+                &:after{ 
+                    border-left: 15px solid transparent;
+                    border-right: 15px solid transparent;
+                    border-top: 8.66px solid #000;
+                }
+                
+                >span{
+                    line-height: 18px;
+                }
+                
+                .nav-link:first-child {
+                    margin-left: 1em;
+                }
+            }
+        }
     }
 }
 

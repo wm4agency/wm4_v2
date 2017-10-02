@@ -4435,14 +4435,39 @@ ul.hex {
   /* line 38, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
   .centered-navigation nav .tooltip {
     width: 12em; }
+  @media only screen and (max-width: 480px) {
+    /* line 43, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
+    .centered-navigation nav span.contacto-icon {
+      font-size: 1em !important;
+      line-height: 20px; }
+    /* line 44, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
+    .centered-navigation nav #contacto_head {
+      width: 30px;
+      height: 18px; }
+      /* line 48, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
+      .centered-navigation nav #contacto_head:before {
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 8.66px solid #000; }
+      /* line 54, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
+      .centered-navigation nav #contacto_head:after {
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 8.66px solid #000; }
+      /* line 60, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
+      .centered-navigation nav #contacto_head > span {
+        line-height: 18px; }
+      /* line 64, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
+      .centered-navigation nav #contacto_head .nav-link:first-child {
+        margin-left: 1em; } }
 
-/* line 44, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
+/* line 72, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
 .minimal-navigation {
   display: block;
   height: 6em;
   position: relative;
   top: 0; }
-  /* line 50, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
+  /* line 78, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
   .minimal-navigation div.container {
     width: 100%;
     max-width: 68em;
@@ -4457,10 +4482,10 @@ ul.hex {
       clear: both;
       content: "";
       display: table; }
-  /* line 59, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
+  /* line 87, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
   .minimal-navigation .logo {
     float: right; }
-    /* line 62, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
+    /* line 90, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
     .minimal-navigation .logo img {
       position: absolute;
       height: 2em;
@@ -4469,10 +4494,10 @@ ul.hex {
       transform: translateY(-50%);
       right: 0; }
       @media only screen and (max-width: 1150px) {
-        /* line 62, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
+        /* line 90, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
         .minimal-navigation .logo img {
           padding-right: 2em; } }
-  /* line 76, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
+  /* line 104, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
   .minimal-navigation .hexa-tip-right {
     position: absolute;
     height: 2em;
@@ -4482,7 +4507,7 @@ ul.hex {
     right: 1em !important;
     float: right;
     padding-left: 1em; }
-    /* line 86, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
+    /* line 114, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
     .minimal-navigation .hexa-tip-right figure {
       position: relative;
       width: 1em;
@@ -4596,9 +4621,13 @@ main#home {
     /* line 7, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
     main#home {
       background-color: rgba(255, 255, 255, 0.5);
-      padding: 90px 50px 0 0;
-      font-weight: 300; }
-      /* line 79, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+      padding-top: 120px;
+      font-weight: 300;
+      position: relative; }
+      /* line 80, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+      main#home .main_logo {
+        max-width: 75%; }
+      /* line 82, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
       main#home .unidades {
         width: 33.3% !important;
         float: left;
@@ -4606,17 +4635,17 @@ main#home {
         margin: 0 !important;
         clear: none;
         border-radius: 0; }
-        /* line 87, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+        /* line 90, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
         main#home .unidades h1 {
           font-size: .75em;
           margin: .75em auto; }
-      /* line 98, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+      /* line 101, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
       main#home .span-6 {
         float: none;
         position: absolute;
         margin-top: 3em;
         padding-right: 50px; }
-      /* line 105, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+      /* line 108, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
       main#home .span-3 {
         float: right;
         width: 100% !important;
@@ -4626,51 +4655,117 @@ main#home {
         position: absolute;
         min-height: 30%;
         font-size: .75em; }
-      /* line 116, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+      /* line 119, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
       main#home .flap.r {
         right: 0 !important; }
-      /* line 120, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+      /* line 123, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
       main#home .flap.l {
         display: none; }
-      /* line 124, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+      /* line 127, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
       main#home .bloque_wrapper {
         min-height: 30vh; }
-        /* line 127, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+        /* line 130, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
         main#home .bloque_wrapper .row {
           padding: .5em; } }
 
-/* line 132, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+/* line 135, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
 #pagepiling .section {
   background: white no-repeat center center;
   background-size: cover; }
-  /* line 136, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+  /* line 139, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   #pagepiling .section#welcome-splash {
     background-color: white; }
 
 @media only screen and (max-width: 480px) {
-  /* line 141, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+  /* line 144, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   .centered-navigation ul li.nav-link {
     padding-right: 0; } }
 
 @media only screen and (max-width: 480px) {
-  /* line 149, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+  /* line 152, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   html.pagepiled header {
     padding-right: 50px; }
-  /* line 153, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+  /* line 156, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   html.pagepiled .centered-navigation {
     min-height: 90px; }
-    /* line 156, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+    /* line 159, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
     html.pagepiled .centered-navigation .nav-link:first-child {
       margin-left: .5em; }
-    /* line 159, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+    /* line 162, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
     html.pagepiled .centered-navigation ul li.nav-link a {
       padding-right: .65em; }
-  /* line 164, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+  /* line 167, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   html.pagepiled ul.hex li {
     padding-left: 1.5em;
     font-size: 1.25em;
     padding-bottom: 0.2em;
     font-weight: 400; } }
+
+/* line 177, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+section#unidades_negocio .section-header {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-size: .75em;
+  text-align: center; }
+
+/* line 185, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+section#unidades_negocio .unidades {
+  text-transform: uppercase;
+  border-right: 1px solid black;
+  border-radius: 0;
+  padding: 1em; }
+  /* line 191, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+  section#unidades_negocio .unidades:last-child {
+    border: none; }
+  /* line 195, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+  section#unidades_negocio .unidades.selected {
+    color: #477dca;
+    font-weight: 700;
+    border: 1px solid #477dca;
+    background-color: rgba(255, 255, 255, 0.5); }
+  /* line 202, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+  section#unidades_negocio .unidades a {
+    text-decoration: none;
+    color: inherit; }
+
+/* line 208, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+section#unidades_negocio article {
+  margin: 0;
+  width: 33.33%;
+  float: left;
+  padding: .15em;
+  overflow: hidden;
+  display: block;
+  max-height: 200px; }
+  /* line 217, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+  section#unidades_negocio article h1 {
+    width: 100%;
+    font-size: 2.5em;
+    line-height: .95em; }
+  /* line 223, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+  section#unidades_negocio article:after {
+    content: " ";
+    padding-bottom: 100%;
+    display: block; }
+  /* line 229, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+  section#unidades_negocio article#digital {
+    background-color: #1797cd; }
+    /* line 231, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+    section#unidades_negocio article#digital h1 {
+      color: #8bcbe6; }
+  /* line 233, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+  section#unidades_negocio article#politico {
+    background-color: #cdc200; }
+    /* line 235, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+    section#unidades_negocio article#politico h1 {
+      color: #e6e080; }
+  /* line 237, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+  section#unidades_negocio article#deportivo {
+    background-color: #d53d0e; }
+    /* line 239, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+    section#unidades_negocio article#deportivo h1 {
+      color: #ea9e86; }
 
 /* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_portada_seccion.scss */
 main.portada-seccion {

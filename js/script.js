@@ -150,14 +150,17 @@ function pagepilingInit(){
 
 function cycle(){
     var mensaje = [
-        '"Contar con una estrategia digital ha dejado de ser opcional"',
-        '"El marketing deportivo es un deporte de contacto y estrategia"',
-        '"En política, la reputación lo es todo"'
+        'Marketing con sentido',
+        'Marketing estratégico',
+        'Marketing por objetivos',
+        'Marketing con resultados',
+        'Analíticos y optimización',
+        'Publicidad con ROI medido'
     ];
     
     var x = 0;
     loopmsg();
-    setInterval(loopmsg, 5000);
+    setInterval(loopmsg, 3500);
     // cycles through different salutations
     function loopmsg(){
         $('#cycling').fadeOut(1000, function(){
