@@ -37,7 +37,6 @@ function sendRequest() {
     var intencion = document.getElementById("intencion").value;
     var grado = document.getElementById("grado").value;
     var comentarios = escape(document.getElementById("comentarios").value);
-    console.log('nombre= '+nombre);
 //    var landing = document.getElementById("landing").value;
 //    var idempresa = document.getElementById("idempresa").value;
 //    var tipo = document.getElementById("tipo").value;
@@ -54,7 +53,7 @@ function sendRequest() {
 	catch(e){ console.log(e);}
 	finally{
         $('#contactform').slideUp("slow").hide();
-        $('#contactWrapper').append('<div class="success"><h4>Email Successfully Sent!</h4><br><p>Thank you for using our contact form <strong>'+decodeURIComponent(name)+'</strong>! Your email was successfully sent and we&#39;ll be in touch with you soon.</p></div>');
+        $('#form-wrapper').append('<div class="success"><h4>¡ENVIADO!</h4><br><p>Gracias por escribirnos <strong>'+decodeURIComponent(name)+'</strong>! Tu correo ha sido enviado con éxito y pronto te contactaremos para darle seguimiento.</p></div>');
 //        track();
 	}
 }

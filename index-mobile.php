@@ -1,6 +1,6 @@
 <?php  
 $title = 'WM4'; 
-$localScripts = 'slideout';
+$localScripts = 'email-modal';
 $header = 'full'; 
 include 'header-mobile.php'; 
 ?>
@@ -118,6 +118,7 @@ include 'header-mobile.php';
             </fieldset>
             <input id="send" type="button" value="Enviar" onClick="return check_values();">
         </form>
+        <div id="confirmation"></div>
     </div>
 </section>
 
@@ -126,7 +127,7 @@ include 'header-mobile.php';
     <!-- Modal content -->
     <div id="#contactWrapper" class="modal-content">
         <span class="close">&times;</span>
-        <form id="contactform">
+        <form id="contactform-modal">
             <fieldset>
                 <span><input id="nombre" type="text" name="nombre" placeholder="Nombre" class="validar"></span>
                 <span><input id="empresa" type="text" name="empresa" placeholder="Empresa" class="validar"></span>
@@ -161,9 +162,9 @@ include 'header-mobile.php';
                 </span>
                 <textarea id="comentarios" name="comentarios" placeholder="Cometarios adicionales"></textarea>
             </fieldset>
-            <input id="send" type="button" value="Enviar" onClick="return check_values();">
+            <input id="send-modal" type="button" value="Enviar" onClick="return modal_check_values();">
         </form>
-        <div id="confirmation"></div>
+        <div id="modal-confirmation"></div>
     </div>
 
 </div>

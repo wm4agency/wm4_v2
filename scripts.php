@@ -7,6 +7,7 @@
 $scriptsBasePath ='js/';
 $scriptsCatalog = array(
     "email" => "email.js",
+    "email-modal" => "email-modal.js",
     "pagepiling" => "jquery.pagepiling.js",
     "slideout" => "slideout.js",
 );

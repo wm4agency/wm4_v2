@@ -350,7 +350,7 @@ if (mail($to,$subject,$email_message,$headers)){
 }
 else{
     echo "hemos tenido algún problema con tu envío, por favor intenta nuevamente";
-//    echo "no enviado" . " | PARAMETERS INTENDED: to= ".$to." / subject= ".$subject." / email_mesagge= ".$email_message." / headers= ".$headers;
+   //echo "no enviado" . " | PARAMETERS INTENDED: to= ".$to." / subject= ".$subject." / email_mesagge= ".$email_message." / headers= ".$headers;
     die();
 }
 
