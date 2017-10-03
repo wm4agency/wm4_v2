@@ -173,70 +173,178 @@ html.pagepiled{
     }
 }
 
-section#unidades_negocio{
+
+body.mobile{
+    $mobile-padding: 1.5em;
+    
+    section,main{
+        display: table!important;
+        width: 100%;
+    }    
+    
+    section.bloque{
+        div#cycle{
+            margin: 2em auto;
+            
+            h3#cycling{
+                font-weight: 100;
+                text-transform: uppercase;
+            }
+        }
+    }
+    
     .section-header{
         background-color: black;
         color: white;
         text-transform: uppercase;
-        font-size: .75em;
+        font-size: 2.75em;
         text-align: center;
-    }
-    
-    .unidades{
-        text-transform: uppercase;
-        border-right: 1px solid black;
-        border-radius: 0;
-        padding: 1em;
-
-        &:last-child{
-            border:none;   
-        }
-
-        &.selected{
-            color:$action-color;
-            font-weight: 700;
-            border: 1px solid $action-color;
-            background-color: rgba(255,255,255,.5);
-        }
-
-        a{
-            text-decoration: none;
-            color: inherit;
-        }
-    }
-    
-    article{
-        margin:0;
-        width: 33.33%;
-        float:left;
-        padding: .15em;
-        overflow: hidden;
+        font-weight: 100;
         display: block;
-        max-height: 200px;
-        
-        h1{
-            width: 100%;
-            font-size: 2.5em;
-            line-height: .95em;
+        padding: 50px;
+    }
+
+    section#unidades_negocio{        
+        .section-header{
+            font-size: 1.5em;
         }
+        
+        article.unidades{
+            text-transform: uppercase;
+            border-radius: 0;
+
+            margin:0;
+            width: 33.33%;
+            float:left;
+            padding: .15em;
+            overflow: hidden;
+            display: block;
+            height: 200px;
+            position: relative;
+            
+            h1{
+                width: 100%;
+                font-size: 2.5em;
+                line-height: .95em;
+                display: block;
+                top: 50%;
+                left: 50%;
+                transform: translate(-35%,-50%);
+                position: absolute;
+            }
+
+            &#digital{
+                background-color: #1797cd;
+                h1{color:#8bcbe6;}
+            }
+            &#politico{
+                background-color: #cdc200;
+                h1{color:#e6e080;}
+            }
+            &#deportivo{
+                background-color: #d53d0e;
+                h1{color:#ea9e86;}
+            }
+
+            &:last-child{
+                border:none;   
+            }
+        }
+
+    }
+
+    section#mvp{
+        @include colored-section;
+        
+        background: url(../img/left-corner-25alpha.png) #4d4d4d no-repeat;
+        background-size: 130px;
+        background-position: bottom right;
+        padding: $mobile-padding;
+        padding-right: 4.5em;
         
         &:after{
-            content: " ";
-            padding-bottom: 100%;
-            display: block;
+            padding-bottom: 0%;
+        }
+
+        h1{
+            @include josefin;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 2em;
+        }
+
+        p{
+            font-size: .90em;
+            line-height: 1.70em;
+            letter-spacing: .035em;
+        }
+    }
+    
+    section#valores{
+        article{
+            width: 50%;
+            margin: 0;
+            float: left;
+            position: relative;
+            overflow: hidden;
+            
+            &:after{
+                content: "";
+                padding-bottom: 125%;
+                position: relative;
+                display: block;
+            }
+            
+            div.article-wrapper{
+                overflow: hidden;
+                max-width: 100%;
+                position: absolute;
+                min-height: 100%;
+                top: 0;
+                right: 0;
+                padding: 1em;
+                overflow: hidden;
+            }
+            
+            h1{
+                @include josefin;
+                font-size: 1em;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+            
+            p{
+                font-size: .75em;
+                line-height: 1.5em;
+                font-weight: 500;
+            }
+        }
+    }
+    
+    section#forma{
+    
+        div.form-wrapper{
+            position: relative;
+            width: 100%;
         }
         
-        &#digital{
-            background-color: #1797cd;
-            h1{color:#8bcbe6;}
-        }
-        &#politico{
-            background-color: #cdc200;
-            h1{color:#e6e080;}
-        }
-        &#deportivo{
-            background-color: #d53d0e;
-            h1{color:#ea9e86;}
+        form{
+            overflow: hidden;
+            max-width: 100%;
+            position: absolute;
+            min-height: 100%;
+            top: 0;
+            right: 0;
+            padding: $mobile-padding;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            
+            fieldset{
+                top: 0;
+                left: 0;
+                max-width: 100%;
+            }
         }
     }
 }

@@ -138,8 +138,31 @@ ul.hex {
                 
                 input, select, textarea{
                     max-width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
             }
         }
+    }
+}
+
+
+@mixin colored-section{
+    color:white;
+    display: block;
+    width: 100%;
+    margin:0;
+    padding: 1.5em;
+
+    &:after{
+        content: "";
+        padding-bottom: 50%;
+        display: block;
+    }
+}
+
+form{
+    select{
+        width: 100%;
     }
 }

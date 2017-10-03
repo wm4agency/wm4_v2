@@ -246,3 +246,9 @@ function slideoutInit(){
         };
     }
 }
+
+function bindUnidades(){
+    if (!$("body").hasClass("mobile"))return;
+    
+    $(".addproduct").click(function(){
+}

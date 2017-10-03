@@ -31,7 +31,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 })();
 </script>
 </head>
-    <body>
+    <body class="mobile">
         <?php  if ($header == 'full'): ?>
         <header class="centered-navigation" role="banner">
             <div class="centered-navigation-wrapper">
