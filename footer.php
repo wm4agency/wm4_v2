@@ -1,9 +1,9 @@
-<?php if ($footer == "full"): echo "full footer";?>
+<?php if ($footer == "full"): /*echo "full footer"*/;?>
 <footer class="fullwidth">
     <div class="container">
     </div>
 </footer>
-<?php elseif($footer =="minimal"): echo "minimal footer" ?>
+<?php elseif($footer =="minimal"): /*echo "minimal footer";*/ ?>
 <footer class="fullwidth">
     <div class="container">
         <div class="span-4">

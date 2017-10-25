@@ -24,6 +24,7 @@
         </ul>
     </div>
 </main>
+<!--
 <section id="stats" class="<?php echo $role; ?> container row">
     <h1 class="span-12">Resultados Medibles</h1>
     <ul class="span-12 stats">
@@ -103,6 +104,7 @@
         </form>
     </div>
 </section>
+-->
 
 
 <?php 
