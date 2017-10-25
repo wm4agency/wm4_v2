@@ -14,8 +14,15 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-<link rel="shortcut icon" href="img/apple-touch-icon.png">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="/img/favicons/favicon.ico">
+    <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#000000">
+    
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,700|Roboto+Slab:300,400,700" rel="stylesheet">
 <link rel="stylesheet" href="css/base.css">
 
