@@ -3,28 +3,28 @@
     $localScripts = 'slideout';
     $header = 'minimal'; 
     $role = 'portada-seccion'; 
+    $colo_space:blue;
     include 'header-desktop.php'; 
 ?>
 
 <main class="<?php echo $role; ?> container row">
     <h1 class="span-12">marketing <br> digital</h1>
     <p role="definition" class="span-5">Desarrollamos e implementamos estrategias que permiten al cliente concretar objetivos de negocio a través de internet, analizando y optimizando constantemente para entregar resultados tangibles que se traducen en oportunidades de ingreso para el cliente</p>
-    <div class="span-7 omega">
+    <section id="servicios" class="span-7 omega">
         <ul class="hex span-6">
             <li>Análisis y estrategia</li>
             <li>Diseño y desarrollo</li>
             <li>Consultoría en Marketing y Comunicación</li>
             <li>Monitoreo y análisis</li>
         </ul>
-        <ul class="hex span-6">
+        <ul class="hex span-6 omega">
             <li>Posicionamiento Web</li>
             <li>Content Marketing</li>
             <li>Social Marketing</li>
             <li>Producción de contenido</li>
         </ul>
-    </div>
+    </section>
 </main>
-<!--
 <section id="stats" class="<?php echo $role; ?> container row">
     <h1 class="span-12">Resultados Medibles</h1>
     <ul class="span-12 stats">
@@ -104,8 +104,6 @@
         </form>
     </div>
 </section>
--->
-
 
 <?php 
     $footer="minimal";

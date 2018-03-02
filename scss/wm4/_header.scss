@@ -1,4 +1,4 @@
-.centered-navigation{
+header.centered-navigation{
 //    background: rgba(0,0,0,.1);
     position: absolute;
     z-index: 999;
@@ -69,9 +69,9 @@
     }
 }
 
-.minimal-navigation{
+header.minimal-navigation{
     display: block;
-    height: 6em;
+    height: 9em;
     position: relative;
     top:0;
     
@@ -82,6 +82,27 @@
         display: block;
         position: relative;
         height: 100%;
+    }
+    
+    nav{
+        //background: orange;
+        
+        ul{
+            height: 3em;
+            
+            li{
+                list-style: none;
+                font-size: .75em;
+                display: block;
+                color: $light-gray;
+                text-transform: lowercase;
+                line-height: 3em;
+                padding: 0 1.5em;
+            }
+            
+            &.nav-left li{ float: left; }
+            &.nav-right li{ float: right; }
+        }
     }
     
     .logo {
@@ -110,6 +131,7 @@
         right: 1em !important;
         float: right;
         padding-left: 1em;
+        margin-top: 3em;
         
         figure{@include hexagon(1em,1em);}
     }

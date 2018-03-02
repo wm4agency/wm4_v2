@@ -5,7 +5,7 @@ error_reporting(0);
 
 // configuration
 $to = "wm4 - atención a clientes";
-$recipients = "oscar@wm4.mx,maru@wm4.mx,bety@wm4.mx";
+$recipients = "oscar@wm4.mx,maru@wm4.mx,bety@wm4.mx, pepe@wm4.mx";
 
 $error_message = "Por favor complete la información en la forma";
 

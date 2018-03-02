@@ -66,6 +66,17 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
     
     <?php elseif ($header == 'minimal'): ?>
     <header class="minimal-navigation fullwidth">
+        <nav class="container">
+            <ul class="nav-left span-3">
+                <li>home</li>
+            </ul>
+            <ul class="nav-right span-9 omega">
+                <li>marketing político</li>
+                <li>marketing deportivo</li>
+                <li>agencia</li>
+                <li>contacto</li>
+            </ul>
+        </nav>
         <div class="container"><figure class="logo"><a href="index.php"><img src="img/wm4.png"></a></figure></div>
         <div class="hexa-tip-right"><figure>&nbsp;</figure></div>
     </header>

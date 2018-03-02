@@ -1,260 +1,208 @@
 @charset "UTF-8";
-/* line 4, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/neat/grid/_box-sizing.scss */
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 9, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/neat/grid/_box-sizing.scss */
 *, *::after, *::before {
+  -webkit-box-sizing: inherit;
   box-sizing: inherit; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 audio, canvas, video {
   display: inline-block;
   *display: inline;
   *zoom: 1; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 [hidden] {
   display: none; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 html, button, input, select, textarea {
   font-family: sans-serif; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 body {
   margin: 0; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 a:focus {
   outline: thin dotted; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 a:active, a:hover {
   outline: 0; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: .67em 0; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 h2 {
   font-size: 1.5em;
   margin: .83em 0; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 h3 {
   font-size: 1.17em;
   margin: 1em 0; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 h4 {
   font-size: 1em;
   margin: 1.33em 0; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 h5 {
   font-size: .83em;
   margin: 1.67em 0; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 h6 {
   font-size: .67em;
   margin: 2.33em 0; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 b, strong {
   font-weight: bold; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 blockquote {
   margin: 1em 40px; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 dfn {
   font-style: italic; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 hr {
-  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 mark {
   background: #ff0;
   color: #000; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 p, pre {
   margin: 1em 0; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 code, kbd, pre, samp {
   font-family: monospace,serif;
   _font-family: 'courier new',monospace;
   font-size: 1em; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 q {
   quotes: none; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 q:before, q:after {
   content: '';
   content: none; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 small {
   font-size: 80%; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 sup {
   top: -0.5em; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 sub {
   bottom: -0.25em; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 dl, menu, ol, ul {
   margin: 1em 0; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 dd {
   margin: 0 0 0 40px; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 menu, ol, ul {
   padding: 0 0 0 40px; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 nav ul, nav ol {
   list-style: none;
   list-style-image: none; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 img {
   border: 0;
   -ms-interpolation-mode: bicubic; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 svg:not(:root) {
   overflow: hidden; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 figure {
   margin: 0; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 form {
   margin: 0; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: .35em .625em .75em; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 legend {
   border: 0;
   padding: 0;
   white-space: normal;
   *margin-left: -7px; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 button, input, select, textarea {
   font-size: 100%;
   margin: 0;
   vertical-align: baseline;
   *vertical-align: middle; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 button, input {
   line-height: normal; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 button, select {
   text-transform: none; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
   *overflow: visible; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 button[disabled], html input[disabled] {
   cursor: default; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 input[type="checkbox"], input[type="radio"] {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   *height: 13px;
   *width: 13px; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 textarea {
   overflow: auto;
   vertical-align: top; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_normalize.scss */
 img {
   max-width: 100%;
   height: auto;
@@ -262,235 +210,186 @@ img {
   margin-left: auto;
   margin-right: auto; }
 
-/* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
 .span-1 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 6.17215%; }
-  /* line 89, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/neat/grid/_span-columns.scss */
   .span-1:last-child {
     margin-right: 0; }
   @media only screen and (max-width: 768px) {
-    /* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
     .span-1 {
       width: 100% !important;
       clear: both; } }
 
-/* line 20, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
 .shift-1 {
   margin-left: 8.5298%; }
 
-/* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
 .span-2 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 14.70196%; }
-  /* line 89, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/neat/grid/_span-columns.scss */
   .span-2:last-child {
     margin-right: 0; }
   @media only screen and (max-width: 768px) {
-    /* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
     .span-2 {
       width: 100% !important;
       clear: both; } }
 
-/* line 20, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
 .shift-2 {
   margin-left: 17.05961%; }
 
-/* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
 .span-3 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%; }
-  /* line 89, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/neat/grid/_span-columns.scss */
   .span-3:last-child {
     margin-right: 0; }
   @media only screen and (max-width: 768px) {
-    /* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
     .span-3 {
       width: 100% !important;
       clear: both; } }
 
-/* line 20, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
 .shift-3 {
   margin-left: 25.58941%; }
 
-/* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
 .span-4 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%; }
-  /* line 89, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/neat/grid/_span-columns.scss */
   .span-4:last-child {
     margin-right: 0; }
   @media only screen and (max-width: 768px) {
-    /* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
     .span-4 {
       width: 100% !important;
       clear: both; } }
 
-/* line 20, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
 .shift-4 {
   margin-left: 34.11922%; }
 
-/* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
 .span-5 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 40.29137%; }
-  /* line 89, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/neat/grid/_span-columns.scss */
   .span-5:last-child {
     margin-right: 0; }
   @media only screen and (max-width: 768px) {
-    /* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
     .span-5 {
       width: 100% !important;
       clear: both; } }
 
-/* line 20, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
 .shift-5 {
   margin-left: 42.64902%; }
 
-/* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
 .span-6 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%; }
-  /* line 89, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/neat/grid/_span-columns.scss */
   .span-6:last-child {
     margin-right: 0; }
   @media only screen and (max-width: 768px) {
-    /* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
     .span-6 {
       width: 100% !important;
       clear: both; } }
 
-/* line 20, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
 .shift-6 {
   margin-left: 51.17883%; }
 
-/* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
 .span-7 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 57.35098%; }
-  /* line 89, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/neat/grid/_span-columns.scss */
   .span-7:last-child {
     margin-right: 0; }
   @media only screen and (max-width: 768px) {
-    /* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
     .span-7 {
       width: 100% !important;
       clear: both; } }
 
-/* line 20, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
 .shift-7 {
   margin-left: 59.70863%; }
 
-/* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
 .span-8 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 65.88078%; }
-  /* line 89, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/neat/grid/_span-columns.scss */
   .span-8:last-child {
     margin-right: 0; }
   @media only screen and (max-width: 768px) {
-    /* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
     .span-8 {
       width: 100% !important;
       clear: both; } }
 
-/* line 20, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
 .shift-8 {
   margin-left: 68.23843%; }
 
-/* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
 .span-9 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 74.41059%; }
-  /* line 89, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/neat/grid/_span-columns.scss */
   .span-9:last-child {
     margin-right: 0; }
   @media only screen and (max-width: 768px) {
-    /* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
     .span-9 {
       width: 100% !important;
       clear: both; } }
 
-/* line 20, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
 .shift-9 {
   margin-left: 76.76824%; }
 
-/* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
 .span-10 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 82.94039%; }
-  /* line 89, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/neat/grid/_span-columns.scss */
   .span-10:last-child {
     margin-right: 0; }
   @media only screen and (max-width: 768px) {
-    /* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
     .span-10 {
       width: 100% !important;
       clear: both; } }
 
-/* line 20, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
 .shift-10 {
   margin-left: 85.29804%; }
 
-/* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
 .span-11 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 91.4702%; }
-  /* line 89, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/neat/grid/_span-columns.scss */
   .span-11:last-child {
     margin-right: 0; }
   @media only screen and (max-width: 768px) {
-    /* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
     .span-11 {
       width: 100% !important;
       clear: both; } }
 
-/* line 20, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
 .shift-11 {
   margin-left: 93.82785%; }
 
-/* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
 .span-12 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%; }
-  /* line 89, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/neat/grid/_span-columns.scss */
   .span-12:last-child {
     margin-right: 0; }
   @media only screen and (max-width: 768px) {
-    /* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
     .span-12 {
       width: 100% !important;
       clear: both; } }
 
-/* line 20, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
 .shift-12 {
   margin-left: 102.35765%; }
 
-/* line 25, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_neat-settings.scss */
 .omega {
   margin-right: 0; }
 
@@ -506,8 +405,6 @@ img {
   src: url("../css/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"), url("../css/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"), url("../css/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"), url("../css/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"), url("../css/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
-/* line 4, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_core.scss */
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -515,84 +412,67 @@ img {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-transform: translate(0, 0);
   transform: translate(0, 0); }
 
 /* makes the font 33% larger relative to the icon container */
-/* line 5, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_larger.scss */
 .fa-lg {
   font-size: 1.33333em;
   line-height: 0.75em;
   vertical-align: -15%; }
 
-/* line 10, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_larger.scss */
 .fa-2x {
   font-size: 2em; }
 
-/* line 11, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_larger.scss */
 .fa-3x {
   font-size: 3em; }
 
-/* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_larger.scss */
 .fa-4x {
   font-size: 4em; }
 
-/* line 13, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_larger.scss */
 .fa-5x {
   font-size: 5em; }
 
-/* line 3, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_fixed-width.scss */
 .fa-fw {
   width: 1.28571em;
   text-align: center; }
 
-/* line 4, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_list.scss */
 .fa-ul {
   padding-left: 0;
   margin-left: 2.14286em;
   list-style-type: none; }
-  /* line 8, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_list.scss */
   .fa-ul > li {
     position: relative; }
 
-/* line 10, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_list.scss */
 .fa-li {
   position: absolute;
   left: -2.14286em;
   width: 2.14286em;
   top: 0.14286em;
   text-align: center; }
-  /* line 16, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_list.scss */
   .fa-li.fa-lg {
     left: -1.85714em; }
 
-/* line 4, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_bordered-pulled.scss */
 .fa-border {
   padding: .2em .25em .15em;
   border: solid 0.08em #eee;
   border-radius: .1em; }
 
-/* line 10, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_bordered-pulled.scss */
 .pull-right {
   float: right; }
 
-/* line 11, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_bordered-pulled.scss */
 .pull-left {
   float: left; }
 
-/* line 14, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_bordered-pulled.scss */
 .fa.pull-left {
   margin-right: .3em; }
-
-/* line 15, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_bordered-pulled.scss */
 .fa.pull-right {
   margin-left: .3em; }
 
-/* line 4, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_animated.scss */
 .fa-spin {
   -webkit-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear; }
 
-/* line 9, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_animated.scss */
 .fa-pulse {
   -webkit-animation: fa-spin 1s infinite steps(8);
   animation: fa-spin 1s infinite steps(8); }
@@ -604,7 +484,6 @@ img {
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
-
 @keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -612,51 +491,39 @@ img {
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
-
-/* line 4, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_rotated-flipped.scss */
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
   transform: rotate(90deg); }
 
-/* line 5, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_rotated-flipped.scss */
 .fa-rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
-/* line 6, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_rotated-flipped.scss */
 .fa-rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   -webkit-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
   transform: rotate(270deg); }
 
-/* line 8, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_rotated-flipped.scss */
 .fa-flip-horizontal {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
   -webkit-transform: scale(-1, 1);
-  -ms-transform: scale(-1, 1);
   transform: scale(-1, 1); }
 
-/* line 9, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_rotated-flipped.scss */
 .fa-flip-vertical {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: scale(1, -1);
-  -ms-transform: scale(1, -1);
   transform: scale(1, -1); }
 
-/* line 14, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_rotated-flipped.scss */
 :root .fa-rotate-90,
 :root .fa-rotate-180,
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
+  -webkit-filter: none;
   filter: none; }
 
-/* line 4, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_stacked.scss */
 .fa-stack {
   position: relative;
   display: inline-block;
@@ -665,1764 +532,1340 @@ img {
   line-height: 2em;
   vertical-align: middle; }
 
-/* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_stacked.scss */
 .fa-stack-1x, .fa-stack-2x {
   position: absolute;
   left: 0;
   width: 100%;
   text-align: center; }
 
-/* line 18, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_stacked.scss */
 .fa-stack-1x {
   line-height: inherit; }
 
-/* line 19, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_stacked.scss */
 .fa-stack-2x {
   font-size: 2em; }
 
-/* line 20, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_stacked.scss */
 .fa-inverse {
   color: #fff; }
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
-/* line 4, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-glass:before {
   content: ""; }
 
-/* line 5, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-music:before {
   content: ""; }
 
-/* line 6, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-search:before {
   content: ""; }
 
-/* line 7, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-envelope-o:before {
   content: ""; }
 
-/* line 8, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-heart:before {
   content: ""; }
 
-/* line 9, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-star:before {
   content: ""; }
 
-/* line 10, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-star-o:before {
   content: ""; }
 
-/* line 11, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-user:before {
   content: ""; }
 
-/* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-film:before {
   content: ""; }
 
-/* line 13, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-th-large:before {
   content: ""; }
 
-/* line 14, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-th:before {
   content: ""; }
 
-/* line 15, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-th-list:before {
   content: ""; }
 
-/* line 16, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-check:before {
   content: ""; }
 
-/* line 17, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-remove:before,
 .fa-close:before,
 .fa-times:before {
   content: ""; }
 
-/* line 20, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-search-plus:before {
   content: ""; }
 
-/* line 21, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-search-minus:before {
   content: ""; }
 
-/* line 22, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-power-off:before {
   content: ""; }
 
-/* line 23, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-signal:before {
   content: ""; }
 
-/* line 24, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-gear:before,
 .fa-cog:before {
   content: ""; }
 
-/* line 26, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-trash-o:before {
   content: ""; }
 
-/* line 27, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-home:before {
   content: ""; }
 
-/* line 28, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-file-o:before {
   content: ""; }
 
-/* line 29, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-clock-o:before {
   content: ""; }
 
-/* line 30, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-road:before {
   content: ""; }
 
-/* line 31, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-download:before {
   content: ""; }
 
-/* line 32, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-arrow-circle-o-down:before {
   content: ""; }
 
-/* line 33, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-arrow-circle-o-up:before {
   content: ""; }
 
-/* line 34, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-inbox:before {
   content: ""; }
 
-/* line 35, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-play-circle-o:before {
   content: ""; }
 
-/* line 36, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-rotate-right:before,
 .fa-repeat:before {
   content: ""; }
 
-/* line 38, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-refresh:before {
   content: ""; }
 
-/* line 39, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-list-alt:before {
   content: ""; }
 
-/* line 40, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-lock:before {
   content: ""; }
 
-/* line 41, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-flag:before {
   content: ""; }
 
-/* line 42, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-headphones:before {
   content: ""; }
 
-/* line 43, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-volume-off:before {
   content: ""; }
 
-/* line 44, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-volume-down:before {
   content: ""; }
 
-/* line 45, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-volume-up:before {
   content: ""; }
 
-/* line 46, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-qrcode:before {
   content: ""; }
 
-/* line 47, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-barcode:before {
   content: ""; }
 
-/* line 48, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-tag:before {
   content: ""; }
 
-/* line 49, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-tags:before {
   content: ""; }
 
-/* line 50, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-book:before {
   content: ""; }
 
-/* line 51, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-bookmark:before {
   content: ""; }
 
-/* line 52, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-print:before {
   content: ""; }
 
-/* line 53, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-camera:before {
   content: ""; }
 
-/* line 54, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-font:before {
   content: ""; }
 
-/* line 55, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-bold:before {
   content: ""; }
 
-/* line 56, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-italic:before {
   content: ""; }
 
-/* line 57, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-text-height:before {
   content: ""; }
 
-/* line 58, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-text-width:before {
   content: ""; }
 
-/* line 59, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-align-left:before {
   content: ""; }
 
-/* line 60, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-align-center:before {
   content: ""; }
 
-/* line 61, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-align-right:before {
   content: ""; }
 
-/* line 62, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-align-justify:before {
   content: ""; }
 
-/* line 63, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-list:before {
   content: ""; }
 
-/* line 64, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-dedent:before,
 .fa-outdent:before {
   content: ""; }
 
-/* line 66, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-indent:before {
   content: ""; }
 
-/* line 67, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-video-camera:before {
   content: ""; }
 
-/* line 68, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-photo:before,
 .fa-image:before,
 .fa-picture-o:before {
   content: ""; }
 
-/* line 71, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-pencil:before {
   content: ""; }
 
-/* line 72, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-map-marker:before {
   content: ""; }
 
-/* line 73, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-adjust:before {
   content: ""; }
 
-/* line 74, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-tint:before {
   content: ""; }
 
-/* line 75, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-edit:before,
 .fa-pencil-square-o:before {
   content: ""; }
 
-/* line 77, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-share-square-o:before {
   content: ""; }
 
-/* line 78, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-check-square-o:before {
   content: ""; }
 
-/* line 79, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-arrows:before {
   content: ""; }
 
-/* line 80, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-step-backward:before {
   content: ""; }
 
-/* line 81, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-fast-backward:before {
   content: ""; }
 
-/* line 82, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-backward:before {
   content: ""; }
 
-/* line 83, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-play:before {
   content: ""; }
 
-/* line 84, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-pause:before {
   content: ""; }
 
-/* line 85, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-stop:before {
   content: ""; }
 
-/* line 86, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-forward:before {
   content: ""; }
 
-/* line 87, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-fast-forward:before {
   content: ""; }
 
-/* line 88, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-step-forward:before {
   content: ""; }
 
-/* line 89, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-eject:before {
   content: ""; }
 
-/* line 90, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-chevron-left:before {
   content: ""; }
 
-/* line 91, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-chevron-right:before {
   content: ""; }
 
-/* line 92, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-plus-circle:before {
   content: ""; }
 
-/* line 93, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-minus-circle:before {
   content: ""; }
 
-/* line 94, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-times-circle:before {
   content: ""; }
 
-/* line 95, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-check-circle:before {
   content: ""; }
 
-/* line 96, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-question-circle:before {
   content: ""; }
 
-/* line 97, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-info-circle:before {
   content: ""; }
 
-/* line 98, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-crosshairs:before {
   content: ""; }
 
-/* line 99, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-times-circle-o:before {
   content: ""; }
 
-/* line 100, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-check-circle-o:before {
   content: ""; }
 
-/* line 101, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-ban:before {
   content: ""; }
 
-/* line 102, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-arrow-left:before {
   content: ""; }
 
-/* line 103, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-arrow-right:before {
   content: ""; }
 
-/* line 104, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-arrow-up:before {
   content: ""; }
 
-/* line 105, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-arrow-down:before {
   content: ""; }
 
-/* line 106, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-mail-forward:before,
 .fa-share:before {
   content: ""; }
 
-/* line 108, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-expand:before {
   content: ""; }
 
-/* line 109, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-compress:before {
   content: ""; }
 
-/* line 110, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-plus:before {
   content: ""; }
 
-/* line 111, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-minus:before {
   content: ""; }
 
-/* line 112, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-asterisk:before {
   content: ""; }
 
-/* line 113, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-exclamation-circle:before {
   content: ""; }
 
-/* line 114, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-gift:before {
   content: ""; }
 
-/* line 115, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-leaf:before {
   content: ""; }
 
-/* line 116, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-fire:before {
   content: ""; }
 
-/* line 117, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-eye:before {
   content: ""; }
 
-/* line 118, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-eye-slash:before {
   content: ""; }
 
-/* line 119, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-warning:before,
 .fa-exclamation-triangle:before {
   content: ""; }
 
-/* line 121, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-plane:before {
   content: ""; }
 
-/* line 122, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-calendar:before {
   content: ""; }
 
-/* line 123, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-random:before {
   content: ""; }
 
-/* line 124, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-comment:before {
   content: ""; }
 
-/* line 125, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-magnet:before {
   content: ""; }
 
-/* line 126, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-chevron-up:before {
   content: ""; }
 
-/* line 127, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-chevron-down:before {
   content: ""; }
 
-/* line 128, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-retweet:before {
   content: ""; }
 
-/* line 129, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-shopping-cart:before {
   content: ""; }
 
-/* line 130, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-folder:before {
   content: ""; }
 
-/* line 131, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-folder-open:before {
   content: ""; }
 
-/* line 132, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-arrows-v:before {
   content: ""; }
 
-/* line 133, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-arrows-h:before {
   content: ""; }
 
-/* line 134, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-bar-chart-o:before,
 .fa-bar-chart:before {
   content: ""; }
 
-/* line 136, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-twitter-square:before {
   content: ""; }
 
-/* line 137, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-facebook-square:before {
   content: ""; }
 
-/* line 138, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-camera-retro:before {
   content: ""; }
 
-/* line 139, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-key:before {
   content: ""; }
 
-/* line 140, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-gears:before,
 .fa-cogs:before {
   content: ""; }
 
-/* line 142, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-comments:before {
   content: ""; }
 
-/* line 143, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-thumbs-o-up:before {
   content: ""; }
 
-/* line 144, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-thumbs-o-down:before {
   content: ""; }
 
-/* line 145, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-star-half:before {
   content: ""; }
 
-/* line 146, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-heart-o:before {
   content: ""; }
 
-/* line 147, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-sign-out:before {
   content: ""; }
 
-/* line 148, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-linkedin-square:before {
   content: ""; }
 
-/* line 149, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-thumb-tack:before {
   content: ""; }
 
-/* line 150, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-external-link:before {
   content: ""; }
 
-/* line 151, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-sign-in:before {
   content: ""; }
 
-/* line 152, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-trophy:before {
   content: ""; }
 
-/* line 153, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-github-square:before {
   content: ""; }
 
-/* line 154, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-upload:before {
   content: ""; }
 
-/* line 155, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-lemon-o:before {
   content: ""; }
 
-/* line 156, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-phone:before {
   content: ""; }
 
-/* line 157, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-square-o:before {
   content: ""; }
 
-/* line 158, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-bookmark-o:before {
   content: ""; }
 
-/* line 159, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-phone-square:before {
   content: ""; }
 
-/* line 160, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-twitter:before {
   content: ""; }
 
-/* line 161, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-facebook-f:before,
 .fa-facebook:before {
   content: ""; }
 
-/* line 163, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-github:before {
   content: ""; }
 
-/* line 164, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-unlock:before {
   content: ""; }
 
-/* line 165, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-credit-card:before {
   content: ""; }
 
-/* line 166, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-rss:before {
   content: ""; }
 
-/* line 167, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-hdd-o:before {
   content: ""; }
 
-/* line 168, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-bullhorn:before {
   content: ""; }
 
-/* line 169, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-bell:before {
   content: ""; }
 
-/* line 170, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-certificate:before {
   content: ""; }
 
-/* line 171, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-hand-o-right:before {
   content: ""; }
 
-/* line 172, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-hand-o-left:before {
   content: ""; }
 
-/* line 173, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-hand-o-up:before {
   content: ""; }
 
-/* line 174, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-hand-o-down:before {
   content: ""; }
 
-/* line 175, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-arrow-circle-left:before {
   content: ""; }
 
-/* line 176, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-arrow-circle-right:before {
   content: ""; }
 
-/* line 177, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-arrow-circle-up:before {
   content: ""; }
 
-/* line 178, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-arrow-circle-down:before {
   content: ""; }
 
-/* line 179, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-globe:before {
   content: ""; }
 
-/* line 180, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-wrench:before {
   content: ""; }
 
-/* line 181, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-tasks:before {
   content: ""; }
 
-/* line 182, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-filter:before {
   content: ""; }
 
-/* line 183, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-briefcase:before {
   content: ""; }
 
-/* line 184, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-arrows-alt:before {
   content: ""; }
 
-/* line 185, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-group:before,
 .fa-users:before {
   content: ""; }
 
-/* line 187, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-chain:before,
 .fa-link:before {
   content: ""; }
 
-/* line 189, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-cloud:before {
   content: ""; }
 
-/* line 190, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-flask:before {
   content: ""; }
 
-/* line 191, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-cut:before,
 .fa-scissors:before {
   content: ""; }
 
-/* line 193, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-copy:before,
 .fa-files-o:before {
   content: ""; }
 
-/* line 195, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-paperclip:before {
   content: ""; }
 
-/* line 196, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-save:before,
 .fa-floppy-o:before {
   content: ""; }
 
-/* line 198, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-square:before {
   content: ""; }
 
-/* line 199, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-navicon:before,
 .fa-reorder:before,
 .fa-bars:before {
   content: ""; }
 
-/* line 202, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-list-ul:before {
   content: ""; }
 
-/* line 203, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-list-ol:before {
   content: ""; }
 
-/* line 204, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-strikethrough:before {
   content: ""; }
 
-/* line 205, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-underline:before {
   content: ""; }
 
-/* line 206, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-table:before {
   content: ""; }
 
-/* line 207, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-magic:before {
   content: ""; }
 
-/* line 208, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-truck:before {
   content: ""; }
 
-/* line 209, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-pinterest:before {
   content: ""; }
 
-/* line 210, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-pinterest-square:before {
   content: ""; }
 
-/* line 211, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-google-plus-square:before {
   content: ""; }
 
-/* line 212, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-google-plus:before {
   content: ""; }
 
-/* line 213, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-money:before {
   content: ""; }
 
-/* line 214, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-caret-down:before {
   content: ""; }
 
-/* line 215, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-caret-up:before {
   content: ""; }
 
-/* line 216, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-caret-left:before {
   content: ""; }
 
-/* line 217, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-caret-right:before {
   content: ""; }
 
-/* line 218, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-columns:before {
   content: ""; }
 
-/* line 219, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-unsorted:before,
 .fa-sort:before {
   content: ""; }
 
-/* line 221, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-sort-down:before,
 .fa-sort-desc:before {
   content: ""; }
 
-/* line 223, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-sort-up:before,
 .fa-sort-asc:before {
   content: ""; }
 
-/* line 225, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-envelope:before {
   content: ""; }
 
-/* line 226, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-linkedin:before {
   content: ""; }
 
-/* line 227, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-rotate-left:before,
 .fa-undo:before {
   content: ""; }
 
-/* line 229, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-legal:before,
 .fa-gavel:before {
   content: ""; }
 
-/* line 231, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-dashboard:before,
 .fa-tachometer:before {
   content: ""; }
 
-/* line 233, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-comment-o:before {
   content: ""; }
 
-/* line 234, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-comments-o:before {
   content: ""; }
 
-/* line 235, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-flash:before,
 .fa-bolt:before {
   content: ""; }
 
-/* line 237, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-sitemap:before {
   content: ""; }
 
-/* line 238, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-umbrella:before {
   content: ""; }
 
-/* line 239, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-paste:before,
 .fa-clipboard:before {
   content: ""; }
 
-/* line 241, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-lightbulb-o:before {
   content: ""; }
 
-/* line 242, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-exchange:before {
   content: ""; }
 
-/* line 243, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-cloud-download:before {
   content: ""; }
 
-/* line 244, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-cloud-upload:before {
   content: ""; }
 
-/* line 245, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-user-md:before {
   content: ""; }
 
-/* line 246, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-stethoscope:before {
   content: ""; }
 
-/* line 247, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-suitcase:before {
   content: ""; }
 
-/* line 248, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-bell-o:before {
   content: ""; }
 
-/* line 249, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-coffee:before {
   content: ""; }
 
-/* line 250, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-cutlery:before {
   content: ""; }
 
-/* line 251, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-file-text-o:before {
   content: ""; }
 
-/* line 252, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-building-o:before {
   content: ""; }
 
-/* line 253, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-hospital-o:before {
   content: ""; }
 
-/* line 254, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-ambulance:before {
   content: ""; }
 
-/* line 255, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-medkit:before {
   content: ""; }
 
-/* line 256, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-fighter-jet:before {
   content: ""; }
 
-/* line 257, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-beer:before {
   content: ""; }
 
-/* line 258, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-h-square:before {
   content: ""; }
 
-/* line 259, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-plus-square:before {
   content: ""; }
 
-/* line 260, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-angle-double-left:before {
   content: ""; }
 
-/* line 261, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-angle-double-right:before {
   content: ""; }
 
-/* line 262, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-angle-double-up:before {
   content: ""; }
 
-/* line 263, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-angle-double-down:before {
   content: ""; }
 
-/* line 264, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-angle-left:before {
   content: ""; }
 
-/* line 265, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-angle-right:before {
   content: ""; }
 
-/* line 266, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-angle-up:before {
   content: ""; }
 
-/* line 267, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-angle-down:before {
   content: ""; }
 
-/* line 268, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-desktop:before {
   content: ""; }
 
-/* line 269, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-laptop:before {
   content: ""; }
 
-/* line 270, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-tablet:before {
   content: ""; }
 
-/* line 271, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-mobile-phone:before,
 .fa-mobile:before {
   content: ""; }
 
-/* line 273, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-circle-o:before {
   content: ""; }
 
-/* line 274, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-quote-left:before {
   content: ""; }
 
-/* line 275, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-quote-right:before {
   content: ""; }
 
-/* line 276, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-spinner:before {
   content: ""; }
 
-/* line 277, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-circle:before {
   content: ""; }
 
-/* line 278, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-mail-reply:before,
 .fa-reply:before {
   content: ""; }
 
-/* line 280, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-github-alt:before {
   content: ""; }
 
-/* line 281, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-folder-o:before {
   content: ""; }
 
-/* line 282, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-folder-open-o:before {
   content: ""; }
 
-/* line 283, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-smile-o:before {
   content: ""; }
 
-/* line 284, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-frown-o:before {
   content: ""; }
 
-/* line 285, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-meh-o:before {
   content: ""; }
 
-/* line 286, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-gamepad:before {
   content: ""; }
 
-/* line 287, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-keyboard-o:before {
   content: ""; }
 
-/* line 288, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-flag-o:before {
   content: ""; }
 
-/* line 289, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-flag-checkered:before {
   content: ""; }
 
-/* line 290, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-terminal:before {
   content: ""; }
 
-/* line 291, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-code:before {
   content: ""; }
 
-/* line 292, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-mail-reply-all:before,
 .fa-reply-all:before {
   content: ""; }
 
-/* line 294, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-star-half-empty:before,
 .fa-star-half-full:before,
 .fa-star-half-o:before {
   content: ""; }
 
-/* line 297, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-location-arrow:before {
   content: ""; }
 
-/* line 298, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-crop:before {
   content: ""; }
 
-/* line 299, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-code-fork:before {
   content: ""; }
 
-/* line 300, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-unlink:before,
 .fa-chain-broken:before {
   content: ""; }
 
-/* line 302, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-question:before {
   content: ""; }
 
-/* line 303, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-info:before {
   content: ""; }
 
-/* line 304, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-exclamation:before {
   content: ""; }
 
-/* line 305, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-superscript:before {
   content: ""; }
 
-/* line 306, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-subscript:before {
   content: ""; }
 
-/* line 307, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-eraser:before {
   content: ""; }
 
-/* line 308, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-puzzle-piece:before {
   content: ""; }
 
-/* line 309, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-microphone:before {
   content: ""; }
 
-/* line 310, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-microphone-slash:before {
   content: ""; }
 
-/* line 311, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-shield:before {
   content: ""; }
 
-/* line 312, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-calendar-o:before {
   content: ""; }
 
-/* line 313, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-fire-extinguisher:before {
   content: ""; }
 
-/* line 314, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-rocket:before {
   content: ""; }
 
-/* line 315, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-maxcdn:before {
   content: ""; }
 
-/* line 316, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-chevron-circle-left:before {
   content: ""; }
 
-/* line 317, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-chevron-circle-right:before {
   content: ""; }
 
-/* line 318, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-chevron-circle-up:before {
   content: ""; }
 
-/* line 319, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-chevron-circle-down:before {
   content: ""; }
 
-/* line 320, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-html5:before {
   content: ""; }
 
-/* line 321, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-css3:before {
   content: ""; }
 
-/* line 322, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-anchor:before {
   content: ""; }
 
-/* line 323, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-unlock-alt:before {
   content: ""; }
 
-/* line 324, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-bullseye:before {
   content: ""; }
 
-/* line 325, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-ellipsis-h:before {
   content: ""; }
 
-/* line 326, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-ellipsis-v:before {
   content: ""; }
 
-/* line 327, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-rss-square:before {
   content: ""; }
 
-/* line 328, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-play-circle:before {
   content: ""; }
 
-/* line 329, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-ticket:before {
   content: ""; }
 
-/* line 330, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-minus-square:before {
   content: ""; }
 
-/* line 331, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-minus-square-o:before {
   content: ""; }
 
-/* line 332, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-level-up:before {
   content: ""; }
 
-/* line 333, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-level-down:before {
   content: ""; }
 
-/* line 334, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-check-square:before {
   content: ""; }
 
-/* line 335, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-pencil-square:before {
   content: ""; }
 
-/* line 336, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-external-link-square:before {
   content: ""; }
 
-/* line 337, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-share-square:before {
   content: ""; }
 
-/* line 338, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-compass:before {
   content: ""; }
 
-/* line 339, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-toggle-down:before,
 .fa-caret-square-o-down:before {
   content: ""; }
 
-/* line 341, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-toggle-up:before,
 .fa-caret-square-o-up:before {
   content: ""; }
 
-/* line 343, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-toggle-right:before,
 .fa-caret-square-o-right:before {
   content: ""; }
 
-/* line 345, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-euro:before,
 .fa-eur:before {
   content: ""; }
 
-/* line 347, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-gbp:before {
   content: ""; }
 
-/* line 348, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-dollar:before,
 .fa-usd:before {
   content: ""; }
 
-/* line 350, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-rupee:before,
 .fa-inr:before {
   content: ""; }
 
-/* line 352, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-cny:before,
 .fa-rmb:before,
 .fa-yen:before,
 .fa-jpy:before {
   content: ""; }
 
-/* line 356, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-ruble:before,
 .fa-rouble:before,
 .fa-rub:before {
   content: ""; }
 
-/* line 359, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-won:before,
 .fa-krw:before {
   content: ""; }
 
-/* line 361, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-bitcoin:before,
 .fa-btc:before {
   content: ""; }
 
-/* line 363, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-file:before {
   content: ""; }
 
-/* line 364, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-file-text:before {
   content: ""; }
 
-/* line 365, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-sort-alpha-asc:before {
   content: ""; }
 
-/* line 366, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-sort-alpha-desc:before {
   content: ""; }
 
-/* line 367, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-sort-amount-asc:before {
   content: ""; }
 
-/* line 368, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-sort-amount-desc:before {
   content: ""; }
 
-/* line 369, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-sort-numeric-asc:before {
   content: ""; }
 
-/* line 370, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-sort-numeric-desc:before {
   content: ""; }
 
-/* line 371, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-thumbs-up:before {
   content: ""; }
 
-/* line 372, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-thumbs-down:before {
   content: ""; }
 
-/* line 373, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-youtube-square:before {
   content: ""; }
 
-/* line 374, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-youtube:before {
   content: ""; }
 
-/* line 375, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-xing:before {
   content: ""; }
 
-/* line 376, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-xing-square:before {
   content: ""; }
 
-/* line 377, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-youtube-play:before {
   content: ""; }
 
-/* line 378, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-dropbox:before {
   content: ""; }
 
-/* line 379, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-stack-overflow:before {
   content: ""; }
 
-/* line 380, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-instagram:before {
   content: ""; }
 
-/* line 381, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-flickr:before {
   content: ""; }
 
-/* line 382, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-adn:before {
   content: ""; }
 
-/* line 383, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-bitbucket:before {
   content: ""; }
 
-/* line 384, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-bitbucket-square:before {
   content: ""; }
 
-/* line 385, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-tumblr:before {
   content: ""; }
 
-/* line 386, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-tumblr-square:before {
   content: ""; }
 
-/* line 387, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-long-arrow-down:before {
   content: ""; }
 
-/* line 388, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-long-arrow-up:before {
   content: ""; }
 
-/* line 389, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-long-arrow-left:before {
   content: ""; }
 
-/* line 390, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-long-arrow-right:before {
   content: ""; }
 
-/* line 391, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-apple:before {
   content: ""; }
 
-/* line 392, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-windows:before {
   content: ""; }
 
-/* line 393, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-android:before {
   content: ""; }
 
-/* line 394, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-linux:before {
   content: ""; }
 
-/* line 395, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-dribbble:before {
   content: ""; }
 
-/* line 396, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-skype:before {
   content: ""; }
 
-/* line 397, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-foursquare:before {
   content: ""; }
 
-/* line 398, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-trello:before {
   content: ""; }
 
-/* line 399, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-female:before {
   content: ""; }
 
-/* line 400, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-male:before {
   content: ""; }
 
-/* line 401, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-gittip:before,
 .fa-gratipay:before {
   content: ""; }
 
-/* line 403, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-sun-o:before {
   content: ""; }
 
-/* line 404, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-moon-o:before {
   content: ""; }
 
-/* line 405, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-archive:before {
   content: ""; }
 
-/* line 406, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-bug:before {
   content: ""; }
 
-/* line 407, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-vk:before {
   content: ""; }
 
-/* line 408, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-weibo:before {
   content: ""; }
 
-/* line 409, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-renren:before {
   content: ""; }
 
-/* line 410, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-pagelines:before {
   content: ""; }
 
-/* line 411, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-stack-exchange:before {
   content: ""; }
 
-/* line 412, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-arrow-circle-o-right:before {
   content: ""; }
 
-/* line 413, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-arrow-circle-o-left:before {
   content: ""; }
 
-/* line 414, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-toggle-left:before,
 .fa-caret-square-o-left:before {
   content: ""; }
 
-/* line 416, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-dot-circle-o:before {
   content: ""; }
 
-/* line 417, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-wheelchair:before {
   content: ""; }
 
-/* line 418, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-vimeo-square:before {
   content: ""; }
 
-/* line 419, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-turkish-lira:before,
 .fa-try:before {
   content: ""; }
 
-/* line 421, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-plus-square-o:before {
   content: ""; }
 
-/* line 422, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-space-shuttle:before {
   content: ""; }
 
-/* line 423, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-slack:before {
   content: ""; }
 
-/* line 424, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-envelope-square:before {
   content: ""; }
 
-/* line 425, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-wordpress:before {
   content: ""; }
 
-/* line 426, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-openid:before {
   content: ""; }
 
-/* line 427, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-institution:before,
 .fa-bank:before,
 .fa-university:before {
   content: ""; }
 
-/* line 430, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-mortar-board:before,
 .fa-graduation-cap:before {
   content: ""; }
 
-/* line 432, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-yahoo:before {
   content: ""; }
 
-/* line 433, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-google:before {
   content: ""; }
 
-/* line 434, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-reddit:before {
   content: ""; }
 
-/* line 435, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-reddit-square:before {
   content: ""; }
 
-/* line 436, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-stumbleupon-circle:before {
   content: ""; }
 
-/* line 437, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-stumbleupon:before {
   content: ""; }
 
-/* line 438, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-delicious:before {
   content: ""; }
 
-/* line 439, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-digg:before {
   content: ""; }
 
-/* line 440, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-pied-piper:before {
   content: ""; }
 
-/* line 441, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-pied-piper-alt:before {
   content: ""; }
 
-/* line 442, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-drupal:before {
   content: ""; }
 
-/* line 443, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-joomla:before {
   content: ""; }
 
-/* line 444, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-language:before {
   content: ""; }
 
-/* line 445, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-fax:before {
   content: ""; }
 
-/* line 446, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-building:before {
   content: ""; }
 
-/* line 447, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-child:before {
   content: ""; }
 
-/* line 448, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-paw:before {
   content: ""; }
 
-/* line 449, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-spoon:before {
   content: ""; }
 
-/* line 450, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-cube:before {
   content: ""; }
 
-/* line 451, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-cubes:before {
   content: ""; }
 
-/* line 452, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-behance:before {
   content: ""; }
 
-/* line 453, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-behance-square:before {
   content: ""; }
 
-/* line 454, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-steam:before {
   content: ""; }
 
-/* line 455, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-steam-square:before {
   content: ""; }
 
-/* line 456, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-recycle:before {
   content: ""; }
 
-/* line 457, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-automobile:before,
 .fa-car:before {
   content: ""; }
 
-/* line 459, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-cab:before,
 .fa-taxi:before {
   content: ""; }
 
-/* line 461, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-tree:before {
   content: ""; }
 
-/* line 462, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-spotify:before {
   content: ""; }
 
-/* line 463, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-deviantart:before {
   content: ""; }
 
-/* line 464, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-soundcloud:before {
   content: ""; }
 
-/* line 465, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-database:before {
   content: ""; }
 
-/* line 466, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-file-pdf-o:before {
   content: ""; }
 
-/* line 467, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-file-word-o:before {
   content: ""; }
 
-/* line 468, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-file-excel-o:before {
   content: ""; }
 
-/* line 469, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-file-powerpoint-o:before {
   content: ""; }
 
-/* line 470, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-file-photo-o:before,
 .fa-file-picture-o:before,
 .fa-file-image-o:before {
   content: ""; }
 
-/* line 473, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-file-zip-o:before,
 .fa-file-archive-o:before {
   content: ""; }
 
-/* line 475, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-file-sound-o:before,
 .fa-file-audio-o:before {
   content: ""; }
 
-/* line 477, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-file-movie-o:before,
 .fa-file-video-o:before {
   content: ""; }
 
-/* line 479, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-file-code-o:before {
   content: ""; }
 
-/* line 480, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-vine:before {
   content: ""; }
 
-/* line 481, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-codepen:before {
   content: ""; }
 
-/* line 482, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-jsfiddle:before {
   content: ""; }
 
-/* line 483, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-life-bouy:before,
 .fa-life-buoy:before,
 .fa-life-saver:before,
@@ -2430,413 +1873,313 @@ img {
 .fa-life-ring:before {
   content: ""; }
 
-/* line 488, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-circle-o-notch:before {
   content: ""; }
 
-/* line 489, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-ra:before,
 .fa-rebel:before {
   content: ""; }
 
-/* line 491, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-ge:before,
 .fa-empire:before {
   content: ""; }
 
-/* line 493, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-git-square:before {
   content: ""; }
 
-/* line 494, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-git:before {
   content: ""; }
 
-/* line 495, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-hacker-news:before {
   content: ""; }
 
-/* line 496, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-tencent-weibo:before {
   content: ""; }
 
-/* line 497, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-qq:before {
   content: ""; }
 
-/* line 498, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-wechat:before,
 .fa-weixin:before {
   content: ""; }
 
-/* line 500, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-send:before,
 .fa-paper-plane:before {
   content: ""; }
 
-/* line 502, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-send-o:before,
 .fa-paper-plane-o:before {
   content: ""; }
 
-/* line 504, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-history:before {
   content: ""; }
 
-/* line 505, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-genderless:before,
 .fa-circle-thin:before {
   content: ""; }
 
-/* line 507, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-header:before {
   content: ""; }
 
-/* line 508, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-paragraph:before {
   content: ""; }
 
-/* line 509, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-sliders:before {
   content: ""; }
 
-/* line 510, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-share-alt:before {
   content: ""; }
 
-/* line 511, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-share-alt-square:before {
   content: ""; }
 
-/* line 512, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-bomb:before {
   content: ""; }
 
-/* line 513, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-soccer-ball-o:before,
 .fa-futbol-o:before {
   content: ""; }
 
-/* line 515, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-tty:before {
   content: ""; }
 
-/* line 516, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-binoculars:before {
   content: ""; }
 
-/* line 517, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-plug:before {
   content: ""; }
 
-/* line 518, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-slideshare:before {
   content: ""; }
 
-/* line 519, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-twitch:before {
   content: ""; }
 
-/* line 520, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-yelp:before {
   content: ""; }
 
-/* line 521, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-newspaper-o:before {
   content: ""; }
 
-/* line 522, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-wifi:before {
   content: ""; }
 
-/* line 523, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-calculator:before {
   content: ""; }
 
-/* line 524, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-paypal:before {
   content: ""; }
 
-/* line 525, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-google-wallet:before {
   content: ""; }
 
-/* line 526, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-cc-visa:before {
   content: ""; }
 
-/* line 527, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-cc-mastercard:before {
   content: ""; }
 
-/* line 528, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-cc-discover:before {
   content: ""; }
 
-/* line 529, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-cc-amex:before {
   content: ""; }
 
-/* line 530, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-cc-paypal:before {
   content: ""; }
 
-/* line 531, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-cc-stripe:before {
   content: ""; }
 
-/* line 532, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-bell-slash:before {
   content: ""; }
 
-/* line 533, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-bell-slash-o:before {
   content: ""; }
 
-/* line 534, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-trash:before {
   content: ""; }
 
-/* line 535, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-copyright:before {
   content: ""; }
 
-/* line 536, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-at:before {
   content: ""; }
 
-/* line 537, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-eyedropper:before {
   content: ""; }
 
-/* line 538, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-paint-brush:before {
   content: ""; }
 
-/* line 539, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-birthday-cake:before {
   content: ""; }
 
-/* line 540, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-area-chart:before {
   content: ""; }
 
-/* line 541, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-pie-chart:before {
   content: ""; }
 
-/* line 542, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-line-chart:before {
   content: ""; }
 
-/* line 543, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-lastfm:before {
   content: ""; }
 
-/* line 544, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-lastfm-square:before {
   content: ""; }
 
-/* line 545, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-toggle-off:before {
   content: ""; }
 
-/* line 546, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-toggle-on:before {
   content: ""; }
 
-/* line 547, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-bicycle:before {
   content: ""; }
 
-/* line 548, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-bus:before {
   content: ""; }
 
-/* line 549, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-ioxhost:before {
   content: ""; }
 
-/* line 550, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-angellist:before {
   content: ""; }
 
-/* line 551, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-cc:before {
   content: ""; }
 
-/* line 552, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-shekel:before,
 .fa-sheqel:before,
 .fa-ils:before {
   content: ""; }
 
-/* line 555, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-meanpath:before {
   content: ""; }
 
-/* line 556, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-buysellads:before {
   content: ""; }
 
-/* line 557, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-connectdevelop:before {
   content: ""; }
 
-/* line 558, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-dashcube:before {
   content: ""; }
 
-/* line 559, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-forumbee:before {
   content: ""; }
 
-/* line 560, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-leanpub:before {
   content: ""; }
 
-/* line 561, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-sellsy:before {
   content: ""; }
 
-/* line 562, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-shirtsinbulk:before {
   content: ""; }
 
-/* line 563, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-simplybuilt:before {
   content: ""; }
 
-/* line 564, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-skyatlas:before {
   content: ""; }
 
-/* line 565, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-cart-plus:before {
   content: ""; }
 
-/* line 566, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-cart-arrow-down:before {
   content: ""; }
 
-/* line 567, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-diamond:before {
   content: ""; }
 
-/* line 568, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-ship:before {
   content: ""; }
 
-/* line 569, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-user-secret:before {
   content: ""; }
 
-/* line 570, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-motorcycle:before {
   content: ""; }
 
-/* line 571, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-street-view:before {
   content: ""; }
 
-/* line 572, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-heartbeat:before {
   content: ""; }
 
-/* line 573, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-venus:before {
   content: ""; }
 
-/* line 574, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-mars:before {
   content: ""; }
 
-/* line 575, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-mercury:before {
   content: ""; }
 
-/* line 576, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-transgender:before {
   content: ""; }
 
-/* line 577, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-transgender-alt:before {
   content: ""; }
 
-/* line 578, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-venus-double:before {
   content: ""; }
 
-/* line 579, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-mars-double:before {
   content: ""; }
 
-/* line 580, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-venus-mars:before {
   content: ""; }
 
-/* line 581, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-mars-stroke:before {
   content: ""; }
 
-/* line 582, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-mars-stroke-v:before {
   content: ""; }
 
-/* line 583, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-mars-stroke-h:before {
   content: ""; }
 
-/* line 584, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-neuter:before {
   content: ""; }
 
-/* line 585, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-facebook-official:before {
   content: ""; }
 
-/* line 586, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-pinterest-p:before {
   content: ""; }
 
-/* line 587, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-whatsapp:before {
   content: ""; }
 
-/* line 588, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-server:before {
   content: ""; }
 
-/* line 589, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-user-plus:before {
   content: ""; }
 
-/* line 590, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-user-times:before {
   content: ""; }
 
-/* line 591, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-hotel:before,
 .fa-bed:before {
   content: ""; }
 
-/* line 593, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-viacoin:before {
   content: ""; }
 
-/* line 594, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-train:before {
   content: ""; }
 
-/* line 595, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-subway:before {
   content: ""; }
 
-/* line 596, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/font-awesome/_icons.scss */
 .fa-medium:before {
   content: ""; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_buttons.scss */
 button, input[type="button"], input[type="reset"], input[type="submit"],
 button {
   -webkit-appearance: none;
@@ -2857,136 +2200,111 @@ button {
   line-height: 1;
   padding: 0.75em 1em;
   text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap; }
-  /* line 21, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_buttons.scss */
   button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus,
   button:hover,
   button:focus {
     background-color: #2c5999;
     color: #fff; }
-  /* line 27, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_buttons.scss */
   button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled,
   button:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
 
-/* line 2, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_forms.scss */
 form fieldset {
   border: none;
   margin: 0 0 0.75em;
   padding: 1.5em; }
-
-/* line 9, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_forms.scss */
 form input,
 form label,
 form select {
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 1em; }
-
-/* line 16, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_forms.scss */
 form label {
   font-weight: 600;
   margin-bottom: 0.375em; }
-  /* line 20, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_forms.scss */
   form label.required::after {
     content: "*"; }
-  /* line 24, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_forms.scss */
   form label abbr {
     display: none; }
-
-/* line 29, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_forms.scss */
 form input[type="color"], form input[type="date"], form input[type="datetime"], form input[type="datetime-local"], form input[type="email"], form input[type="month"], form input[type="number"], form input[type="password"], form input[type="search"], form input[type="tel"], form input[type="text"], form input[type="time"], form input[type="url"], form input[type="week"], form textarea,
 form select[multiple=multiple],
 form textarea {
   background-color: none;
   border: none;
   border-bottom: 1px solid #ddd;
+  -webkit-box-shadow: none;
   box-shadow: none;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 1em;
   margin-bottom: 0.75em;
   padding: 0.5em;
+  -webkit-transition: border-color;
   transition: border-color;
   width: 100%; }
-  /* line 46, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_forms.scss */
   form input[type="color"]:hover, form input[type="date"]:hover, form input[type="datetime"]:hover, form input[type="datetime-local"]:hover, form input[type="email"]:hover, form input[type="month"]:hover, form input[type="number"]:hover, form input[type="password"]:hover, form input[type="search"]:hover, form input[type="tel"]:hover, form input[type="text"]:hover, form input[type="time"]:hover, form input[type="url"]:hover, form input[type="week"]:hover, form textarea:hover,
   form select[multiple=multiple]:hover,
   form textarea:hover {
     border-color: #c4c4c4; }
-  /* line 50, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_forms.scss */
   form input[type="color"]:focus, form input[type="date"]:focus, form input[type="datetime"]:focus, form input[type="datetime-local"]:focus, form input[type="email"]:focus, form input[type="month"]:focus, form input[type="number"]:focus, form input[type="password"]:focus, form input[type="search"]:focus, form input[type="tel"]:focus, form input[type="text"]:focus, form input[type="time"]:focus, form input[type="url"]:focus, form input[type="week"]:focus, form textarea:focus,
   form select[multiple=multiple]:focus,
   form textarea:focus {
     border-color: #477dca;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .06), 0 0 5px rgba(55, 112, 192, .7);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .06), 0 0 5px rgba(55, 112, 192, .7);
     outline: none; }
-  /* line 56, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_forms.scss */
   form input[type="color"]:disabled, form input[type="date"]:disabled, form input[type="datetime"]:disabled, form input[type="datetime-local"]:disabled, form input[type="email"]:disabled, form input[type="month"]:disabled, form input[type="number"]:disabled, form input[type="password"]:disabled, form input[type="search"]:disabled, form input[type="tel"]:disabled, form input[type="text"]:disabled, form input[type="time"]:disabled, form input[type="url"]:disabled, form input[type="week"]:disabled, form textarea:disabled,
   form select[multiple=multiple]:disabled,
   form textarea:disabled {
     background-color: #f0f0f0;
     cursor: not-allowed; }
-    /* line 60, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_forms.scss */
     form input[type="color"]:disabled:hover, form input[type="date"]:disabled:hover, form input[type="datetime"]:disabled:hover, form input[type="datetime-local"]:disabled:hover, form input[type="email"]:disabled:hover, form input[type="month"]:disabled:hover, form input[type="number"]:disabled:hover, form input[type="password"]:disabled:hover, form input[type="search"]:disabled:hover, form input[type="tel"]:disabled:hover, form input[type="text"]:disabled:hover, form input[type="time"]:disabled:hover, form input[type="url"]:disabled:hover, form input[type="week"]:disabled:hover, form textarea:disabled:hover,
     form select[multiple=multiple]:disabled:hover,
     form textarea:disabled:hover {
       border: 1px solid #ddd; }
-
-/* line 66, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_forms.scss */
 form textarea {
   resize: vertical; }
-
-/* line 70, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_forms.scss */
 form input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none; }
-
-/* line 74, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_forms.scss */
 form input[type="checkbox"],
 form input[type="radio"] {
   display: inline;
   margin-right: 0.375em; }
-
-/* line 80, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_forms.scss */
 form input[type="file"] {
   padding-bottom: 0.75em;
   width: 100%; }
-
-/* line 85, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_forms.scss */
 form select {
   margin-bottom: 1.5em;
   max-width: 100%;
   width: auto; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_lists.scss */
 ul,
 ol {
   list-style-type: none;
   margin: 0;
   padding: 0; }
-
-/* line 20, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_lists.scss */
 dl {
   margin-bottom: 0.75em; }
-  /* line 23, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_lists.scss */
   dl dt {
     font-weight: bold;
     margin-top: 0.75em; }
-  /* line 28, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_lists.scss */
   dl dd {
     margin: 0; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_tables.scss */
 table {
   -webkit-font-feature-settings: "kern", "liga", "tnum";
-  -moz-font-feature-settings: "kern", "liga", "tnum";
   -ms-font-feature-settings: "kern", "liga", "tnum";
   font-feature-settings: "kern", "liga", "tnum";
   border-collapse: collapse;
@@ -2994,28 +2312,23 @@ table {
   table-layout: fixed;
   width: 100%; }
 
-/* line 9, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_tables.scss */
 th {
   border-bottom: 1px solid #b7b7b7;
   font-weight: 600;
   padding: 0.75em 0;
   text-align: left; }
 
-/* line 16, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_tables.scss */
 td {
   border-bottom: 1px solid #ddd;
   padding: 0.75em 0; }
 
-/* line 21, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_tables.scss */
 tr,
 td,
 th {
   vertical-align: middle; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_typography.scss */
 body {
   -webkit-font-feature-settings: "kern", "liga", "pnum";
-  -moz-font-feature-settings: "kern", "liga", "pnum";
   -ms-font-feature-settings: "kern", "liga", "pnum";
   font-feature-settings: "kern", "liga", "pnum";
   color: #333;
@@ -3024,7 +2337,6 @@ body {
   -webkit-font-smoothing: antialiased;
   line-height: 1.5; }
 
-/* line 10, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_typography.scss */
 h1,
 h2,
 h3,
@@ -3036,23 +2348,19 @@ h6 {
   line-height: 1.2;
   margin: 0 0 0.75em; }
 
-/* line 22, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_typography.scss */
 p {
   margin: 0 0 0.75em; }
 
-/* line 26, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_typography.scss */
 a {
   color: #477dca;
   text-decoration: none;
+  -webkit-transition: color 0.1s linear;
   transition: color 0.1s linear; }
-  /* line 31, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_typography.scss */
   a:active, a:focus, a:hover {
     color: #2c5999; }
-  /* line 37, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_typography.scss */
   a:active, a:focus {
     outline: none; }
 
-/* line 43, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bitters/_typography.scss */
 hr {
   border-bottom: 1px solid #ddd;
   border-left: none;
@@ -3065,176 +2373,146 @@ hr {
   font-style: normal;
   font-weight: normal;
   src: url("fonts/Samplino.eot?#iefix") format("embedded-opentype"), url("fonts/Samplino.woff2") format("woff2"), url("fonts/Samplino.woff") format("woff"), url("fonts/Samplino.ttf") format("truetype"), url("fonts/Samplino.svg#Samplino") format("svg"); }
-
 @font-face {
   font-family: "Samplina Neue";
   font-style: italic;
   font-weight: bold;
   src: url("fonts/SamplinaNeue.eot?#iefix") format("embedded-opentype"), url("fonts/SamplinaNeue.woff2") format("woff2"), url("fonts/SamplinaNeue.woff") format("woff"), url("fonts/SamplinaNeue.ttf") format("truetype"), url("fonts/SamplinaNeue.svg#Samplina Neue") format("svg"); }
-
-/* line 25, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_common.scss */
 body {
   top: 0;
   left: 0;
   min-height: 100%; }
 
 @media only screen and (max-width: 768px) {
-  /* line 32, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_common.scss */
   body, p, li, small, blockquote {
     font-weight: 300; } }
 
-/* line 38, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_common.scss */
 .fullwidth {
   width: 100% !important; }
 
-/* line 41, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_common.scss */
 .row {
   display: block;
   width: 100%;
   margin: 0 auto;
   padding: 1.5em; }
-  /* line 20, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bourbon/addons/_clearfix.scss */
   .row::after {
     clear: both;
     content: "";
     display: table; }
 
-/* line 69, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_common.scss */
 .mobile {
   display: none !important; }
   @media only screen and (max-width: 480px) {
-    /* line 69, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_common.scss */
     .mobile {
       display: block !important; } }
 
-/* line 77, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_common.scss */
 .tablet {
   display: none !important; }
   @media only screen and (max-width: 768px) {
-    /* line 77, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_common.scss */
     .tablet {
       display: block !important; } }
 
-/* line 85, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_common.scss */
 .desktop {
   display: block !important; }
   @media only screen and (max-width: 1000px) {
-    /* line 85, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_common.scss */
     .desktop {
       display: none !important; } }
 
-/* line 93, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_common.scss */
 .mobile-inline {
   display: none !important; }
   @media only screen and (max-width: 480px) {
-    /* line 93, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_common.scss */
     .mobile-inline {
       display: inline-block !important; } }
 
-/* line 101, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_common.scss */
 .tablet-inline {
   display: none !important; }
   @media only screen and (max-width: 768px) {
-    /* line 101, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_common.scss */
     .tablet-inline {
       display: inline-block !important; } }
 
-/* line 109, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_common.scss */
 .desktop-inline {
   display: inline-block !important; }
   @media only screen and (max-width: 768px) {
-    /* line 109, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_common.scss */
     .desktop-inline {
       display: none !important; } }
 
-/* line 117, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_common.scss */
+::-moz-selection {
+  background: #477dca;
+  color: #fff;
+  text-shadow: none; }
+
 ::selection {
   background: #477dca;
   color: #fff;
   text-shadow: none; }
 
-/* line 118, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_common.scss */
 ::-moz-selection {
   background: #ff2965;
   color: #fff;
   text-shadow: none; }
 
-/* line 119, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_common.scss */
 ::-webkit-selection {
   background: #ff2965;
   color: #fff;
   text-shadow: none; }
 
-/* line 154, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_common.scss */
 ::selection {
   background: #000;
   color: #fff;
   text-shadow: none;
   font-weight: 100; }
 
-/* line 155, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_common.scss */
 ::-moz-selection {
   background: #000;
   color: #fff;
   text-shadow: none; }
 
-/* line 156, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_common.scss */
 ::-webkit-selection {
   background: #000;
   color: #fff;
   text-shadow: none; }
 
-/* line 158, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_common.scss */
 .wrapper {
   display: block;
   position: relative;
   padding: 0 !important;
   margin: 0 !important; }
 
-/* line 165, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_common.scss */
 .img_box {
-  background: rgba(0, 0, 0, 0.25) no-repeat center;
+  background: rgba(0, 0, 0, .25) no-repeat center;
   background-size: cover; }
 
-/* line 182, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_common.scss */
 .hidden {
   display: none !important; }
 
-/* line 3, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_style.scss */
 .container {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
   max-width: 1150px; }
-  /* line 20, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bourbon/addons/_clearfix.scss */
   .container::after {
     clear: both;
     content: "";
     display: table; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
 .centered-navigation {
   background-color: transparent;
   border-bottom: 1px solid transparent;
   min-height: 120px;
   width: 100%;
   z-index: 9999; }
-  /* line 27, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
   .centered-navigation .mobile-logo {
     display: inline;
     float: left;
     max-height: 120px;
     padding-left: 1em; }
-    /* line 33, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
     .centered-navigation .mobile-logo img {
       max-height: 120px;
       opacity: 0.6;
       padding: 0.8em 0; }
     @media screen and (min-width: 53.75em) {
-      /* line 27, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
       .centered-navigation .mobile-logo {
         display: none; } }
-  /* line 44, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
   .centered-navigation .centered-navigation-mobile-menu {
     color: #333;
     display: block;
@@ -3245,27 +2523,22 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     display: none; }
-    /* line 58, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
     .centered-navigation .centered-navigation-mobile-menu:focus, .centered-navigation .centered-navigation-mobile-menu:hover {
       color: #477dca; }
-  /* line 67, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
   .centered-navigation .centered-navigation-wrapper {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     z-index: 999; }
-    /* line 20, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bourbon/addons/_clearfix.scss */
     .centered-navigation .centered-navigation-wrapper::after {
       clear: both;
       content: "";
       display: table; }
-    /* line 20, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bourbon/addons/_clearfix.scss */
     .centered-navigation .centered-navigation-wrapper::after {
       clear: both;
       content: "";
       display: table; }
-  /* line 74, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
   .centered-navigation ul.centered-navigation-menu {
     clear: both;
     display: none;
@@ -3277,13 +2550,10 @@ body {
     z-index: 99999;
     display: block;
     text-align: center; }
-    /* line 85, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
     .centered-navigation ul.centered-navigation-menu.show {
       display: block; }
-  /* line 98, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
   .centered-navigation .nav-link:first-child {
     margin-left: 2.2em; }
-  /* line 104, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
   .centered-navigation ul li.nav-link {
     background: transparent;
     display: block;
@@ -3299,49 +2569,37 @@ body {
     background: transparent;
     display: inline;
     line-height: 120px; }
-    /* line 119, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
     .centered-navigation ul li.nav-link a {
       color: #333;
       display: inline-block;
       outline: none;
       text-decoration: none; }
-      /* line 126, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
       .centered-navigation ul li.nav-link a:focus, .centered-navigation ul li.nav-link a:hover {
         color: #477dca; }
-    /* line 137, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
     .centered-navigation ul li.nav-link a {
       padding-right: 1em; }
-  /* line 143, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
   .centered-navigation li.logo.nav-link {
     display: none;
     line-height: 0;
     display: inline; }
-  /* line 153, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
   .centered-navigation .logo {
     margin-left: auto;
     margin-right: auto; }
-    /* line 157, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
     .centered-navigation .logo img {
       margin-bottom: -0.66667em;
       max-height: 2em;
       opacity: 0.6; }
-  /* line 167, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
   .centered-navigation li.more.nav-link {
     padding-right: 0; }
     @media screen and (min-width: 53.75em) {
-      /* line 167, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
       .centered-navigation li.more.nav-link {
         padding-right: 1em; } }
-    /* line 174, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
     .centered-navigation li.more.nav-link > ul > li:first-child a {
       padding-top: 1em; }
-    /* line 178, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
     .centered-navigation li.more.nav-link a {
       margin-right: 1em; }
-    /* line 182, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
     .centered-navigation li.more.nav-link > a {
       padding-right: 0.6em; }
-    /* line 186, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
     .centered-navigation li.more.nav-link > a::after {
       position: absolute;
       top: auto;
@@ -3350,63 +2608,49 @@ body {
       left: auto;
       color: #333;
       content: "\25BE"; }
-  /* line 193, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
   .centered-navigation li.more {
     overflow: visible;
     padding-right: 0;
     padding-right: 1em;
     position: relative; }
-    /* line 197, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
     .centered-navigation li.more a {
       padding-right: 1em; }
-    /* line 201, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
     .centered-navigation li.more > a {
       padding-right: 1.6em;
       position: relative; }
       @media screen and (min-width: 53.75em) {
-        /* line 201, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
         .centered-navigation li.more > a {
           margin-right: 1em; } }
-      /* line 209, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
       .centered-navigation li.more > a::after {
-        content: "›";
+        content: "ÔÇ║";
         font-size: 1.2em;
         position: absolute;
         right: 0.5em; }
-    /* line 217, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
-    .centered-navigation li.more:focus > .submenu,
-    .centered-navigation li.more:hover > .submenu {
+    .centered-navigation li.more:focus > .submenu, .centered-navigation li.more:hover > .submenu {
       display: block; }
-  /* line 232, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
   .centered-navigation ul.submenu {
     display: none;
     padding-left: 0;
     left: -1em;
     position: absolute;
     top: 1.5em; }
-    /* line 242, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
     .centered-navigation ul.submenu .submenu.fly-out-right {
       left: 11.8em;
       top: 0; }
-    /* line 249, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
     .centered-navigation ul.submenu .submenu.fly-out-left {
       left: -11.8em;
       top: 0; }
-    /* line 256, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
     .centered-navigation ul.submenu li {
       display: block;
       padding-right: 0;
       line-height: 92.30769px; }
-      /* line 263, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
       .centered-navigation ul.submenu li:first-child > a {
         border-top-left-radius: 3px;
         border-top-right-radius: 3px; }
-      /* line 268, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
       .centered-navigation ul.submenu li:last-child > a {
         border-bottom-left-radius: 3px;
         border-bottom-right-radius: 3px;
         padding-bottom: 0.7em; }
-      /* line 275, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_centered_nav.scss */
       .centered-navigation ul.submenu li a {
         background-color: transparent;
         display: inline-block;
@@ -3418,19 +2662,15 @@ body {
         text-align: left;
         width: 12em; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_tooltips.scss */
 .tooltip-item {
   border-radius: 3px;
   display: inline-block;
   padding: 0.25em 1em;
   position: relative;
   text-align: center; }
-  /* line 23, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_tooltips.scss */
-  .tooltip-item:focus,
-  .tooltip-item:hover .tooltip {
+  .tooltip-item:focus, .tooltip-item:hover .tooltip {
     opacity: 1;
     visibility: visible; }
-  /* line 29, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_tooltips.scss */
   .tooltip-item .tooltip {
     position: absolute;
     top: 3em;
@@ -3438,6 +2678,7 @@ body {
     left: 0;
     background-color: #12181c;
     border-radius: 3px;
+    -webkit-box-shadow: 0 2px 2px silver;
     box-shadow: 0 2px 2px silver;
     color: #333;
     font-size: 0.75em;
@@ -3447,16 +2688,15 @@ body {
     opacity: 0;
     padding: 1em;
     text-align: center;
+    -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     visibility: hidden;
     z-index: 10;
     text-transform: lowercase; }
-    /* line 47, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_tooltips.scss */
     .tooltip-item .tooltip p {
       color: #fff;
       line-height: 1.5;
       margin: 0; }
-    /* line 53, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_tooltips.scss */
     .tooltip-item .tooltip::after, .tooltip-item .tooltip::before {
       bottom: 100%;
       left: 50%;
@@ -3466,13 +2706,11 @@ body {
       width: 0;
       position: absolute;
       pointer-events: none; }
-    /* line 64, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_tooltips.scss */
     .tooltip-item .tooltip::after {
       border-color: rgba(136, 183, 213, 0);
       border-bottom-color: #12181c;
       border-width: 10px;
       margin-left: -10px; }
-    /* line 71, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_tooltips.scss */
     .tooltip-item .tooltip::before {
       border-color: rgba(194, 225, 245, 0);
       border-bottom-color: #12181c;
@@ -3480,7 +2718,6 @@ body {
       margin-left: -10px; }
 
 /* The Modal (background) */
-/* line 2, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_modals.scss */
 .modal {
   display: none;
   /* Hidden by default */
@@ -3498,11 +2735,10 @@ body {
   /* Enable scroll if needed */
   background-color: black;
   /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, .8);
   /* Black w/ opacity */ }
 
 /* Modal Content/Box */
-/* line 16, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_modals.scss */
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto;
@@ -3513,30 +2749,25 @@ body {
   /* Could be more or less, depending on screen size */ }
 
 /* The Close Button */
-/* line 25, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_modals.scss */
 .close {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold; }
 
-/* line 32, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_modals.scss */
 .close:hover,
 .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_stats.scss */
 .stats {
   padding: 0.75em;
   margin: 0 auto; }
-  /* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_stats.scss */
   .stats ul {
     padding: 0; }
-  /* line 16, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_stats.scss */
   .stats li {
-    border-right: 1px solid rgba(51, 51, 51, 0.2);
+    border-right: 1px solid rgba(51, 51, 51, .2);
     color: #000;
     display: inline;
     float: left;
@@ -3548,32 +2779,26 @@ body {
     text-align: center;
     font-size: 4em;
     font-weight: bold; }
-    /* line 30, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_stats.scss */
     .stats li:first-child {
       padding-left: 0; }
-    /* line 34, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_stats.scss */
     .stats li:last-child {
       border-right: 0; }
-  /* line 39, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_stats.scss */
   .stats span {
     color: #333;
     display: block;
     font-size: .5em;
     font-weight: bold; }
 
-/* line 5, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_griditems.scss */
 .grid-items-lines {
   position: relative; }
-  /* line 20, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bourbon/addons/_clearfix.scss */
   .grid-items-lines::after {
     clear: both;
     content: "";
     display: table; }
-  /* line 24, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_griditems.scss */
   .grid-items-lines .grid-item {
     background: #fff;
-    border-bottom: 1px solid rgba(51, 51, 51, 0.2);
-    border-right: 1px solid rgba(51, 51, 51, 0.2);
+    border-bottom: 1px solid rgba(51, 51, 51, .2);
+    border-right: 1px solid rgba(51, 51, 51, .2);
     cursor: pointer;
     float: left;
     height: 14em;
@@ -3583,64 +2808,53 @@ body {
     width: 100%;
     background: #477dca no-repeat center;
     background-size: cover; }
-    /* line 174, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/custom/_common.scss */
     .grid-items-lines .grid-item:before {
       content: "";
       display: block;
       padding-bottom: 100%;
       position: absolute; }
     @media screen and (min-width: 53.75em) {
-      /* line 24, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_griditems.scss */
       .grid-items-lines .grid-item {
         width: 25%; } }
-    /* line 43, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_griditems.scss */
     .grid-items-lines .grid-item article {
       position: relative;
       width: 100%;
       height: 100%;
       padding: 2em;
+      -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out;
       opacity: 0;
       background-color: transparent; }
-      /* line 52, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_griditems.scss */
       .grid-items-lines .grid-item article:focus, .grid-items-lines .grid-item article:hover {
         opacity: 1;
         background-color: #000; }
-    /* line 59, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_griditems.scss */
     .grid-items-lines .grid-item img {
       display: block;
       height: 2.5em;
       margin-bottom: 1.2em;
       opacity: 0.2; }
-    /* line 66, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_griditems.scss */
     .grid-items-lines .grid-item h1 {
       color: #477dca;
       font-size: 1.3em;
       margin-bottom: 0.4em; }
-    /* line 72, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_griditems.scss */
     .grid-items-lines .grid-item p {
       color: #fff;
       line-height: 1.5em; }
       @media screen and (min-width: 40em) {
-        /* line 72, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_griditems.scss */
         .grid-items-lines .grid-item p {
           max-width: 70%; } }
   @media screen and (min-width: 53.75em) {
-    /* line 84, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_griditems.scss */
     .grid-items-lines .grid-item-big {
       width: 50%; } }
   @media screen and (min-width: 40em) {
-    /* line 88, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_griditems.scss */
     .grid-items-lines .grid-item-big p {
       max-width: 60%; } }
-  /* line 97, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_griditems.scss */
   .grid-items-lines .bottom-cover {
     background: #fff;
     bottom: 0;
     height: 3px;
     position: absolute;
     width: 100%; }
-  /* line 105, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/refills/_griditems.scss */
   .grid-items-lines .right-cover {
     background: #fff;
     height: 100%;
@@ -3654,15 +2868,12 @@ body {
 * @description: A Simple Mixin Tooltip CSS Using Sass
 * @version: 1.0.6
 */
-/* line 230, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
 .tipsy--nw {
   position: relative;
   display: inline-block; }
-  /* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--nw:hover:before, .tipsy--nw:hover:after, .tipsy--nw:focus:before, .tipsy--nw:focus:after {
     visibility: visible;
     opacity: 1; }
-  /* line 18, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--nw:before, .tipsy--nw:after {
     position: absolute;
     visibility: hidden;
@@ -3673,48 +2884,40 @@ body {
     -webkit-transform: translate3d(0, 0, 0);
     transition: 250ms ease-in-out;
     -webkit-transition: 250ms ease-in-out; }
-  /* line 30, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--nw:before {
     content: '';
     border: 5px solid transparent;
     bottom: 0;
     z-index: 1000001; }
-  /* line 37, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--nw:after {
     content: attr(data-tipsy);
     background-color: #34495e;
     border-radius: 0;
     color: white;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
     padding: 5px 10px;
     white-space: nowrap;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
     width: 0; }
-  /* line 54, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--nw:hover:before, .tipsy--nw:focus:before {
     top: -15%; }
-  /* line 57, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--nw:hover:after, .tipsy--nw:focus:after {
     bottom: 115%; }
-  /* line 62, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--nw:before {
     border-top-color: #34495e;
     top: -35%;
     right: 60%; }
-  /* line 68, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--nw:after {
     bottom: 135%;
     right: 50%; }
 
-/* line 231, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
 .tipsy--n {
   position: relative;
   display: inline-block; }
-  /* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--n:hover:before, .tipsy--n:hover:after, .tipsy--n:focus:before, .tipsy--n:focus:after {
     visibility: visible;
     opacity: 1; }
-  /* line 18, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--n:before, .tipsy--n:after {
     position: absolute;
     visibility: hidden;
@@ -3725,51 +2928,42 @@ body {
     -webkit-transform: translate3d(0, 0, 0);
     transition: 250ms ease-in-out;
     -webkit-transition: 250ms ease-in-out; }
-  /* line 30, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--n:before {
     content: '';
     border: 5px solid transparent;
     bottom: 0;
     z-index: 1000001; }
-  /* line 37, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--n:after {
     content: attr(data-tipsy);
     background-color: #2ecc71;
     border-radius: 3px;
     color: white;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
     padding: 5px 10px;
     white-space: nowrap;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
     width: 0; }
-  /* line 74, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--n:hover:before, .tipsy--n:focus:before {
     top: -15%; }
-  /* line 77, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--n:hover:after, .tipsy--n:focus:after {
     bottom: 115%; }
-  /* line 82, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--n:before, .tipsy--n:after {
     left: 50%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%); }
-  /* line 88, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--n:before {
     border-top-color: #2ecc71;
     top: -35%; }
-  /* line 93, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--n:after {
     bottom: 135%; }
 
-/* line 232, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
 .tipsy--ne {
   position: relative;
   display: inline-block; }
-  /* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--ne:hover:before, .tipsy--ne:hover:after, .tipsy--ne:focus:before, .tipsy--ne:focus:after {
     visibility: visible;
     opacity: 1; }
-  /* line 18, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--ne:before, .tipsy--ne:after {
     position: absolute;
     visibility: hidden;
@@ -3780,48 +2974,40 @@ body {
     -webkit-transform: translate3d(0, 0, 0);
     transition: 250ms ease-in-out;
     -webkit-transition: 250ms ease-in-out; }
-  /* line 30, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--ne:before {
     content: '';
     border: 5px solid transparent;
     bottom: 0;
     z-index: 1000001; }
-  /* line 37, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--ne:after {
     content: attr(data-tipsy);
     background-color: #3498db;
     border-radius: 0;
     color: white;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
     padding: 5px 10px;
     white-space: nowrap;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
     width: 0; }
-  /* line 98, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--ne:hover:before, .tipsy--ne:focus:before {
     top: -15%; }
-  /* line 101, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--ne:hover:after, .tipsy--ne:focus:after {
     bottom: 115%; }
-  /* line 106, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--ne:before {
     border-top-color: #3498db;
     top: -35%;
     left: 60%; }
-  /* line 112, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--ne:after {
     bottom: 135%;
     left: 50%; }
 
-/* line 233, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
 .tipsy--e {
   position: relative;
   display: inline-block; }
-  /* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--e:hover:before, .tipsy--e:hover:after, .tipsy--e:focus:before, .tipsy--e:focus:after {
     visibility: visible;
     opacity: 1; }
-  /* line 18, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--e:before, .tipsy--e:after {
     position: absolute;
     visibility: hidden;
@@ -3832,51 +3018,42 @@ body {
     -webkit-transform: translate3d(0, 0, 0);
     transition: 250ms ease-in-out;
     -webkit-transition: 250ms ease-in-out; }
-  /* line 30, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--e:before {
     content: '';
     border: 5px solid transparent;
     bottom: 0;
     z-index: 1000001; }
-  /* line 37, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--e:after {
     content: attr(data-tipsy);
     background-color: #9b59b6;
     border-radius: 3px;
     color: white;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
     padding: 5px 10px;
     white-space: nowrap;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
     width: 0; }
-  /* line 118, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--e:hover:before, .tipsy--e:focus:before {
     right: -15%; }
-  /* line 121, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--e:hover:after, .tipsy--e:focus:after {
     left: 115%; }
-  /* line 126, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--e:before, .tipsy--e:after {
     top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%); }
-  /* line 132, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--e:before {
     border-right-color: #9b59b6;
     right: -35%; }
-  /* line 137, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--e:after {
     left: 135%; }
 
-/* line 234, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
 .tipsy--se {
   position: relative;
   display: inline-block; }
-  /* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--se:hover:before, .tipsy--se:hover:after, .tipsy--se:focus:before, .tipsy--se:focus:after {
     visibility: visible;
     opacity: 1; }
-  /* line 18, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--se:before, .tipsy--se:after {
     position: absolute;
     visibility: hidden;
@@ -3887,48 +3064,40 @@ body {
     -webkit-transform: translate3d(0, 0, 0);
     transition: 250ms ease-in-out;
     -webkit-transition: 250ms ease-in-out; }
-  /* line 30, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--se:before {
     content: '';
     border: 5px solid transparent;
     bottom: 0;
     z-index: 1000001; }
-  /* line 37, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--se:after {
     content: attr(data-tipsy);
     background-color: #f39c12;
     border-radius: 0;
     color: white;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
     padding: 5px 10px;
     white-space: nowrap;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
     width: 0; }
-  /* line 142, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--se:hover:before, .tipsy--se:focus:before {
     bottom: -15%; }
-  /* line 145, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--se:hover:after, .tipsy--se:focus:after {
     top: 115%; }
-  /* line 150, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--se:before {
     border-bottom-color: #f39c12;
     left: 60%;
     bottom: -35%; }
-  /* line 156, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--se:after {
     left: 50%;
     top: 135%; }
 
-/* line 235, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
 .tipsy--s {
   position: relative;
   display: inline-block; }
-  /* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--s:hover:before, .tipsy--s:hover:after, .tipsy--s:focus:before, .tipsy--s:focus:after {
     visibility: visible;
     opacity: 1; }
-  /* line 18, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--s:before, .tipsy--s:after {
     position: absolute;
     visibility: hidden;
@@ -3939,51 +3108,42 @@ body {
     -webkit-transform: translate3d(0, 0, 0);
     transition: 250ms ease-in-out;
     -webkit-transition: 250ms ease-in-out; }
-  /* line 30, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--s:before {
     content: '';
     border: 5px solid transparent;
     bottom: 0;
     z-index: 1000001; }
-  /* line 37, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--s:after {
     content: attr(data-tipsy);
     background-color: #d35400;
     border-radius: 3px;
     color: white;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
     padding: 5px 10px;
     white-space: nowrap;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
     width: 0; }
-  /* line 162, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--s:hover:before, .tipsy--s:focus:before {
     bottom: -15%; }
-  /* line 165, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--s:hover:after, .tipsy--s:focus:after {
     top: 115%; }
-  /* line 170, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--s:before, .tipsy--s:after {
     left: 50%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%); }
-  /* line 176, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--s:before {
     border-bottom-color: #d35400;
     bottom: -35%; }
-  /* line 181, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--s:after {
     top: 135%; }
 
-/* line 236, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
 .tipsy--sw {
   position: relative;
   display: inline-block; }
-  /* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--sw:hover:before, .tipsy--sw:hover:after, .tipsy--sw:focus:before, .tipsy--sw:focus:after {
     visibility: visible;
     opacity: 1; }
-  /* line 18, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--sw:before, .tipsy--sw:after {
     position: absolute;
     visibility: hidden;
@@ -3994,48 +3154,40 @@ body {
     -webkit-transform: translate3d(0, 0, 0);
     transition: 250ms ease-in-out;
     -webkit-transition: 250ms ease-in-out; }
-  /* line 30, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--sw:before {
     content: '';
     border: 5px solid transparent;
     bottom: 0;
     z-index: 1000001; }
-  /* line 37, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--sw:after {
     content: attr(data-tipsy);
     background-color: #c0392b;
     border-radius: 0;
     color: white;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
     padding: 5px 10px;
     white-space: nowrap;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
     width: 0; }
-  /* line 186, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--sw:hover:before, .tipsy--sw:focus:before {
     bottom: -15%; }
-  /* line 189, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--sw:hover:after, .tipsy--sw:focus:after {
     top: 115%; }
-  /* line 194, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--sw:before {
     border-bottom-color: #c0392b;
     right: 60%;
     bottom: -35%; }
-  /* line 200, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--sw:after {
     right: 50%;
     top: 135%; }
 
-/* line 237, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
 .tipsy--w {
   position: relative;
   display: inline-block; }
-  /* line 12, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--w:hover:before, .tipsy--w:hover:after, .tipsy--w:focus:before, .tipsy--w:focus:after {
     visibility: visible;
     opacity: 1; }
-  /* line 18, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--w:before, .tipsy--w:after {
     position: absolute;
     visibility: hidden;
@@ -4046,39 +3198,33 @@ body {
     -webkit-transform: translate3d(0, 0, 0);
     transition: 250ms ease-in-out;
     -webkit-transition: 250ms ease-in-out; }
-  /* line 30, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--w:before {
     content: '';
     border: 5px solid transparent;
     bottom: 0;
     z-index: 1000001; }
-  /* line 37, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--w:after {
     content: attr(data-tipsy);
     background-color: #8e44ad;
     border-radius: 3px;
     color: white;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
     padding: 5px 10px;
     white-space: nowrap;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
     width: 10px; }
-  /* line 206, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--w:hover:before, .tipsy--w:focus:before {
     left: -15%; }
-  /* line 209, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--w:hover:after, .tipsy--w:focus:after {
     right: 115%; }
-  /* line 214, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--w:before, .tipsy--w:after {
     top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%); }
-  /* line 220, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--w:before {
     border-left-color: #8e44ad;
     left: -35%; }
-  /* line 224, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_tipsy.scss */
   .tipsy--w:after {
     right: 125%; }
 
@@ -4090,7 +3236,6 @@ body {
 *
 * Copyright (C) 2016 alvarotrigo.com - A project by Alvaro Trigo
 */
-/* line 9, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_pagePilling.scss */
 html.pagepiled, html.pagepiled body {
   overflow: hidden;
   margin: 0;
@@ -4098,26 +3243,19 @@ html.pagepiled, html.pagepiled body {
   /*Avoid flicker on slides transitions for mobile phones #336 */
   -webkit-tap-highlight-color: transparent; }
 
-/* line 17, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_pagePilling.scss */
 .pp-section {
   height: 100%;
   position: absolute;
   width: 100%; }
 
-/* line 22, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_pagePilling.scss */
 .pp-easing {
   -webkit-transition: all 1000ms cubic-bezier(0.55, 0.085, 0, 0.99);
-  -moz-transition: all 1000ms cubic-bezier(0.55, 0.085, 0, 0.99);
-  -o-transition: all 1000ms cubic-bezier(0.55, 0.085, 0, 0.99);
   transition: all 1000ms cubic-bezier(0.55, 0.085, 0, 0.99);
   /* custom */
   -webkit-transition-timing-function: cubic-bezier(0.55, 0.085, 0, 0.99);
-  -moz-transition-timing-function: cubic-bezier(0.55, 0.085, 0, 0.99);
-  -o-transition-timing-function: cubic-bezier(0.55, 0.085, 0, 0.99);
   transition-timing-function: cubic-bezier(0.55, 0.085, 0, 0.99);
   /* custom */ }
 
-/* line 34, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_pagePilling.scss */
 #pp-nav {
   position: fixed;
   z-index: 100;
@@ -4125,47 +3263,38 @@ html.pagepiled, html.pagepiled body {
   top: 50%;
   opacity: 1; }
 
-/* line 41, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_pagePilling.scss */
 #pp-nav.right {
   right: 17px; }
 
-/* line 44, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_pagePilling.scss */
 #pp-nav.left {
   left: 17px; }
 
-/* line 47, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_pagePilling.scss */
 .pp-section.pp-table {
   display: table; }
 
-/* line 50, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_pagePilling.scss */
 .pp-tableCell {
   display: table-cell;
   vertical-align: middle;
   width: 100%;
   height: 100%; }
 
-/* line 56, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_pagePilling.scss */
 .pp-slidesNav {
   position: absolute;
   z-index: 4;
   left: 50%;
   opacity: 1; }
 
-/* line 62, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_pagePilling.scss */
 .pp-slidesNav.bottom {
   bottom: 17px; }
 
-/* line 65, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_pagePilling.scss */
 .pp-slidesNav.top {
   top: 17px; }
 
-/* line 68, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_pagePilling.scss */
 #pp-nav ul,
 .pp-slidesNav ul {
   margin: 0;
   padding: 0; }
 
-/* line 73, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_pagePilling.scss */
 #pp-nav li,
 .pp-slidesNav li {
   display: block;
@@ -4174,11 +3303,9 @@ html.pagepiled, html.pagepiled body {
   margin: 7px;
   position: relative; }
 
-/* line 81, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_pagePilling.scss */
 .pp-slidesNav li {
   display: inline-block; }
 
-/* line 84, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_pagePilling.scss */
 #pp-nav li a,
 .pp-slidesNav li a {
   display: block;
@@ -4189,12 +3316,10 @@ html.pagepiled, html.pagepiled body {
   cursor: pointer;
   text-decoration: none; }
 
-/* line 94, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_pagePilling.scss */
 #pp-nav li .active span,
 .pp-slidesNav .active span {
   background: #333; }
 
-/* line 98, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_pagePilling.scss */
 #pp-nav span,
 .pp-slidesNav span {
   top: 2px;
@@ -4207,7 +3332,6 @@ html.pagepiled, html.pagepiled body {
   position: absolute;
   z-index: 1; }
 
-/* line 110, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_pagePilling.scss */
 .pp-tooltip {
   position: absolute;
   top: -2px;
@@ -4217,20 +3341,16 @@ html.pagepiled, html.pagepiled body {
   white-space: nowrap;
   max-width: 220px; }
 
-/* line 119, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_pagePilling.scss */
 .pp-tooltip.right {
   right: 20px; }
 
-/* line 122, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_pagePilling.scss */
 .pp-tooltip.left {
   left: 20px; }
 
-/* line 125, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_pagePilling.scss */
 .pp-scrollable {
   overflow-y: scroll;
   height: 100%; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_slideout.scss */
 .slideout-menu {
   position: fixed;
   top: 0;
@@ -4243,28 +3363,22 @@ html.pagepiled, html.pagepiled body {
   display: none;
   background: black;
   color: white; }
-  /* line 14, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_slideout.scss */
   .slideout-menu::-webkit-scrollbar {
     width: 5px;
     background-color: black; }
-  /* line 19, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_slideout.scss */
   .slideout-menu::-webkit-scrollbar-track {
     -webkit-box-shadow: none;
     background-color: black; }
-  /* line 23, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_slideout.scss */
   .slideout-menu::-webkit-scrollbar-thumb {
     background-color: #F5F5F5;
     border: none; }
 
-/* line 29, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_slideout.scss */
 .slideout-menu-left {
   left: 0; }
 
-/* line 33, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_slideout.scss */
 .slideout-menu-right {
   right: 0; }
 
-/* line 37, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_slideout.scss */
 .slideout-panel {
   position: relative;
   z-index: 1;
@@ -4273,37 +3387,29 @@ html.pagepiled, html.pagepiled body {
   /* A background-color is required */
   min-height: 100vh; }
 
-/* line 45, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_slideout.scss */
 .slideout-open,
 .slideout-open body,
 .slideout-open .slideout-panel {
   overflow: hidden; }
 
-/* line 51, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/components/_slideout.scss */
 .slideout-open .slideout-menu {
   display: block; }
 
-/* line 43, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_commons.scss */
 body {
   font-family: 'Roboto Slab', serif; }
 
-/* line 48, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_commons.scss */
 form fieldset {
   background: none; }
-  /* line 51, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_commons.scss */
   form fieldset label {
     font-family: 'Roboto Slab', serif;
     font-size: 0.75em;
     font-weight: 300; }
-  /* line 57, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_commons.scss */
   form fieldset input {
     border: none; }
 
-/* line 63, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_commons.scss */
 ul.hex {
   list-style: none;
   padding: 0 1em; }
-  /* line 67, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_commons.scss */
   ul.hex li {
     font-family: 'Josefin Sans', sans-serif;
     padding-left: 1em;
@@ -4312,7 +3418,6 @@ ul.hex {
     line-height: 1em;
     font-size: .8Sem;
     padding-bottom: .75em; }
-    /* line 76, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_commons.scss */
     ul.hex li:before, ul.hex li:after {
       position: absolute;
       content: "";
@@ -4323,79 +3428,62 @@ ul.hex {
       width: 11px;
       height: 5px;
       border-width: 0px 3px; }
-    /* line 88, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_commons.scss */
     ul.hex li:before {
       margin-top: -5px;
       border-bottom: 5px solid;
       border-bottom-color: inherit; }
-    /* line 94, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_commons.scss */
     ul.hex li:after {
       margin-top: 0px;
       border-top: 5px solid;
       border-top-color: inherit; }
 
-/* line 20, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bourbon/addons/_clearfix.scss */
 .arrow::after {
   clear: both;
   content: "";
   display: table; }
-
-/* line 105, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_commons.scss */
 .arrow.right {
   display: block;
   position: relative;
   float: right;
   right: 0.5em; }
-  /* line 111, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_commons.scss */
   .arrow.right:after {
     font-family: 'FontAwesome';
     content: '\f054';
     display: block; }
-
-/* line 119, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_commons.scss */
 .arrow:hover, .arrow:focus, .arrow:active {
   color: #477dca;
   cursor: pointer; }
 
 @media only screen and (max-width: 480px) {
-  /* line 128, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_commons.scss */
   .modal .modal-content {
     padding: 10px;
     margin-top: 120px; }
-    /* line 132, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_commons.scss */
     .modal .modal-content fieldset {
       margin: 0;
       padding: 0;
       max-width: 100%;
       overflow: hidden;
       font-size: .75em; }
-      /* line 139, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_commons.scss */
       .modal .modal-content fieldset input, .modal .modal-content fieldset select, .modal .modal-content fieldset textarea {
         max-width: 80%;
         margin-left: auto;
         margin-right: auto; } }
 
-/* line 165, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_commons.scss */
 form select {
   width: 100%; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
-.centered-navigation {
+header.centered-navigation {
   position: absolute;
   z-index: 999; }
-  /* line 7, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
-  .centered-navigation nav #contacto_head {
+  header.centered-navigation nav #contacto_head {
     position: relative;
     width: 60px;
     height: 36.64px;
     background-color: #000;
     margin: 17.32px 0;
-    -moz-transition: background-color 0.125s 0.25s;
-    -o-transition: background-color 0.125s 0.25s;
     -webkit-transition: background-color 0.125s 0.25s;
     transition: background-color 0.125s 0.25s; }
-    /* line 17, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_commons.scss */
-    .centered-navigation nav #contacto_head:before {
+    header.centered-navigation nav #contacto_head:before {
       content: "";
       position: absolute;
       width: 0;
@@ -4404,8 +3492,7 @@ form select {
       bottom: 100%;
       border-bottom: 17.32px solid #000;
       left: 0; }
-    /* line 29, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_commons.scss */
-    .centered-navigation nav #contacto_head:after {
+    header.centered-navigation nav #contacto_head:after {
       content: "";
       position: absolute;
       width: 0;
@@ -4415,66 +3502,50 @@ form select {
       width: 0;
       border-top: 17.32px solid #000;
       left: 0; }
-    /* line 10, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
-    .centered-navigation nav #contacto_head span {
+    header.centered-navigation nav #contacto_head span {
       display: block;
       font-size: .75em;
       color: #fff;
       line-height: 30px;
       text-align: center;
       margin: 0 auto; }
-    /* line 21, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
-    .centered-navigation nav #contacto_head:after, .centered-navigation nav #contacto_head:before {
-      -moz-transition: border-color 0.125s 0.25s;
-      -o-transition: border-color 0.125s 0.25s;
+    header.centered-navigation nav #contacto_head:after, header.centered-navigation nav #contacto_head:before {
       -webkit-transition: border-color 0.125s 0.25s;
       transition: border-color 0.125s 0.25s; }
-    /* line 25, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
-    .centered-navigation nav #contacto_head:hover {
+    header.centered-navigation nav #contacto_head:hover {
       background-color: #477dca; }
-      /* line 28, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
-      .centered-navigation nav #contacto_head:hover:before {
+      header.centered-navigation nav #contacto_head:hover:before {
         border-bottom-color: #477dca; }
-      /* line 32, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
-      .centered-navigation nav #contacto_head:hover:after {
+      header.centered-navigation nav #contacto_head:hover:after {
         border-top-color: #477dca; }
-  /* line 38, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
-  .centered-navigation nav .tooltip {
+  header.centered-navigation nav .tooltip {
     width: 12em; }
   @media only screen and (max-width: 480px) {
-    /* line 43, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
-    .centered-navigation nav span.contacto-icon {
+    header.centered-navigation nav span.contacto-icon {
       font-size: 1em !important;
       line-height: 20px; }
-    /* line 44, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
-    .centered-navigation nav #contacto_head {
+    header.centered-navigation nav #contacto_head {
       width: 30px;
       height: 18px; }
-      /* line 48, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
-      .centered-navigation nav #contacto_head:before {
+      header.centered-navigation nav #contacto_head:before {
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
         border-bottom: 8.66px solid #000; }
-      /* line 54, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
-      .centered-navigation nav #contacto_head:after {
+      header.centered-navigation nav #contacto_head:after {
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
         border-top: 8.66px solid #000; }
-      /* line 60, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
-      .centered-navigation nav #contacto_head > span {
+      header.centered-navigation nav #contacto_head > span {
         line-height: 18px; }
-      /* line 64, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
-      .centered-navigation nav #contacto_head .nav-link:first-child {
+      header.centered-navigation nav #contacto_head .nav-link:first-child {
         margin-left: 1em; } }
 
-/* line 72, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
-.minimal-navigation {
+header.minimal-navigation {
   display: block;
-  height: 6em;
+  height: 9em;
   position: relative;
   top: 0; }
-  /* line 78, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
-  .minimal-navigation div.container {
+  header.minimal-navigation div.container {
     width: 100%;
     max-width: 68em;
     margin-left: auto;
@@ -4483,45 +3554,55 @@ form select {
     display: block;
     position: relative;
     height: 100%; }
-    /* line 20, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/bourbon/addons/_clearfix.scss */
-    .minimal-navigation div.container::after {
+    header.minimal-navigation div.container::after {
       clear: both;
       content: "";
       display: table; }
-  /* line 87, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
-  .minimal-navigation .logo {
+  header.minimal-navigation nav ul {
+    height: 3em; }
+    header.minimal-navigation nav ul li {
+      list-style: none;
+      font-size: .75em;
+      display: block;
+      color: #ddd;
+      text-transform: lowercase;
+      line-height: 3em;
+      padding: 0 1.5em; }
+    header.minimal-navigation nav ul.nav-left li {
+      float: left; }
+    header.minimal-navigation nav ul.nav-right li {
+      float: right; }
+  header.minimal-navigation .logo {
     float: right; }
-    /* line 90, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
-    .minimal-navigation .logo img {
+    header.minimal-navigation .logo img {
       position: absolute;
       height: 2em;
       width: auto;
       top: 50%;
+      -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
       right: 0; }
       @media only screen and (max-width: 1150px) {
-        /* line 90, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
-        .minimal-navigation .logo img {
+        header.minimal-navigation .logo img {
           padding-right: 2em; } }
-  /* line 104, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
-  .minimal-navigation .hexa-tip-right {
+  header.minimal-navigation .hexa-tip-right {
     position: absolute;
     height: 2em;
     width: 1em;
     top: 50%;
+    -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
     right: 1em !important;
     float: right;
-    padding-left: 1em; }
-    /* line 114, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_header.scss */
-    .minimal-navigation .hexa-tip-right figure {
+    padding-left: 1em;
+    margin-top: 3em; }
+    header.minimal-navigation .hexa-tip-right figure {
       position: relative;
       width: 1em;
       height: 36.64px;
       background-color: #000;
       margin: 17.32px 0; }
-      /* line 17, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_commons.scss */
-      .minimal-navigation .hexa-tip-right figure:before {
+      header.minimal-navigation .hexa-tip-right figure:before {
         content: "";
         position: absolute;
         width: 0;
@@ -4530,8 +3611,7 @@ form select {
         bottom: 100%;
         border-bottom: 17.32px solid #000;
         left: 0; }
-      /* line 29, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_commons.scss */
-      .minimal-navigation .hexa-tip-right figure:after {
+      header.minimal-navigation .hexa-tip-right figure:after {
         content: "";
         position: absolute;
         width: 0;
@@ -4542,28 +3622,23 @@ form select {
         border-top: 17.32px solid #000;
         left: 0; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_footer.scss */
 footer {
   background-color: #000; }
-  /* line 6, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_footer.scss */
   footer nav#footer-icons ul li {
     float: right;
     padding: 0 .5em; }
-    /* line 10, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_footer.scss */
     footer nav#footer-icons ul li a {
       color: #fff;
+      -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out; }
-      /* line 14, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_footer.scss */
       footer nav#footer-icons ul li a:hover {
         color: #477dca; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
 .main_logo {
   max-width: 50%;
   text-align: center;
   margin: 0 auto; }
 
-/* line 7, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
 main#home {
   display: block;
   min-height: 100%;
@@ -4571,69 +3646,57 @@ main#home {
   text-align: center;
   position: absolute;
   z-index: 10;
-  background-color: rgba(255, 255, 255, 0.25); }
-  /* line 15, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+  background-color: rgba(255, 255, 255, .25); }
   main#home .span-3, main#home .span-6 {
     min-height: 100%; }
-  /* line 19, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   main#home .bloque_wrapper {
     position: relative;
     width: 100%;
     min-height: 100vh; }
-  /* line 24, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   main#home .bloque {
     width: 100%;
     display: block;
     top: 50%;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     position: absolute;
     margin: 0 auto; }
-    /* line 32, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
     main#home .bloque .unidades {
       text-transform: uppercase;
       border-right: 1px solid black;
       border-radius: 0;
       padding: 1em; }
-      /* line 38, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
       main#home .bloque .unidades:last-child {
         border: none; }
-      /* line 42, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
       main#home .bloque .unidades.selected {
         color: #477dca;
         font-weight: 700;
         border: 1px solid #477dca;
-        background-color: rgba(255, 255, 255, 0.5); }
-      /* line 49, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
+        background-color: rgba(255, 255, 255, .5); }
       main#home .bloque .unidades a {
         text-decoration: none;
         color: inherit; }
-  /* line 56, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   main#home .flap {
     background: no-repeat;
     background-size: contain;
     font-size: .85em;
     text-align: left; }
-    /* line 62, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
     main#home .flap.r {
       background-position: right;
       background-image: url(../img/aleta-der.png);
       padding-right: 2em; }
-    /* line 67, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
     main#home .flap.l {
       background-position: left;
       background-image: url(../img/aleta-izq.png);
       padding-left: 2em; }
   @media only screen and (max-width: 480px) {
-    /* line 7, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
     main#home {
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(255, 255, 255, .5);
       padding-top: 120px;
       font-weight: 300;
       position: relative; }
-      /* line 80, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
       main#home .main_logo {
         max-width: 75%; }
-      /* line 82, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
       main#home .unidades {
         width: 33.3% !important;
         float: left;
@@ -4641,17 +3704,14 @@ main#home {
         margin: 0 !important;
         clear: none;
         border-radius: 0; }
-        /* line 90, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
         main#home .unidades h1 {
           font-size: .75em;
           margin: .75em auto; }
-      /* line 101, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
       main#home .span-6 {
         float: none;
         position: absolute;
         margin-top: 3em;
         padding-right: 50px; }
-      /* line 108, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
       main#home .span-3 {
         float: right;
         width: 100% !important;
@@ -4661,66 +3721,48 @@ main#home {
         position: absolute;
         min-height: 30%;
         font-size: .75em; }
-      /* line 119, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
       main#home .flap.r {
         right: 0 !important; }
-      /* line 123, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
       main#home .flap.l {
         display: none; }
-      /* line 127, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
       main#home .bloque_wrapper {
         min-height: 30vh; }
-        /* line 130, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
         main#home .bloque_wrapper .row {
           padding: .5em; } }
 
-/* line 135, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
 #pagepiling .section {
   background: white no-repeat center center;
   background-size: cover; }
-  /* line 139, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   #pagepiling .section#welcome-splash {
     background-color: white; }
 
 @media only screen and (max-width: 480px) {
-  /* line 144, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   .centered-navigation ul li.nav-link {
     padding-right: 0; } }
 
 @media only screen and (max-width: 480px) {
-  /* line 152, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   html.pagepiled header {
     padding-right: 50px; }
-  /* line 156, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   html.pagepiled .centered-navigation {
     min-height: 90px; }
-    /* line 159, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
     html.pagepiled .centered-navigation .nav-link:first-child {
       margin-left: .5em; }
-    /* line 162, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
     html.pagepiled .centered-navigation ul li.nav-link a {
       padding-right: .65em; }
-  /* line 167, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   html.pagepiled ul.hex li {
     padding-left: 1.5em;
     font-size: 1.25em;
     padding-bottom: 0.2em;
     font-weight: 400; } }
 
-/* line 180, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
 body.mobile section, body.mobile main {
   display: table !important;
   width: 100%; }
-
-/* line 186, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
 body.mobile section.bloque div#cycle {
   margin: 2em auto; }
-  /* line 189, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   body.mobile section.bloque div#cycle h3#cycling {
     font-weight: 100;
     text-transform: uppercase; }
-
-/* line 196, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
 body.mobile .section-header {
   background-color: black;
   color: white;
@@ -4730,12 +3772,8 @@ body.mobile .section-header {
   font-weight: 100;
   display: block;
   padding: 50px; }
-
-/* line 208, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
 body.mobile section#unidades_negocio .section-header {
   font-size: 1.5em; }
-
-/* line 212, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
 body.mobile section#unidades_negocio article.unidades {
   text-transform: uppercase;
   border-radius: 0;
@@ -4747,7 +3785,6 @@ body.mobile section#unidades_negocio article.unidades {
   display: block;
   height: 200px;
   position: relative; }
-  /* line 225, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   body.mobile section#unidades_negocio article.unidades h1 {
     width: 100%;
     font-size: 2.5em;
@@ -4755,31 +3792,23 @@ body.mobile section#unidades_negocio article.unidades {
     display: block;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-35%, -50%);
     transform: translate(-35%, -50%);
     position: absolute; }
-  /* line 236, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   body.mobile section#unidades_negocio article.unidades#digital {
     background-color: #1797cd; }
-    /* line 238, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
     body.mobile section#unidades_negocio article.unidades#digital h1 {
       color: #8bcbe6; }
-  /* line 240, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   body.mobile section#unidades_negocio article.unidades#politico {
     background-color: #cdc200; }
-    /* line 242, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
     body.mobile section#unidades_negocio article.unidades#politico h1 {
       color: #e6e080; }
-  /* line 244, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   body.mobile section#unidades_negocio article.unidades#deportivo {
     background-color: #d53d0e; }
-    /* line 246, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
     body.mobile section#unidades_negocio article.unidades#deportivo h1 {
       color: #ea9e86; }
-  /* line 249, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   body.mobile section#unidades_negocio article.unidades:last-child {
     border: none; }
-
-/* line 256, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
 body.mobile section#mvp {
   color: white;
   display: block;
@@ -4791,40 +3820,32 @@ body.mobile section#mvp {
   background-position: bottom right;
   padding: 1.5em;
   padding-right: 4.5em; }
-  /* line 157, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_commons.scss */
   body.mobile section#mvp:after {
     content: "";
     padding-bottom: 50%;
     display: block; }
-  /* line 265, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   body.mobile section#mvp:after {
     padding-bottom: 0%; }
-  /* line 269, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   body.mobile section#mvp h1 {
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 2em; }
-  /* line 276, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   body.mobile section#mvp p {
     font-size: .90em;
     line-height: 1.70em;
     letter-spacing: .035em; }
-
-/* line 284, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
 body.mobile section#valores article {
   width: 50%;
   margin: 0;
   float: left;
   position: relative;
   overflow: hidden; }
-  /* line 291, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   body.mobile section#valores article:after {
     content: "";
     padding-bottom: 125%;
     position: relative;
     display: block; }
-  /* line 298, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   body.mobile section#valores article div.article-wrapper {
     overflow: hidden;
     max-width: 100%;
@@ -4834,24 +3855,18 @@ body.mobile section#valores article {
     right: 0;
     padding: 1em;
     overflow: hidden; }
-  /* line 309, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   body.mobile section#valores article h1 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1em;
     text-transform: uppercase;
     font-weight: 700; }
-  /* line 316, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   body.mobile section#valores article p {
     font-size: .75em;
     line-height: 1.5em;
     font-weight: 500; }
-
-/* line 326, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
 body.mobile section#forma div.form-wrapper {
   position: relative;
   width: 100%; }
-
-/* line 331, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
 body.mobile section#forma form {
   overflow: hidden;
   max-width: 100%;
@@ -4863,68 +3878,54 @@ body.mobile section#forma form {
   overflow: hidden;
   top: 0;
   left: 0; }
-  /* line 343, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_home.scss */
   body.mobile section#forma form fieldset {
     top: 0;
     left: 0;
     max-width: 100%; }
 
-/* line 1, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_portada_seccion.scss */
 main.portada-seccion {
   margin-top: -6em; }
-  /* line 4, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_portada_seccion.scss */
   main.portada-seccion p {
     text-align: justify;
     border-right: 1px dashed #000;
     padding-right: 1.5em; }
-  /* line 10, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_portada_seccion.scss */
   main.portada-seccion h1 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 3em;
     line-height: 1.5em; }
   @media only screen and (max-width: 480px) {
-    /* line 18, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_portada_seccion.scss */
     main.portada-seccion p {
       font-size: .85em;
       border: none;
       border-bottom: 1px dashed #000;
       padding-bottom: 1em; }
-    /* line 24, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_portada_seccion.scss */
     main.portada-seccion h1 {
       font-size: 2em;
       line-height: 1em; }
-    /* line 29, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_portada_seccion.scss */
     main.portada-seccion ul.hex li {
       line-height: .95em;
       padding-bottom: .5em; } }
 
-/* line 38, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_portada_seccion.scss */
 section.portada-seccion#stats {
   text-align: center;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000; }
-  /* line 43, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_portada_seccion.scss */
   section.portada-seccion#stats h1 {
     font-size: 1em;
     text-transform: uppercase;
     font-weight: 100; }
   @media only screen and (max-width: 480px) {
-    /* line 50, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_portada_seccion.scss */
     section.portada-seccion#stats li {
       font-size: 1.5em;
       line-height: .85em; } }
-
-/* line 62, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_portada_seccion.scss */
 section.portada-seccion#portfolio {
   text-align: center; }
-  /* line 65, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_portada_seccion.scss */
   section.portada-seccion#portfolio h2 {
     font-size: 1em;
     text-transform: uppercase;
     font-weight: 100;
     margin: 1.5em auto; }
-  /* line 76, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_portada_seccion.scss */
   section.portada-seccion#portfolio .grid-item article h1 {
     display: block;
     position: absolute;
@@ -4934,7 +3935,6 @@ section.portada-seccion#portfolio {
     color: #fff;
     bottom: 2em;
     text-align: left; }
-  /* line 87, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_portada_seccion.scss */
   section.portada-seccion#portfolio .grid-item article p {
     display: block;
     position: absolute;
@@ -4947,17 +3947,15 @@ section.portada-seccion#portfolio {
     margin-bottom: 2em;
     font-size: .75em;
     text-align: left; }
-
-/* line 106, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_portada_seccion.scss */
 section.portada-seccion#contacto .wrapper {
   background: crimson;
   padding: 3em; }
-
-/* line 111, ../../Users/Estrategia y Desarro/sites/wm4_v2/scss/wm4/_portada_seccion.scss */
 section.portada-seccion#contacto h1 {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2em;
   line-height: .85em; }
+
+
 
 /*# sourceMappingURL=base.css.map */
