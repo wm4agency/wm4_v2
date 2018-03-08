@@ -10,13 +10,13 @@ $scriptsCatalog = array(
     "email-modal" => "email-modal.js",
     "pagepiling" => "jquery.pagepiling.js",
     "slideout" => "slideout.js",
+    "odometer" => "odometer.js",
 );
 
 $scripts = array('email');
-//print_r($scripts);
 
 //Ask for the scripts each page should load that were declared locally on it's constructor file
-if(!empty($localScripts)){array_push($scripts,$localScripts);}
+if(!empty($localScripts)){$scripts=array_merge($scripts,$localScripts);}
 
 // iterate the scripts list and echo the corresponding <script> tag
 if(!empty($scripts)){

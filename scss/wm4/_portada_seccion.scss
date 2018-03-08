@@ -1,123 +1,137 @@
-main.portada-seccion{
-    margin-top: -6em;
+body.portada-seccion {
+    background: $grey_base;
 
-    p{
-        text-align: justify;
-        border-right: 1px dashed $b;
-        padding-right: 1.5em;
-    }
-    
-    h1{
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 3em;
-        line-height:1.5em;
-    }
-    
-    @include max-width($mobile) {
-        p{
-          font-size: .85em; 
-            border: none;
-            border-bottom: 1px dashed $b;
-            padding-bottom: 1em;
-        }
-        h1{
-            font-size: 2em;
-            line-height: 1em;
-        }
-        
-        ul.hex li{
-            line-height: .95em;
-            padding-bottom: .5em;
-        }
-    }
-}
+    main{    
+        margin-top: -6em;
 
-
-section.portada-seccion{
-    &#stats{
-        text-align: center;
-        border-top: 1px solid $b;
-        border-bottom: 1px solid $b;
-
-        h1{
-            font-size: 1em;
-            text-transform: uppercase;
-            font-weight: 100;
-        }
-        
-        @include max-width($mobile) {
-            li{
-                font-size: 1.5em;
-                line-height: .85em;
-            }
-            
-            span{
-                
-            }
+        summary#intro{
+            text-align: justify;
+            padding-right: 1.5em;
         }
 
-    }
-    
-    &#portfolio{
-        text-align: center;
-
-        h2{
-            font-size: 1em;
-            text-transform: uppercase;
-            font-weight: 100;
-            margin:1.5em auto;
-        }
-        
-        .grid-item{
-            
-            article{
-
-                h1{
-                    display: block;
-                    position: absolute;
-                    @include josefin;
-                    font-weight: 100;
-                    text-transform: uppercase;
-                    color: $w;
-                    bottom: 2em;
-                    text-align: left;
-                }
-                
-                p{
-                    display: block;
-                    position: absolute;
-                    width: 100%;
-                    color: transparentize ($w,.75);
-                    line-height: 1.25em;
-                    margin-left: auto;
-                    margin-right: auto;
-                    bottom: 0;
-                    margin-bottom: 2em;
-                    font-size: .75em;
-                    text-align: left;
-                }
-            }
-        }
-    }
-    
-    &#contacto{
-        
-        .wrapper{
-            background: crimson;
-            padding: 3em;
-        }
-        
         h1{
             text-transform: uppercase;
             font-weight: 700;
-            font-size: 2em;
-            line-height:.85em;
+            font-size: 3em;
+            line-height:1.5em;
+        }
+
+        @include max-width($mobile) {
+            p{
+                font-size: .85em; 
+                border: none;
+                border-bottom: 1px dashed $b;
+                padding-bottom: 1em;
+            }
+            h1{
+                font-size: 2em;
+                line-height: 1em;
+            }
+
+            ul li{
+                line-height: .95em;
+                padding-bottom: .5em;
+            }
         }
     }
     
-    @include max-width($mobile) {
+    section{
+        &#servicios{
+            background: $action-color;
+            color:white;
+        }
+
+        &#stats{
+            text-align: center;
+            background: white;
+
+            h1{
+                font-size: 1em;
+                text-transform: uppercase;
+                font-weight: 100;
+            }
+
+            @include max-width($mobile) {
+                li{
+                    font-size: 1.5em;
+                    line-height: .85em;
+                }
+
+                span{
+
+                }
+            }
+        }
         
+        &#portfolio{
+            text-align: center;
+
+            h2{
+                font-size: 1em;
+                text-transform: uppercase;
+                font-weight: 100;
+                margin:1.5em auto;
+            }
+
+            .grid-item{
+
+                article{
+
+                    h1{
+                        display: block;
+                        position: absolute;
+                        @include josefin;
+                        font-weight: 100;
+                        text-transform: uppercase;
+                        color: $w;
+                        bottom: 2em;
+                        text-align: left;
+                    }
+
+                    p{
+                        display: block;
+                        position: absolute;
+                        width: 100%;
+                        color: transparentize ($w,.75);
+                        line-height: 1.25em;
+                        margin-left: auto;
+                        margin-right: auto;
+                        bottom: 0;
+                        margin-bottom: 2em;
+                        font-size: .75em;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        
+        &#contacto{
+            @include framing_skewed();
+            
+            .wrapper{
+                background: crimson;
+                padding: 3em;
+            }
+
+            h1{
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 2em;
+                line-height:.85em;
+            }
+        }
+    }
+    
+    &.mkt_d{
+        main h1, .linktext{color: $digital_blue_dark;}
+        
+        section{
+            &#servicios{
+                background: $digital_blue;
+            }
+            
+            &#stats{ color: $digital_blue;}
+        }
     }
 }
 

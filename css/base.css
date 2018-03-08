@@ -2767,27 +2767,19 @@ body {
   .stats ul {
     padding: 0; }
   .stats li {
-    border-right: 1px solid rgba(51, 51, 51, .2);
-    color: #000;
-    display: inline;
-    float: left;
-    font-size: 1.2em;
-    line-height: 1.1em;
-    padding: 0 0.7em;
-    width: 25%;
     display: block;
     text-align: center;
     font-size: 4em;
-    font-weight: bold; }
-    .stats li:first-child {
-      padding-left: 0; }
-    .stats li:last-child {
-      border-right: 0; }
-  .stats span {
-    color: #333;
-    display: block;
-    font-size: .5em;
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 1.05em; }
+    .stats li span.subtitle {
+      font-size: .5em;
+      line-height: .75em; }
+    .stats li strong {
+      display: block;
+      font-size: 3em;
+      line-height: .85em; }
 
 .grid-items-lines {
   position: relative; }
@@ -3395,6 +3387,76 @@ html.pagepiled, html.pagepiled body {
 .slideout-open .slideout-menu {
   display: block; }
 
+.odometer.odometer-auto-theme, .odometer.odometer-theme-minimal {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: relative; }
+
+.odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-minimal .odometer-digit {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: relative; }
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer, .odometer.odometer-theme-minimal .odometer-digit .odometer-digit-spacer {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  visibility: hidden; }
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-minimal .odometer-digit .odometer-digit-inner {
+  text-align: left;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden; }
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon, .odometer.odometer-theme-minimal .odometer-digit .odometer-ribbon {
+  display: block; }
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon-inner, .odometer.odometer-theme-minimal .odometer-digit .odometer-ribbon-inner {
+  display: block;
+  -webkit-backface-visibility: hidden; }
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-value, .odometer.odometer-theme-minimal .odometer-digit .odometer-value {
+  display: block;
+  -webkit-transform: translateZ(0); }
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-value.odometer-last-value, .odometer.odometer-theme-minimal .odometer-digit .odometer-value.odometer-last-value {
+  position: absolute; }
+
+.odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner, .odometer.odometer-theme-minimal.odometer-animating-up .odometer-ribbon-inner {
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s; }
+
+.odometer.odometer-auto-theme.odometer-animating-up.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-minimal.odometer-animating-up.odometer-animating .odometer-ribbon-inner {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%); }
+
+.odometer.odometer-auto-theme.odometer-animating-down .odometer-ribbon-inner, .odometer.odometer-theme-minimal.odometer-animating-down .odometer-ribbon-inner {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%); }
+
+.odometer.odometer-auto-theme.odometer-animating-down.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-minimal.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+  -webkit-transform: translateY(0);
+  transform: translateY(0); }
+
 body {
   font-family: 'Roboto Slab', serif; }
 
@@ -3564,7 +3626,7 @@ header.minimal-navigation {
       list-style: none;
       font-size: .75em;
       display: block;
-      color: #ddd;
+      color: #999;
       text-transform: lowercase;
       line-height: 3em;
       padding: 0 1.5em; }
@@ -3883,78 +3945,100 @@ body.mobile section#forma form {
     left: 0;
     max-width: 100%; }
 
-main.portada-seccion {
-  margin-top: -6em; }
-  main.portada-seccion p {
-    text-align: justify;
-    border-right: 1px dashed #000;
-    padding-right: 1.5em; }
-  main.portada-seccion h1 {
+body.portada-seccion {
+  background: #e6e6e6; }
+  body.portada-seccion main {
+    margin-top: -6em; }
+    body.portada-seccion main summary#intro {
+      text-align: justify;
+      padding-right: 1.5em; }
+    body.portada-seccion main h1 {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 3em;
+      line-height: 1.5em; }
+    @media only screen and (max-width: 480px) {
+      body.portada-seccion main p {
+        font-size: .85em;
+        border: none;
+        border-bottom: 1px dashed #000;
+        padding-bottom: 1em; }
+      body.portada-seccion main h1 {
+        font-size: 2em;
+        line-height: 1em; }
+      body.portada-seccion main ul li {
+        line-height: .95em;
+        padding-bottom: .5em; } }
+  body.portada-seccion section#servicios {
+    background: #477dca;
+    color: white; }
+  body.portada-seccion section#stats {
+    text-align: center;
+    background: white; }
+    body.portada-seccion section#stats h1 {
+      font-size: 1em;
+      text-transform: uppercase;
+      font-weight: 100; }
+    @media only screen and (max-width: 480px) {
+      body.portada-seccion section#stats li {
+        font-size: 1.5em;
+        line-height: .85em; } }
+  body.portada-seccion section#portfolio {
+    text-align: center; }
+    body.portada-seccion section#portfolio h2 {
+      font-size: 1em;
+      text-transform: uppercase;
+      font-weight: 100;
+      margin: 1.5em auto; }
+    body.portada-seccion section#portfolio .grid-item article h1 {
+      display: block;
+      position: absolute;
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 100;
+      text-transform: uppercase;
+      color: #fff;
+      bottom: 2em;
+      text-align: left; }
+    body.portada-seccion section#portfolio .grid-item article p {
+      display: block;
+      position: absolute;
+      width: 100%;
+      color: transparentize #fff, 0.75;
+      line-height: 1.25em;
+      margin-left: auto;
+      margin-right: auto;
+      bottom: 0;
+      margin-bottom: 2em;
+      font-size: .75em;
+      text-align: left; }
+  body.portada-seccion section#contacto::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='framings skewed' viewBox='0 0 1350 189'%3E%3Cstyle type='text/css'%3E .main%7Bfill:%23006F9E;%7D .sub%7Bfill:%231797CD;%7D%0A%3C/style%3E%3Cpolygon class='main' points='0 189 1350 189 0 0 '/%3E%3Cpolygon class='sub' points='1350 0 0 189 1350 189 '/%3E%3C/svg%3E");
+    display: inline;
+    padding-top: 14%;
+    width: 100%;
+    position: absolute; }
+  body.portada-seccion section#contacto::after {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='framings skewed' viewBox='0 0 1350 189'%3E%3Cstyle type='text/css'%3E .main%7Bfill:%23006F9E;%7D .sub%7Bfill:%231797CD;%7D%0A%3C/style%3E%3Cpolygon class='main' points='0 189 1350 189 0 0 '/%3E%3Cpolygon class='sub' points='1350 0 0 189 1350 189 '/%3E%3C/svg%3E");
+    display: inline;
+    padding-top: 14%;
+    width: 100%;
+    position: absolute;
+    -webkit-transform: rotate(180);
+    transform: rotate(180); }
+  body.portada-seccion section#contacto .wrapper {
+    background: crimson;
+    padding: 3em; }
+  body.portada-seccion section#contacto h1 {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 3em;
-    line-height: 1.5em; }
-  @media only screen and (max-width: 480px) {
-    main.portada-seccion p {
-      font-size: .85em;
-      border: none;
-      border-bottom: 1px dashed #000;
-      padding-bottom: 1em; }
-    main.portada-seccion h1 {
-      font-size: 2em;
-      line-height: 1em; }
-    main.portada-seccion ul.hex li {
-      line-height: .95em;
-      padding-bottom: .5em; } }
-
-section.portada-seccion#stats {
-  text-align: center;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000; }
-  section.portada-seccion#stats h1 {
-    font-size: 1em;
-    text-transform: uppercase;
-    font-weight: 100; }
-  @media only screen and (max-width: 480px) {
-    section.portada-seccion#stats li {
-      font-size: 1.5em;
-      line-height: .85em; } }
-section.portada-seccion#portfolio {
-  text-align: center; }
-  section.portada-seccion#portfolio h2 {
-    font-size: 1em;
-    text-transform: uppercase;
-    font-weight: 100;
-    margin: 1.5em auto; }
-  section.portada-seccion#portfolio .grid-item article h1 {
-    display: block;
-    position: absolute;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 100;
-    text-transform: uppercase;
-    color: #fff;
-    bottom: 2em;
-    text-align: left; }
-  section.portada-seccion#portfolio .grid-item article p {
-    display: block;
-    position: absolute;
-    width: 100%;
-    color: transparentize #fff, 0.75;
-    line-height: 1.25em;
-    margin-left: auto;
-    margin-right: auto;
-    bottom: 0;
-    margin-bottom: 2em;
-    font-size: .75em;
-    text-align: left; }
-section.portada-seccion#contacto .wrapper {
-  background: crimson;
-  padding: 3em; }
-section.portada-seccion#contacto h1 {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 2em;
-  line-height: .85em; }
+    font-size: 2em;
+    line-height: .85em; }
+  body.portada-seccion.mkt_d main h1, body.portada-seccion.mkt_d .linktext {
+    color: #006f9e; }
+  body.portada-seccion.mkt_d section#servicios {
+    background: #1797cd; }
+  body.portada-seccion.mkt_d section#stats {
+    color: #1797cd; }
 
 
 

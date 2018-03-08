@@ -2,12 +2,17 @@
 @import 'neat/neat';
 @import 'custom/normalize';
 @import 'custom/neat-settings';
+@import 'custom/functions';
 @import 'font-awesome/font-awesome';
 @import 'bitters/base';
 
-// Feel free to edit files below
+// customs
 @import 'custom/common';
 @import 'custom/style';
 @import 'refills/active';
+
+// components
 @import 'components/active';
+
+// wm4's
 @import 'wm4/base'

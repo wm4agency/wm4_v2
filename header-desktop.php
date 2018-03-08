@@ -38,7 +38,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 })();
 </script>
 </head>
-<body>
+    <body class="<?php echo $role; echo " "; echo $localclass; ?>">
 
     <?php  if ($header == 'full'): ?>
     <header class="centered-navigation" role="banner">
@@ -66,7 +66,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
     
     <?php elseif ($header == 'minimal'): ?>
     <header class="minimal-navigation fullwidth">
-        <nav class="container">
+        <nav class="container desktop">
             <ul class="nav-left span-3">
                 <li>home</li>
             </ul>

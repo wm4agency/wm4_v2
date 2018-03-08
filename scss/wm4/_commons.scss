@@ -166,3 +166,27 @@ form{
         width: 100%;
     }
 }
+
+
+
+@mixin framing_skewed(){
+    $skewed_f: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='framings skewed' viewBox='0 0 1350 189'%3E%3Cstyle type='text/css'%3E .main%7Bfill:%23006F9E;%7D .sub%7Bfill:%231797CD;%7D%0A%3C/style%3E%3Cpolygon class='main' points='0 189 1350 189 0 0 '/%3E%3Cpolygon class='sub' points='1350 0 0 189 1350 189 '/%3E%3C/svg%3E");
+    
+    &::before{
+        content: $skewed_f;
+        display: inline;
+        padding-top:14%;
+        width: 100%;
+        position: absolute;
+    }
+    
+    &::after{
+        content: $skewed_f;
+        display: inline;
+        padding-top:14%;
+        width: 100%;
+        position: absolute;
+        transform: rotate(180)
+    }
+}
+

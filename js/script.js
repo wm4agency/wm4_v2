@@ -3,8 +3,11 @@ $(document).ready(function($){
     pagepilingInit();
     modalInit();
     slideoutInit();
+    odometerinit();
 });
-                  
+window.onload = function() {
+
+}          
                   
 //$(window).on("load resize",function(e) {
 //    var more = document.getElementById("js-centered-more");
@@ -46,6 +49,10 @@ var btn = document.getElementById("contacto_head");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
+
+// evaluate if there's an odometer
+var odo = document.getElementsByClassName("odometer");
+
 
 function modalInit(){
     if(!modal || modal == null) return;
@@ -247,3 +254,15 @@ function slideoutInit(){
     }
 }
 
+function odometerinit(){
+    
+    if(!odo[0] || odo[0] == null) return;
+    setTimeout(function(){
+        for(var i = 0; i < odo.length; i++){
+            var element = odo[i];
+            var data = element.getAttribute('data-odo');
+            element.innerHTML = data;
+        }
+    }, 5000);
+
+}
