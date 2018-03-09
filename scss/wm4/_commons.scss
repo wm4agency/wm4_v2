@@ -167,34 +167,71 @@ form{
     }
 }
 
+/// FRAMINGS
+@mixin framing{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+@mixin f_top($f_padding:10%){
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-top:$f_padding;    
+    margin-top: $f_padding*-1;
+    content:" ";
+    top:0;
+    left: 0;
+    display: block;
+    width: 100%;
+    position: absolute;
+}
 
+@mixin f_bottom($f_padding:10%){
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-bottom:$f_padding;    
+    margin-bottom: $f_padding*-1;
+    content:" ";
+    bottom:0;
+    left: 0;
+    display: block;
+    width: 100%;
+    position: absolute;
+}
 
-@mixin framing_skewed($maincolor:'#333',$subcolor:'#222'){
+@mixin f_skewed($maincolor:'#333',$subcolor:'#222'){
     $skewed_f: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='framings skewed' viewBox='0 0 1350 189'%3E%3Cstyle type='text/css'%3E .main%7Bfill:#{url-friendly-colour($maincolor)};%7D .sub%7Bfill:#{url-friendly-colour($subcolor)};%7D%0A%3C/style%3E%3Cpolygon class='sub' points='0 189 1350 189 0 0 '/%3E%3Cpolygon class='main' points='1350 0 0 189 1350 189 '/%3E%3C/svg%3E");
     
     &::before{
         background-image: $skewed_f;
-        content:" ";
-        top:0;
-        left: 0;
-        display: block;
-        padding-top:14%;    
-        margin-top: -14%;
-        width: 100%;
-        position: absolute;
+        @include f_top(14%);
     }
     
     &::after{
         background-image: $skewed_f;
-        content:" ";
-        bottom:0;
-        left: 0;
-        display: block;
-        padding-bottom:14%;
-        margin-bottom: -14%;
-        width: 100%;
-        position: absolute;
+        @include f_bottom(14%);
         transform: rotate(180deg)
     }
 }
 
+@mixin f_arrowdown($color:'#333'){
+    
+    &::before{
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='framing downarrow negative' viewBox='0 0 2200 55'%3E%3Cstyle type='text/css'%3E .element%7Bfill:#{url-friendly-colour($color)};%7D%0A%3C/style%3E%3Cpolygon class='element' points='1179 0 1179 0 1100 45.6 1021 0 1021 0 0 0 0 56 2200 56 2200 0 '/%3E%3C/svg%3E");
+        @include f_top(3%);
+    }
+    
+    &::after{
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='framing arrowdown' viewBox='0 0 2200 55'%3E%3Cstyle type='text/css'%3E .area%7Bfill:none;%7D .arrow%7Bfill:#{url-friendly-colour($color)};%7D%0A%3C/style%3E%3Crect class='area' width='2200' height='55'/%3E%3Cpolygon class='arrow' points='1179 0 1179 0 1100 45.6 1021 0 1021 0 '/%3E%3C/svg%3E");
+        @include f_bottom(3%);
+
+    }
+}
+
+@mixin hexa_marker_right($color:#000){
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='hexa pointer right' viewBox='0 0 216.5 500'%3E%3Cstyle type='text/css'%3E .element%7Bfill:#{url-friendly-colour($color)};%7D%3C/style%3E%3Cpolygon class='element' points='216.5 500 0 375 0 125 216.5 0 '/%3E%3C/svg%3E%0A");
+    @include img_sprite(43%);
+}

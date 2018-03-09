@@ -1,5 +1,9 @@
 body.portada-seccion {
     background: $grey_base;
+    width: 100%!important;
+    width: 100vw!important;
+    overflow-x: hidden;
+    position: absolute;
 
     main{    
         margin-top: -6em;
@@ -65,7 +69,10 @@ body.portada-seccion {
         
         &#portfolio{
             text-align: center;
+            @include framing();
+            @include f_arrowdown($darkest);
             background-color: $darkest;
+            padding: 50px 0;
 
             h2{
                 font-size: 1em;
@@ -107,10 +114,9 @@ body.portada-seccion {
         }
         
         &#contacto{
-            position: relative;
             background-color: $digital_blue;
-            
-            @include framing_skewed();
+            @include framing();
+            @include f_skewed();
             
             .wrapper{
                 background: crimson;
@@ -126,7 +132,9 @@ body.portada-seccion {
         }
         
         &.precontacto{padding-bottom: 14%;}
-        &.postcontacto{padding-top: 14%;}
+        &.postcontacto{padding-top: 14%;}        
+        &.prearrow{padding-bottom: 2.5%;}
+        &.postarrow{padding-top: 2.5%;}
     }
     
     &.mkt_d{
@@ -134,7 +142,7 @@ body.portada-seccion {
         
         section{
             &#contacto{
-                @include framing_skewed($digital_blue, $digital_blue_dark);
+                @include f_skewed($digital_blue, $digital_blue_dark);
             }
             
             &#servicios{

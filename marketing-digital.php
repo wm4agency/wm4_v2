@@ -29,7 +29,7 @@
         </ul>
     </section>
 </main>
-<section id="stats" class="<?php echo $role; ?> row">
+<section id="stats" class="<?php echo $role; ?> row prearrow">
    <div class="container">
        <h1 class="span-12">estrategias y acciones que generan resultados</h1>
        <ul class="span-12 stats">
@@ -40,7 +40,7 @@
        </ul>
     </div>
 </section>
-<section id="portfolio" class="<?php echo $role; ?> fullwidth precontacto">
+<section id="portfolio" class="<?php echo $role; ?> fullwidth">
     <h2><strong>Portafolios</strong><br />Algunos de nuestros proyectos mas recientes</h2>
     <div class="grid-items-lines">
         <a href="javascript:void(0)" class="grid-item" style="background-image: url(img/stock/beach-beverage-caribbean-cocktail-68672.jpeg)">
@@ -95,6 +95,28 @@
         <div class="bottom-cover"></div>
     </div>
 </section>
+<section id="clientes" class="postarrow precontacto">
+   <div class="container">
+       <h1>Currículo</h1>
+       <h2>Algunos de nuestros clientes más destacados</h2>
+       <ul>
+           <li><figure>ingresio</figure></li>
+           <li><figure>gbg</figure></li>
+           <li><figure>anuies</figure></li>
+           <li><figure>fese</figure></li>
+           <li><figure>toyota</figure></li>
+           <li><figure>maha</figure></li>
+           <li><figure>reylaz</figure></li>
+           <li><figure>puerto</figure></li>
+           <li><figure>coca</figure></li>
+           <li><figure>pepsi</figure></li>
+           <li><figure>bahia</figure></li>
+           <li><figure>lacavi</figure></li>
+           <li><figure>arecas</figure></li>
+           <li><figure>merlos</figure></li>
+       </ul>
+    </div>
+</section>
 <section id="contacto" class="<?php echo $role; ?> row">
     <div class="container">
         <span class="span-2">&nbsp;</span>
@@ -109,7 +131,7 @@
         </form>
     </div>
 </section>
-<section class="postcontacto"><h3>creamos estrategias | entregamos resultados</h3></section>
+<section class="postcontacto"><div class="container"><h3>creamos estrategias | entregamos resultados</h3></div></section>
 
 <?php 
     $footer="minimal";

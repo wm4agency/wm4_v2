@@ -185,6 +185,17 @@ body, p, li, small, blockquote {
     }
 }
 
+@mixin img_sprite($paddingdef){
+    background-size: cover;
+
+    &:before{
+        content: "";
+        display: block;
+        padding-bottom: $paddingdef;
+        position: absolute;
+    }
+}
+
 .hidden{
     display: none!important;
 }
