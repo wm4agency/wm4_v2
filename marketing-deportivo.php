@@ -1,6 +1,6 @@
 <?php  
     $title = 'Marketing Deportivo'; 
-    $localScripts = 'slideout';
+    $localScripts = array('slideout');
     $header = 'minimal'; 
     $role = 'portada-seccion'; 
     include 'header-desktop.php'; 

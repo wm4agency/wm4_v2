@@ -1,6 +1,6 @@
 <?php  
 $title = 'WM4'; 
-$localScripts = 'pagepiling';
+$localScripts = array('pagepiling');
 $header = 'full'; 
 include 'header-desktop.php'; 
 ?>

@@ -40,7 +40,7 @@
        </ul>
     </div>
 </section>
-<section id="portfolio" class="<?php echo $role; ?> fullwidth">
+<section id="portfolio" class="<?php echo $role; ?> fullwidth precontacto">
     <h2><strong>Portafolios</strong><br />Algunos de nuestros proyectos mas recientes</h2>
     <div class="grid-items-lines">
         <a href="javascript:void(0)" class="grid-item" style="background-image: url(img/stock/beach-beverage-caribbean-cocktail-68672.jpeg)">
@@ -95,12 +95,11 @@
         <div class="bottom-cover"></div>
     </div>
 </section>
-<section id="contacto" class="<?php echo $role; ?> container row">
-    <div class="wrapper">
-        <div class="span-4">
+<section id="contacto" class="<?php echo $role; ?> row">
+    <div class="container">
+        <span class="span-2">&nbsp;</span>
+        <form id="contactform" class="span-8">
             <h1>contacto</h1>
-        </div>
-        <form id="contactform" class="span-8 omega">
             <input type=text placeholder="nombre">
             <input type=text placeholder="empresa">
             <input type=email placeholder="correo">
@@ -110,6 +109,7 @@
         </form>
     </div>
 </section>
+<section class="postcontacto"><h3>creamos estrategias | entregamos resultados</h3></section>
 
 <?php 
     $footer="minimal";

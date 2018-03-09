@@ -1,6 +1,6 @@
 <?php  
 $title = 'WM4'; 
-$localScripts = 'email-modal';
+$localScripts = array('email-modal');
 $header = 'full'; 
 include 'header-mobile.php'; 
 ?>

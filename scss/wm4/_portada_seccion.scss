@@ -36,7 +36,7 @@ body.portada-seccion {
     }
     
     section{
-        &#servicios{
+            &#servicios{
             background: $action-color;
             color:white;
         }
@@ -65,6 +65,7 @@ body.portada-seccion {
         
         &#portfolio{
             text-align: center;
+            background-color: $darkest;
 
             h2{
                 font-size: 1em;
@@ -106,6 +107,9 @@ body.portada-seccion {
         }
         
         &#contacto{
+            position: relative;
+            background-color: $digital_blue;
+            
             @include framing_skewed();
             
             .wrapper{
@@ -120,12 +124,19 @@ body.portada-seccion {
                 line-height:.85em;
             }
         }
+        
+        &.precontacto{padding-bottom: 14%;}
+        &.postcontacto{padding-top: 14%;}
     }
     
     &.mkt_d{
         main h1, .linktext{color: $digital_blue_dark;}
         
         section{
+            &#contacto{
+                @include framing_skewed($digital_blue, $digital_blue_dark);
+            }
+            
             &#servicios{
                 background: $digital_blue;
             }
