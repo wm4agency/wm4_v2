@@ -81,7 +81,7 @@ include 'header-desktop.php';
                         <option value="Marketing Deportivo">Marketing Deportivo</option>
                     </select>
                 </span>
-                <span class="span-6">
+                <span class="span-6 omega">
                     <select id="intencion" name="intencion" class="validar">
                         <option value="0">Motivo del contacto</option>
                         <option value="Nueva marca">Nueva marca</option>

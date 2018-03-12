@@ -15,6 +15,7 @@
         <span class="linktext">Solicitar información</span>       
     </summary>
     <section id="servicios" class="span-7 omega">
+        <h1 class="hexa_centered">Nuestros servicios</h1>
         <ul class="span-6">
             <li>Análisis y estrategia</li>
             <li>Diseño y desarrollo</li>
@@ -100,28 +101,35 @@
        <h1>Currículo</h1>
        <h2>Algunos de nuestros clientes más destacados</h2>
        <ul>
-           <li><figure>ingresio</figure></li>
-           <li><figure>gbg</figure></li>
-           <li><figure>anuies</figure></li>
-           <li><figure>fese</figure></li>
-           <li><figure>toyota</figure></li>
-           <li><figure>maha</figure></li>
-           <li><figure>reylaz</figure></li>
-           <li><figure>puerto</figure></li>
-           <li><figure>coca</figure></li>
-           <li><figure>pepsi</figure></li>
-           <li><figure>bahia</figure></li>
-           <li><figure>lacavi</figure></li>
-           <li><figure>arecas</figure></li>
-           <li><figure>merlos</figure></li>
+           <span>
+           <li><figure><img src="img/logos/ingressio.svg"> <figcaption>ingresio</figcaption></figure></li>
+           <li><figure><img src="img/logos/gbg.svg"> <figcaption>gbg</figcaption></figure></li>
+               <li><figure><img src="img/logos/anuies.svg"><figcaption>anuies</figcaption></figure></li>
+               <li><figure><img src="img/logos/FESE.svg"><figcaption>fese</figcaption></figure></li>
+               <li><figure><img src="img/logos/toyota_fs.svg"><figcaption>toyota</figcaption></figure></li>
+               <li><figure><img src="img/logos/maha.svg"><figcaption>maha</figcaption></figure></li>
+           </span>
+           <span>
+               <li><figure><img src="img/logos/Reylaz.svg"><figcaption>reylaz</figcaption></figure></li>
+               <li><figure><img src="img/logos/pcmarina.svg"><figcaption>puerto</figcaption></figure></li>
+               <li><figure><img src="img/logos/coca.svg"><figcaption>coca</figcaption></figure></li>
+               <li><figure><img src="img/logos/pepsi.svg"><figcaption>pepsi</figcaption></figure></li>
+               <li><figure><img src="img/logos/BahiaPrincipeRG.svg"><figcaption>bahia</figcaption></figure></li>
+           </span>
+           <span>
+               <li><figure><img src="img/logos/lacavi.svg"><figcaption>lacavi</figcaption></figure></li>
+               <li><figure><img src="img/logos/arecas.svg"><figcaption>arecas</figcaption></figure></li>
+               <li><figure><img src="img/logos/merlos.svg"><figcaption>merlos</figcaption></figure></li>
+           </span>
        </ul>
     </div>
 </section>
 <section id="contacto" class="<?php echo $role; ?> row">
     <div class="container">
-        <span class="span-2">&nbsp;</span>
-        <form id="contactform" class="span-8">
-            <h1>contacto</h1>
+        <span class="span-4">&nbsp;</span>
+        <form id="contactform" class="span-4">
+            <h1 class="hexa_centered sub">Contáctanos</h1>
+            <h2>Transforma hoy tu estrategia digital</h2>
             <input type=text placeholder="nombre">
             <input type=text placeholder="empresa">
             <input type=email placeholder="correo">

@@ -40,9 +40,84 @@ body.portada-seccion {
     }
     
     section{
-            &#servicios{
+        
+        &.precontacto{padding-bottom: 14%;}
+        &.postcontacto{padding-top: 14%;}        
+        &.prearrow{padding-bottom: 2.5%;}
+        &.postarrow{padding-top: 2.5%;}
+        
+        h1.hexa_centered{
+            text-transform: uppercase;
+            text-align: center;
+            position: relative;
+            font-weight: 700;
+            font-size: 2em;
+            line-height:.85em;
+            border-bottom: 1px solid darken($action-color,.75);
+            padding: 0;
+            padding-top: 1.2em;
+
+            &::before{
+                @include hexa_marker(darken($action-color,.75));
+                width: .75em;
+                margin-top: -1.3em;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+            }
+            
+            &.sub{
+                color: white;
+                padding-bottom: .7em;
+                border-bottom-color: $darkest;
+                margin: 0;
+
+                &::before{
+                    @include hexa_marker(#fff);
+
+                }
+                & + h2{
+                    margin: -1.3em 0 1.5em 0;
+                    padding: 0;
+                    line-height: 1em;
+                    font-size: 1em;
+                    text-align: center;
+                }
+            }
+        }
+        
+
+        &#servicios{
             background: $action-color;
             color:white;
+            font-size: .9em;
+            padding: 1.5em 2.5em;
+            font-weight: 100;
+            text-transform: uppercase;
+            letter-spacing: .125em;
+
+            li{
+                position: relative;
+                display: block;
+                line-height: 1.5em;
+                margin-left: 1.5em;
+
+                &::before{
+                    @include arrow_marker();
+                    left:-1.5em;
+                    width: .35em;
+                    margin-top: -.15em;
+                }
+            }
+
+            h1{
+                font-size: 1.5em;
+                border-bottom-color: $digital_blue_dark;
+
+                &::before{
+                    @include hexa_marker($digital_blue_dark);
+                }
+            }
         }
 
         &#stats{
@@ -53,6 +128,10 @@ body.portada-seccion {
                 font-size: 1em;
                 text-transform: uppercase;
                 font-weight: 100;
+            }
+            
+            ul{
+                margin-bottom: 3em;
             }
 
             @include max-width($mobile) {
@@ -66,7 +145,7 @@ body.portada-seccion {
                 }
             }
         }
-        
+
         &#portfolio{
             text-align: center;
             @include framing();
@@ -112,33 +191,57 @@ body.portada-seccion {
                 }
             }
         }
-        
+
+        &#clientes{
+            ul {
+                width: 100%;
+                text-align: center;
+
+                span{
+                    margin-bottom: 1em;
+                    overflow: hidden;
+                    line-height: 10em;
+                }
+
+                li {
+                    max-width: 14%;
+                    margin-right: 3%;
+                    display: inline-block;
+
+                    &:last-child{margin-right: 0;}
+                }
+
+                figure {
+                    display: inline-block;
+                    vertical-align: middle;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                figcaption{display: none;}
+            }
+        }
+
         &#contacto{
             background-color: $digital_blue;
             @include framing();
             @include f_skewed();
-            
+
             .wrapper{
                 background: crimson;
                 padding: 3em;
             }
-
-            h1{
-                text-transform: uppercase;
-                font-weight: 700;
-                font-size: 2em;
-                line-height:.85em;
-            }
+           
         }
-        
-        &.precontacto{padding-bottom: 14%;}
-        &.postcontacto{padding-top: 14%;}        
-        &.prearrow{padding-bottom: 2.5%;}
-        &.postarrow{padding-top: 2.5%;}
     }
     
     &.mkt_d{
-        main h1, .linktext{color: $digital_blue_dark;}
+        main h1, .linktext{
+            color: $digital_blue_dark;
+        }
         
         section{
             &#contacto{
@@ -147,6 +250,17 @@ body.portada-seccion {
             
             &#servicios{
                 background: $digital_blue;
+                
+                h1{
+                    border-bottom-color: $digital_blue_dark;
+                    
+                    &::before{
+                        @include hexa_marker($digital_blue_dark);
+                        width: 1em;
+                        text-align: center;
+                    }
+                }
+                
             }
             
             &#stats{ color: $digital_blue;}
