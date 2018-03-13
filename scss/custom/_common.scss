@@ -1,25 +1,3 @@
-// colors
-$w: #fff;
-$b: #000;
-$charcoal: #444;
-$pink: #ff2965;
-$orange: #ff5b3d;
-
-$grey_base: #e6e6e6;
-$grey: #999;
-$digital_blue:#1797cd;
-$digital_blue_dark:#006f9e;
-$darkest: #333;
-
-// typo
-$helvetica: Helvetica, sans-serif;
-$serif: serif;
-$fa: 'FontAwesome';
-
-// fontface example - https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
-@include font-face('Samplino', fonts/Samplino);
-@include font-face('Samplina Neue', fonts/SamplinaNeue, bold, italic);
-
 // width
 $w1150: 	1150px;
 $w1000: 	1000px;
@@ -32,6 +10,7 @@ body{
     top: 0;
     left: 0;
     min-height: 100%;
+    @extend %sans;
 }
 
 // for mobile/tablet

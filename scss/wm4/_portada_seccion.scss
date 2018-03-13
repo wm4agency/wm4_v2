@@ -10,14 +10,15 @@ body.portada-seccion {
 
         summary#intro{
             text-align: justify;
-            padding-right: 1.5em;
+            //padding-right: 1.5em;
         }
 
         h1{
             text-transform: uppercase;
             font-weight: 700;
-            font-size: 3em;
-            line-height:1.5em;
+            font-size: 4em;
+            line-height:.8em;
+            margin-bottom: .5em;
         }
 
         @include max-width($mobile) {
@@ -112,15 +113,15 @@ body.portada-seccion {
             }
 
             h1{
-                font-size: 1.5em;
+                font-size: 2em;
+                line-height: 1.5em;
                 border-bottom-color: $digital_blue_dark;
 
                 &::before{
                     @include hexa_marker($digital_blue_dark);
                 }
             }
-        }
-        
+        }     
 
         &#stats{
             text-align: center;
@@ -172,7 +173,7 @@ body.portada-seccion {
                     h1{
                         display: block;
                         position: absolute;
-                        @include josefin;
+                        @extend %sans;
                         font-weight: 100;
                         text-transform: uppercase;
                         color: $w;

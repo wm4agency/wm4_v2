@@ -267,7 +267,7 @@ body.mobile{
         }
 
         h1{
-            @include josefin;
+            @extend %sans;
             text-transform: uppercase;
             font-weight: 700;
             font-size: 2em;
@@ -307,7 +307,7 @@ body.mobile{
             }
             
             h1{
-                @include josefin;
+                @extend %sans;
                 font-size: 1em;
                 text-transform: uppercase;
                 font-weight: 700;
