@@ -12,7 +12,6 @@
     <h1 class="span-12">marketing <br> digital</h1>
     <summary id="intro" class="span-5">
         <p role="definition" >Desarrollamos e implementamos estrategias que permiten al cliente concretar objetivos de negocio a través de internet, analizando y optimizando constantemente para entregar resultados tangibles que se traducen en oportunidades de ingreso para el cliente</p>
-        <span class="linktext">Solicitar información</span>       
     </summary>
     <section id="servicios" class="span-7 omega">
         <h1 class="hexa_centered">Nuestros servicios</h1>
@@ -29,6 +28,7 @@
             <li>Producción de contenido</li>
         </ul>
     </section>
+    <div class="span-5"><span class="linktext">Solicitar información</span></div>       
 </main>
 <section id="stats" class="<?php echo $role; ?> row prearrow">
    <div class="container">
@@ -43,7 +43,7 @@
 </section>
 <section id="portfolio" class="<?php echo $role; ?> fullwidth">
     <h2><strong>Portafolios</strong><br />Algunos de nuestros proyectos mas recientes</h2>
-    <div class="grid-items-lines">
+    <div class="grid-items-lines container">
         <a href="javascript:void(0)" class="grid-item" style="background-image: url(img/stock/beach-beverage-caribbean-cocktail-68672.jpeg)">
             <article>
                 <h1>Proyecto</h1>
@@ -92,8 +92,30 @@
                 <p>Breve descripción</p>
             </article>
         </a>
-        <div class="right-cover"></div>
-        <div class="bottom-cover"></div>
+        <a href="javascript:void(0)" class="grid-item" style="background-image: url(img/stock/beach-beverage-caribbean-cocktail-68672.jpeg)">
+            <article>
+                <h1>Proyecto</h1>
+                <p>Breve descripción</p>
+            </article>
+        </a>
+        <a href="javascript:void(0)" class="grid-item"  style="background-image: url(img/stock/garden_flowers.jpg)">
+            <article>
+                <h1>Proyecto</h1>
+                <p>Breve descripción</p>
+            </article>
+        </a>
+        <a href="javascript:void(0)" class="grid-item"  style="background-image: url(img/stock/lake_dock.jpeg)">
+            <article>
+                <h1>Proyecto</h1>
+                <p>Breve descripción</p>
+            </article>
+        </a>
+        <a href="javascript:void(0)" class="grid-item"  style="background-image: url(img/stock/pexels-photo-112372.jpeg)">
+            <article>
+                <h1>Proyecto</h1>
+                <p>Breve descripción</p>
+            </article>
+        </a>
     </div>
 </section>
 <section id="clientes" class="postarrow precontacto">

@@ -244,3 +244,33 @@ form{
     position: absolute;
 }
 
+@mixin beveled_corner($color:grey, $size:10px){
+    background: $color; /* default color */
+    background:
+        -moz-linear-gradient(45deg,  $color $size, $color $size),
+        -moz-linear-gradient(135deg, transparent $size, $color $size);
+    background:
+        -o-linear-gradient(45deg,  $color $size, $color $size),
+        -o-linear-gradient(135deg, transparent $size, $color $size);
+    background:
+        -webkit-linear-gradient(45deg,  $color $size, $color $size),
+        -webkit-linear-gradient(135deg, transparent $size, $color $size);
+    
+    background-position: bottom left, bottom right, top right, top left;
+    -moz-background-size: 51% 100%;
+    -webkit-background-size: 51% 100%;
+    background-size: 51% 100%;
+    background-repeat: no-repeat;
+}
+
+.linktext{         
+    float: right;
+    padding-right: 3em;
+    position: relative;
+
+    &::after{
+        content: ">";
+        position: absolute;
+        margin-right: -3em;
+    }
+}

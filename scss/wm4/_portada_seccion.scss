@@ -88,7 +88,8 @@ body.portada-seccion {
         
 
         &#servicios{
-            background: $action-color;
+            @include beveled_corner($action-color);
+            //background:$action-color;
             color:white;
             font-size: .9em;
             padding: 1.5em 2.5em;
@@ -103,7 +104,7 @@ body.portada-seccion {
                 margin-left: 1.5em;
 
                 &::before{
-                    @include arrow_marker();
+                    @include arrow_marker(#FFF);
                     left:-1.5em;
                     width: .35em;
                     margin-top: -.15em;
@@ -119,6 +120,7 @@ body.portada-seccion {
                 }
             }
         }
+        
 
         &#stats{
             text-align: center;
@@ -161,7 +163,10 @@ body.portada-seccion {
             }
 
             .grid-item{
-
+                background-color: $digital_blue_dark;
+                border-bottom-color: $digital_blue_dark;
+                border-right-color: $digital_blue_dark;
+                
                 article{
 
                     h1{
@@ -187,6 +192,11 @@ body.portada-seccion {
                         margin-bottom: 2em;
                         font-size: .75em;
                         text-align: left;
+                    }
+                    
+                    &:focus,
+                    &:hover{
+                        background-color: $digital_blue_dark;
                     }
                 }
             }
@@ -249,7 +259,8 @@ body.portada-seccion {
             }
             
             &#servicios{
-                background: $digital_blue;
+                @include beveled_corner($digital_blue, 20px);
+                //background:$digital_blue;
                 
                 h1{
                     border-bottom-color: $digital_blue_dark;
