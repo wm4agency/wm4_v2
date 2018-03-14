@@ -31,7 +31,7 @@
 </footer>
 <?php   
     endif;
-    include 'scripts.php'; 
+    require_once('scripts.php'); 
 ?>
 
 </body>

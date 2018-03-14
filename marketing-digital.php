@@ -1,7 +1,7 @@
 <?php  
     $title = 'Marketing Digital'; 
     $localclass= 'mkt_d';
-    $localScripts = array("slideout","odometer");
+    $localScripts = array("odometer","photoswipe");
     $header = 'minimal'; 
     $role = 'portada-seccion'; 
     $color_space = "#1797cd ";
