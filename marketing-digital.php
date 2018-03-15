@@ -166,4 +166,5 @@
 <?php 
     $footer="minimal";
     include("footer.php"); 
+    require_once("php/components/photoswipe.php");
 ?>
