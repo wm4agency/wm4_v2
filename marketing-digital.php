@@ -44,16 +44,16 @@
 <section id="portfolio" class="<?php echo $role; ?> fullwidth">
     <h2><strong>Portafolios</strong><br />Algunos de nuestros proyectos mas recientes</h2>
     <div class="grid-items-lines container">
-        <a href="javascript:void(0)" class="grid-item" style="background-image: url(img/stock/beach-beverage-caribbean-cocktail-68672.jpeg)">
+        <a href="javascript:void(0)" class="grid-item portfolio-item" style="background-image: url(img/portafolio/bahia/12a.jpg)" data-sourcedir="portafolio/bahia">
             <article>
-                <h1>Proyecto</h1>
-                <p>Breve descripción</p>
+                <h1>Bahia Principe</h1>
+                <p>Desarrollo de contenido</p>
             </article>
         </a>
-        <a href="javascript:void(0)" class="grid-item"  style="background-image: url(img/stock/garden_flowers.jpg)">
+        <a href="javascript:void(0)" class="grid-item  portfolio-item"  style="background-image: url(img/portafolio/arecas/19.png)" data-sourcedir="portafolio/arecas">
             <article>
-                <h1>Proyecto</h1>
-                <p>Breve descripción</p>
+                <h1>Arecas</h1>
+                <p>Desarrollo de cotenido</p>
             </article>
         </a>
         <a href="javascript:void(0)" class="grid-item"  style="background-image: url(img/stock/lake_dock.jpeg)">
@@ -165,6 +165,6 @@
 
 <?php 
     $footer="minimal";
-    include("footer.php"); 
     require_once("php/components/photoswipe.php");
+    include("footer.php"); 
 ?>

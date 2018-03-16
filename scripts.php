@@ -11,7 +11,7 @@ $scriptsCatalog = array(
     "pagepiling" => "jquery.pagepiling.js",
     "slideout" => "slideout.js",
     "odometer" => "odometer.js",
-    "photoswipe" => ["photoswipe.js","photoswipe_ui.js"]
+    "photoswipe" => ["photoswipe.js","photoswipe-ui-default.js"]
 );
 
 $scripts = array('email');

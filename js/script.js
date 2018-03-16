@@ -4,6 +4,7 @@ $(document).ready(function($){
     modalInit();
     slideoutInit();
     odometerinit();
+    getFolderItems();
 });
 window.onload = function() {
 
@@ -52,6 +53,10 @@ var span = document.getElementsByClassName("close")[0];
 
 // evaluate if there's an odometer
 var odo = document.getElementsByClassName("odometer");
+
+var pswpElement = document.querySelectorAll('.pswp')[0];
+var pswpGalleries = [];
+
 
 
 function modalInit(){
@@ -275,30 +280,103 @@ retrieves it's value, iterates through the folder
 and then passes the items' array to the function passed to it 
 to handle response.
 ****/
-function getFolderItems(functionName){
-    var sourcedir = document.querySelector("[data-sourcedir]");
+function getFolderItems(){
+    var datareferers = document.querySelectorAll("[data-sourcedir]"),
+        datareferer,
+        sourcedir,
+        callback;
     
-    if (typeof sourcedir!= 'undefined' && sourcedir != null){
-        sourcedir=sourcedir.getAttribute('data-sourcedir');
-        $.ajax({
-            url: 'php/services/diriterator.php',
-            data: {"dir":dir},
-            error: function() {
-                console.log("ajax call error");
-            },
-            dataType: 'json',
-            success: function(diritems) {
-                //            console.log("ajax success");
-                if(typeof diritems != 'undefined' && diritems != null){
-                    //                console.log("there're diritems");
-                    //                console.log(diritems);
-                    functionName(diritems);
-                }else{console.log("no diritems")}
-            },
-            type: 'GET'
-        });    }
-    else console.log("no source directory available");
+    for (i = 0 ; i < datareferers.length ; i ++ ){
+        datareferer = datareferers[i]; 
+        console.log(datareferer);
+        sourcedir = datareferer.getAttribute('data-sourcedir');
+        callback = datareferer.getAttribute('data-callback');
+        
+        if(!callback ) {
+            if(!datareferer.classList.contains('portfolio-item')){
+                throw "no callback function declared for datasource";
+            }
+            callback = 'photoSwipeFromDIR';
+        }
+     
+        if(typeof sourcedir=== 'undefined' || sourcedir === null){throw "data-source tag with no value available";}
+        try {
+            ajaxcall(datareferer,sourcedir);
+        } catch (e){
+            console.log(e);
+            return false;
+        }
+    }
 }
+
+function photoSwipeFromDIR(datareferer,diritems){
+    if(typeof pswpElement === 'undefined' || !pswpElement){ throw "no pswpElement found";}
+    // build items array
+    var items = [],
+        item = [],
+        pic,
+        gal;
+    
+    for(var i = 0; i < diritems.length; i++) {
+        pic = diritems[i];
+        item = {
+            src     :   pic.dir,
+            w       :   pic.width,
+            h       :   pic.height,
+            title   :   pic.title,
+            desc    :   pic.description,
+            tags    :   pic.tag
+        }
+        items.push(item);
+    }
+    
+    // define options (if needed)
+    var options = {
+        history: true,
+        focus: true,
+        showAnimationDuration: 0,
+        hideAnimationDuration: 0
+    };
+    
+
+    var n = pswpGalleries.length;
+    //console.log(diritems);
+    pswpGalleries[n] = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+   // console.log( datareferer);
+    datareferer.addEventListener('click', function() {
+        alert("click");
+        datareferer.preventDefault;
+        $.when(pswpGalleries[n].init()).then(openPhotoSwipe(0,pswpGalleries[n]));
+        
+    });
+//   gal.openPhotoSwipe();
+}
+function ajaxcall(datareferer,sourcedir){
+    $.ajax({
+        url: 'php/services/dirmedia.php',
+        data: {"dir":sourcedir},
+        error: function() {
+            throw "ajax failed, callback function not initiated";
+        },
+        dataType: 'json',
+        success: function(diritems) {
+            if(typeof diritems === 'undefined' || diritems === null){
+                throw "no diritems returned, callback not initiated";
+            }
+            try{
+                console.log(datareferer);
+                //callback(diritems);
+                photoSwipeFromDIR(datareferer,diritems);
+                //return true;
+            }catch(e){
+                throw (e);
+                return false;
+            }
+        },
+        type: 'GET'
+    });
+}
+
 function listItems(els){
     
 }
@@ -350,8 +428,6 @@ function photoswipe_GalleryBuilder(images) {
     }
     photoSwipeFromDOM(".my-gallery");
 }
-
-function photoSwipeFromDIR()
 
 function photoSwipeFromDOM(gallerySelector){
 

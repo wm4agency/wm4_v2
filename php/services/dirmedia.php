@@ -9,7 +9,7 @@ $result = array();
 //Get all the files in the specified directory
 
 
-$files = scandir("../../".$dir);
+$files = scandir("../../img/".$dir);
 
 //echo "dir = $dir<br />\n";
 //print_r ($files);
@@ -21,7 +21,7 @@ if(isset($files)&&$files!= null&& $files>0 ){
 
                 //If the file is an image, add it to the array
             case "jpg": case "jpeg": case "png": case "gif":
-                $path = "../../".$dir."/".$file;
+                $path = "../../img/".$dir."/".$file;
                 $exif = exif_read_data($path);
                 $img = getImageInfo($path);
                 //print_r($img);
@@ -31,7 +31,7 @@ if(isset($files)&&$files!= null&& $files>0 ){
                     $height= $exif[COMPUTED][Height];
                 }else $exifdata = "No header data found";
                 //$result[] = ["dir" => $dir. "/" .$file,"width" => $width,"height" => $height,"description" => $desc,"title" => $title];
-                $img['dir'] = $dir. "/" .$file;
+                $img['dir'] = "img/".$dir. "/" .$file;
                 $img['width'] = $width;
                 $img['height'] = $height;
                 //$result[] = ["dir" => $dir. "/" .$file,$img];
