@@ -20,7 +20,24 @@ if(isset($files)&&$files!= null&& $files>0 ){
         switch(ltrim(strstr($file, '.'), '.')) {
 
                 //If the file is an image, add it to the array
-            case "jpg": case "jpeg": case "png": case "gif":
+            case "png": case "gif":
+                $path = "../../img/".$dir."/".$file;
+                //$exif = exif_read_data($path);
+                $img = getImageInfo($path);
+                //print_r($img);
+                //exit;
+                if ($exif && $exif!=false){
+                    $width= $exif[COMPUTED][Width];
+                    $height= $exif[COMPUTED][Height];
+                }else $exifdata = "No header data found";
+                //$result[] = ["dir" => $dir. "/" .$file,"width" => $width,"height" => $height,"description" => $desc,"title" => $title];
+                $img['dir'] = "img/".$dir. "/" .$file;
+                $img['width'] = $width;
+                $img['height'] = $height;
+                //$result[] = ["dir" => $dir. "/" .$file,$img];
+                $result[] = $img;
+                break;
+            case "jpg": case "jpeg":
                 $path = "../../img/".$dir."/".$file;
                 $exif = exif_read_data($path);
                 $img = getImageInfo($path);
@@ -36,6 +53,7 @@ if(isset($files)&&$files!= null&& $files>0 ){
                 $img['height'] = $height;
                 //$result[] = ["dir" => $dir. "/" .$file,$img];
                 $result[] = $img;
+                break;
         }
     }
     
@@ -109,7 +127,7 @@ function getImageXMP($filename) {
         unset($r);
         preg_match ($k["regexp"], $xmpdata, $r);
         $xmp_item = @$r[1];
-        if(in_array($k["name"], array("f number", "focal lenght"))) eval("\$xmp_item = ".$xmp_item.";");
+        //if(in_array($k["name"], array("f number", "focal lenght"))) eval("\$xmp_item = ".$xmp_item.";");
         $xmp_parsed[$k["name"]] = str_replace("&#xA;", "\n", $xmp_item);
     }
     return $xmp_parsed;

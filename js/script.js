@@ -288,7 +288,6 @@ function getFolderItems(){
     
     for (i = 0 ; i < datareferers.length ; i ++ ){
         datareferer = datareferers[i]; 
-        console.log(datareferer);
         sourcedir = datareferer.getAttribute('data-sourcedir');
         callback = datareferer.getAttribute('data-callback');
         
@@ -340,11 +339,9 @@ function photoSwipeFromDIR(datareferer,diritems){
     
 
     var n = pswpGalleries.length;
-    //console.log(diritems);
+console.log(diritems);
     pswpGalleries[n] = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-   // console.log( datareferer);
     datareferer.addEventListener('click', function() {
-        alert("click");
         datareferer.preventDefault;
         $.when(pswpGalleries[n].init()).then(openPhotoSwipe(0,pswpGalleries[n]));
         
@@ -364,7 +361,7 @@ function ajaxcall(datareferer,sourcedir){
                 throw "no diritems returned, callback not initiated";
             }
             try{
-                console.log(datareferer);
+                //console.log(datareferer);
                 //callback(diritems);
                 photoSwipeFromDIR(datareferer,diritems);
                 //return true;

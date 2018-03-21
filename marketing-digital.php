@@ -50,67 +50,67 @@
                 <p>Desarrollo de contenido</p>
             </article>
         </a>
-        <a href="javascript:void(0)" class="grid-item  portfolio-item"  style="background-image: url(img/portafolio/arecas/19.png)" data-sourcedir="portafolio/arecas">
+        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/arecas/19.jpg)" data-sourcedir="portafolio/arecas">
             <article>
                 <h1>Arecas</h1>
-                <p>Desarrollo de cotenido</p>
+                <p>Social Media</p>
             </article>
         </a>
-        <a href="javascript:void(0)" class="grid-item"  style="background-image: url(img/stock/lake_dock.jpeg)">
+        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/fese/FB-Martes30.jpeg)" data-sourcedir="portafolio/fese">
+            <article>
+                <h1>FESE</h1>
+                <p>Producción de contenidos</p>
+            </article>
+        </a>
+        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/merlos/chf.png)" data-sourcedir="portafolio/merlos">
+            <article>
+                <h1>Merlos</h1>
+                <p>Social Media</p>
+            </article>
+        </a>
+        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/maha/maha_promo_bimestre.jpeg)" data-sourcedir="portafolio/maha">
+            <article>
+                <h1>Maha</h1>
+                <p>Operación digital</p>
+            </article>
+        </a>
+        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/maha_squash/006.png)" data-sourcedir="portafolio/maha_squash">
+            <article>
+                <h1>Maha Squash</h1>
+                <p>Social Media</p>
+            </article>
+        </a>
+        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/stock/subway-escalator.jpg)">
             <article>
                 <h1>Proyecto</h1>
                 <p>Breve descripción</p>
             </article>
         </a>
-        <a href="javascript:void(0)" class="grid-item"  style="background-image: url(img/stock/pexels-photo-112372.jpeg)">
+        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/stock/beach-beverage-caribbean-cocktail-68672.jpeg)">
             <article>
                 <h1>Proyecto</h1>
                 <p>Breve descripción</p>
             </article>
         </a>
-        <a href="javascript:void(0)" class="grid-item"  style="background-image: url(img/stock/pexels-photo-459320.jpeg)">
+        <a href="javascript:void(0)" class="grid-item portfolio-item" style="background-image: url(img/stock/beach-beverage-caribbean-cocktail-68672.jpeg)">
             <article>
                 <h1>Proyecto</h1>
                 <p>Breve descripción</p>
             </article>
         </a>
-        <a href="javascript:void(0)" class="grid-item"  style="background-image: url(img/stock/pexels-photo-112372.jpeg)">
+        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/stock/garden_flowers.jpg)">
             <article>
                 <h1>Proyecto</h1>
                 <p>Breve descripción</p>
             </article>
         </a>
-        <a href="javascript:void(0)" class="grid-item"  style="background-image: url(img/stock/subway-escalator.jpg)">
+        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/stock/lake_dock.jpeg)">
             <article>
                 <h1>Proyecto</h1>
                 <p>Breve descripción</p>
             </article>
         </a>
-        <a href="javascript:void(0)" class="grid-item"  style="background-image: url(img/stock/beach-beverage-caribbean-cocktail-68672.jpeg)">
-            <article>
-                <h1>Proyecto</h1>
-                <p>Breve descripción</p>
-            </article>
-        </a>
-        <a href="javascript:void(0)" class="grid-item" style="background-image: url(img/stock/beach-beverage-caribbean-cocktail-68672.jpeg)">
-            <article>
-                <h1>Proyecto</h1>
-                <p>Breve descripción</p>
-            </article>
-        </a>
-        <a href="javascript:void(0)" class="grid-item"  style="background-image: url(img/stock/garden_flowers.jpg)">
-            <article>
-                <h1>Proyecto</h1>
-                <p>Breve descripción</p>
-            </article>
-        </a>
-        <a href="javascript:void(0)" class="grid-item"  style="background-image: url(img/stock/lake_dock.jpeg)">
-            <article>
-                <h1>Proyecto</h1>
-                <p>Breve descripción</p>
-            </article>
-        </a>
-        <a href="javascript:void(0)" class="grid-item"  style="background-image: url(img/stock/pexels-photo-112372.jpeg)">
+        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/stock/pexels-photo-112372.jpeg)">
             <article>
                 <h1>Proyecto</h1>
                 <p>Breve descripción</p>
