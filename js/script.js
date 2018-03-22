@@ -330,23 +330,23 @@ function photoSwipeFromDIR(datareferer,diritems){
     }
     
     // define options (if needed)
+
+
+    var n = pswpGalleries.length;
+    var name = 'pswipe'+n;
     var options = {
         history: true,
         focus: true,
         showAnimationDuration: 0,
-        hideAnimationDuration: 0
+        hideAnimationDuration: 0,
+        name : name
     };
-    
 
-    var n = pswpGalleries.length;
-console.log(diritems);
-    pswpGalleries[n] = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
     datareferer.addEventListener('click', function() {
         datareferer.preventDefault;
-        $.when(pswpGalleries[n].init()).then(openPhotoSwipe(0,pswpGalleries[n]));
-        
+        pswpGalleries[n] = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+        pswpGalleries[n].init();
     });
-//   gal.openPhotoSwipe();
 }
 function ajaxcall(datareferer,sourcedir){
     $.ajax({

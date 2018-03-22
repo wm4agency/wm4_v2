@@ -4918,7 +4918,10 @@ body.portada-seccion {
     body.portada-seccion section#portfolio .grid-item {
       background-color: #006f9e;
       border-bottom-color: #006f9e;
-      border-right-color: #006f9e; }
+      border-right-color: #006f9e;
+      width: 25%;
+      height: 18em;
+      height: 33vh; }
       body.portada-seccion section#portfolio .grid-item article h1 {
         display: block;
         position: absolute;

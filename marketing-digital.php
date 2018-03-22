@@ -43,7 +43,7 @@
 </section>
 <section id="portfolio" class="<?php echo $role; ?> fullwidth">
     <h2><strong>Portafolios</strong><br />Algunos de nuestros proyectos mas recientes</h2>
-    <div class="grid-items-lines container">
+    <div class="grid-items-lines">
         <a href="javascript:void(0)" class="grid-item portfolio-item" style="background-image: url(img/portafolio/bahia/12a.jpg)" data-sourcedir="portafolio/bahia">
             <article>
                 <h1>Bahia Principe</h1>
@@ -80,22 +80,22 @@
                 <p>Social Media</p>
             </article>
         </a>
-        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/stock/subway-escalator.jpg)">
+        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/eldiez/FB-Corte-tuco.jpg)" data-sourcedir="portafolio/eldiez">
             <article>
-                <h1>Proyecto</h1>
-                <p>Breve descripción</p>
+                <h1>El Diez</h1>
+                <p>Operación y Contenidos Sociales</p>
             </article>
         </a>
-        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/stock/beach-beverage-caribbean-cocktail-68672.jpeg)">
+        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/tuinforma/TuInforma-01.JPG)" data-sourcedir="portafolio/tuinforma">
             <article>
-                <h1>Proyecto</h1>
-                <p>Breve descripción</p>
+                <h1>Tu Informa</h1>
+                <p>Arquitectura y estrategia</p>
             </article>
         </a>
-        <a href="javascript:void(0)" class="grid-item portfolio-item" style="background-image: url(img/stock/beach-beverage-caribbean-cocktail-68672.jpeg)">
+        <a href="javascript:void(0)" class="grid-item portfolio-item" style="background-image: url(img/portafolio/bahia_landings/BahiaPrincipe_landings.jpg)" data-sourcedir="portafolio/bahia_landings">
             <article>
-                <h1>Proyecto</h1>
-                <p>Breve descripción</p>
+                <h1>Campaña Performance</h1>
+                <p>Ecosistema de landings y campañas para generar prospectos</p>
             </article>
         </a>
         <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/stock/garden_flowers.jpg)">
