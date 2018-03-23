@@ -103,20 +103,20 @@
         </a>
         <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/grill/grill-home.png)" data-sourcedir="portafolio/grill">
             <article>
-                <h1>Grill Home & More</h1>
-                <p>e-Commerce</p>
+                <h1>e-Commerce</h1>
+                <p>Sitio transaccional para Grill Home & More</p>
             </article>
         </a>
-        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/stock/lake_dock.jpeg)">
+        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/marina/01-marina_website_home.png)" data-sourcedir="portafolio/marina">
             <article>
-                <h1>Proyecto</h1>
-                <p>Breve descripción</p>
+                <h1>Presencia digital</h1>
+                <p>Propiedad principal de Marina Town Center en internet.</p>
             </article>
         </a>
-        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/stock/pexels-photo-112372.jpeg)">
+        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/ccc/01-cancun_country_club-home.png)"  data-sourcedir="portafolio/ccc">
             <article>
-                <h1>Proyecto</h1>
-                <p>Breve descripción</p>
+                <h1>Punto de contacto</h1>
+                <p>Plataforma digital del Cancún Country Club, orientado a conversión</p>
             </article>
         </a>
     </div>
