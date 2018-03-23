@@ -2,6 +2,7 @@
 
 //The directory (relative to this file) that holds the images
 $dir = $_GET['dir'];
+require_once("../helpers/MP4Info.php");
 
 //This array will hold all the image addresses
 $result = array();
@@ -17,42 +18,33 @@ $files = scandir("../../img/".$dir);
 
 if(isset($files)&&$files!= null&& $files>0 ){
     foreach($files as $file) {
+        $path = "../../img/".$dir."/".$file;
+        $img =[];
+        $img['dir'] = "img/".$dir. "/" .$file;
+        
         switch(ltrim(strstr($file, '.'), '.')) {
-
-                //If the file is an image, add it to the array
             case "png": case "gif":
-                $path = "../../img/".$dir."/".$file;
-                //$exif = exif_read_data($path);
                 $img = getImageInfo($path);
-                //print_r($img);
-                //exit;
-                if ($exif && $exif!=false){
-                    $width= $exif[COMPUTED][Width];
-                    $height= $exif[COMPUTED][Height];
-                }else $exifdata = "No header data found";
-                //$result[] = ["dir" => $dir. "/" .$file,"width" => $width,"height" => $height,"description" => $desc,"title" => $title];
-                $img['dir'] = "img/".$dir. "/" .$file;
-                $img['width'] = $width;
-                $img['height'] = $height;
-                //$result[] = ["dir" => $dir. "/" .$file,$img];
+                $size = getImageSize($path);
+                $size&$img['width'] = $size[0];
+                $size&$img['height'] = $size[1];
                 $result[] = $img;
                 break;
             case "jpg": case "jpeg":
-                $path = "../../img/".$dir."/".$file;
                 $exif = exif_read_data($path);
                 $img = getImageInfo($path);
-                //print_r($img);
-                //exit;
+
                 if ($exif && $exif!=false){
                     $width= $exif[COMPUTED][Width];
                     $height= $exif[COMPUTED][Height];
                 }else $exifdata = "No header data found";
-                //$result[] = ["dir" => $dir. "/" .$file,"width" => $width,"height" => $height,"description" => $desc,"title" => $title];
-                $img['dir'] = "img/".$dir. "/" .$file;
                 $img['width'] = $width;
                 $img['height'] = $height;
-                //$result[] = ["dir" => $dir. "/" .$file,$img];
                 $result[] = $img;
+                break;
+            case "mp4":
+                $media=MP4Info::getInfo($path);
+                $result[] = 
                 break;
         }
     }

@@ -203,6 +203,11 @@ body.portada-seccion {
                         background-color: $digital_blue_dark;
                     }
                 }
+                
+                @include max-width($mobile) {
+                    width: 100%;
+                    //float: none;
+                }
             }
         }
 

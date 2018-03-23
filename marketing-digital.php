@@ -98,10 +98,10 @@
                 <p>Ecosistema de landings y campañas para generar prospectos</p>
             </article>
         </a>
-        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/stock/garden_flowers.jpg)">
+        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/grill/grill-home.png)" data-sourcedir="portafolio/grill">
             <article>
-                <h1>Proyecto</h1>
-                <p>Breve descripción</p>
+                <h1>Grill Home & More</h1>
+                <p>e-Commerce</p>
             </article>
         </a>
         <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/stock/lake_dock.jpeg)">

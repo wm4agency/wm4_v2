@@ -361,7 +361,7 @@ function ajaxcall(datareferer,sourcedir){
                 throw "no diritems returned, callback not initiated";
             }
             try{
-                //console.log(datareferer);
+                console.log(diritems);
                 //callback(diritems);
                 photoSwipeFromDIR(datareferer,diritems);
                 //return true;
