@@ -318,13 +318,22 @@ function photoSwipeFromDIR(datareferer,diritems){
     
     for(var i = 0; i < diritems.length; i++) {
         pic = diritems[i];
-        item = {
-            src     :   pic.dir,
-            w       :   pic.width,
-            h       :   pic.height,
-            title   :   pic.title,
-            desc    :   pic.description,
-            tags    :   pic.tag
+        switch (pic.type){
+            case "image":
+                item = {
+                    src     :   pic.dir,
+                    w       :   pic.width,
+                    h       :   pic.height,
+                    title   :   pic.title,
+                    desc    :   pic.description,
+                    tags    :   pic.tag
+                }
+                break;
+                
+            case "video":
+                var video = '<div class="wrapper"><div class="video-wrapper"><video width="'+pic.width+'" height="'+pic.height+' class="pswp__video" src="'+pic.dir+'" controls></video></div></div>'
+                item = {html: video}
+                break;
         }
         items.push(item);
     }
@@ -332,7 +341,7 @@ function photoSwipeFromDIR(datareferer,diritems){
     // define options (if needed)
 
 
-    var n = pswpGalleries.length;
+    var n = pswpGalleries.length, gal;
     var name = 'pswipe'+n;
     var options = {
         history: true,
@@ -345,9 +354,42 @@ function photoSwipeFromDIR(datareferer,diritems){
     datareferer.addEventListener('click', function() {
         datareferer.preventDefault;
         pswpGalleries[n] = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-        pswpGalleries[n].init();
+        gal = pswpGalleries[n]
+        gal.init();
+
+        gal.listen('beforeChange', function() {   
+            var currItem = $(gal.currItem.container);
+            $('.pswp__video').removeClass('active');
+            $('.pswp__video').trigger('pause');
+            var currItemIframe = currItem.find('.pswp__video').addClass('active');
+            var videos = document.getElementsByTagName("video");
+            for (i=0; i<videos.length; i++){
+                videos[i].pause();
+            }
+            //console.log(videos);
+            $('.pswp__video').each(function() {                
+                //console.log( $(this));
+                
+                if (!$(this).hasClass('active')) {
+                    $(this).attr('src', $(this).attr('src'));
+                }
+            });
+        });
+
+        gal.listen('close', function() {
+            var videos = document.getElementsByTagName("video");
+            for (i=0; i<videos.length; i++){
+                videos[i].pause();
+            }
+            $('.pswp__video').each(function() {
+                console.log( $(this));
+                
+                $(this).attr('src', $(this).attr('src'));
+            });
+        });
     });
 }
+
 function ajaxcall(datareferer,sourcedir){
     $.ajax({
         url: 'php/services/dirmedia.php',
@@ -361,10 +403,7 @@ function ajaxcall(datareferer,sourcedir){
                 throw "no diritems returned, callback not initiated";
             }
             try{
-                console.log(diritems);
-                //callback(diritems);
                 photoSwipeFromDIR(datareferer,diritems);
-                //return true;
             }catch(e){
                 throw (e);
                 return false;

@@ -8,7 +8,7 @@ body.portada-seccion {
     main{    
         margin-top: -6em;
 
-        summary#intro{
+        summary{
             text-align: justify;
             //padding-right: 1.5em;
         }
@@ -22,12 +22,11 @@ body.portada-seccion {
         }
 
         @include max-width($mobile) {
-            p{
-                font-size: .85em; 
-                border: none;
-                border-bottom: 1px dashed $b;
-                padding-bottom: 1em;
-            }
+            font-size: .85em; 
+            border: none;
+            border-bottom: 1px dashed $b;
+            padding-bottom: 1em;
+            
             h1{
                 font-size: 2em;
                 line-height: 1em;
@@ -46,82 +45,6 @@ body.portada-seccion {
         &.postcontacto{padding-top: 14%;}        
         &.prearrow{padding-bottom: 2.5%;}
         &.postarrow{padding-top: 2.5%;}
-        
-        h1.hexa_centered{
-            text-transform: uppercase;
-            text-align: center;
-            position: relative;
-            font-weight: 700;
-            font-size: 2em;
-            line-height:.85em;
-            border-bottom: 1px solid darken($action-color,.75);
-            padding: 0;
-            padding-top: 1.2em;
-
-            &::before{
-                @include hexa_marker(darken($action-color,.75));
-                width: .75em;
-                margin-top: -1.3em;
-                left: 50%;
-                -webkit-transform: translateX(-50%);
-                transform: translateX(-50%);
-            }
-            
-            &.sub{
-                color: white;
-                padding-bottom: .7em;
-                border-bottom-color: $darkest;
-                margin: 0;
-
-                &::before{
-                    @include hexa_marker(#fff);
-
-                }
-                & + h2{
-                    margin: -1.3em 0 1.5em 0;
-                    padding: 0;
-                    line-height: 1em;
-                    font-size: 1em;
-                    text-align: center;
-                }
-            }
-        }
-        
-
-        &#servicios{
-            @include beveled_corner($action-color);
-            //background:$action-color;
-            color:white;
-            font-size: .9em;
-            padding: 1.5em 2.5em;
-            font-weight: 100;
-            text-transform: uppercase;
-            letter-spacing: .125em;
-
-            li{
-                position: relative;
-                display: block;
-                line-height: 1.5em;
-                margin-left: 1.5em;
-
-                &::before{
-                    @include arrow_marker(#FFF);
-                    left:-1.5em;
-                    width: .35em;
-                    margin-top: -.15em;
-                }
-            }
-
-            h1{
-                font-size: 2em;
-                line-height: 1.5em;
-                border-bottom-color: $digital_blue_dark;
-
-                &::before{
-                    @include hexa_marker($digital_blue_dark);
-                }
-            }
-        }     
 
         &#stats{
             text-align: center;
@@ -257,30 +180,66 @@ body.portada-seccion {
         }
     }
     
+    #servicios{
+        @include beveled_corner($action-color);
+        //background:$action-color;
+        color:white;
+        font-size: .9em;
+        padding: 1.5em 2.5em;
+        text-transform: uppercase;
+        letter-spacing: .125em;
+
+        dt{
+            position: relative;
+            display: block;
+            line-height: 1.5em;
+            margin-left: 1.5em;
+            font-weight: 100;
+
+            &::before{
+                @include arrow_marker(#FFF);
+                left:-1.5em;
+                width: .35em;
+                margin-top: -.15em;
+            }
+        }
+
+        h3{
+            font-size: 2em;
+            line-height: 1.5em;
+            border-bottom-color: $digital_blue_dark;
+
+            &::before{
+                @include hexa_marker($digital_blue_dark);
+            }
+        }
+    }     
+    
     &.mkt_d{
         main h1, .linktext{
             color: $digital_blue_dark;
         }
         
+        #servicios{
+            @include beveled_corner($digital_blue, 20px);
+            margin: 0;
+            //background:$digital_blue;
+
+            h3{
+                border-bottom-color: $digital_blue_dark;
+
+                &::before{
+                    @include hexa_marker($digital_blue_dark);
+                    width: 1em;
+                    text-align: center;
+                }
+            }
+
+        }
+        
         section{
             &#contacto{
                 @include f_skewed($digital_blue, $digital_blue_dark);
-            }
-            
-            &#servicios{
-                @include beveled_corner($digital_blue, 20px);
-                //background:$digital_blue;
-                
-                h1{
-                    border-bottom-color: $digital_blue_dark;
-                    
-                    &::before{
-                        @include hexa_marker($digital_blue_dark);
-                        width: 1em;
-                        text-align: center;
-                    }
-                }
-                
             }
             
             &#stats{ color: $digital_blue;}

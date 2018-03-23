@@ -8,27 +8,30 @@
     include 'header-desktop.php'; 
 ?>
 
-<main class="container row">
-    <h1 class="span-12">marketing <br> digital</h1>
-    <summary id="intro" class="span-5">
-        <p role="definition" >Desarrollamos e implementamos estrategias que permiten al cliente concretar objetivos de negocio a través de internet, analizando y optimizando constantemente para entregar resultados tangibles que se traducen en oportunidades de ingreso para el cliente</p>
-    </summary>
-    <section id="servicios" class="span-7 omega">
-        <h1 class="hexa_centered">Nuestros servicios</h1>
-        <ul class="span-6">
-            <li>Análisis y estrategia</li>
-            <li>Diseño y desarrollo</li>
-            <li>Consultoría en Marketing y Comunicación</li>
-            <li>Monitoreo y análisis</li>
-        </ul>
-        <ul class="span-6 omega">
-            <li>Posicionamiento Web</li>
-            <li>Content Marketing</li>
-            <li>Social Marketing</li>
-            <li>Producción de contenido</li>
-        </ul>
-    </section>
-    <div class="span-5"><span class="linktext">Solicitar información</span></div>       
+<main class="row">
+    <article itemscope itemtype="http://schema.org/Service" class="container">
+        <meta itemprop="provider" itemscope itemtype="http://schema.org/LocalBusiness" content="WM4" />
+        <h1 itemprop="serviceType" itemprop="name" class="span-12">Marketing<br> Digital</h1>
+        <summary id="intro" class="span-5">
+            Desarrollamos e implementamos estrategias que permiten al cliente concretar objetivos de negocio a través de internet, analizando y optimizando constantemente para entregar resultados tangibles que se traducen en oportunidades de ingreso para el cliente
+        </summary>
+        <dl itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog" id="servicios" class="span-7 omega">
+            <h3 class="hexa_centered">Nuestros servicios</h3>
+            <div class="span-6">
+                <dt itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">Análisis y estrategia</dt>
+                <dt itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">Diseño y desarrollo</dt>
+                <dt itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">Consultoría en Marketing y Comunicación</dt>
+                <dt itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">Monitoreo y análisis</dt>
+            </div>
+            <div class="span-6 omega">
+                <dt itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">Posicionamiento Web</dt>
+                <dt itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">Content Marketing</dt>
+                <dt itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">Social Marketing</dt>
+                <dt itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">Producción de contenido</dt>
+            </div>
+        </dl>
+        <aside class="span-5"><span class="linktext">Solicitar información</span></aside> 
+    </article>      
 </main>
 <section id="stats" class="<?php echo $role; ?> row prearrow">
    <div class="container">

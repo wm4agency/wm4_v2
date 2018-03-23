@@ -3687,6 +3687,25 @@ As animating opacity is much faster than animating rgba() background-color.
   right: 0;
   top: 0;
   bottom: 0; }
+  .pswp__container .video-wrapper,
+  .pswp__zoom-wrap .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    width: 100%; }
+    .pswp__container .video-wrapper iframe,
+    .pswp__zoom-wrap .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  .pswp__container video,
+  .pswp__zoom-wrap video {
+    width: 100% !important;
+    height: auto !important; }
 
 /* Prevent selection and tap highlights */
 .pswp__container,
@@ -4355,6 +4374,39 @@ ul.hex {
 form select {
   width: 100%; }
 
+.hexa_centered {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-weight: 700;
+  font-size: 2em;
+  line-height: .85em;
+  border-bottom: 1px solid #447bc9;
+  padding: 0;
+  padding-top: 1.2em; }
+  .hexa_centered::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 433 500'%3E%3Cstyle type='text/css'%3E .marker%7Bfill:%23447bc9;%7D%0A%3C/style%3E%3Cpolygon class='marker' points='433 375 216.5 500 0 375 0 125 216.5 0 433 125 '/%3E%3C/svg%3E");
+    position: absolute;
+    width: .75em;
+    margin-top: -1.3em;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
+  .hexa_centered.sub {
+    color: white;
+    padding-bottom: .7em;
+    border-bottom-color: #333;
+    margin: 0; }
+    .hexa_centered.sub::before {
+      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 433 500'%3E%3Cstyle type='text/css'%3E .marker%7Bfill:%23fff;%7D%0A%3C/style%3E%3Cpolygon class='marker' points='433 375 216.5 500 0 375 0 125 216.5 0 433 125 '/%3E%3C/svg%3E");
+      position: absolute; }
+    .hexa_centered.sub + h2 {
+      margin: -1.3em 0 1.5em 0;
+      padding: 0;
+      line-height: 1em;
+      font-size: 1em;
+      text-align: center; }
+
 header.centered-navigation {
   position: absolute;
   z-index: 999; }
@@ -4772,7 +4824,7 @@ body.portada-seccion {
   position: absolute; }
   body.portada-seccion main {
     margin-top: -6em; }
-    body.portada-seccion main summary#intro {
+    body.portada-seccion main summary {
       text-align: justify; }
     body.portada-seccion main h1 {
       text-transform: uppercase;
@@ -4781,17 +4833,17 @@ body.portada-seccion {
       line-height: .8em;
       margin-bottom: .5em; }
     @media only screen and (max-width: 480px) {
-      body.portada-seccion main p {
+      body.portada-seccion main {
         font-size: .85em;
         border: none;
         border-bottom: 1px dashed #000;
         padding-bottom: 1em; }
-      body.portada-seccion main h1 {
-        font-size: 2em;
-        line-height: 1em; }
-      body.portada-seccion main ul li {
-        line-height: .95em;
-        padding-bottom: .5em; } }
+        body.portada-seccion main h1 {
+          font-size: 2em;
+          line-height: 1em; }
+        body.portada-seccion main ul li {
+          line-height: .95em;
+          padding-bottom: .5em; } }
   body.portada-seccion section.precontacto {
     padding-bottom: 14%; }
   body.portada-seccion section.postcontacto {
@@ -4800,69 +4852,6 @@ body.portada-seccion {
     padding-bottom: 2.5%; }
   body.portada-seccion section.postarrow {
     padding-top: 2.5%; }
-  body.portada-seccion section h1.hexa_centered {
-    text-transform: uppercase;
-    text-align: center;
-    position: relative;
-    font-weight: 700;
-    font-size: 2em;
-    line-height: .85em;
-    border-bottom: 1px solid #447bc9;
-    padding: 0;
-    padding-top: 1.2em; }
-    body.portada-seccion section h1.hexa_centered::before {
-      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 433 500'%3E%3Cstyle type='text/css'%3E .marker%7Bfill:%23447bc9;%7D%0A%3C/style%3E%3Cpolygon class='marker' points='433 375 216.5 500 0 375 0 125 216.5 0 433 125 '/%3E%3C/svg%3E");
-      position: absolute;
-      width: .75em;
-      margin-top: -1.3em;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-      transform: translateX(-50%); }
-    body.portada-seccion section h1.hexa_centered.sub {
-      color: white;
-      padding-bottom: .7em;
-      border-bottom-color: #333;
-      margin: 0; }
-      body.portada-seccion section h1.hexa_centered.sub::before {
-        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 433 500'%3E%3Cstyle type='text/css'%3E .marker%7Bfill:%23fff;%7D%0A%3C/style%3E%3Cpolygon class='marker' points='433 375 216.5 500 0 375 0 125 216.5 0 433 125 '/%3E%3C/svg%3E");
-        position: absolute; }
-      body.portada-seccion section h1.hexa_centered.sub + h2 {
-        margin: -1.3em 0 1.5em 0;
-        padding: 0;
-        line-height: 1em;
-        font-size: 1em;
-        text-align: center; }
-  body.portada-seccion section#servicios {
-    background: #477dca;
-    /* default color */
-    background: -webkit-linear-gradient(45deg, #477dca 10px, #477dca 10px), -webkit-linear-gradient(135deg, transparent 10px, #477dca 10px);
-    background-position: bottom left, bottom right, top right, top left;
-    background-size: 51% 100%;
-    background-repeat: no-repeat;
-    color: white;
-    font-size: .9em;
-    padding: 1.5em 2.5em;
-    font-weight: 100;
-    text-transform: uppercase;
-    letter-spacing: .125em; }
-    body.portada-seccion section#servicios li {
-      position: relative;
-      display: block;
-      line-height: 1.5em;
-      margin-left: 1.5em; }
-      body.portada-seccion section#servicios li::before {
-        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 281.3 500'%3E%3Cstyle type='text/css'%3E .marker%7Bfill:%23FFF;%7D%0A%3C/style%3E%3Cpath class='marker' d='M272 272L53.2 490.7c-5.9 5.9-13.7 9.3-22 9.3C14.2 500 0 485.9 0 468.8V31.3C0 14.1 14.2 0 31.3 0c8.3 0 16.1 3.4 22 9.3L272 228c5.9 5.9 9.3 13.7 9.3 22C281.3 258.3 277.8 266.1 272 272z'/%3E%3C/svg%3E");
-        position: absolute;
-        left: -1.5em;
-        width: .35em;
-        margin-top: -.15em; }
-    body.portada-seccion section#servicios h1 {
-      font-size: 2em;
-      line-height: 1.5em;
-      border-bottom-color: #006f9e; }
-      body.portada-seccion section#servicios h1::before {
-        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 433 500'%3E%3Cstyle type='text/css'%3E .marker%7Bfill:%23006f9e;%7D%0A%3C/style%3E%3Cpolygon class='marker' points='433 375 216.5 500 0 375 0 125 216.5 0 433 125 '/%3E%3C/svg%3E");
-        position: absolute; }
   body.portada-seccion section#stats {
     text-align: center;
     background: white; }
@@ -5005,8 +4994,54 @@ body.portada-seccion {
     body.portada-seccion section#contacto .wrapper {
       background: crimson;
       padding: 3em; }
+  body.portada-seccion #servicios {
+    background: #477dca;
+    /* default color */
+    background: -webkit-linear-gradient(45deg, #477dca 10px, #477dca 10px), -webkit-linear-gradient(135deg, transparent 10px, #477dca 10px);
+    background-position: bottom left, bottom right, top right, top left;
+    background-size: 51% 100%;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: .9em;
+    padding: 1.5em 2.5em;
+    text-transform: uppercase;
+    letter-spacing: .125em; }
+    body.portada-seccion #servicios dt {
+      position: relative;
+      display: block;
+      line-height: 1.5em;
+      margin-left: 1.5em;
+      font-weight: 100; }
+      body.portada-seccion #servicios dt::before {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 281.3 500'%3E%3Cstyle type='text/css'%3E .marker%7Bfill:%23FFF;%7D%0A%3C/style%3E%3Cpath class='marker' d='M272 272L53.2 490.7c-5.9 5.9-13.7 9.3-22 9.3C14.2 500 0 485.9 0 468.8V31.3C0 14.1 14.2 0 31.3 0c8.3 0 16.1 3.4 22 9.3L272 228c5.9 5.9 9.3 13.7 9.3 22C281.3 258.3 277.8 266.1 272 272z'/%3E%3C/svg%3E");
+        position: absolute;
+        left: -1.5em;
+        width: .35em;
+        margin-top: -.15em; }
+    body.portada-seccion #servicios h3 {
+      font-size: 2em;
+      line-height: 1.5em;
+      border-bottom-color: #006f9e; }
+      body.portada-seccion #servicios h3::before {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 433 500'%3E%3Cstyle type='text/css'%3E .marker%7Bfill:%23006f9e;%7D%0A%3C/style%3E%3Cpolygon class='marker' points='433 375 216.5 500 0 375 0 125 216.5 0 433 125 '/%3E%3C/svg%3E");
+        position: absolute; }
   body.portada-seccion.mkt_d main h1, body.portada-seccion.mkt_d .linktext {
     color: #006f9e; }
+  body.portada-seccion.mkt_d #servicios {
+    background: #1797cd;
+    /* default color */
+    background: -webkit-linear-gradient(45deg, #1797cd 20px, #1797cd 20px), -webkit-linear-gradient(135deg, transparent 20px, #1797cd 20px);
+    background-position: bottom left, bottom right, top right, top left;
+    background-size: 51% 100%;
+    background-repeat: no-repeat;
+    margin: 0; }
+    body.portada-seccion.mkt_d #servicios h3 {
+      border-bottom-color: #006f9e; }
+      body.portada-seccion.mkt_d #servicios h3::before {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 433 500'%3E%3Cstyle type='text/css'%3E .marker%7Bfill:%23006f9e;%7D%0A%3C/style%3E%3Cpolygon class='marker' points='433 375 216.5 500 0 375 0 125 216.5 0 433 125 '/%3E%3C/svg%3E");
+        position: absolute;
+        width: 1em;
+        text-align: center; }
   body.portada-seccion.mkt_d section#contacto::before {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='framings skewed' viewBox='0 0 1350 189'%3E%3Cstyle type='text/css'%3E .main%7Bfill:%231797cd;%7D .sub%7Bfill:%23006f9e;%7D%0A%3C/style%3E%3Cpolygon class='sub' points='0 189 1350 189 0 0 '/%3E%3Cpolygon class='main' points='1350 0 0 189 1350 189 '/%3E%3C/svg%3E");
     background-size: cover;
@@ -5035,20 +5070,6 @@ body.portada-seccion {
     position: absolute;
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg); }
-  body.portada-seccion.mkt_d section#servicios {
-    background: #1797cd;
-    /* default color */
-    background: -webkit-linear-gradient(45deg, #1797cd 20px, #1797cd 20px), -webkit-linear-gradient(135deg, transparent 20px, #1797cd 20px);
-    background-position: bottom left, bottom right, top right, top left;
-    background-size: 51% 100%;
-    background-repeat: no-repeat; }
-    body.portada-seccion.mkt_d section#servicios h1 {
-      border-bottom-color: #006f9e; }
-      body.portada-seccion.mkt_d section#servicios h1::before {
-        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 433 500'%3E%3Cstyle type='text/css'%3E .marker%7Bfill:%23006f9e;%7D%0A%3C/style%3E%3Cpolygon class='marker' points='433 375 216.5 500 0 375 0 125 216.5 0 433 125 '/%3E%3C/svg%3E");
-        position: absolute;
-        width: 1em;
-        text-align: center; }
   body.portada-seccion.mkt_d section#stats {
     color: #1797cd; }
 

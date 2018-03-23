@@ -269,3 +269,42 @@ form{
     background-repeat: no-repeat;
 }
 
+.hexa_centered{
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-weight: 700;
+    font-size: 2em;
+    line-height:.85em;
+    border-bottom: 1px solid darken($action-color,.75);
+    padding: 0;
+    padding-top: 1.2em;
+
+    &::before{
+        @include hexa_marker(darken($action-color,.75));
+        width: .75em;
+        margin-top: -1.3em;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
+    &.sub{
+        color: white;
+        padding-bottom: .7em;
+        border-bottom-color: $darkest;
+        margin: 0;
+
+        &::before{
+            @include hexa_marker(#fff);
+
+        }
+        & + h2{
+            margin: -1.3em 0 1.5em 0;
+            padding: 0;
+            line-height: 1em;
+            font-size: 1em;
+            text-align: center;
+        }
+    }
+}

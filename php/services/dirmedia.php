@@ -8,28 +8,30 @@ require_once("../helpers/MP4Info.php");
 $result = array();
 
 //Get all the files in the specified directory
-
-
 $files = scandir("../../img/".$dir);
 
-//echo "dir = $dir<br />\n";
-//print_r ($files);
+try{
+    setItems($files,$dir);
+}catch (Exception $e){
+    echo $e->getMessage();
+    return false;
+}
 
-
-if(isset($files)&&$files!= null&& $files>0 ){
+function setItems($files, $dir){
+    if(!isset($files) || $files== null || $files<0){throw new Exception('no files in specified directory');}
     foreach($files as $file) {
         $path = "../../img/".$dir."/".$file;
         $img =[];
-        $img['dir'] = "img/".$dir. "/" .$file;
-        
+
         switch(ltrim(strstr($file, '.'), '.')) {
             case "png": case "gif":
                 $img = getImageInfo($path);
                 $size = getImageSize($path);
                 $size&$img['width'] = $size[0];
                 $size&$img['height'] = $size[1];
-                $result[] = $img;
+                $img['type'] = "image";
                 break;
+
             case "jpg": case "jpeg":
                 $exif = exif_read_data($path);
                 $img = getImageInfo($path);
@@ -40,24 +42,30 @@ if(isset($files)&&$files!= null&& $files>0 ){
                 }else $exifdata = "No header data found";
                 $img['width'] = $width;
                 $img['height'] = $height;
-                $result[] = $img;
+                $img['type'] = "image";
                 break;
+
             case "mp4":
                 $media=MP4Info::getInfo($path);
-                $result[] = 
+                $img=(array)$media;
+                $img['width'] = $media->video->width;
+                $img['height'] = $media->video->height;
+                $img['type'] = "video";
                 break;
+
+            default:
+                unset($img);
         }
+        $img&&$img['dir'] = "img/".$dir. "/" .$file;
+        $img&&$result[] = $img;
     }
-    
+
     //Convert the array into JSON
     $diritems = json_encode($result);
 
     //Output the JSON object
     //This is what the AJAX request will see
     print_r($diritems);
-}
-else{
-    echo(null);
 }
 
 
