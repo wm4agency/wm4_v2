@@ -7,7 +7,7 @@ $(document).ready(function($){
     getFolderItems();
 });
 window.onload = function() {
-
+    document.getElementById('preloader')&&$(".se-pre-con").fadeOut("slow");;
 }          
                   
 //$(window).on("load resize",function(e) {
