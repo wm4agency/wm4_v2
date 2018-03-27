@@ -84,13 +84,6 @@ body.portada-seccion {
             background-color: $darkest;
             padding: 50px 0;
 
-            h2{
-                font-size: 1em;
-                text-transform: uppercase;
-                font-weight: 100;
-                margin:1.5em auto;
-            }
-
             .grid-item{
                 background-color: $digital_blue_dark;
                 border-bottom-color: $digital_blue_dark;
@@ -259,7 +252,7 @@ body.portada-seccion {
         section{
             #portafolio{
                 .hexatitle.right{
-                    h1{color: $digital_blue;}
+                    color: $digital_blue;
 
                     &::before{
                         @include hexa_marker($digital_blue);

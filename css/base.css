@@ -5037,11 +5037,6 @@ body.portada-seccion {
       display: block;
       width: 100%;
       position: absolute; }
-    body.portada-seccion section#portfolio h2 {
-      font-size: 1em;
-      text-transform: uppercase;
-      font-weight: 100;
-      margin: 1.5em auto; }
     body.portada-seccion section#portfolio .grid-item {
       background-color: #006f9e;
       border-bottom-color: #006f9e;
@@ -5185,14 +5180,14 @@ body.portada-seccion {
         position: absolute;
         width: 1em;
         text-align: center; }
-  body.portada-seccion.mkt_d section #portafolio .hexatitle.right h1 {
+  body.portada-seccion.mkt_d section #portafolio .hexatitle.right {
     color: #1797cd; }
-  body.portada-seccion.mkt_d section #portafolio .hexatitle.right::before {
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 433 500'%3E%3Cstyle type='text/css'%3E .marker%7Bfill:%231797cd;%7D%0A%3C/style%3E%3Cpolygon class='marker' points='433 375 216.5 500 0 375 0 125 216.5 0 433 125 '/%3E%3C/svg%3E");
-    position: absolute; }
-  body.portada-seccion.mkt_d section #portafolio .hexatitle.right.sub h2 {
-    color: white;
-    border-bottom-color: white; }
+    body.portada-seccion.mkt_d section #portafolio .hexatitle.right::before {
+      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 433 500'%3E%3Cstyle type='text/css'%3E .marker%7Bfill:%231797cd;%7D%0A%3C/style%3E%3Cpolygon class='marker' points='433 375 216.5 500 0 375 0 125 216.5 0 433 125 '/%3E%3C/svg%3E");
+      position: absolute; }
+    body.portada-seccion.mkt_d section #portafolio .hexatitle.right.sub h2 {
+      color: white;
+      border-bottom-color: white; }
   body.portada-seccion.mkt_d section #clientes .hexatitle.left {
     color: #1797cd; }
     body.portada-seccion.mkt_d section #clientes .hexatitle.left::before {
