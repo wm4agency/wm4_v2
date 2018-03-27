@@ -4,18 +4,18 @@
     $localScripts = array("odometer","photoswipe");
     $header = 'minimal'; 
     $role = 'portada-seccion'; 
-    $color_space = "#1797cd ";
+    $color_space = "#1797cd";
     include 'header-desktop.php'; 
 ?>
 
 <main class="row">
     <article itemscope itemtype="http://schema.org/Service" class="container">
         <meta itemprop="provider" itemscope itemtype="http://schema.org/LocalBusiness" content="WM4" />
-        <h1 itemprop="serviceType" itemprop="name" class="span-12">Marketing<br> Digital</h1>
-        <summary id="intro" class="span-5">
+        <h1 itemprop="serviceType" itemprop="name" class="span-12 animated fadeInLeft">Marketing<br> Digital</h1>
+        <summary id="intro" class="span-5 animated fadeIn">
             Desarrollamos e implementamos estrategias que permiten al cliente concretar objetivos de negocio a través de internet, analizando y optimizando constantemente para entregar resultados tangibles que se traducen en oportunidades de ingreso para el cliente
         </summary>
-        <dl itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog" id="servicios" class="span-7 omega">
+        <dl itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog" id="servicios" class="span-7 omega animated fadeIn">
             <h3 class="hexa_centered">Nuestros servicios</h3>
             <div class="span-6">
                 <dt itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">Análisis y estrategia</dt>
@@ -30,22 +30,25 @@
                 <dt itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">Producción de contenido</dt>
             </div>
         </dl>
-        <aside class="span-5"><span class="linktext">Solicitar información</span></aside> 
+        <aside class="span-5"><a href="#contacto" class="linktext" data-destination="contacto">Solicitar información</a></aside> 
     </article>      
 </main>
 <section id="stats" class="<?php echo $role; ?> row prearrow">
    <div class="container">
        <h1 class="span-12">estrategias y acciones que generan resultados</h1>
        <ul class="span-12 stats">
-           <li class="span-3"><strong class="odometer" data-odo="120">0</strong><br />millones<br /><span class="subtitle"> de impresiones</span></li> 
-           <li class="span-3"><strong class="odometer" data-odo="490">0</strong><br />mil<br /><span> interacciones</span></li> 
-           <li class="span-3"><strong class="odometer" data-odo="5.4">0</strong><br />millones<br /><span> impactos (reach)</span></li> 
-           <li class="span-3 omega featured">$<strong class="odometer" data-odo="79.8">0</strong><br />millones<span>ROI en campañas</span></li> 
+           <li class="span-3 animated fadeInDown"><strong class="odometer" data-odo="120">0</strong><br />millones<br /><span class="subtitle"> de impresiones</span></li> 
+           <li class="span-3 animated fadeInDown"><strong class="odometer" data-odo="490">0</strong><br />mil<br /><span> interacciones</span></li> 
+           <li class="span-3 animated fadeInDown"><strong class="odometer" data-odo="5.4">0</strong><br />millones<br /><span> impactos (reach)</span></li> 
+           <li class="span-3 omega featured animated fadeInDown">$<strong class="odometer" data-odo="79.8">0</strong><br />millones<span>ROI en campañas</span></li> 
        </ul>
     </div>
 </section>
 <section id="portfolio" class="<?php echo $role; ?> fullwidth">
-    <h2><strong>Portafolios</strong><br />Algunos de nuestros proyectos mas recientes</h2>
+    <div class="container">
+        <h1 class="hexatitle right sub">Portafolios</h1>
+        <h2>Algunos de nuestros proyectos mas recientes</h2>
+    </div>
     <div class="grid-items-lines">
         <a href="javascript:void(0)" class="grid-item portfolio-item" style="background-image: url(img/portafolio/bahia/12a.jpg)" data-sourcedir="portafolio/bahia">
             <article>
@@ -123,7 +126,7 @@
 </section>
 <section id="clientes" class="postarrow precontacto">
    <div class="container">
-       <h1>Currículo</h1>
+       <h1 class="hexatitle left sub">Currículo</h1>
        <h2>Algunos de nuestros clientes más destacados</h2>
        <ul>
            <span>
@@ -149,12 +152,12 @@
        </ul>
     </div>
 </section>
-<section id="contacto" class="<?php echo $role; ?> row">
+<section id="contacto" name="contacto" class="<?php echo $role; ?> row">
     <div class="container">
         <span class="span-4">&nbsp;</span>
         <form id="contactform" class="span-4">
-            <h1 class="hexa_centered sub">Contáctanos</h1>
-            <h2>Transforma hoy tu estrategia digital</h2>
+            <h1 class="hexatitle centered sub">Contáctanos</h1>
+            <h2 >Transforma hoy tu estrategia digital</h2>
             <input type=text placeholder="nombre">
             <input type=text placeholder="empresa">
             <input type=email placeholder="correo">
@@ -164,7 +167,7 @@
         </form>
     </div>
 </section>
-<section class="postcontacto"><div class="container"><h3>creamos estrategias | entregamos resultados</h3></div></section>
+<section id="tagline" class="postcontacto"><div class="container"><h5>creamos estrategias | entregamos resultados</h5></div></section>
 
 <?php 
     $footer="minimal";

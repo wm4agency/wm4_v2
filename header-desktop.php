@@ -39,7 +39,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 </script>
 </head>
     <body class="<?php echo $role; echo " "; echo $localclass; ?>">
-    <div id="preloader" class="se-pre-con"></div>
+        <!-- <div id="preloader" class="se-pre-con"></div> -->
     <?php  if ($header == 'full'): ?>
     <header class="centered-navigation" role="banner">
     <div class="centered-navigation-wrapper">
@@ -68,13 +68,14 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
     <header class="minimal-navigation fullwidth">
         <nav class="container desktop">
             <ul class="nav-left span-3">
-                <li>home</li>
+                <li data-target="index.php">home</li>
             </ul>
             <ul class="nav-right span-9 omega">
-                <li>marketing político</li>
-                <li>marketing deportivo</li>
-                <li>agencia</li>
-                <li>contacto</li>
+                <li data-target="marketing-digital.php">marketing digital</li>
+                <li data-target="marketing-politico.php">marketing político</li>
+                <li data-target="marketing-deportivo.php">marketing deportivo</li>
+                <!-- <li data-target="marketing-politico">agencia</li> -->
+                <!-- <li data-target="ontacto.php">contacto</li> -->
             </ul>
         </nav>
         <div class="container"><figure class="logo"><a href="index.php"><img src="img/wm4.png"></a></figure></div>

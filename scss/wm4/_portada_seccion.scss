@@ -19,6 +19,7 @@ body.portada-seccion {
             font-size: 4em;
             line-height:.8em;
             margin-bottom: .5em;
+            //@include fadeInLeft();
         }
 
         @include max-width($mobile) {
@@ -58,6 +59,10 @@ body.portada-seccion {
             
             ul{
                 margin-bottom: 3em;
+            }
+            
+            li{
+                //@include fadeInDown();
             }
 
             @include max-width($mobile) {
@@ -178,6 +183,15 @@ body.portada-seccion {
             }
            
         }
+        
+        &#tagline{
+            text-align: center;
+            
+            h5{
+                font-size: 3em;
+                font-weight: 100;
+            }
+        }
     }
     
     #servicios{
@@ -188,6 +202,7 @@ body.portada-seccion {
         padding: 1.5em 2.5em;
         text-transform: uppercase;
         letter-spacing: .125em;
+        //@include fadeIn(null, null, 1s);
 
         dt{
             position: relative;
@@ -213,6 +228,10 @@ body.portada-seccion {
                 @include hexa_marker($digital_blue_dark);
             }
         }
+        .linktext{
+            //@include fadeInDown(null, null, 1s);
+        }
+
     }     
     
     &.mkt_d{
@@ -238,8 +257,41 @@ body.portada-seccion {
         }
         
         section{
+            #portafolio{
+                .hexatitle.right{
+                    h1{color: $digital_blue;}
+
+                    &::before{
+                        @include hexa_marker($digital_blue);
+                    }
+                    
+                    &.sub h2{
+                        color: white;
+                        border-bottom-color: white;
+
+                    }
+                }
+            }
+            
+            #clientes{
+                .hexatitle.left{
+                    color: $digital_blue;
+                    &::before{
+                        @include hexa_marker($digital_blue);
+                    }
+                }
+            }
+            
             &#contacto{
                 @include f_skewed($digital_blue, $digital_blue_dark);
+                
+                .hexatitle.centered{
+                    color: white;
+                    
+                    &::before{
+                        @include hexa_marker(#fff);
+                    }
+                }
             }
             
             &#stats{ color: $digital_blue;}

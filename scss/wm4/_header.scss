@@ -97,7 +97,14 @@ header.minimal-navigation{
                 color: $grey;
                 text-transform: lowercase;
                 line-height: 3em;
-                padding: 0 1.5em;
+                padding: 0;
+                margin: 0  1.5em;
+                
+                &:hover{
+                    color: $darkest;
+                    //border-bottom: 1px solid $darkest;
+                    cursor: pointer;
+                }
             }
             
             &.nav-left li{ float: left; }
