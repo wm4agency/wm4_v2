@@ -16,7 +16,7 @@
             Desarrollamos e implementamos estrategias que permiten al cliente concretar objetivos de negocio a través de internet, analizando y optimizando constantemente para entregar resultados tangibles que se traducen en oportunidades de ingreso para el cliente
         </summary>
         <dl itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog" id="servicios" class="span-7 omega animated fadeIn">
-            <h3 class="hexa_centered">Nuestros servicios</h3>
+            <h3 class="hexatitle centered">Nuestros servicios</h3>
             <div class="span-6">
                 <dt itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">Análisis y estrategia</dt>
                 <dt itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">Diseño y desarrollo</dt>
@@ -50,76 +50,88 @@
         <h2>Algunos de nuestros proyectos mas recientes</h2>
     </div>
     <div class="grid-items-lines">
-        <a href="javascript:void(0)" class="grid-item portfolio-item" style="background-image: url(img/portafolio/bahia/12a.jpg)" data-sourcedir="portafolio/bahia">
+        <a href="javascript:void(0)" class="grid-item portfolio-item" style="background-image: url(img/portafolio/digital/911/IN001-QueEs.png)" data-sourcedir="portafolio/digital/911">
             <article>
-                <h1>Bahia Principe</h1>
-                <p>Desarrollo de contenido</p>
+                <h1>Producción Gráfica y Multimedia</h1>
+                <p>Lanzamiento sistema 911, gobierno federal</p>
             </article>
         </a>
-        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/arecas/19.jpg)" data-sourcedir="portafolio/arecas">
+        <a href="javascript:void(0)" class="grid-item portfolio-item" style="background-image: url(img/portafolio/digital/bahia/12a.jpg)" data-sourcedir="portafolio/digital/bahia">
             <article>
-                <h1>Arecas</h1>
-                <p>Social Media</p>
+                <h1>Producción de contenido</h1>
+                <p>Bahía Príncipe Golf & Residences</p>
             </article>
         </a>
-        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/fese/FB-Martes30.jpeg)" data-sourcedir="portafolio/fese">
+        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/digital/tuinforma/TuInforma-01.JPG)" data-sourcedir="portafolio/digital/tuinforma">
+            <article>
+                <h1>Estrategia y arquitectura</h1>
+                <p>Portal Tu Informa</p>
+            </article>
+        </a>
+        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/digital/segob/WM4_NSJP-Beneficios-Compartible.jpg)" data-sourcedir="portafolio/digital/segob">
+            <article>
+                <h1>Producción Gráfica y Multimedia</h1>
+                <p>Nuevo Sistema de Justicia Penal, SEGOB</p>
+            </article>
+        </a>
+        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/digital/ccc/01-cancun_country_club-home.png)"  data-sourcedir="portafolio/digital/ccc">
+            <article>
+                <h1>Punto de contacto</h1>
+                <p>Plataforma digital del Cancún Country Club, orientado a conversión</p>
+            </article>
+        </a>
+        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/digital/fese/FB-Martes30.jpeg)" data-sourcedir="portafolio/digital/fese">
             <article>
                 <h1>FESE</h1>
                 <p>Producción de contenidos</p>
             </article>
         </a>
-        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/merlos/chf.png)" data-sourcedir="portafolio/merlos">
+        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/digital/merlos/chf.png)" data-sourcedir="portafolio/digital/merlos">
             <article>
                 <h1>Merlos</h1>
                 <p>Social Media</p>
             </article>
         </a>
-        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/maha/maha_promo_bimestre.jpeg)" data-sourcedir="portafolio/maha">
-            <article>
-                <h1>Maha</h1>
-                <p>Operación digital</p>
-            </article>
-        </a>
-        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/maha_squash/006.png)" data-sourcedir="portafolio/maha_squash">
-            <article>
-                <h1>Maha Squash</h1>
-                <p>Social Media</p>
-            </article>
-        </a>
-        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/eldiez/FB-Corte-tuco.jpg)" data-sourcedir="portafolio/eldiez">
+        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/digital/eldiez/FB-Corte-tuco.jpg)" data-sourcedir="portafolio/digital/eldiez">
             <article>
                 <h1>El Diez</h1>
                 <p>Operación y Contenidos Sociales</p>
             </article>
         </a>
-        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/tuinforma/TuInforma-01.JPG)" data-sourcedir="portafolio/tuinforma">
+        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/digital/maha/maha_promo_bimestre.jpeg)" data-sourcedir="portafolio/digital/maha">
             <article>
-                <h1>Tu Informa</h1>
-                <p>Arquitectura y estrategia</p>
+                <h1>Maha</h1>
+                <p>Operación digital</p>
             </article>
         </a>
-        <a href="javascript:void(0)" class="grid-item portfolio-item" style="background-image: url(img/portafolio/bahia_landings/BahiaPrincipe_landings.jpg)" data-sourcedir="portafolio/bahia_landings">
+        <a href="javascript:void(0)" class="grid-item portfolio-item" style="background-image: url(img/portafolio/digital/bahia_landings/BahiaPrincipe_landings.jpg)" data-sourcedir="portafolio/digital/bahia_landings">
             <article>
                 <h1>Campaña Performance</h1>
                 <p>Ecosistema de landings y campañas para generar prospectos</p>
             </article>
         </a>
-        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/grill/grill-home.png)" data-sourcedir="portafolio/grill">
+        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/digital/maha_squash/006.png)" data-sourcedir="portafolio/digital/maha_squash">
+            <article>
+                <h1>Maha Squash</h1>
+                <p>Social Media</p>
+            </article>
+        </a>
+        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/digital/grill/grill-home.png)" data-sourcedir="portafolio/digital/grill">
             <article>
                 <h1>e-Commerce</h1>
                 <p>Sitio transaccional para Grill Home & More</p>
             </article>
         </a>
-        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/marina/01-marina_website_home.png)" data-sourcedir="portafolio/marina">
+        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/digital/marina/Marina_thumb.jpg)" data-sourcedir="portafolio/digital/marina">
             <article>
-                <h1>Presencia digital</h1>
+                <h1>Sitio promocionl a medida</h1>
                 <p>Propiedad principal de Marina Town Center en internet.</p>
             </article>
         </a>
-        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/ccc/01-cancun_country_club-home.png)"  data-sourcedir="portafolio/ccc">
+        <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/digital/arecas/19.jpg)" data-sourcedir="portafolio/digital/arecas">
             <article>
-                <h1>Punto de contacto</h1>
-                <p>Plataforma digital del Cancún Country Club, orientado a conversión</p>
+                <h1>Arecas</h1>
+                <p>Social Media</p>
             </article>
         </a>
     </div>
