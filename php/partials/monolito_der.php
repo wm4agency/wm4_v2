@@ -1,0 +1,6 @@
+<svg class="monolito der" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 542.9 719.7">
+    <style type="text/css">  
+    .clipper{clip-path:url(#SVGID_2_);}
+    .hexa{opacity:0.5;}
+    </style><defs><rect transform="matrix(-1 -4.489665e-11 4.489665e-11 -1 542.9461 719.7293)" width="542.9" height="719.7"/></defs><clipPath><use xlink:href="#SVGID_1_"/></clipPath><g class="clipper"><polygon class="hexa" points="236.3 627.7 543.6 805.2 850.9 627.7 850.9 272.9 543.6 95.5 236.3 272.9 "/><polygon class="hexa" points="6.1 672 236.3 804.9 466.6 672 466.6 406.1 236.3 273.2 6.1 406.1 "/><polygon class="hexa" points="236.3 804.9 466.6 672 466.6 406.1 236.3 273.2 "/><polygon class="hexa" points="236 804.8 389.8 893.6 543.6 804.8 543.6 627.2 389.8 538.4 236 627.2 "/><polygon class="hexa" points="389.8 893.6 543.6 804.8 543.6 627.2 389.8 538.4 "/><polygon class="hexa" points="236.3 273 390.1 361.9 543.9 273 543.9 95.5 390.1 6.7 236.3 95.5 "/><polygon class="hexa" points="390.1 361.9 543.9 273 543.9 95.5 390.1 6.7 "/></g>
+</svg>

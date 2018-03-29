@@ -2211,10 +2211,10 @@ img {
   src: url("fonts/RobotoSlab-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal; }
-body, ul.hex li, body.mobile section#mvp h1, body.mobile section#valores article h1, body.portada-seccion section#portfolio .grid-item article h1 {
+body, body.home #unidades dt + *, ul.hex li, body.home #unidades h1, body.mobile section#mvp h1, body.mobile section#valores article h1, body.portada-seccion section#portfolio .grid-item article h1 {
   font-family: 'Roboto', sans-serif; }
 
-.linktext, form fieldset label {
+.linktext, form fieldset label, body.home #unidades dt {
   font-family: 'Roboto Slab', serif; }
 
 button, input[type="button"], input[type="reset"], input[type="submit"],
@@ -2579,8 +2579,6 @@ body {
     text-align: center; }
     .centered-navigation ul.centered-navigation-menu.show {
       display: block; }
-  .centered-navigation .nav-link:first-child {
-    margin-left: 2.2em; }
   .centered-navigation ul li.nav-link {
     background: transparent;
     display: block;
@@ -2689,16 +2687,15 @@ body {
         text-align: left;
         width: 12em; }
 
-.tooltip-item {
-  border-radius: 3px;
+body.home #unidades dt {
+  border-radius: 0;
   display: inline-block;
-  padding: 0.25em 1em;
   position: relative;
   text-align: center; }
-  .tooltip-item:focus, .tooltip-item:hover .tooltip {
+  body.home #unidades dt:focus, body.home #unidades dt:hover + * {
     opacity: 1;
     visibility: visible; }
-  .tooltip-item .tooltip {
+  body.home #unidades dt + * {
     position: absolute;
     top: 3em;
     right: 0;
@@ -2719,12 +2716,10 @@ body {
     transition: all 0.2s ease-in-out;
     visibility: hidden;
     z-index: 10;
-    text-transform: lowercase; }
-    .tooltip-item .tooltip p {
-      color: #fff;
-      line-height: 1.5;
-      margin: 0; }
-    .tooltip-item .tooltip::after, .tooltip-item .tooltip::before {
+    text-transform: lowercase;
+    color: #fff;
+    line-height: 1.5; }
+    body.home #unidades dt + *::after, body.home #unidades dt + *::before {
       bottom: 100%;
       left: 50%;
       border: solid transparent;
@@ -2733,12 +2728,12 @@ body {
       width: 0;
       position: absolute;
       pointer-events: none; }
-    .tooltip-item .tooltip::after {
+    body.home #unidades dt + *::after {
       border-color: rgba(136, 183, 213, 0);
       border-bottom-color: #12181c;
       border-width: 10px;
       margin-left: -10px; }
-    .tooltip-item .tooltip::before {
+    body.home #unidades dt + *::before {
       border-color: rgba(194, 225, 245, 0);
       border-bottom-color: #12181c;
       border-width: 10px;
@@ -4402,6 +4397,52 @@ e.g. when user taps to toggle visibility of controls
 .pswp--minimal--dark .pswp__top-bar {
   background: none; }
 
+/**
+*   Default variables
+*
+*   While these can be set with JavaScript, it's probably
+*   better and faster to just set them here, compile to
+*   CSS and include that instead to use some of that
+*   hardware-accelerated goodness.
+*/
+.unslider {
+  overflow: auto;
+  margin: 0;
+  padding: 0; }
+  .unslider-wrap {
+    position: relative; }
+    .unslider-wrap.unslider-carousel > li {
+      float: left; }
+  .unslider-vertical > ul {
+    height: 100%; }
+  .unslider-vertical li {
+    float: none;
+    width: 100%; }
+  .unslider-fade {
+    position: relative; }
+    .unslider-fade .unslider-wrap li {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      z-index: 8; }
+      .unslider-fade .unslider-wrap li.unslider-active {
+        z-index: 10; }
+  .unslider ul, .unslider ol, .unslider li {
+    list-style: none;
+    /* Reset any weird spacing */
+    margin: 0;
+    padding: 0;
+    border: none; }
+  .unslider-arrow {
+    position: absolute;
+    left: 20px;
+    z-index: 2;
+    cursor: pointer; }
+    .unslider-arrow.next {
+      left: auto;
+      right: 20px; }
+
 .linktext {
   float: right;
   padding-right: 1.5em;
@@ -4580,7 +4621,8 @@ header.centered-navigation {
       -webkit-transition: border-color 0.125s 0.25s;
       transition: border-color 0.125s 0.25s; }
     header.centered-navigation nav #contacto_head:hover {
-      background-color: #477dca; }
+      background-color: #477dca;
+      cursor: pointer; }
       header.centered-navigation nav #contacto_head:hover:before {
         border-bottom-color: #477dca; }
       header.centered-navigation nav #contacto_head:hover:after {
@@ -4708,107 +4750,96 @@ footer {
         footer nav#footer-icons ul li a:hover {
           color: #477dca; }
 
-.main_logo {
-  max-width: 50%;
+body.home .main_logo {
+  max-width: 70%;
   text-align: center;
   margin: 0 auto; }
-
-main#home {
-  display: block;
-  min-height: 100%;
-  min-width: 100%;
-  text-align: center;
-  position: absolute;
-  z-index: 10;
-  background-color: rgba(255, 255, 255, .25); }
-  main#home .span-3, main#home .span-6 {
-    min-height: 100%; }
-  main#home .bloque_wrapper {
-    position: relative;
-    width: 100%;
-    min-height: 100vh; }
-  main#home .bloque {
-    width: 100%;
-    display: block;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    position: absolute;
-    margin: 0 auto; }
-    main#home .bloque .unidades {
-      text-transform: uppercase;
-      border-right: 1px solid black;
-      border-radius: 0;
-      padding: 1em; }
-      main#home .bloque .unidades:last-child {
-        border: none; }
-      main#home .bloque .unidades.selected {
-        color: #477dca;
-        font-weight: 700;
-        border: 1px solid #477dca;
-        background-color: rgba(255, 255, 255, .5); }
-      main#home .bloque .unidades a {
-        text-decoration: none;
-        color: inherit; }
-  main#home .flap {
-    background: no-repeat;
-    background-size: contain;
-    font-size: .85em;
-    text-align: left; }
-    main#home .flap.r {
-      background-position: right;
-      background-image: url(../img/aleta-der.png);
-      padding-right: 2em; }
-    main#home .flap.l {
-      background-position: left;
-      background-image: url(../img/aleta-izq.png);
-      padding-left: 2em; }
-  @media only screen and (max-width: 480px) {
-    main#home {
-      background-color: rgba(255, 255, 255, .5);
-      padding-top: 120px;
-      font-weight: 300;
-      position: relative; }
-      main#home .main_logo {
-        max-width: 75%; }
-      main#home .unidades {
-        width: 33.3% !important;
-        float: left;
-        padding: 0 !important;
-        margin: 0 !important;
-        clear: none;
-        border-radius: 0; }
-        main#home .unidades h1 {
-          font-size: .75em;
-          margin: .75em auto; }
-      main#home .span-6 {
-        float: none;
-        position: absolute;
-        margin-top: 3em;
-        padding-right: 50px; }
-      main#home .span-3 {
-        float: right;
-        width: 100% !important;
-        margin: 0;
-        padding: 1em !important;
-        bottom: 0 !important;
-        position: absolute;
-        min-height: 30%;
-        font-size: .75em; }
-      main#home .flap.r {
-        right: 0 !important; }
-      main#home .flap.l {
-        display: none; }
-      main#home .bloque_wrapper {
-        min-height: 30vh; }
-        main#home .bloque_wrapper .row {
-          padding: .5em; } }
-
-#pagepiling .section {
+body.home #pagepiling section {
   background: white no-repeat center center;
   background-size: cover; }
-  #pagepiling .section#welcome-splash {
-    background-color: white; }
+  body.home #pagepiling section#home {
+    background-color: white;
+    min-height: 100%; }
+    body.home #pagepiling section#home .pp-tableCell {
+      padding-bottom: 93px;
+      vertical-align: bottom; }
+  body.home #pagepiling section#modelo {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1280'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23E6E6E6;%7D .st1%7Bfill:%23D53D0E;%7D .st2%7Bfill:%23333333;%7D%0A%3C/style%3E%3Crect class='st0' width='1920' height='1280'/%3E%3Cpolygon class='st1' points='1920 1279 356.9 1280.1 580.4 506.6 966.5 1.1 1920 0 '/%3E%3Cpolygon class='st2' points='1920 1279 1059.6 1280.1 1236.7 664.7 1839.9 1.1 1920 0 '/%3E%3C/svg%3E"); }
+    body.home #pagepiling section#modelo main, body.home #pagepiling section#modelo aside {
+      display: table-row; }
+  body.home #pagepiling section#contacto {
+    background-color: #ddd; }
+body.home #cycle h3 {
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 100; }
+body.home #cycle li {
+  display: none; }
+body.home #unidades {
+  position: absolute;
+  bottom: 0;
+  margin: 0; }
+  body.home #unidades h1 {
+    width: 100%;
+    display: inline-block;
+    background: #333;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 100;
+    font-size: 1.25em;
+    letter-spacing: .125em;
+    margin: 0;
+    text-transform: uppercase; }
+  body.home #unidades dt {
+    font-size: 2em;
+    width: 33.33%;
+    text-transform: uppercase;
+    line-height: 50px;
+    letter-spacing: 0.05em;
+    background: #ddd;
+    margin: 0;
+    float: left; }
+    body.home #unidades dt:last-child {
+      border: none; }
+    body.home #unidades dt:hover {
+      color: white;
+      font-weight: 700;
+      background-color: #333 !important; }
+    body.home #unidades dt span {
+      display: none; }
+    body.home #unidades dt.d {
+      background-color: #1797cd; }
+    body.home #unidades dt.p {
+      background-color: #cdc200; }
+    body.home #unidades dt.s {
+      background-color: #d53d0e; }
+body.home .monolito-wrapper {
+  padding: 0;
+  margin: 0; }
+  body.home .monolito-wrapper:first-child {
+    float: left; }
+  body.home .monolito-wrapper:last-child {
+    float: right; }
+@media only screen and (max-width: 480px) {
+  body.home {
+    background-color: rgba(255, 255, 255, .5);
+    padding-top: 120px;
+    font-weight: 300;
+    position: relative; }
+    body.home .main_logo {
+      max-width: 75%; }
+    body.home .unidades {
+      width: 33.3% !important;
+      float: left;
+      padding: 0 !important;
+      margin: 0 !important;
+      clear: none;
+      border-radius: 0; }
+      body.home .unidades h1 {
+        font-size: .75em;
+        margin: .75em auto; } }
 
 @media only screen and (max-width: 480px) {
   .centered-navigation ul li.nav-link {

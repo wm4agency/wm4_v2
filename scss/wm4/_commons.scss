@@ -323,7 +323,6 @@ form{
     background-repeat: no-repeat;
 }
 
-
 .hexatitle{
     text-transform: uppercase;
     position: relative;
@@ -387,4 +386,10 @@ form{
         }
         &.sub + h2{text-align: right;}
     }
+}
+
+@mixin monolito_izq($color:#000000){
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 542.9 719.7'%3E%3Cstyle type='text/css'%3E .clipper%7Bclip-path:url%28%23SVGID_2_%29;%7D .hexa%7Bopacity:0.5;fill:#{url-friendly-colour($color)};%7D%0A%3C/style%3E%3Cdefs%3E%3Crect width='542.9' height='719.7'/%3E%3C/defs%3E%3CclipPath%3E%3Cuse xlink:href='%23SVGID_1_'/%3E%3C/clipPath%3E%3Cg class='clipper'%3E%3Cpolygon class='hexa' points='306.6 627.7 -0.6 805.2 -307.9 627.7 -307.9 272.9 -0.6 95.5 306.6 272.9 '/%3E%3Cpolygon class='hexa' points='536.9 672 306.6 804.9 76.4 672 76.4 406.1 306.6 273.2 536.9 406.1 '/%3E%3Cpolygon class='hexa' points='306.6 804.9 76.4 672 76.4 406.1 306.6 273.2 '/%3E%3Cpolygon class='hexa' points='306.9 804.8 153.1 893.6 -0.6 804.8 -0.6 627.2 153.1 538.4 306.9 627.2 '/%3E%3Cpolygon class='hexa' points='153.1 893.6 -0.6 804.8 -0.6 627.2 153.1 538.4 '/%3E%3Cpolygon class='hexa' points='306.6 273 152.8 361.9 -1 273 -1 95.5 152.8 6.7 306.6 95.5 '/%3E%3Cpolygon class='hexa' points='152.8 361.9 -1 273 -1 95.5 152.8 6.7 '/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }

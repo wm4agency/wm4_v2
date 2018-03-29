@@ -24,6 +24,7 @@ header.centered-navigation{
             
             &:hover{
                 background-color: $action-color;
+                cursor: pointer;
                 
                 &:before{
                     border-bottom-color: $action-color;

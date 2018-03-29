@@ -1,4 +1,4 @@
-.tooltip-item {
+%tooltip{
     $base-border-color: gainsboro !default;
     $base-border-radius: 3px !default;
     $base-line-height: 1.5em !default;
@@ -14,19 +14,18 @@
 
 //    background: $tooltip-background;
 //    border: 1px solid $base-border-color;
-    border-radius: $base-border-radius;
+    border-radius:0;
     display: inline-block;
-    padding: 0.25em 1em;
     position: relative;
     text-align: center;
 
     &:focus,
-    &:hover .tooltip {
+    &:hover + * {
         opacity: 1;
         visibility: visible;
     }
 
-    .tooltip {
+    & + * {
         @include position(absolute,$tooltip-distance-from-item 0 null 0);
         background-color: $tooltip-background;
         border-radius: $base-border-radius;
@@ -43,12 +42,9 @@
         visibility: hidden;
         z-index: 10;
         text-transform: lowercase;
-
-        p {
-            color: #fff;
-            line-height: $base-line-height;
-            margin: 0;
-        }
+        color: #fff;
+        line-height: $base-line-height;
+        @extend %sans;
         
         &::after, &::before{
             bottom: 100%;

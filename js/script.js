@@ -6,6 +6,7 @@ $(document).ready(function($){
     slideoutInit();
     odometerinit();
     getFolderItems();
+    unsliderInit();
 });
 window.onload = function() {
     //document.getElementById('preloader')&&$(".se-pre-con").fadeOut("slow")&&odometerinit();
@@ -55,6 +56,9 @@ var span = document.getElementsByClassName("close")[0];
 // evaluate if there's an odometer
 var odo = document.getElementsByClassName("odometer");
 
+// evaluate if there's an unslider
+var unslider = document.getElementsByClassName("unslider");
+
 var pswpElement = document.querySelectorAll('.pswp')[0];
 var pswpGalleries = [];
 
@@ -78,18 +82,19 @@ function linktexts(){
 }
 
 function navlinks(){
-    var navlinks = document.querySelectorAll("nav li"), 
-        mapTargets = function() {
-            this.preventDefault;
-            console.log('nav!');
-            var target = this.getAttribute('data-target');
-            window.location=target;
-        };
+    var navlinks = document.querySelectorAll("nav.navlinks li");
+    if(!navlinks || navlinks == null) return;
+
+    mapTargets = function() {
+        this.preventDefault;
+        console.log('nav!');
+        var target = this.getAttribute('data-target');
+        window.location=target;
+    };
     [].map.call(navlinks, function(elem) {
         elem.addEventListener("click", mapTargets, false);
-    });
+    });       
 }
-
 
 function modalInit(){
     if(!modal || modal == null) return;
@@ -113,8 +118,12 @@ function modalInit(){
 }
  
 function pagepilingInit(){
-    var e = document.getElementById("pagepiling");
+    var e = document.getElementById("pagepiling"),
+        anchors=[];
     if(!e || e == null) return;
+    
+    var anchores = document.querySelectorAll('#pagepiling > section');
+    anchores.forEach(function(el){ anchors.push(el.id);});
     
     $('html').addClass('pagepiled');
     
@@ -122,98 +131,32 @@ function pagepilingInit(){
         direction: 'horizontal',
         verticalCentered: true,
         loopBottom: true,
-
         afterRender: function(){
-            //            alert("The resulting DOM structure is ready");
+
         },
-
-        anchors: ['welcome-splash', 'mkt-digital', 'mkt-politico', 'mkt-deportivo'],
-
-        afterLoad: function(anchorLink){
-            switch (anchorLink){
-                case 'mkt-digital':
-                    var lFlapContent = "<p>Ofrecemos soluciones para que nuestros clientes incrementen su presencia online, aumenten su credibilidad, hagan negocios en internet, mejoren su imagen y como resultado: obtengan mayor ROI</p>";
-
-                    var rFlapContent ="<ul class='hex'>\n"+
-                        "<li>Análisis y estrategia</li>\n"+
-                        "<li>Diseño y desarrollo</li>\n"+
-                        "<li>Consultoría en Marketing y Comunicación</li>\n"+
-                        "<li>Monitoreo y análisis</li>\n"+
-                        "<li>Posicionamiento Web</li>\n"+
-                        "<li>Content Marketing</li>\n"+
-                        "<li>Social Marketing</li>\n"+
-                        "<li>Producción de contenido</li>\n"+
-                        "</ul>";
-                    var selected = $('#u_mkt_digital');
-                    break;
-
-                case 'mkt-politico':
-                    var lFlapContent = "<p>Ofrecemos consultoría en marketing y comunicación política</p>";
-
-                    var rFlapContent ="<ul class='hex'>\n"+
-                        "<li>Estrategia de comunicación</li>\n"+
-                        "<li>Estrategia de comunicación digital</li>\n"+
-                        "<li>Finanzas públicas y transparencia</li>\n"+
-                        "<li>Jurídico electoral</li>\n"+
-                        "</ul>";
-                    var selected = $('#u_mkt_politico');
-                    break;
-
-                case 'mkt-deportivo':
-                    var lFlapContent = "<p>Construimos proyectos específicos que responden a sus necesidades, cualesquiera que sean.</p>";
-
-                    var rFlapContent ="<ul class='hex'>\n"+
-                        "<li>Estrategias 360</li>\n"+
-                        "<li>Diseño y desarrollo Web</li>\n"+
-                        "<li>Consultoría de Marketing y Comunicación</li>\n"+
-                        "<li>Web | Social Analytics</li>\n"+
-                        "<li>Construcción y reputación de marca</li>\n"+
-                        "<li>Content Marketing</li>\n"+
-                        "<li>Social Media Marketing</li>\n"+
-                        "</ul>";
-                    var selected = $('#u_mkt_deportivo');
-                    break;
-
-                default:
-                    var lFlapContent ="&nbsp;";
-                    var rFlapContent ="&nbsp;";
-                    break;
-                              }
-            $('#left-flap').html(lFlapContent);
-            $('#right-flap').html(rFlapContent);
-            if(selected){
-                console.log(selected);
-                $('.unidades').removeClass('selected');
-                selected.addClass('selected');
-            }else{
-                $('.unidades').removeClass('selected');
-            };
-        }
+        anchors: anchors,
     });
 }
 
 function cycle(){
-    var mensaje = [
-        'Marketing con sentido',
-        'Marketing estratégico',
-        'Marketing por objetivos',
-        'Marketing con resultados',
-        'Analíticos y optimización',
-        'Publicidad con ROI medido'
-    ];
+    var e = document.querySelectorAll('#cycle ul > li');
+    if(!e || e == null) return;
+
+    var mensajes = [],
+        x = 0;
+    e.forEach(function(el){ mensajes.push(el.innerHTML);});
     
-    var x = 0;
     loopmsg();
     setInterval(loopmsg, 3500);
     // cycles through different salutations
     function loopmsg(){
-        $('#cycling').fadeOut(1000, function(){
-            $(this).text(mensaje[x + 1]);
+        $('#cycle h3').fadeOut(1000, function(){
+            $(this).text(mensajes[x + 1]);
             $(this).fadeIn(1000);
             x++;
 
             // resets x
-            if (x > mensaje.length - 2) {
+            if (x > mensajes.length - 2) {
                 x = -1;
             }
         }
@@ -291,9 +234,9 @@ function slideoutInit(){
     }
 }
 
-function odometerinit(){
-    
+function odometerinit(){  
     if(!odo[0] || odo[0] == null) return;
+    
     setTimeout(function(){
         for(var i = 0; i < odo.length; i++){
             var element = odo[i];
@@ -304,6 +247,23 @@ function odometerinit(){
 
 }
 
+function unsliderInit(){
+    if(!unslider[0] || unslider[0] == null) return;
+    for(var i = 0; i < unslider.length; i++){
+        var selectors = unslider[i].dataset.unslider_selectors;
+        if(!selectors || selectors == null) {
+            jQuery(unslider[i]).unslider();
+        }else{
+
+            console.log(selectors);
+            selectors = JSON.parse(selectors);
+            jQuery(unslider[i]).unslider({
+                selectors : selectors
+            });
+        };
+        
+    }
+}
 
 /*** mono ****
 function hasDir() evaluates if there is an element in the DOM
@@ -445,13 +405,10 @@ function ajaxcall(datareferer,sourcedir){
     });
 }
 
-function listItems(els){
-    
-}
-
-
 function photoswipe_GalleryBuilder(images) {
     var container = document.getElementById("swipe_gallery");
+    if(!container || container == null) return;
+
     //For each image,
     for(var i = 0; i < images.length; i++) {
         var imageName = images[i].split('/').pop();

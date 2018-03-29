@@ -45,7 +45,7 @@
             normalScrollElementTouchThreshold: 5,
             touchSensitivity: 5,
             keyboardScrolling: true,
-            sectionSelector: '.section',
+            sectionSelector: '#pagepiling > section',
             animateAnchor: false,
 
             //events

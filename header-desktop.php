@@ -66,7 +66,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
     
     <?php elseif ($header == 'minimal'): ?>
     <header class="minimal-navigation fullwidth">
-        <nav class="container desktop">
+        <nav class="navlinks container desktop">
             <ul class="nav-left span-3">
                 <li data-target="index.php">home</li>
             </ul>
