@@ -1,3 +1,35 @@
+//colors
+$w: #fff;
+$b: #000;
+$grey_base: #e6e6e6;
+$grey: #999;
+$dark-gray:#333;
+$light-gray:#e6e6e6;
+$digital_blue:#1797cd;
+$digital_blue_dark:#006f9e;
+$darkest: #1e1e1e;
+$pol_green: #cdc200;
+$pol_green_dark: #8f8700;
+$sport_orange: #d53d0e;
+$sport_orange_dark: #a62700;
+
+$charcoal: #444;
+$pink: #ff2965;
+$orange: #ff5b3d;
+
+$warn-yellow: #FBAE17;
+
+// Font Colors
+$base-font-color: $dark-gray;
+$action-color: $warn-yellow;
+
+// font-faces
+%sans{ font-family: 'Roboto', sans-serif;}
+%serif{ font-family: 'Roboto Slab', serif;}
+$serif: 'Roboto Slab', serif;
+$sans:'Roboto', sans-serif;
+
+
 // width
 $w1150: 	1150px;
 $w1000: 	1000px;

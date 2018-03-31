@@ -23,8 +23,63 @@ body.home{
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1280'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23E6E6E6;%7D .st1%7Bfill:%23D53D0E;%7D .st2%7Bfill:%23333333;%7D%0A%3C/style%3E%3Crect class='st0' width='1920' height='1280'/%3E%3Cpolygon class='st1' points='1920 1279 356.9 1280.1 580.4 506.6 966.5 1.1 1920 0 '/%3E%3Cpolygon class='st2' points='1920 1279 1059.6 1280.1 1236.7 664.7 1839.9 1.1 1920 0 '/%3E%3C/svg%3E");
             
             main , aside{
-                display: table-row;
+                display: block;
+            }
+            
+            main{
+                height: 70%;
+                height: 70vh;
+                top:50%;
+                transform: translateY(-50%);
+                position: absolute;
                 padding: 0 3em;
+            }
+            
+            aside{
+                @include jaggedStrip;
+                position: absolute;
+                height: 130px;
+                bottom: 0;
+                padding: 1em 0;
+                
+                h2{
+                    font-size: 2em;
+                    overflow: hidden;
+                }
+                
+                .unslider-wrapp{
+                    overflow: hidden;
+                    float: left;
+                    
+                    .unslider-arrow {
+                        color:$w;
+                    }
+                }
+                
+                article{
+                    padding: 1.5em;
+                    
+                    dt{
+                        @extend %sans;
+                        font-weight: 100;
+                        font-size: 4em;
+                        color: $w;
+                        width: 70%;
+                        overflow: hidden;
+                        float: left;
+                        line-height: 130px;
+                        margin: 0;
+                    }
+                    
+                    dd{
+                        margin: 0;
+                        font-size: .9em;
+                        width: 20%;
+                        float: left;
+                        overflow: hidden;
+                        color: $darkest;
+                    }
+                }
             }
         }
         

@@ -393,3 +393,11 @@ form{
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
+@mixin jaggedStrip($color:$warn-yellow){
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1366 131'%3E%3Cstyle type='text/css'%3E .shape%7Bfill:#{url-friendly-colour($color)};%7D%0A%3C/style%3E%3Cpolygon class='shape' points='114.6 2.9 1365.5 2.9 1365.5 131 14.4 131 '/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+    background-position: bottom left;
+}

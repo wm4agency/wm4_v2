@@ -1,32 +1,10 @@
-// colors
-$w: #fff;
-$b: #000;
-$charcoal: #444;
-$pink: #ff2965;
-$orange: #ff5b3d;
-
-$grey_base: #e6e6e6;
-$grey: #999;
-$light-gray:#e6e6e6;
-$digital_blue:#1797cd;
-$digital_blue_dark:#006f9e;
-$darkest: #333;
-$pol_green: #cdc200;
-$pol_green_dark: #8f8700;
-$sport_orange: #d53d0e;
-$sport_orange_dark: #a62700;
-
 // typo
 $helvetica: Helvetica, sans-serif;
-$serif: 'Roboto Slab', serif;;
-$sans:'Roboto', sans-serif;;
 $fa: 'FontAwesome';
 
 // fontface example - https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
 //@include font-face('Roboto', css/fonts/Roboto/Roboto-Regular, null, null, woff2);
 //@include font-face('Roboto_Slab', css/fonts/Roboto_Slab/Roboto_Slab-Regular, null, null, woff2);
-%sans{ font-family: 'Roboto', sans-serif;}
-%serif{ font-family: 'Roboto Slab', serif;}
 
 // Typography
 $base-font-family: $sans;
@@ -44,16 +22,6 @@ $base-border-radius: 3px;
 $base-spacing: $base-line-height * 1em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
-
-// Colors
-$blue: #477dca;
-$dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #ddd;
-
-// Font Colors
-$base-font-color: $dark-gray;
-$action-color: $blue;
 
 // Border
 $base-border-color: $light-gray;
