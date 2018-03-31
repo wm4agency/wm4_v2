@@ -12,9 +12,9 @@
         <p></p>
     </article>
 </main>
-<aside id="valores" class="unslider" >
+<aside id="valores" class="unslider" data-unslider_selectors='{"container": "dl:first","slides":"article"}'>
     <h2 class="hexatitle left">Trabajamos con valor</h2>
-    <!--<dl>
+    <dl>
         <article>
             <dt>Talento</dt>
             <dd>Nuestro equipo está formado por una constelación de individuos con experiencias y capacidades que sobresalen y se complementan</dd>
@@ -29,11 +29,11 @@
             <dt>Compromiso</dt>
             <dd></dd>
         </article>
-    </dl>-->
-    <ul>
+    </dl>
+    <!--<ul>
         <li>Talento</li>
             <li>Eficacia</li>
             <li>Pasión</li>
             <li>Compromiso</li>
-    </ul>
+</ul>-->
 </aside>

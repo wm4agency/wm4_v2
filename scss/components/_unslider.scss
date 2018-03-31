@@ -8,7 +8,7 @@
 */
 
 //  Unslider 2 has navigation styles pre-designed. You can turn it on or off here. Default is off (false).
-$unslider-dot-navigation: false;
+$unslider-dot-navigation: true;
 $unslider-dot-colour: #fff;
 
 //  Unslider 2 has navigation styles pre-designed. You can turn it off here.
@@ -29,7 +29,7 @@ $unslider-namespace: 'unslider';
     &-wrap {
         position: relative;
 
-        &.unslider-carousel > li {
+        &.unslider-carousel > * {
             float: left;
         }
     }
@@ -51,7 +51,7 @@ $unslider-namespace: 'unslider';
     &-fade {
         position: relative;
 
-        .unslider-wrap li {
+        .unslider-wrap + * {
             position: absolute;
             left: 0;
             top: 0;
