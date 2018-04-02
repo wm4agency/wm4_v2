@@ -129,7 +129,6 @@
 
         //  Get everything set up innit
         self.init = function(options) {
-            console.log(options);
             //  Set up our options inside here so we can re-init at
             //  any time
             self.options = $.extend({}, self.defaults, options);

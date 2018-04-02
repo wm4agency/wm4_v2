@@ -24,15 +24,39 @@ body.home{
             
             main , aside{
                 display: block;
+                
+                .hexatitle.left{
+                    border: none;
+                    &::before{
+                        @include hexa_marker($darkest);
+                    }
+                }
             }
             
             main{
-                height: 70%;
-                height: 70vh;
-                top:50%;
-                transform: translateY(-50%);
-                position: absolute;
+                height: 65%;
+                height: 65vh;
                 padding: 0 3em;
+                margin: 150px 0 130px 0;
+
+                article{
+                    padding: 0 3em;
+                    p{font-size: .95em;}
+
+                    &:first-child{padding-top: 2%;}
+                    &:nth-child(2){padding-top: 10%;}
+                    &:last-child{
+                        color: $w;
+                        padding-top: 20%;
+
+                        & > .hexatitle.left{
+                            color:$warn-yellow;
+                            &::before{
+                                @include hexa_marker($warn-yellow);
+                            }
+                        }
+                    }
+                }
             }
             
             aside{
@@ -45,39 +69,49 @@ body.home{
                 h2{
                     font-size: 2em;
                     overflow: hidden;
+                    margin-top: 1em;
                 }
                 
                 .unslider-wrapp{
-                    overflow: hidden;
-                    float: left;
-                    
+                    margin: auto;
+                    height: 100px;
+                    overflow: hidden;                    
                     .unslider-arrow {
                         color:$w;
                     }
+                    
+                    & > .unslider{
+                        position: relative;
+                    }
                 }
                 
-                article{
-                    padding: 1.5em;
+                .dtwrapper{
+                    padding: 0 1.5em;
+                    height: 100px;
+                    overflow: hidden;
+                    text-align: left;
                     
                     dt{
                         @extend %sans;
                         font-weight: 100;
-                        font-size: 4em;
+                        font-size: 5em;
                         color: $w;
-                        width: 70%;
+                        width: 75%;
                         overflow: hidden;
                         float: left;
-                        line-height: 130px;
+                        line-height: 100px;
                         margin: 0;
+                        text-transform: uppercase;
                     }
                     
                     dd{
-                        margin: 0;
-                        font-size: .9em;
-                        width: 20%;
+                        margin: auto 0;
+                        font-size: .75em;
+                        width: 25%;
                         float: left;
                         overflow: hidden;
                         color: $darkest;
+                        //line-height: .95em;
                     }
                 }
             }

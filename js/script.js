@@ -250,16 +250,12 @@ function odometerinit(){
 function unsliderInit(){
     if(!unslider[0] || unslider[0] == null) return;
     for(var i = 0; i < unslider.length; i++){
-        var selectors = unslider[i].dataset.unslider_selectors;
-        if(!selectors || selectors == null) {
+        var options = unslider[i].dataset.unslider_options;
+        if(!options || options == null) {
             jQuery(unslider[i]).unslider();
         }else{
-
-            console.log(selectors);
-            selectors = JSON.parse(selectors);
-            jQuery(unslider[i]).unslider({
-                selectors : selectors
-            });
+            options = JSON.parse(options);
+            jQuery(unslider[i]).unslider(options);
         };
         
     }

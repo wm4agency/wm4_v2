@@ -8,11 +8,11 @@ include 'header-desktop.php';
 ?>
 
 <div id="pagepiling">
-    <section id="home"><?php include 'php/partials/home_main.php'; ?></section>
-    <section id="modelo"><?php include 'php/partials/home_modelo.php'; ?></section>
+    <section id="home"><?php include 'home_main.php'; ?></section>
+    <section id="modelo"><?php include 'home_modelo.php'; ?></section>
     <section id="contacto"></section>
 </div>    
 <?php 
-    require_once('php/components/modal_contacto.php');
+    require_once('../components/modal_contacto.php');
     include 'footer.php'; 
 ?>
