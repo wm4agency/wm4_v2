@@ -9,7 +9,8 @@ if ( $detect->isMobile() ) {
 }elseif ( $detect->isTablet() ){
     require 'partials/index-mobile.php';
 }else{
-    require 'partials/index-desktop.php' ;
+    echo"is desktop!<br/>\n";
+    require_once('partials/index-desktop.php');
 }
 /*require 'index-desktop.php' ;*/
 

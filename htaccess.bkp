@@ -1,0 +1,4 @@
+# RewriteEngine On
+# RewriteBase /
+
+# RewriteRule ^marketing-digital$ /examp.php [R=301,L]
