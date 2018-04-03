@@ -1,4 +1,7 @@
-<?php if ($footer == "full"): /*echo "full footer"*/;?>
+<?php 
+if ($footer == "full"): /*echo "full footer"*/;
+?>
+
 <footer class="fullwidth">
     <div class="container">
     </div>
@@ -20,7 +23,7 @@
 </footer>
 <?php   
     endif;
-    require_once('/../s.php'); 
+    require_once('php/s.php'); 
 ?>
 
 </body>

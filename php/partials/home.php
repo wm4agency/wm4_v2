@@ -1,12 +1,11 @@
-<?
+<?PHP
 /* Home main structure */
 $title = 'WM4'; 
 $localScripts = array('pagepiling','unslider');
 $header = 'full'; 
 $role = 'home';
 $localclass = 'ppd';
-include 'header-desktop.php'; 
-
+if (! @include_once('header-desktop.php')){echo "couldn't include header";}
 ?>
 <div id="pagepiling">
     <section id="home"><?php include 'home_main.php'; ?></section>

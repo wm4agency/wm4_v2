@@ -1,0 +1,11 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^marketing-digital$ index.php
+# RewriteRule ^marketing-digital/(\d+)*$ ./index.php?d=marketing-digital
+# RewriteRule ^threads/(\d+)*$ ./thread.php?id=$1
+
+# RewriteRule ^search/(.*)$ ./search.php?query=$1

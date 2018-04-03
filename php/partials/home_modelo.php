@@ -1,3 +1,5 @@
+<!-- HOME "MODELO" SECTION CONTENTS -->
+
 <main class="fullwidth">
     <article class="span-4">
         <h1 class="hexatitle left animate fadeInDown">Creamos estrategias</h1>
