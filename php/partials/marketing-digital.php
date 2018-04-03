@@ -166,17 +166,14 @@
 </section>
 <section id="contacto" name="contacto" class="<?php echo $role; ?> row">
     <div class="container">
-        <span class="span-4">&nbsp;</span>
-        <form id="contactform" class="span-4">
-            <h1 class="hexatitle centered sub">Contáctanos</h1>
-            <h2 >Transforma hoy tu estrategia digital</h2>
-            <input type=text placeholder="nombre">
-            <input type=text placeholder="empresa">
-            <input type=email placeholder="correo">
-            <input type=tel placeholder="teléfono">
-            <input type=text placeholder="asunto">
-            <textarea placeholder="comentarios"></textarea>
-        </form>
+        <div class="span-4">&nbsp;</div>
+        <div class="span-4">
+            <hgroup>
+                <h1 class="hexatitle centered sub">Contáctanos</h1>
+                <h2 >Transforma hoy tu estrategia digital</h2>
+            </hgroup>
+            <?php include "php/components/forma_general.php"; ?>
+        </div>
     </div>
 </section>
 <section id="tagline" class="postcontacto"><div class="container"><h5>creamos estrategias | entregamos resultados</h5></div></section>

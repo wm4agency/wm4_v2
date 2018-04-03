@@ -10,5 +10,5 @@ if (! @include_once('header-desktop.php')){echo "couldn't include header";}
 <div id="pagepiling">
     <section id="home"><?php include 'home_main.php'; ?></section>
     <section id="modelo"><?php include 'home_modelo.php'; ?></section>
-    <section id="contacto"></section>
+    <section id="contacto"><?php include 'home_contacto.php'; ?></section>
 </div>    

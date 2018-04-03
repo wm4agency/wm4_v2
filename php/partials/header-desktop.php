@@ -39,7 +39,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 </script>
 </head>
     <body class="<?php echo $role; echo " "; echo $localclass; ?>">
-        <!-- <div id="preloader" class="se-pre-con"></div> -->
+     <div id="preloader" class="se-pre-con"></div>
     <?php  if ($header == 'full'): ?>
     <header class="centered-navigation" role="banner">
     <div class="centered-navigation-wrapper">

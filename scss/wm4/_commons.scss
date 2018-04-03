@@ -179,12 +179,19 @@ form{
 }
 
 /// FRAMINGS
-@mixin framing{
+@mixin framing_v{
     position: relative;
     width: 100%;
     margin: 0;
     padding: 0;
 }
+@mixin framing_h{
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 @mixin f_top($f_padding:10%){
     background-size: cover;
     background-repeat: no-repeat;
@@ -198,7 +205,6 @@ form{
     width: 100%;
     position: absolute;
 }
-
 @mixin f_bottom($f_padding:10%){
     background-size: cover;
     background-repeat: no-repeat;
@@ -213,7 +219,34 @@ form{
     position: absolute;
 }
 
-@mixin f_skewed($maincolor:'#333',$subcolor:'#222'){
+@mixin f_left($f_padding:30%){
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-left:$f_padding;    
+    margin-left: $f_padding*-1;
+    content:" ";
+    bottom:0;
+    left: -3%;
+    display: block;
+    min-height: 100%;
+    position: absolute;
+}
+@mixin f_right($f_padding:30%){
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding-right:$f_padding;    
+    margin-right: $f_padding*-1;
+    content:" ";
+    bottom:0;
+    right: -3%;
+    display: block;
+    min-height: 100%;
+    position: absolute;
+}
+
+@mixin f_jagged_v($maincolor:'#333',$subcolor:'#222'){
     $skewed_f: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='framings skewed' viewBox='0 0 1350 189'%3E%3Cstyle type='text/css'%3E .main%7Bfill:#{url-friendly-colour($maincolor)};%7D .sub%7Bfill:#{url-friendly-colour($subcolor)};%7D%0A%3C/style%3E%3Cpolygon class='sub' points='0 189 1350 189 0 0 '/%3E%3Cpolygon class='main' points='1350 0 0 189 1350 189 '/%3E%3C/svg%3E");
     
     &::before{
@@ -224,6 +257,21 @@ form{
     &::after{
         background-image: $skewed_f;
         @include f_bottom(14%);
+        transform: rotate(180deg)
+    }
+}
+
+@mixin f_jagged_h($maincolor:'#FBAE17',$subcolor:'#DEC493'){
+    $jagged_h: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 768'%3E%3Cstyle type='text/css'%3E .back%7Bfill:#{url-friendly-colour($subcolor)};%7D .front%7Bfill:#{url-friendly-colour($maincolor)};%7D%0A%3C/style%3E%3Cpolygon class='back' points='120 768 120 0 107.5 0 0 768 '/%3E%3Cpolygon class='front' points='120 0 120 768 107.5 768 0 0 '/%3E%3C/svg%3E");
+    
+    &::before{
+        background-image: $jagged_h;
+        @include f_left(30%);
+    }
+    
+    &::after{
+        background-image: $jagged_h;
+        @include f_right(30%);
         transform: rotate(180deg)
     }
 }
@@ -245,6 +293,7 @@ form{
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='hexa pointer right' viewBox='0 0 216.5 500'%3E%3Cstyle type='text/css'%3E .element%7Bfill:#{url-friendly-colour($color)};%7D%3C/style%3E%3Cpolygon class='element' points='216.5 500 0 375 0 125 216.5 0 '/%3E%3C/svg%3E%0A");
     @include img_sprite(43%);
 }
+
 @mixin hexa_marker($color:#000){
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 433 500'%3E%3Cstyle type='text/css'%3E .marker%7Bfill:#{url-friendly-colour($color)};%7D%0A%3C/style%3E%3Cpolygon class='marker' points='433 375 216.5 500 0 375 0 125 216.5 0 433 125 '/%3E%3C/svg%3E");
     position: absolute;

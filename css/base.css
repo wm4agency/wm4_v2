@@ -2214,7 +2214,7 @@ img {
 body, body.home #unidades dt + *, ul.hex li, body.home #pagepiling section#modelo aside .dtwrapper dt, body.home #unidades h1, body.mobile section#mvp h1, body.mobile section#valores article h1, body.portada-seccion section#portfolio .grid-item article h1 {
   font-family: 'Roboto', sans-serif; }
 
-.linktext, form fieldset label, body.home #unidades dt {
+.linktext, form fieldset label, body.home #pagepiling section#contacto main ul.links.unidades li, body.home #unidades dt {
   font-family: 'Roboto Slab', serif; }
 
 body {
@@ -3168,6 +3168,25 @@ header.minimal-navigation {
         border-top: 17.32px solid #000;
         left: 0; }
 
+header nav#nav_sections ul {
+  height: 3em; }
+  header nav#nav_sections ul li {
+    list-style: none;
+    font-size: .75em;
+    display: block;
+    color: #999;
+    text-transform: lowercase;
+    line-height: 3em;
+    padding: 0;
+    margin: 0  1.5em; }
+    header nav#nav_sections ul li:hover {
+      color: #1e1e1e;
+      cursor: pointer; }
+  header nav#nav_sections ul.nav-left li {
+    float: left; }
+  header nav#nav_sections ul.nav-right li {
+    float: right; }
+
 footer {
   background-color: #000; }
   footer nav#footer-icons {
@@ -3183,6 +3202,13 @@ footer {
         footer nav#footer-icons ul li a:hover {
           color: #FBAE17; }
 
+body.home .nav_sections ul.nav-right.span-9 {
+  float: none;
+  text-align: center;
+  width: auto; }
+  body.home .nav_sections ul.nav-right.span-9 li {
+    display: inline;
+    color: #333; }
 body.home .main_logo {
   max-width: 70%;
   text-align: center;
@@ -3272,6 +3298,108 @@ body.home #pagepiling section {
           color: #1e1e1e; }
   body.home #pagepiling section#contacto {
     background-color: #e6e6e6; }
+    body.home #pagepiling section#contacto > div > div:first-of-type {
+      min-height: 100%;
+      background-color: #1e1e1e; }
+    body.home #pagepiling section#contacto aside {
+      background-color: #FBAE17;
+      position: relative;
+      min-height: 100%;
+      margin: 0;
+      padding: 0; }
+      body.home #pagepiling section#contacto aside::before {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 768'%3E%3Cstyle type='text/css'%3E .back%7Bfill:%23DEC493;%7D .front%7Bfill:%23FBAE17;%7D%0A%3C/style%3E%3Cpolygon class='back' points='120 768 120 0 107.5 0 0 768 '/%3E%3Cpolygon class='front' points='120 0 120 768 107.5 768 0 0 '/%3E%3C/svg%3E");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center right;
+        padding-left: 30%;
+        margin-left: -30%;
+        content: " ";
+        bottom: 0;
+        left: -3%;
+        display: block;
+        min-height: 100%;
+        position: absolute; }
+      body.home #pagepiling section#contacto aside::after {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 768'%3E%3Cstyle type='text/css'%3E .back%7Bfill:%23DEC493;%7D .front%7Bfill:%23FBAE17;%7D%0A%3C/style%3E%3Cpolygon class='back' points='120 768 120 0 107.5 0 0 768 '/%3E%3Cpolygon class='front' points='120 0 120 768 107.5 768 0 0 '/%3E%3C/svg%3E");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center left;
+        padding-right: 30%;
+        margin-right: -30%;
+        content: " ";
+        bottom: 0;
+        right: -3%;
+        display: block;
+        min-height: 100%;
+        position: absolute;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg); }
+      body.home #pagepiling section#contacto aside::before {
+        background-color: #1e1e1e;
+        padding-left: 40%; }
+      body.home #pagepiling section#contacto aside::after {
+        padding-right: 40%; }
+      body.home #pagepiling section#contacto aside form {
+        padding: .5em;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%); }
+    body.home #pagepiling section#contacto main {
+      min-height: 100%;
+      padding-left: 110px;
+      position: relative; }
+      body.home #pagepiling section#contacto main .wrapper {
+        padding: .5em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 70%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        margin: 0 auto; }
+      body.home #pagepiling section#contacto main h1 {
+        color: #fff;
+        font-size: 3em; }
+        body.home #pagepiling section#contacto main h1::before {
+          content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 433 500'%3E%3Cstyle type='text/css'%3E .marker%7Bfill:%23fff;%7D%0A%3C/style%3E%3Cpolygon class='marker' points='433 375 216.5 500 0 375 0 125 216.5 0 433 125 '/%3E%3C/svg%3E");
+          position: absolute; }
+        body.home #pagepiling section#contacto main h1 + h2 {
+          text-transform: uppercase;
+          border-bottom-color: #1e1e1e;
+          font-size: 1.5em;
+          line-height: 1em;
+          margin-bottom: .5em; }
+      body.home #pagepiling section#contacto main ul.links.unidades li {
+        width: 33.33%;
+        padding: 0;
+        margin: 0;
+        float: left;
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: pointer; }
+        body.home #pagepiling section#contacto main ul.links.unidades li.digital {
+          color: #1797cd; }
+        body.home #pagepiling section#contacto main ul.links.unidades li.politico {
+          color: #cdc200; }
+        body.home #pagepiling section#contacto main ul.links.unidades li.deportivo {
+          color: #d53d0e; }
+      body.home #pagepiling section#contacto main ul.icons.sociales {
+        margin-top: 50px; }
+        body.home #pagepiling section#contacto main ul.icons.sociales li {
+          font-size: 4em;
+          text-align: center;
+          color: #999;
+          cursor: pointer; }
+    body.home #pagepiling section#contacto .monolito-wrapper {
+      min-height: 100%; }
+    body.home #pagepiling section#contacto .monolito {
+      position: absolute;
+      bottom: 0; }
 body.home #cycle h3 {
   font-size: 2em;
   text-transform: uppercase;

@@ -80,7 +80,7 @@ body.portada-seccion {
 
         &#portfolio{
             text-align: center;
-            @include framing();
+            @include framing_v();
             @include f_arrowdown($darkest);
             background-color: $darkest;
             padding: 50px 0;
@@ -182,14 +182,13 @@ body.portada-seccion {
 
         &#contacto{
             background-color: $digital_blue;
-            @include framing();
-            @include f_skewed();
+            @include framing_v();
+            @include f_jagged_v();
 
             .wrapper{
                 background: crimson;
                 padding: 3em;
             }
-           
         }
         
         &#tagline{
@@ -291,7 +290,7 @@ body.portada-seccion {
             }
             
             &#contacto{
-                @include f_skewed($digital_blue, $digital_blue_dark);
+                @include f_jagged_v($digital_blue, $digital_blue_dark);
                 
                 .hexatitle.centered{
                     color: white;
@@ -357,7 +356,7 @@ body.portada-seccion {
             
             &#contacto{
                 background-color: $pol_green;
-                @include f_skewed($pol_green, $pol_green_dark);
+                @include f_jagged_v($pol_green, $pol_green_dark);
                 
                 .hexatitle.centered{
                     color: white;

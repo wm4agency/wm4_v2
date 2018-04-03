@@ -9,7 +9,7 @@ $(document).ready(function($){
     unsliderInit();
 });
 window.onload = function() {
-    //document.getElementById('preloader')&&$(".se-pre-con").fadeOut("slow")&&odometerinit();
+    document.getElementById('preloader')&&$(".se-pre-con").fadeOut("slow")&&odometerinit();
 }          
                   
 //$(window).on("load resize",function(e) {

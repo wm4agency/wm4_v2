@@ -144,3 +144,31 @@ header.minimal-navigation{
         figure{@include hexagon(1em,1em);}
     }
 }
+
+header nav#nav_sections{
+    //background: orange;
+
+    ul{
+        height: 3em;
+
+        li{
+            list-style: none;
+            font-size: .75em;
+            display: block;
+            color: $grey;
+            text-transform: lowercase;
+            line-height: 3em;
+            padding: 0;
+            margin: 0  1.5em;
+
+            &:hover{
+                color: $darkest;
+                //border-bottom: 1px solid $darkest;
+                cursor: pointer;
+            }
+        }
+
+        &.nav-left li{ float: left; }
+        &.nav-right li{ float: right; }
+    }
+}
