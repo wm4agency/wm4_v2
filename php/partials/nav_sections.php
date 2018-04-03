@@ -1,4 +1,4 @@
-<nav class="navlinks container desktop">
+<nav id="nav_sections" class="navlinks container desktop animate fadeInDown">
     <ul class="nav-left span-3">
         <li data-target="index.php">home</li>
     </ul>

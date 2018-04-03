@@ -132,9 +132,18 @@ function pagepilingInit(){
         verticalCentered: true,
         loopBottom: true,
         afterRender: function(){
-
+            document.getElementById('nav_sections').classList.add('hidden');
         },
         anchors: anchors,
+        afterLoad: function(anchorLink, index){            
+            if(anchorLink == 'modelo' || anchorLink == 'contacto') document.getElementById('nav_sections').classList.remove('hidden');
+            var navleft = document.querySelectorAll('#nav_sections > .nav-left');
+            navleft[0].classList.add('hidden');
+        },
+        onLeave: function(index, nextIndex, direction){
+            //after leaving section 2
+            if(nextIndex == 1) document.getElementById('nav_sections').classList.add('hidden');
+        }
     });
 }
 
