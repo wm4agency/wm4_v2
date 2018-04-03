@@ -5,7 +5,7 @@ body.home{
         text-align: center;
         width: auto;
         
-        li{display: inline; color: $dark-gray;}
+        li{display: inline; color: $dark-gray; float: none; }
     }
     
     .main_logo{
@@ -250,17 +250,25 @@ body.home{
             text-transform: uppercase;
         }
         
+         &>div{
+            width: 33.33%;
+            margin: 0;
+            float: left;
+            position: relative;
+            height: 50px;
+             margin: 0;
+        }
+        
         dt{
             @extend %tooltip;
             @extend %serif;
+            width: 100%;
             font-size: 2em;
-            width: 33.33%;
             text-transform: uppercase;
             line-height: 50px;
             letter-spacing: 0.05em;
             background: $light-gray;
             margin: 0;
-            float: left;
 
             &:last-child{
                 border:none;
@@ -270,6 +278,7 @@ body.home{
                 color:white;
                 font-weight: 700;
                 background-color: $darkest!important;
+                cursor: pointer;
             }
             
             span{display: none;}
@@ -277,6 +286,21 @@ body.home{
             &.d{background-color: $digital_blue;}
             &.p{background-color: $pol_green;}
             &.s{background-color: $sport_orange;}
+            
+            & + *{
+                background: $action-color;
+                color: $darkest;
+                @extend %sans;
+                font-weight: 100;
+                top: 0;
+                margin-top: -70px;
+                border: none;
+                border-radius: 1px;
+                max-width: 90%;
+                box-shadow: none;
+                
+                &::before{content: none; display: none;}
+            }
         }
     }
     

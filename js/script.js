@@ -82,13 +82,13 @@ function linktexts(){
 }
 
 function navlinks(){
-    var navlinks = document.querySelectorAll("nav.navlinks li");
+    var navlinks = document.querySelectorAll("[data-target]");
     if(!navlinks || navlinks == null) return;
 
     mapTargets = function() {
         this.preventDefault;
         console.log('nav!');
-        var target = this.getAttribute('data-target');
+        var target = rootpath+'/'+this.getAttribute('data-target');
         window.location=target;
     };
     [].map.call(navlinks, function(elem) {

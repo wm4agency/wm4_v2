@@ -29,7 +29,7 @@ form{
     #{$all-text-inputs},
     select[multiple=multiple],
     textarea {
-        background-color: none;
+        background-color: transparent;
         border: none;
         border-bottom: $base-border;
 //        border-radius: $base-border-radius;

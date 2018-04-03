@@ -9,9 +9,9 @@
             <h2>Descubre todo el valor<br />que podemos agregar<br />a tu negocio</h2>
         </hgroup>
         <ul class="links unidades">
-            <li class="digital">Marketing digital</li>
-            <li class="politico">Marketing político</li>
-            <li class="deportivo">Marketing deportivo</li>
+            <li class="digital" data-target="?d=marketing-digital">Marketing digital</li>
+            <li class="politico" data-target="?d=marketing-politico">Marketing político</li>
+            <li class="deportivo" data-target="?d=marketing-deportivo">Marketing deportivo</li>
         </ul>
         <ul class="icons sociales">
             <li class="fa fa-facebook">&nbsp;</li>

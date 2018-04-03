@@ -21,12 +21,18 @@
     </div>
     <div class="span-3 omega monolito-wrapper animated fadeInRight"><?php include 'monolito_der.php'; ?></div>
 </main>
-<dl id="unidades" class="fullwidth animated fadeInDown">
+<dl itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog" id="unidades" class="fullwidth animated fadeInDown">
     <h1>Marketing Especializado</h1>
-    <dt class="d"><span>Marketing</span> Digital</dt>
-    <dd>Ayudamos a las marcas a cumplir objetivos de negocio en internet</dd>
-    <dt class="p"><span>Marketing</span> Político</dt>
-    <dd>Trabajamos con figuras y entidades para incrementar su presencia pública y operaciones digitales</dd>
-    <dt class="s"><span>Marketing</span> Deportivo</dt>
-    <dd>Desarrollamos grandes marcas para grandes equipos</dd>
+    <div>
+        <dt itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog" class="d" data-target="?d=marketing-digital"><span>Marketing</span> Digital</dt>
+        <dd>Ayudamos a las marcas a cumplir objetivos de negocio en internet</dd>
+    </div>
+    <div>
+        <dt itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog" class="p" data-target="?d=marketing-politico"><span>Marketing</span> Político</dt>
+        <dd>Trabajamos con figuras y entidades para incrementar su presencia pública y operaciones digitales</dd>
+    </div>
+    <div>
+        <dt itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog" class="s" data-target="?d=marketing-deportivo"><span>Marketing</span> Deportivo</dt>
+        <dd>Desarrollamos grandes marcas para grandes equipos</dd>
+    </div>
 </dl>

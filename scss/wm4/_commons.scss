@@ -1,3 +1,13 @@
+#{$all-text-inputs},
+select[multiple=multiple],
+textarea{
+    @extend %sans;
+    &:placeholder-shown{
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+}
+
 @mixin hexagon ($width,$height) {
     position: relative;
     width: $height; 

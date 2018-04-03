@@ -2211,7 +2211,8 @@ img {
   src: url("fonts/RobotoSlab-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal; }
-body, body.home #unidades dt + *, ul.hex li, body.home #pagepiling section#modelo aside .dtwrapper dt, body.home #unidades h1, body.mobile section#mvp h1, body.mobile section#valores article h1, body.portada-seccion section#portfolio .grid-item article h1 {
+body, body.home #unidades dt + *, input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], textarea,
+select[multiple=multiple], ul.hex li, body.home #pagepiling section#modelo aside .dtwrapper dt, body.home #unidades h1, body.mobile section#mvp h1, body.mobile section#valores article h1, body.portada-seccion section#portfolio .grid-item article h1 {
   font-family: 'Roboto', sans-serif; }
 
 .linktext, form fieldset label, body.home #pagepiling section#contacto main ul.links.unidades li, body.home #unidades dt {
@@ -2379,7 +2380,7 @@ form label {
 form input[type="color"], form input[type="date"], form input[type="datetime"], form input[type="datetime-local"], form input[type="email"], form input[type="month"], form input[type="number"], form input[type="password"], form input[type="search"], form input[type="tel"], form input[type="text"], form input[type="time"], form input[type="url"], form input[type="week"], form textarea,
 form select[multiple=multiple],
 form textarea {
-  background-color: none;
+  background-color: transparent;
   border: none;
   border-bottom: 1px solid #e6e6e6;
   -webkit-box-shadow: none;
@@ -2876,6 +2877,12 @@ body.home #unidades dt {
     right: 0;
     width: 4px; }
 
+input[type="color"]:placeholder-shown, input[type="date"]:placeholder-shown, input[type="datetime"]:placeholder-shown, input[type="datetime-local"]:placeholder-shown, input[type="email"]:placeholder-shown, input[type="month"]:placeholder-shown, input[type="number"]:placeholder-shown, input[type="password"]:placeholder-shown, input[type="search"]:placeholder-shown, input[type="tel"]:placeholder-shown, input[type="text"]:placeholder-shown, input[type="time"]:placeholder-shown, input[type="url"]:placeholder-shown, input[type="week"]:placeholder-shown, textarea:placeholder-shown,
+select[multiple=multiple]:placeholder-shown,
+textarea:placeholder-shown {
+  font-weight: 100;
+  text-transform: uppercase; }
+
 .linktext {
   float: right;
   padding-right: 1.5em;
@@ -3208,7 +3215,8 @@ body.home .nav_sections ul.nav-right.span-9 {
   width: auto; }
   body.home .nav_sections ul.nav-right.span-9 li {
     display: inline;
-    color: #333; }
+    color: #333;
+    float: none; }
 body.home .main_logo {
   max-width: 70%;
   text-align: center;
@@ -3423,21 +3431,28 @@ body.home #unidades {
     letter-spacing: .125em;
     margin: 0;
     text-transform: uppercase; }
-  body.home #unidades dt {
-    font-size: 2em;
+  body.home #unidades > div {
     width: 33.33%;
+    margin: 0;
+    float: left;
+    position: relative;
+    height: 50px;
+    margin: 0; }
+  body.home #unidades dt {
+    width: 100%;
+    font-size: 2em;
     text-transform: uppercase;
     line-height: 50px;
     letter-spacing: 0.05em;
     background: #e6e6e6;
-    margin: 0;
-    float: left; }
+    margin: 0; }
     body.home #unidades dt:last-child {
       border: none; }
     body.home #unidades dt:hover {
       color: white;
       font-weight: 700;
-      background-color: #1e1e1e !important; }
+      background-color: #1e1e1e !important;
+      cursor: pointer; }
     body.home #unidades dt span {
       display: none; }
     body.home #unidades dt.d {
@@ -3446,6 +3461,20 @@ body.home #unidades {
       background-color: #cdc200; }
     body.home #unidades dt.s {
       background-color: #d53d0e; }
+    body.home #unidades dt + * {
+      background: #FBAE17;
+      color: #1e1e1e;
+      font-weight: 100;
+      top: 0;
+      margin-top: -70px;
+      border: none;
+      border-radius: 1px;
+      max-width: 90%;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+      body.home #unidades dt + *::before {
+        content: none;
+        display: none; }
 body.home .monolito-wrapper {
   padding: 0;
   margin: 0; }
@@ -3759,7 +3788,7 @@ body.portada-seccion {
       vertical-align: middle; }
       body.portada-seccion section#clientes ul figure img {
         width: 100%;
-        height: 100%; }
+        height: auto; }
     body.portada-seccion section#clientes ul figcaption {
       display: none; }
   body.portada-seccion section#contacto {
