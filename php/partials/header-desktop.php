@@ -23,13 +23,18 @@
     <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#000000">
     
+    <!-- Google Tag Manager dataLayer-->
+    <script>
+        dataLayer = [];
+    </script>
     
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                                                           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                                })(window,document,'script','dataLayer','GTM-M7Q6HD8');</script>
+                                })(window,document,'script','dataLayer','GTM-M7Q6HD8');
+    </script>
     <!-- End Google Tag Manager -->
     
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,700|Roboto+Slab:300,400,700" rel="stylesheet">

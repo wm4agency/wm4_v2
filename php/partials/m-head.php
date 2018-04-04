@@ -23,20 +23,26 @@
     <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#000000">
     
+    <!-- Google Tag Manager dataLayer-->
+    <script>
+        dataLayer = [];
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                                                          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                                })(window,document,'script','dataLayer','GTM-M7Q6HD8');</script>
+    <!-- End Google Tag Manager -->    
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,700|Roboto+Slab:300,400,700" rel="stylesheet">
 <link rel="stylesheet" href="css/base.css">
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-<script>
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
-_gaq.push(['_trackPageview']);
-(function() {
-var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-</script>
+
 </head>
     <body class="mobile">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7Q6HD8"
+                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
         <?php if (! @include_once('php/components/m-slideMenu.php')){die "couldn't include sliding menu";} ?>
