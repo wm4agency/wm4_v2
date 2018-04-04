@@ -1,22 +1,17 @@
 $(document).ready(function($){
+    document.getElementById('preloader')&&$(".se-pre-con").fadeOut("slow");
     navlinks();
     cycleInit();
     pagepilingInit();
     modalInit();
     slideoutInit();
-    odometerinit();
+    odometerInit();
     getFolderItems();
     unsliderInit();
 });
 window.onload = function() {
-    document.getElementById('preloader')&&$(".se-pre-con").fadeOut("slow")&&odometerinit();
+    //document.getElementById('preloader')&&$(".se-pre-con").fadeOut("slow")&&odometerInit();
 }          
-
-// evaluate if there's an odometer
-var odo = document.getElementsByClassName("odometer");
-
-// evaluate if there's an unslider
-var unslider = document.getElementsByClassName("unslider");
 
 var pswpElement = document.querySelectorAll('.pswp')[0];
 var pswpGalleries = [];
@@ -146,12 +141,12 @@ function binds(){
     });
 }
 
-function slideoutInit(){
+function slideoutOLD(){
     var e = document.getElementById("slideout");
     if(!e || e == null) return;
     
     var triggers = document.querySelectorAll('.slideout-trigger');
-    var panel =  document.getElementById('slideout');
+    var panel =  document.getElementById('panel');
     var menus = [];
     var slideout = [];
     
@@ -211,9 +206,16 @@ function slideoutInit(){
     }
 }
 
-function odometerinit(){  
-    if(!odo[0] || odo[0] == null) return;
+function slideoutInit(){
     
+}
+
+function odometerInit(){  
+    // evaluate if there's an odometer
+    var odo = document.getElementsByClassName("odometer");
+    
+    if(!odo[0] || odo[0] == null) return;
+
     setTimeout(function(){
         for(var i = 0; i < odo.length; i++){
             var element = odo[i];
@@ -225,6 +227,9 @@ function odometerinit(){
 }
 
 function unsliderInit(){
+    // evaluate if there's an unslider
+    var unslider = document.getElementsByClassName("unslider");
+    
     if(!unslider[0] || unslider[0] == null) return;
     for(var i = 0; i < unslider.length; i++){
         var options = unslider[i].dataset.unslider_options;
