@@ -333,9 +333,9 @@ form{
     background-repeat: no-repeat;
 }
 
-@mixin tipped($element-color:grey,$background-color:#ccc,$size:70px){
+@mixin tipped($element-back:grey,$element-color:grey,$background-color:#ccc,$size:70px){
     position: relative;
-    background: $element-color; /* default color */
+    background: $element-back; /* default color */
     -webkit-box-shadow: 0 1px 2px #777;
     -moz-box-shadow: 0 2px 1px #777;
     box-shadow: 0 2px 1px #777;

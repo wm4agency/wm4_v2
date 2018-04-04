@@ -19,7 +19,8 @@ body.home{
         background-size: cover;
         
         &#home{
-            background-color: white;    
+            //background: $w url(../img/back_shading_upwards.jpg) bottom left repeat-x;    
+            background: linear-gradient(to bottom left,white,white,#e0e0e0);
             min-height: 100%;
             
             .pp-tableCell{
@@ -148,11 +149,11 @@ body.home{
             }
             main{
                 min-height: 100%;
-                padding-left: 110px;
+                margin: 60px 0 0 60px;
                 position: relative;
                 
                 .wrapper{
-                    padding: .5em;
+                    padding: 0;
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -165,6 +166,7 @@ body.home{
                 h1{
                     color:$w;
                     font-size: 3em;
+                    padding: 0;
                     
                     &::before{@include hexa_marker($w);}
                     & + h2{
@@ -172,7 +174,8 @@ body.home{
                         border-bottom-color: $darkest;
                         font-size: 1.5em;
                         line-height: 1em;
-                        margin-bottom: .5em;
+                        margin: .5em auto;
+                        padding-bottom: .5em;
                     } 
                 }
                 
@@ -186,6 +189,8 @@ body.home{
                     font-weight: 700;
                     text-transform: uppercase;
                     cursor: pointer;
+                    line-height: 1em;
+                    padding-bottom: 30px;
                     
                     &.digital{color:$digital_blue;}
                     &.politico{color:$pol_green;}
@@ -212,6 +217,8 @@ body.home{
             .monolito{
                 position: absolute;
                 bottom: 0;
+                width: 100%;
+                height: auto;
             }
         }
     }    
@@ -277,15 +284,15 @@ body.home{
             &:hover{
                 color:white;
                 font-weight: 700;
-                background-color: $darkest!important;
+                background: $darkest!important;
                 cursor: pointer;
             }
             
             span{display: none;}
             
-            &.d{background-color: $digital_blue;}
-            &.p{background-color: $pol_green;}
-            &.s{background-color: $sport_orange;}
+            &.d{background: linear-gradient(to bottom, $digital_blue_dark, $digital_blue, $digital_blue, $digital_blue);}
+            &.p{background: linear-gradient(to bottom, $pol_green_dark, $pol_green, $pol_green, $pol_green);}
+            &.s{background: linear-gradient(to bottom, $sport_orange_dark, $sport_orange, $sport_orange, $sport_orange);}
             
             & + *{
                 background: $action-color;

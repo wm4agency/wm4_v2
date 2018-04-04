@@ -3225,7 +3225,8 @@ body.home #pagepiling section {
   background: white no-repeat center center;
   background-size: cover; }
   body.home #pagepiling section#home {
-    background-color: white;
+    background: -webkit-gradient(linear, right top, left bottom, from(white), color-stop(white), to(#e0e0e0));
+    background: linear-gradient(to bottom left, white, white, #e0e0e0);
     min-height: 100%; }
     body.home #pagepiling section#home .pp-tableCell {
       padding-bottom: 93px;
@@ -3357,10 +3358,10 @@ body.home #pagepiling section {
         transform: translateY(-50%); }
     body.home #pagepiling section#contacto main {
       min-height: 100%;
-      padding-left: 110px;
+      margin: 60px 0 0 60px;
       position: relative; }
       body.home #pagepiling section#contacto main .wrapper {
-        padding: .5em;
+        padding: 0;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -3371,7 +3372,8 @@ body.home #pagepiling section {
         margin: 0 auto; }
       body.home #pagepiling section#contacto main h1 {
         color: #fff;
-        font-size: 3em; }
+        font-size: 3em;
+        padding: 0; }
         body.home #pagepiling section#contacto main h1::before {
           content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 433 500'%3E%3Cstyle type='text/css'%3E .marker%7Bfill:%23fff;%7D%0A%3C/style%3E%3Cpolygon class='marker' points='433 375 216.5 500 0 375 0 125 216.5 0 433 125 '/%3E%3C/svg%3E");
           position: absolute; }
@@ -3380,7 +3382,8 @@ body.home #pagepiling section {
           border-bottom-color: #1e1e1e;
           font-size: 1.5em;
           line-height: 1em;
-          margin-bottom: .5em; }
+          margin: .5em auto;
+          padding-bottom: .5em; }
       body.home #pagepiling section#contacto main ul.links.unidades li {
         width: 33.33%;
         padding: 0;
@@ -3389,7 +3392,9 @@ body.home #pagepiling section {
         text-align: center;
         font-weight: 700;
         text-transform: uppercase;
-        cursor: pointer; }
+        cursor: pointer;
+        line-height: 1em;
+        padding-bottom: 30px; }
         body.home #pagepiling section#contacto main ul.links.unidades li.digital {
           color: #1797cd; }
         body.home #pagepiling section#contacto main ul.links.unidades li.politico {
@@ -3407,7 +3412,9 @@ body.home #pagepiling section {
       min-height: 100%; }
     body.home #pagepiling section#contacto .monolito {
       position: absolute;
-      bottom: 0; }
+      bottom: 0;
+      width: 100%;
+      height: auto; }
 body.home #cycle h3 {
   font-size: 2em;
   text-transform: uppercase;
@@ -3451,16 +3458,19 @@ body.home #unidades {
     body.home #unidades dt:hover {
       color: white;
       font-weight: 700;
-      background-color: #1e1e1e !important;
+      background: #1e1e1e !important;
       cursor: pointer; }
     body.home #unidades dt span {
       display: none; }
     body.home #unidades dt.d {
-      background-color: #1797cd; }
+      background: -webkit-gradient(linear, left top, left bottom, from(#006f9e), color-stop(#1797cd), color-stop(#1797cd), to(#1797cd));
+      background: linear-gradient(to bottom, #006f9e, #1797cd, #1797cd, #1797cd); }
     body.home #unidades dt.p {
-      background-color: #cdc200; }
+      background: -webkit-gradient(linear, left top, left bottom, from(#8f8700), color-stop(#cdc200), color-stop(#cdc200), to(#cdc200));
+      background: linear-gradient(to bottom, #8f8700, #cdc200, #cdc200, #cdc200); }
     body.home #unidades dt.s {
-      background-color: #d53d0e; }
+      background: -webkit-gradient(linear, left top, left bottom, from(#a62700), color-stop(#d53d0e), color-stop(#d53d0e), to(#d53d0e));
+      background: linear-gradient(to bottom, #a62700, #d53d0e, #d53d0e, #d53d0e); }
     body.home #unidades dt + * {
       background: #FBAE17;
       color: #1e1e1e;
@@ -3898,7 +3908,8 @@ body.portada-seccion {
     color: #006f9e; }
   body.portada-seccion.mkt_d #servicios {
     position: relative;
-    background: #1797cd;
+    background: -webkit-gradient(linear, right top, left bottom, from(#1797cd), color-stop(#1797cd), to(#006f9e));
+    background: linear-gradient(to bottom left, #1797cd, #1797cd, #006f9e);
     /* default color */
     -webkit-box-shadow: 0 1px 2px #777;
     box-shadow: 0 2px 1px #777;
@@ -3992,7 +4003,8 @@ body.portada-seccion {
     color: #8f8700; }
   body.portada-seccion.mkt_p #servicios {
     position: relative;
-    background: #cdc200;
+    background: -webkit-gradient(linear, right top, left bottom, from(#cdc200), color-stop(#cdc200), to(#8f8700));
+    background: linear-gradient(to bottom left, #cdc200, #cdc200, #8f8700);
     /* default color */
     -webkit-box-shadow: 0 1px 2px #777;
     box-shadow: 0 2px 1px #777;

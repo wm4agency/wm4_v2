@@ -2,7 +2,7 @@
 <aside class="span-3">
     <?php include "php/components/forma_general.php"; ?>
 </aside>
-<main class="span-6">
+<main class="span-5">
     <div class="wrapper animate fadeInLeft">
         <hgroup>
             <h1 class="hexatitle centered sub" >Contáctanos</h1>
@@ -20,5 +20,5 @@
         </ul>
     </div>
 </main>
-<div class="span-2 omega monolito-wrapper animated fadeInRight"><?php include 'monolito_der.php'; ?></div>
+<div class="span-3 omega monolito-wrapper animated fadeInRight"><?php include 'monolito_der.php'; ?></div>
 
