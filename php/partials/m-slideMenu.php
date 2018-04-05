@@ -1,10 +1,7 @@
 <aside id="slideMenu" class="">
     <figure class="fa fa-bars m-nav-toggler">&nbsp;</figure>
-    <header>
-        <h2>Menú</h2>
-    </header>
     <nav>
-        <ul>
+        <ul class="unidades">
             <li data-target="/?d=Marketing-digital">Marketing Digital</li>
             <li data-target="/?d=Marketing-digital">Marketing Político</li>
             <li data-target="/?d=Marketing-digital">Marketing Deportivo</li>
