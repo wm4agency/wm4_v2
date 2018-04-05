@@ -1,4 +1,8 @@
 <?php 
+echo "footer... meh<br /> \n";
+require_once('/php/components/modal_contacto.php');
+if (! @include_once($root.'/php/components/modal_contacto.php')){echo "couldn't include modal";}
+
 if ($footer == "full"): /*echo "full footer"*/;
 ?>
 

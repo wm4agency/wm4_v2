@@ -45,4 +45,4 @@
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7Q6HD8"
                           height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
-        <?php if (! @include_once('php/components/m-slideMenu.php')){die "couldn't include sliding menu";} ?>
+        <?php if (! @include_once('m-slideMenu.php')){echo "couldn't include sliding menu";} ?>
