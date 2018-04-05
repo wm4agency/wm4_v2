@@ -9,55 +9,6 @@ textarea{
 }
 
 
-
-body.mobile{
-    position: relative;
-    aside#slideMenu, main#panel{
-        width: 100%;
-        min-height: 100%;
-        min-height: 100vh;
-        position: absolute;
-        top: 0;
-        overflow-x: hidden;
-        overflow-y: scroll;
-        -webkit-transition: 3s ease-in-out;
-        -moz-transition: 3s ease-in-out;
-        -o-transition: 3s ease-in-out;
-        transition: 3s ease-in-out;
-        
-        &::-webkit-scrollbar{
-            width: 5px;
-            background-color: $darkest;
-        }
-
-        &::-webkit-scrollbar-track {
-            -webkit-box-shadow: none;
-            background-color: $darkest;
-        }
-        &::-webkit-scrollbar-thumb {
-            background-color: $light-gray;
-            border: none;
-        }
-    }
-    
-    aside#slideMenu{
-        left: -100%;
-        background: $darkest;
-        color: $w; 
-        &.active, &.active+main#panel{
-            -webkit-transform: translateX(100%);
-            -moz-transform: translateX(100%);
-            -o-transform: translateX(100%);
-            -ms-transform: translateX(100%);
-            transform: translatex(100%);
-        }
-    }
-    main#panel{
-       left:0;
-    }
-    
-}
-
 @mixin hexagon ($width,$height) {
     position: relative;
     width: $height; 
