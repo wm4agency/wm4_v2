@@ -1,5 +1,6 @@
 $(document).ready(function($){
     document.getElementById('preloader')&&$(".se-pre-con").fadeOut("slow");
+    document.querySelectorAll('body.mobile')&&navtogglers();
     navlinks();
     cycleInit();
     pagepilingInit();
@@ -38,30 +39,29 @@ function linktexts(){
 function navlinks(){
     var navlinks = document.querySelectorAll("[data-target]");
     if(!navlinks || navlinks == null) return;
-    console.log('navlinks detected');
     mapTargets = function() {
-        //this.preventDefault;
-        console.log('nav!');
+        this.preventDefault;
         var target = rootpath+'/'+this.getAttribute('data-target');
         window.location=target;
     };
     [].map.call(navlinks, function(elem) {
-        var clickEvent = (function() {
-            if ('ontouchstart' in document.documentElement === true)
-                return 'touchstart';
-            else
-                return 'click';
-        })();
-       /*switch (clickEvent){
-           case 'touchstart':
-               //elem.clickEvent.stopPropagation();
-               elem.addEventListener(clickEvent, mapTargets,false);
-               break;
-           case 'click':
-               elem.addEventListener(clickEvent, mapTargets,false);
-               break;
-              }*/
-        elem.addEventListener("click", mapTargets,{passive:false});
+        elem.addEventListener("click", mapTargets,false);
+    });       
+}
+
+function navtogglers(){
+    var navtogs = document.getElementsByClassName("m-nav-toggler"),
+        panel = document.getElementById('panel'),
+        menu = document.getElementById('slideMenu');
+    if(!navtogs || navtogs == null) return;
+    toggleNav = function() {
+        this.preventDefault;
+        console.log('toggle!');
+        menu.classList.toggle("active");
+        //menu.classList.toggle("active");
+    };
+    [].map.call(navtogs, function(elem) {
+        elem.addEventListener("click", toggleNav,false);
     });       
 }
 

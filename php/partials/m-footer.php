@@ -4,13 +4,13 @@ error_reporting(E_ALL);
 
 include_once(dirname(__FILE__).'/../components/modal_contacto.php');
 
-if ($footer == "full"): /*echo "full footer";*/
+if (isset($footer) && $footer == "full"): /*echo "full footer";*/
 ?>
 <footer class="fullwidth">
     <div class="container">
     </div>
 </footer>
-<?php elseif($footer =="minimal"): /*echo "minimal footer";*/ ?>
+<?php elseif(isset($footer) && $footer =="minimal"): /*echo "minimal footer";*/ ?>
 <footer class="fullwidth">
     <div class="container">
         <div class="span-4">

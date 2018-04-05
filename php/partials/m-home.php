@@ -7,7 +7,7 @@ $role = 'home';
 $localclass = 'ppd';
 include_once('m-head.php');
 ?>
-<main class="panel">
+<main id="panel" class="">
     <?php if (! @include_once('m-headers.php')){ throw new Exception("couldn't include header");}?>
 </main>
 

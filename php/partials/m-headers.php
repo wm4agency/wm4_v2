@@ -1,3 +1,4 @@
+<figure class="fa fa-bars m-nav-toggler">&nbsp;</figure>
 <?php  if ($header == 'full'): ?>
 <header class="centered-navigation" role="banner">
     <div class="centered-navigation-wrapper">
