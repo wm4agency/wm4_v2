@@ -10,6 +10,7 @@
     display: none;
     background: black;
     color:white;
+    touch-action: auto;
     
     &::-webkit-scrollbar{
         width: 5px;
@@ -28,10 +29,12 @@
 
 .slideout-menu-left {
     left: 0;
+    touch-action: auto;
 }
 
 .slideout-menu-right {
     right: 0;
+    touch-action: auto;
 }
 
 .slideout-panel {
@@ -40,6 +43,7 @@
     will-change: transform;
     background-color: #FFF; /* A background-color is required */
     min-height: 100vh;
+    touch-action: auto;
 }
 
 .slideout-open,

@@ -1,11 +1,11 @@
 <?php 
-echo "footer... meh<br /> \n";
-require_once('/php/components/modal_contacto.php');
-if (! @include_once($root.'/php/components/modal_contacto.php')){echo "couldn't include modal";}
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 
-if ($footer == "full"): /*echo "full footer"*/;
+include_once(dirname(__FILE__).'/../components/modal_contacto.php');
+
+if ($footer == "full"): /*echo "full footer";*/
 ?>
-
 <footer class="fullwidth">
     <div class="container">
     </div>
@@ -22,12 +22,14 @@ if ($footer == "full"): /*echo "full footer"*/;
         </div>
         <span class="span-4">
         </span>
-        <?php include 'nav_contactPoints_footer.php'; ?>
+        <?php 
+        include_once('nav_contactPoints_footer.php'); 
+        ?>
     </div>
 </footer>
 <?php   
     endif;
-    require_once('php/s.php'); 
+    require_once(dirname(__FILE__)."/../s.php");
 ?>
 
 </body>

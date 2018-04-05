@@ -4711,7 +4711,9 @@ html.pagepiled, html.pagepiled body {
   z-index: -1;
   display: none;
   background: black;
-  color: white; }
+  color: white;
+  -ms-touch-action: auto;
+  touch-action: auto; }
   .slideout-menu::-webkit-scrollbar {
     width: 5px;
     background-color: black; }
@@ -4723,10 +4725,14 @@ html.pagepiled, html.pagepiled body {
     border: none; }
 
 .slideout-menu-left {
-  left: 0; }
+  left: 0;
+  -ms-touch-action: auto;
+  touch-action: auto; }
 
 .slideout-menu-right {
-  right: 0; }
+  right: 0;
+  -ms-touch-action: auto;
+  touch-action: auto; }
 
 .slideout-panel {
   position: relative;
@@ -4734,7 +4740,9 @@ html.pagepiled, html.pagepiled body {
   will-change: transform;
   background-color: #FFF;
   /* A background-color is required */
-  min-height: 100vh; }
+  min-height: 100vh;
+  -ms-touch-action: auto;
+  touch-action: auto; }
 
 .slideout-open,
 .slideout-open body,

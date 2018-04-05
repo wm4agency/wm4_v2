@@ -4,7 +4,7 @@
 * JS libraries listing and loading
 */
 
-$scriptsBasePath ='js/';
+$scriptsBasePath =$root.'/js/';
 $scriptsCatalog = array(
     "email" => "email.js",
     "email-modal" => "email-modal.js",

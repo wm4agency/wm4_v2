@@ -4,7 +4,7 @@ $(document).ready(function($){
     cycleInit();
     pagepilingInit();
     modalInit();
-    slideoutInit();
+    //slideoutInit();
     odometerInit();
     getFolderItems();
     unsliderInit();
@@ -38,15 +38,30 @@ function linktexts(){
 function navlinks(){
     var navlinks = document.querySelectorAll("[data-target]");
     if(!navlinks || navlinks == null) return;
-
+    console.log('navlinks detected');
     mapTargets = function() {
-        this.preventDefault;
+        //this.preventDefault;
         console.log('nav!');
         var target = rootpath+'/'+this.getAttribute('data-target');
         window.location=target;
     };
     [].map.call(navlinks, function(elem) {
-        elem.addEventListener("click", mapTargets, false);
+        var clickEvent = (function() {
+            if ('ontouchstart' in document.documentElement === true)
+                return 'touchstart';
+            else
+                return 'click';
+        })();
+       /*switch (clickEvent){
+           case 'touchstart':
+               //elem.clickEvent.stopPropagation();
+               elem.addEventListener(clickEvent, mapTargets,false);
+               break;
+           case 'click':
+               elem.addEventListener(clickEvent, mapTargets,false);
+               break;
+              }*/
+        elem.addEventListener("click", mapTargets,{passive:false});
     });       
 }
 
@@ -210,7 +225,16 @@ function slideoutOLD(){
 }
 
 function slideoutInit(){
-    
+    console.log("slide out initializing");
+    var e = document.querySelectorAll("main.panel");
+    if(!e[0] || e[0] == null) return;
+    console.log(e[0]);
+    var slideout = new Slideout({
+        'panel': e[0],
+        'menu': document.getElementById('slideMenu'),
+        'padding': 256,
+        'tolerance': 70
+    });
 }
 
 function odometerInit(){  
