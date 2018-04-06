@@ -1,12 +1,10 @@
-<div class="fullwidth">
-    <div class="fullwidth">
-        <figure class="main_logo">
-            <img src="img/wm4.png" class="modal-trigger">
-        </figure>
-    </div>
-    <div class="bloque monolito-wrapper animated fadeInLeft"><?php include 'monolito_izq.php'; ?></div>
-    <div class="bloque">
-        <article id="cycle" class="row">
+<div id="splash" class="fullwidth">
+    <figure class="main_logo">
+        <img src="img/wm4.png" class="modal-trigger">
+    </figure>
+    <figure class="bloque monolito-wrapper animated fadeInLeft"><?php include 'monolito_izq.php'; ?></figure>
+    <div class="bloque cycled">
+        <article id="cycle">
             <h3></h3>
             <ul>
                 <li>Marketing con sentido</li>
@@ -18,7 +16,7 @@
             </ul>
         </article>
     </div>
-    <div class="bloque monolito-wrapper animated fadeInRight"><?php include 'monolito_der.php'; ?></div>
+    <figure class="bloque monolito-wrapper animated fadeInRight"><?php include 'monolito_der.php'; ?></figure>
 </div>
 <dl itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog" id="unidades" class="fullwidth animated fadeInDown">
     <h1>Marketing Especializado</h1>

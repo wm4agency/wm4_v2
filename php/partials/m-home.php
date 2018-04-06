@@ -10,13 +10,13 @@ include_once('m-head.php');
 <main id="panel" class="">
     <figure class="fa fa-bars m-nav-toggler">&nbsp;</figure>
     <section id="main">
-        <?php if (! @include_once('m-home-main.php')){ throw new Exception("couldn't include main home section");}?>
+        <?php include_once('m-home-main.php'); ?>
     </section>
     <section id="modelo">
-        <?php if (! @include_once('m-home-modelo.php')){ throw new Exception("couldn't include 'modelo' home section");}?>
+        <?php include_once('m-home-modelo.php'); ?>
     </section>
     <section id="contacto">
-        <?php if (! @include_once('m-home-contacto.php')){ throw new Exception("couldn't include 'contacto' home section");}?>
+        <?php include_once('m-home-contacto.php'); ?>
     </section>
 </main>
 
