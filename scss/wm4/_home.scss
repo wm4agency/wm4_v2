@@ -373,6 +373,21 @@ body.home{
             
             
         }
+        
+        section#modelo{
+            .hexatitle.center{
+                border-bottom: none;
+            }
+            
+            &>article{
+                @include framing_h;
+                @include angled_down;
+                
+                &#estrategias, &#estrategias:after{
+                    background-color: $light-gray;
+                }
+            }
+        }
     }
 }
 
@@ -439,7 +454,7 @@ body.mobile{
         display: block;
         padding: 50px;
     }
-
+// TO DEPRECATE...
     section#unidades_negocio{        
         .section-header{
             font-size: 1.5em;
