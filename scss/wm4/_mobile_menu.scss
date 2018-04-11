@@ -1,17 +1,17 @@
 body.mobile{
     position: relative;
+    background-color: $darkest!important;
+
     aside#slideMenu, main#panel{
         width: 100%;
         min-height: 100%;
         min-height: 100vh;
-        position: absolute;
         top: 0;
-        overflow-x: hidden;
-        overflow-y: scroll;
-        -webkit-transition: .5s ease-in-out;
+        left: 0;
+        /*-webkit-transition: .5s ease-in-out;
         -moz-transition: .5s ease-in-out;
         -o-transition: .5s ease-in-out;
-        transition: .5s ease-in-out;
+        transition: .5s ease-in-out;*/
 
         &::-webkit-scrollbar{
             width: 5px;
@@ -29,16 +29,17 @@ body.mobile{
     }
 
     aside#slideMenu{
-        left: -100%;
-        background: $grey_base;
-        color: $dark-gray; 
+        //left: -100%;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        color: $w; 
+        z-index: 0;
         
-        &.active, &.active+main#panel{
-            -webkit-transform: translateX(100%);
-            -moz-transform: translateX(100%);
-            -o-transform: translateX(100%);
-            -ms-transform: translateX(100%);
-            transform: translatex(100%);
+        div.nav-wrapper{
+            min-height: 100%;
+            min-width: 100%;
+            position: absolute;
         }
         
         nav{
@@ -59,21 +60,45 @@ body.mobile{
                 text-transform: uppercase;
                 font-weight: 100;
                 
-                &:hover, &:active{color: $darkest;}
+                &:hover, &:active{color: $warn-yellow;}
+                &.d{color: $digital_blue;}
+                &.p{color: $pol_green;}
+                &.s{color: $sport_orange;}
             }
             
-            ul.sociales li.fa{
-                font-size: 3em;
-                padding: 10px;
-                margin-top: 50px;
-                color: $grey;
-                
-                &:hover, &:active{color: $darkest;}
+            ul.sociales li{
+                display: inline-block;
+                .fa{
+                    font-size: 1.5em;
+                    padding: 10px;
+                    //margin-top: 50px;
+                    color: $light-gray;
+
+                    &:hover, &:active{color: $w;}
+                }
             }
         }
     }
     main#panel{
-        left:0;
+        background-color: $w;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        position: absolute;
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        
+        &.sliding{
+            -webkit-transform: translateX(100%);
+            -moz-transform: translateX(100%);
+            -o-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+            transform: translatex(100%);
+        }
+        
+        .m-nav-toggler{
+            position: fixed;}
     }
 
     .m-nav-toggler{
@@ -83,9 +108,9 @@ body.mobile{
         font-size: 2em;
         line-height: 1em;
         margin: 0;
-        z-index:99999;
+        z-index:999999;
         
-        &:hover,&:active{
+        &::before:hover,&::before:active{
             color: $action-color;
         }
     }

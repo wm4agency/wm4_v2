@@ -365,6 +365,10 @@ body.home{
                 clear: none;
                 border-radius: 0;
                 position: absolute;
+                
+                dt.d{background:none;background-color: $digital_blue; }
+                dt.p{background:none;background-color: $pol_green; }
+                dt.s{background:none;background-color: $sport_orange; }
 
                 &>div{
                     width: 100%;
@@ -377,11 +381,15 @@ body.home{
         section#modelo{
             .hexatitle.centered{
                 border-bottom: none;
+                font-size: 2em;
+                &::before{
+                    @include hexa_marker($darkest);
+                }
             }
             
             &>article{
-                padding-top: 50px!important;
                 @include framing_h;
+                padding-top: 75px!important;
                 
                 &:first-child{padding-top: 10px!important;
                 }
@@ -397,13 +405,69 @@ body.home{
                 &#resultados{
                     background-color: $darkest;
                     color: $w;
-                    &h1{color:$warn-yellow;}
                     @include angled_down($darkest);
+                    
+                    .hexatitle.centered{
+                        color:$warn-yellow;
+                        &::before{
+                            @include hexa_marker($warn-yellow);
+                        }
+                    }
                 }
                 &#valores{
                     background-color: $warn-yellow;
                     @include angled_down($warn-yellow);
+                    
+                    dl dt, dl dd {
+                        text-align: center;
+                        width: 100%;
+                        overflow: hidden;
+                    }
+                    dl dt{
+                        font-size: 3em;
+                        text-transform: uppercase;
+                        font-weight: 100;
+                        color:$w;
+                        margin-top: -10px;
+                    }
+                    dl dd{padding: 0 2em; }
+
+                    .unslider-arrow{
+                        top:60%;
+                        &.prev{right: auto;left: 10px;}
+                        &.next{left: auto;right: 10px;}
+                    }
+                    
+                    .unslider-wrapper{
+                        border-bottom: 1px solid $darkest;
+                    }
                 }
+                
+                &>p{padding: 0 2em;}
+            }
+        }
+        section#contacto{
+            background-color: $darkest;
+            color:$w;
+            @include framing_v();
+            @include f_jagged_v($darkest,$grey);
+            margin: 50px 0;
+
+            .hexatitle.centered{
+                color:$pol_green;
+                margin-top: 1.5em;
+                &::before{
+                    @include hexa_marker($pol_green);
+                }
+                
+                &+h2{
+                    color:$w;
+                    border-bottom-color: $w;
+                    text-transform: uppercase;
+                }
+            }
+            form fieldset{
+                padding: 3em;
             }
         }
     }

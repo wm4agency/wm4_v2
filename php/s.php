@@ -1,4 +1,4 @@
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>-->
 <?php
 /*
 * JS libraries listing and loading
@@ -6,6 +6,7 @@
 
 $scriptsBasePath =$root.'/js/';
 $scriptsCatalog = array(
+    "jquery" => "jquery-3.3.1.min.js",
     "email" => "email.js",
     "email-modal" => "email-modal.js",
     "pagepiling" => "jquery.pagepiling.js",
@@ -15,7 +16,7 @@ $scriptsCatalog = array(
     "unslider" => "unslider.js"
 );
 
-$scripts = array('email');
+$scripts = array('jquery','email');
 
 //Ask for the scripts each page should load that were declared locally on it's constructor file
 if(!empty($localScripts)){$scripts=array_merge($scripts,$localScripts);}

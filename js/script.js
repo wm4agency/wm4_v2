@@ -57,8 +57,8 @@ function navtogglers(){
     toggleNav = function() {
         this.preventDefault;
         console.log('toggle!');
-        menu.classList.toggle("active");
-        //menu.classList.toggle("active");
+        panel.classList.toggle("sliding");
+        //panel.classList.contains("sliding")&&window.scrollTo(0,0);
     };
     [].map.call(navtogs, function(elem) {
         elem.addEventListener("click", toggleNav,false);
