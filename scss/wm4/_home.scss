@@ -375,16 +375,34 @@ body.home{
         }
         
         section#modelo{
-            .hexatitle.center{
+            .hexatitle.centered{
                 border-bottom: none;
             }
             
             &>article{
+                padding-top: 50px!important;
                 @include framing_h;
-                @include angled_down;
                 
-                &#estrategias, &#estrategias:after{
+                &:first-child{padding-top: 10px!important;
+                }
+                
+                &#estrategias{
                     background-color: $light-gray;
+                    @include angled_down($light-gray);
+                }
+                &#proyectos{
+                    background-color: $sport_orange;
+                    @include angled_down($sport_orange);
+                }
+                &#resultados{
+                    background-color: $darkest;
+                    color: $w;
+                    &h1{color:$warn-yellow;}
+                    @include angled_down($darkest);
+                }
+                &#valores{
+                    background-color: $warn-yellow;
+                    @include angled_down($warn-yellow);
                 }
             }
         }

@@ -1,7 +1,7 @@
 <!-- HOME "MODELO" SECTION CONTENTS -->
 
 <article id="estrategias" class="span-4 animate fadeInDown" >
-    <h1 class="hexatitle centered ">Creamos estrategias</h1>
+    <h1 class="hexatitle centered">Creamos estrategias</h1>
     <p>Planeamos el trabajo a partir de objetivos de negocio alcanzables y medibles, construimos un plan de trabajo accionable y definimos los indicadores que permitirán evaluar y optimizar el trabajo en cada etapa del proyecto.</p>
 </article>
 <article id="proyectos" class="span-4 animate fadeInDown">

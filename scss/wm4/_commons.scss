@@ -300,17 +300,19 @@ form{
     }
 }
 
-@mixin angled_down($color:#333, $height:100px){
+@mixin angled_down($color:#333, $height:50px){
     &:after {
         content: '';
         position: absolute;
-        top: 0;
-        right: 0;
-        width: 0;
-        height: 0;
-        border-left: ($height/2) solid transparent;
-        border-right: ($height/2) solid transparent;
-        border-top: $height solid $color;
+        height: $height;
+        bottom: ($height - 3px) * -1;
+        width: 100%;
+        display: block;
+        background-size: cover;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        z-index: 99;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='750' height='77' viewBox='0 0 750 77.4'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:#{url-friendly-colour($color)};%7D%0A%3C/style%3E%3Cpolygon class='st0' points='0 20.9 377.6 77.4 750 20.9 750 0 0 0 '/%3E%3C/svg%3E");
     }
 }
 
