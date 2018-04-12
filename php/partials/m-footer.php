@@ -8,6 +8,9 @@ if (isset($footer) && $footer == "full"): /*echo "full footer";*/
 ?>
 <footer class="fullwidth">
     <div class="container">
+        <figure data-target="#main" class="fa fa-arrow-up gotop">arriba</figure>
+        <figure><?php include'logosvg.php'; ?></figure>
+        <h3>Hacemos estrategias | entregamos resultados</h3>
     </div>
 </footer>
 <?php elseif(isset($footer) && $footer =="minimal"): /*echo "minimal footer";*/ ?>
@@ -32,5 +35,3 @@ if (isset($footer) && $footer == "full"): /*echo "full footer";*/
     require_once(dirname(__FILE__)."/../s.php");
 ?>
 
-</body>
-</html>

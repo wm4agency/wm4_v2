@@ -2212,7 +2212,7 @@ img {
   font-weight: 300;
   font-style: normal; }
 body, body.home #unidades dt + *, input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], textarea,
-select[multiple=multiple], ul.hex li, body.home #pagepiling section#modelo aside .dtwrapper dt, body.home #unidades h1, body.mobile section#mvp h1, body.mobile section#valores article h1, body.portada-seccion section#portfolio .grid-item article h1 {
+select[multiple=multiple], ul.hex li, footer.fullwidth h3, body.home #pagepiling section#modelo aside .dtwrapper dt, body.home #unidades h1, body.mobile section#mvp h1, body.mobile section#valores article h1, body.portada-seccion section#portfolio .grid-item article h1 {
   font-family: 'Roboto', sans-serif; }
 
 .linktext, form fieldset label, body.mobile aside#slideMenu nav ul.unidades li, body.home #pagepiling section#contacto main ul.links.unidades li, body.home #unidades dt {
@@ -3052,6 +3052,11 @@ body.mobile {
       min-height: 100%;
       min-width: 100%;
       position: absolute; }
+    body.mobile aside#slideMenu svg.wm4_logo {
+      width: 50%;
+      margin: 0 auto 1.5em auto; }
+      body.mobile aside#slideMenu svg.wm4_logo path {
+        fill: #fff; }
     body.mobile aside#slideMenu nav {
       position: absolute;
       width: 90%;
@@ -3282,6 +3287,7 @@ header nav#nav_sections ul {
     float: right; }
 
 footer {
+  display: table;
   background-color: #000; }
   footer nav#footer-icons {
     text-align: center;
@@ -3295,6 +3301,23 @@ footer {
         transition: all 0.2s ease-in-out; }
         footer nav#footer-icons ul li a:hover {
           color: #FBAE17; }
+  footer.fullwidth h3 {
+    text-transform: uppercase;
+    font-weight: 100; }
+  @media only screen and (max-width: 480px) {
+    footer.fullwidth {
+      text-align: center;
+      color: #fff;
+      padding: 1.5em; }
+      footer.fullwidth figure.gotop {
+        margin: 1em auto; }
+      footer.fullwidth svg.wm4_logo {
+        width: 50%;
+        margin: 0 auto 1.5em auto; }
+        footer.fullwidth svg.wm4_logo path {
+          fill: #fff; }
+      footer.fullwidth h3 {
+        font-size: .75em; } }
 
 body.home .nav_sections ul.nav-right.span-9 {
   float: none;
@@ -3415,7 +3438,8 @@ body.home #pagepiling section {
         left: -3%;
         display: block;
         min-height: 100%;
-        position: absolute; }
+        position: absolute;
+        z-index: 100; }
       body.home #pagepiling section#contacto aside::after {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 768'%3E%3Cstyle type='text/css'%3E .back%7Bfill:%23DEC493;%7D .front%7Bfill:%23FBAE17;%7D%0A%3C/style%3E%3Cpolygon class='back' points='120 768 120 0 107.5 0 0 768 '/%3E%3Cpolygon class='front' points='120 0 120 768 107.5 768 0 0 '/%3E%3C/svg%3E");
         background-size: cover;
@@ -3429,6 +3453,7 @@ body.home #pagepiling section {
         display: block;
         min-height: 100%;
         position: absolute;
+        z-index: 100;
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg); }
       body.home #pagepiling section#contacto aside::before {
@@ -3615,24 +3640,6 @@ body.home .monolito-wrapper {
           left: 20% !important; }
         body.home section#main .bloque:last-of-type {
           left: 80%; }
-      body.home section#main #unidades {
-        width: 100%;
-        padding: 0 !important;
-        margin: 0 !important;
-        clear: none;
-        border-radius: 0;
-        position: absolute; }
-        body.home section#main #unidades dt.d {
-          background: none;
-          background-color: #1797cd; }
-        body.home section#main #unidades dt.p {
-          background: none;
-          background-color: #cdc200; }
-        body.home section#main #unidades dt.s {
-          background: none;
-          background-color: #d53d0e; }
-        body.home section#main #unidades > div {
-          width: 100%; }
     body.home section#modelo .hexatitle.centered {
       border-bottom: none;
       font-size: 2em; }
@@ -3734,7 +3741,7 @@ body.home .monolito-wrapper {
       body.home section#modelo > article > p {
         padding: 0 2em; }
     body.home section#contacto {
-      background-color: #1e1e1e;
+      background-color: #333;
       color: #fff;
       position: relative;
       width: 100%;
@@ -3742,33 +3749,37 @@ body.home .monolito-wrapper {
       padding: 0;
       margin: 50px 0; }
       body.home section#contacto::before {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='framings skewed' viewBox='0 0 1350 189'%3E%3Cstyle type='text/css'%3E .main%7Bfill:%231e1e1e;%7D .sub%7Bfill:%23999;%7D%0A%3C/style%3E%3Cpolygon class='sub' points='0 189 1350 189 0 0 '/%3E%3Cpolygon class='main' points='1350 0 0 189 1350 189 '/%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='framings skewed' viewBox='0 0 1350 189'%3E%3Cstyle type='text/css'%3E .main%7Bfill:%23333;%7D .sub%7Bfill:%23999;%7D%0A%3C/style%3E%3Cpolygon class='sub' points='0 189 1350 189 0 0 '/%3E%3Cpolygon class='main' points='1350 0 0 189 1350 189 '/%3E%3C/svg%3E");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: bottom;
         padding-top: 14%;
-        margin-top: -14%;
+        margin-top: -11%;
         content: " ";
         top: 0;
         left: 0;
         display: block;
         width: 100%;
-        position: absolute; }
+        position: absolute;
+        z-index: 100; }
       body.home section#contacto::after {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='framings skewed' viewBox='0 0 1350 189'%3E%3Cstyle type='text/css'%3E .main%7Bfill:%231e1e1e;%7D .sub%7Bfill:%23999;%7D%0A%3C/style%3E%3Cpolygon class='sub' points='0 189 1350 189 0 0 '/%3E%3Cpolygon class='main' points='1350 0 0 189 1350 189 '/%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='framings skewed' viewBox='0 0 1350 189'%3E%3Cstyle type='text/css'%3E .main%7Bfill:%23333;%7D .sub%7Bfill:%23999;%7D%0A%3C/style%3E%3Cpolygon class='sub' points='0 189 1350 189 0 0 '/%3E%3Cpolygon class='main' points='1350 0 0 189 1350 189 '/%3E%3C/svg%3E");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top;
         padding-bottom: 14%;
-        margin-bottom: -14%;
+        margin-bottom: -11%;
         content: " ";
         bottom: 0;
         left: 0;
         display: block;
         width: 100%;
         position: absolute;
+        z-index: 100;
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg); }
+      body.home section#contacto hgroup {
+        padding: 0 15%; }
       body.home section#contacto .hexatitle.centered {
         color: #cdc200;
         margin-top: 1.5em; }
@@ -3778,9 +3789,60 @@ body.home .monolito-wrapper {
         body.home section#contacto .hexatitle.centered + h2 {
           color: #fff;
           border-bottom-color: #fff;
-          text-transform: uppercase; }
+          text-transform: uppercase;
+          line-height: 1em;
+          padding: .5em 0; }
       body.home section#contacto form fieldset {
-        padding: 3em; } }
+        padding: 3em; }
+        body.home section#contacto form fieldset input::-webkit-input-placeholder::after:required {
+          content: "*";
+          color: #cdc200; }
+        body.home section#contacto form fieldset input:-ms-input-placeholder::after:required {
+          content: "*";
+          color: #cdc200; }
+        body.home section#contacto form fieldset input::-ms-input-placeholder::after:required {
+          content: "*";
+          color: #cdc200; }
+        body.home section#contacto form fieldset input::placeholder::after:required {
+          content: "*";
+          color: #cdc200; }
+    body.home section#unidades {
+      height: 150px; }
+      body.home section#unidades dt.d {
+        padding-top: 50px;
+        margin-top: -50px; }
+      body.home section#unidades dt.s:after {
+        content: '';
+        position: absolute;
+        height: 50px;
+        bottom: -47px;
+        width: 100%;
+        display: block;
+        background-size: cover;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        z-index: 99;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='750' height='77' viewBox='0 0 750 77.4'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23d53d0e;%7D%0A%3C/style%3E%3Cpolygon class='st0' points='0 20.9 377.6 77.4 750 20.9 750 0 0 0 '/%3E%3C/svg%3E"); }
+    body.home dl#unidades {
+      width: 100%;
+      padding: 0 !important;
+      margin: 0 !important;
+      clear: none;
+      border-radius: 0;
+      position: absolute; }
+      body.home dl#unidades dt.d {
+        background: none;
+        background-color: #1797cd; }
+      body.home dl#unidades dt.p {
+        background: none;
+        background-color: #cdc200; }
+      body.home dl#unidades dt.s {
+        background: none;
+        background-color: #d53d0e; }
+      body.home dl#unidades > div {
+        width: 100%; }
+    body.home footer {
+      padding-top: 50px; } }
 
 @media only screen and (max-width: 480px) {
   .centered-navigation ul li.nav-link {
@@ -3991,26 +4053,28 @@ body.portada-seccion {
       background-repeat: no-repeat;
       background-position: bottom;
       padding-top: 3%;
-      margin-top: -3%;
+      margin-top: 0%;
       content: " ";
       top: 0;
       left: 0;
       display: block;
       width: 100%;
-      position: absolute; }
+      position: absolute;
+      z-index: 100; }
     body.portada-seccion section#portfolio::after {
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='framing arrowdown' viewBox='0 0 2200 55'%3E%3Cstyle type='text/css'%3E .area%7Bfill:none;%7D .arrow%7Bfill:%231e1e1e;%7D%0A%3C/style%3E%3Crect class='area' width='2200' height='55'/%3E%3Cpolygon class='arrow' points='1179 0 1179 0 1100 45.6 1021 0 1021 0 '/%3E%3C/svg%3E");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: top;
       padding-bottom: 3%;
-      margin-bottom: -3%;
+      margin-bottom: 0%;
       content: " ";
       bottom: 0;
       left: 0;
       display: block;
       width: 100%;
-      position: absolute; }
+      position: absolute;
+      z-index: 100; }
     body.portada-seccion section#portfolio .hexatitle.right {
       color: #1797cd; }
       body.portada-seccion section#portfolio .hexatitle.right::before {
@@ -4084,26 +4148,28 @@ body.portada-seccion {
       background-repeat: no-repeat;
       background-position: bottom;
       padding-top: 14%;
-      margin-top: -14%;
+      margin-top: -11%;
       content: " ";
       top: 0;
       left: 0;
       display: block;
       width: 100%;
-      position: absolute; }
+      position: absolute;
+      z-index: 100; }
     body.portada-seccion section#contacto::after {
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='framings skewed' viewBox='0 0 1350 189'%3E%3Cstyle type='text/css'%3E .main%7Bfill:%23333;%7D .sub%7Bfill:%23222;%7D%0A%3C/style%3E%3Cpolygon class='sub' points='0 189 1350 189 0 0 '/%3E%3Cpolygon class='main' points='1350 0 0 189 1350 189 '/%3E%3C/svg%3E");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: top;
       padding-bottom: 14%;
-      margin-bottom: -14%;
+      margin-bottom: -11%;
       content: " ";
       bottom: 0;
       left: 0;
       display: block;
       width: 100%;
       position: absolute;
+      z-index: 100;
       -webkit-transform: rotate(180deg);
       transform: rotate(180deg); }
     body.portada-seccion section#contacto .wrapper {
@@ -4241,26 +4307,28 @@ body.portada-seccion {
     background-repeat: no-repeat;
     background-position: bottom;
     padding-top: 14%;
-    margin-top: -14%;
+    margin-top: -11%;
     content: " ";
     top: 0;
     left: 0;
     display: block;
     width: 100%;
-    position: absolute; }
+    position: absolute;
+    z-index: 100; }
   body.portada-seccion.mkt_d section#contacto::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='framings skewed' viewBox='0 0 1350 189'%3E%3Cstyle type='text/css'%3E .main%7Bfill:%231797cd;%7D .sub%7Bfill:%23006f9e;%7D%0A%3C/style%3E%3Cpolygon class='sub' points='0 189 1350 189 0 0 '/%3E%3Cpolygon class='main' points='1350 0 0 189 1350 189 '/%3E%3C/svg%3E");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     padding-bottom: 14%;
-    margin-bottom: -14%;
+    margin-bottom: -11%;
     content: " ";
     bottom: 0;
     left: 0;
     display: block;
     width: 100%;
     position: absolute;
+    z-index: 100;
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg); }
   body.portada-seccion.mkt_d section#contacto .hexatitle.centered {
@@ -4338,26 +4406,28 @@ body.portada-seccion {
       background-repeat: no-repeat;
       background-position: bottom;
       padding-top: 14%;
-      margin-top: -14%;
+      margin-top: -11%;
       content: " ";
       top: 0;
       left: 0;
       display: block;
       width: 100%;
-      position: absolute; }
+      position: absolute;
+      z-index: 100; }
     body.portada-seccion.mkt_p section#contacto::after {
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='framings skewed' viewBox='0 0 1350 189'%3E%3Cstyle type='text/css'%3E .main%7Bfill:%23cdc200;%7D .sub%7Bfill:%238f8700;%7D%0A%3C/style%3E%3Cpolygon class='sub' points='0 189 1350 189 0 0 '/%3E%3Cpolygon class='main' points='1350 0 0 189 1350 189 '/%3E%3C/svg%3E");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: top;
       padding-bottom: 14%;
-      margin-bottom: -14%;
+      margin-bottom: -11%;
       content: " ";
       bottom: 0;
       left: 0;
       display: block;
       width: 100%;
       position: absolute;
+      z-index: 100;
       -webkit-transform: rotate(180deg);
       transform: rotate(180deg); }
     body.portada-seccion.mkt_p section#contacto .hexatitle.centered {

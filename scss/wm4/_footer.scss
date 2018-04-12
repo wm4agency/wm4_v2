@@ -1,4 +1,5 @@
 footer{
+    display: table;
     background-color: $b;
     
     nav#footer-icons{
@@ -19,6 +20,32 @@ footer{
                     }
                 }
             }
+        }
+    }
+    
+    &.fullwidth{
+        h3{
+            @extend %sans;
+            text-transform: uppercase;
+            font-weight: 100;
+        }
+    }
+    
+    @include max-width($mobile){
+        &.fullwidth{
+            text-align: center;
+            color: $w;
+            padding: 1.5em;
+            
+            figure.gotop{margin: 1em auto;}
+            svg.wm4_logo{
+                width: 50%;
+                margin: 0 auto 1.5em auto;
+
+                path{fill:$w;}
+            } 
+            
+            h3{font-size: .75em;}
         }
     }
 }

@@ -1,14 +1,8 @@
-<?php 
-//ini_set('display_errors', 1);
-//error_reporting(E_ALL);
-?>
 <aside id="slideMenu" class="">
     <figure class="fa fa-bars m-nav-toggler">&nbsp;</figure>
-    <figure>
-        <?php include'../components/logosvg.php'; ?>
-    </figure>
     <div class="nav-wrapper">
         <nav>
+            <figure><?php include'logosvg.php'; ?></figure>
             <ul class="unidades">
                 <li data-target="?d=marketing-digital" class="d">Marketing Digital</li>
                 <li data-target="?d=marketing-digital" class="p">Marketing Político</li>

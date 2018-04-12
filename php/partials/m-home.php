@@ -8,6 +8,7 @@ $localScripts = array('pagepiling','unslider');
 $header = 'minimal'; 
 $role = 'home';
 $localclass = 'ppd';
+$footer = "full";
 include_once('m-head.php');
 ?>
 <main id="panel" class="">
@@ -24,8 +25,11 @@ include_once('m-head.php');
     <section id="unidades">
         <?php include_once('m-home-unidades.php'); ?>
     </section>
-</main>
 
 <?php 
 include_once('m-footer.php');
 ?>
+</main>
+
+</body>
+</html>

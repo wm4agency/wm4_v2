@@ -5,7 +5,7 @@ $root = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_
 
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
-
+if(isset($_GET['adcode']))$adcode=$_GET['adcode'];
 ?>
 
 <script>

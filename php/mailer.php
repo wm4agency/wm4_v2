@@ -5,7 +5,8 @@ error_reporting(0);
 
 // configuration
 $to = "wm4 - atención a clientes";
-$recipients = "oscar@wm4.mx,maru@wm4.mx,bety@wm4.mx, pepe@wm4.mx";
+//$recipients = "oscar@wm4.mx,maru@wm4.mx,bety@wm4.mx, pepe@wm4.mx";
+$recipients = "oscar@wm4.mx";
 
 $error_message = "Por favor complete la información en la forma";
 
@@ -18,6 +19,7 @@ $ciudad=$_POST['ciudad'];
 $seleccion=$_POST['seleccion'];
 $intencion=$_POST['intencion'];
 $grado=$_POST['grado'];
+$presupuesto=$_POST['presupuesto'];
 $comentarios=$_POST['comentarios'];
 
 
@@ -49,6 +51,7 @@ $email_message=$email_message."
 		<strong>INTERESADOS EN:</strong> ".$seleccion."<br>
         <strong>MOTIVO DE INTERÉS: </strong>".$intencion."<br>
         <strong>GRADO DE INTENCIÓN: </strong>".$grado."<br>
+        <strong>Presupuesto: </strong>".$presupuesto."<br>
         <br>
         <strong>COMENTARIOS ADICIONALES:</strong> ".$comentarios."
 		<br>
