@@ -3794,16 +3794,16 @@ body.home .monolito-wrapper {
           padding: .5em 0; }
       body.home section#contacto form fieldset {
         padding: 3em; }
-        body.home section#contacto form fieldset input::-webkit-input-placeholder::after:required {
+        body.home section#contacto form fieldset input:required::-webkit-input-placeholder::after {
           content: "*";
           color: #cdc200; }
-        body.home section#contacto form fieldset input:-ms-input-placeholder::after:required {
+        body.home section#contacto form fieldset input:required:-ms-input-placeholder::after {
           content: "*";
           color: #cdc200; }
-        body.home section#contacto form fieldset input::-ms-input-placeholder::after:required {
+        body.home section#contacto form fieldset input:required::-ms-input-placeholder::after {
           content: "*";
           color: #cdc200; }
-        body.home section#contacto form fieldset input::placeholder::after:required {
+        body.home section#contacto form fieldset input:required::placeholder::after {
           content: "*";
           color: #cdc200; }
     body.home section#unidades {

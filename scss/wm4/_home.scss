@@ -455,7 +455,7 @@ body.home{
             form fieldset{
                 padding: 3em;
                 
-                input::placeholder::after:required{
+                input:required::placeholder::after{
                     content: "*";
                     color: $pol_green;
                 }
