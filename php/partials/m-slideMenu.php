@@ -10,9 +10,9 @@
     <div class="nav-wrapper">
         <nav>
             <ul class="unidades">
-                <li data-target="?d=Marketing-digital" class="d">Marketing Digital</li>
-                <li data-target="?d=Marketing-digital" class="p">Marketing Político</li>
-                <li data-target="?d=Marketing-digital" class="s">Marketing Deportivo</li>
+                <li data-target="?d=marketing-digital" class="d">Marketing Digital</li>
+                <li data-target="?d=marketing-digital" class="p">Marketing Político</li>
+                <li data-target="?d=marketing-digital" class="s">Marketing Deportivo</li>
                 <li data-target="#contacto">contacto</li>
             </ul>
             <hr>
