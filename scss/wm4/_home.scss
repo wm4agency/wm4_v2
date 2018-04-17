@@ -1,9 +1,9 @@
 body.home{
     
-    .nav_sections ul.nav-right.span-9{
+    nav#nav_sections ul.nav-right{
         float: none;
         text-align: center;
-        width: auto;
+        width: 100%;
         
         li{display: inline; color: $dark-gray; float: none; }
     }
@@ -136,8 +136,8 @@ body.home{
                 background-color: $warn-yellow;
                 @include framing_h();
                 @include f_jagged_h();
-                &::before{background-color: $darkest;padding-left: 40%;}
-                &::after{padding-right: 40%;}
+                &::before{background-color: $darkest;padding-left: 40%;background-size: 105%;}
+                &::after{padding-right: 40%;background-size: 105%;}
             
                 form{
                     padding: .5em;
@@ -145,6 +145,8 @@ body.home{
                     position: absolute;
                     top: 50%;
                     transform:translateY(-50%);
+                    
+                    input:placeholder-shown{padding: 0.125em;}
                 }
             }
             main{

@@ -2526,16 +2526,16 @@ hr {
 .centered-navigation {
   background-color: transparent;
   border-bottom: 1px solid rgba(0, 0, 0, 0);
-  min-height: 120px;
+  min-height: 80px;
   width: 100%;
   z-index: 9999; }
   .centered-navigation .mobile-logo {
     display: inline;
     float: left;
-    max-height: 120px;
+    max-height: 80px;
     padding-left: 1em; }
     .centered-navigation .mobile-logo img {
-      max-height: 120px;
+      max-height: 80px;
       opacity: 0.6;
       padding: 0.8em 0; }
     @media screen and (min-width: 53.75em) {
@@ -2545,7 +2545,7 @@ hr {
     color: #333;
     display: block;
     float: right;
-    line-height: 120px;
+    line-height: 80px;
     margin: 0;
     padding-right: 1em;
     text-decoration: none;
@@ -2583,7 +2583,7 @@ hr {
   .centered-navigation ul li.nav-link {
     background: transparent;
     display: block;
-    line-height: 120px;
+    line-height: 80px;
     overflow: hidden;
     padding-right: 1em;
     text-align: right;
@@ -2591,10 +2591,10 @@ hr {
     z-index: 9999;
     background: transparent;
     display: inline;
-    line-height: 120px;
+    line-height: 80px;
     background: transparent;
     display: inline;
-    line-height: 120px; }
+    line-height: 80px; }
     .centered-navigation ul li.nav-link a {
       color: #333;
       display: inline-block;
@@ -2612,8 +2612,8 @@ hr {
     margin-left: auto;
     margin-right: auto; }
     .centered-navigation .logo img {
-      margin-bottom: -0.6666666667em;
-      max-height: 2em;
+      margin-bottom: -26.6666666667px;
+      max-height: 80px;
       opacity: 0.6; }
   .centered-navigation li.more.nav-link {
     padding-right: 0; }
@@ -2669,7 +2669,7 @@ hr {
     .centered-navigation ul.submenu li {
       display: block;
       padding-right: 0;
-      line-height: 92.3076923077px; }
+      line-height: 61.5384615385px; }
       .centered-navigation ul.submenu li:first-child > a {
         border-top-left-radius: 3px;
         border-top-right-radius: 3px; }
@@ -3275,7 +3275,6 @@ header nav#nav_sections ul {
     display: block;
     color: #999;
     text-transform: lowercase;
-    line-height: 3em;
     padding: 0;
     margin: 0  1.5em; }
     header nav#nav_sections ul li:hover {
@@ -3319,11 +3318,11 @@ footer {
       footer.fullwidth h3 {
         font-size: .75em; } }
 
-body.home .nav_sections ul.nav-right.span-9 {
+body.home nav#nav_sections ul.nav-right {
   float: none;
   text-align: center;
-  width: auto; }
-  body.home .nav_sections ul.nav-right.span-9 li {
+  width: 100%; }
+  body.home nav#nav_sections ul.nav-right li {
     display: inline;
     color: #333;
     float: none; }
@@ -3458,9 +3457,11 @@ body.home #pagepiling section {
         transform: rotate(180deg); }
       body.home #pagepiling section#contacto aside::before {
         background-color: #1e1e1e;
-        padding-left: 40%; }
+        padding-left: 40%;
+        background-size: 105%; }
       body.home #pagepiling section#contacto aside::after {
-        padding-right: 40%; }
+        padding-right: 40%;
+        background-size: 105%; }
       body.home #pagepiling section#contacto aside form {
         padding: .5em;
         width: 100%;
@@ -3468,6 +3469,8 @@ body.home #pagepiling section {
         top: 50%;
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%); }
+        body.home #pagepiling section#contacto aside form input:placeholder-shown {
+          padding: 0.125em; }
     body.home #pagepiling section#contacto main {
       min-height: 100%;
       margin: 60px 0 0 60px;
