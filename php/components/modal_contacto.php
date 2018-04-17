@@ -38,7 +38,8 @@
                 </span>
                 <textarea id="comentarios" name="comentarios" placeholder="Cometarios adicionales"></textarea>
             </fieldset>
-            <input id="send" type="button" value="Enviar" onClick="return check_values();">
+<!--            <input id="send" type="button" value="Enviar" onClick="return check_values();">-->
+            <input type="button" value="Enviar" class="sendform">
         </form>
         <div id="confirmation"></div>
     </div>

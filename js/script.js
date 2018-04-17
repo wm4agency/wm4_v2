@@ -1,7 +1,9 @@
 $(document).ready(function($){
     document.getElementById('preloader')&&$(".se-pre-con").fadeOut("slow");
     document.querySelectorAll('body.mobile')&&navtogglers();
-    navlinks();
+   
+    delegateEvents();
+    //navlinks();
     cycleInit();
     pagepilingInit();
     modalInit();
@@ -16,6 +18,27 @@ window.onload = function() {
 
 var pswpElement = document.querySelectorAll('.pswp')[0];
 var pswpGalleries = [];
+
+function delegateEvents(){
+    document.addEventListener('click', function (event) {
+        
+        // botones en formas de contacto 
+        if ( event.target.classList.contains( 'sendform' ) ) {
+            var forma = event.target.form;
+            //check_values(forma);
+            checkvals(forma);
+        }
+        
+        // objetos que disparan navegación 
+        if(event.target.getAttribute("data-target")){
+            var e = event.target;
+            e.preventDefault;
+            var actiontarget = rootpath+'/'+e.getAttribute('data-target');
+            window.location=actiontarget;
+        }
+        
+    }, false);
+}
 
 function linktexts(){
     var lintexts = document.querySelectorAll(".linktext"), 
@@ -152,12 +175,6 @@ function cycleInit(){
         }
                        )};
 }; 
-
-function binds(){
-    $('#anchor').on('click',function(e){
-        //e.preventDefault();
-    });
-}
 
 function slideoutOLD(){
     var e = document.getElementById("slideout");

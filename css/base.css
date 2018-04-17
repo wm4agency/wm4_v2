@@ -3326,6 +3326,8 @@ body.home nav#nav_sections ul.nav-right {
     display: inline;
     color: #333;
     float: none; }
+    body.home nav#nav_sections ul.nav-right li:hover {
+      color: #FBAE17; }
 body.home .main_logo {
   max-width: 70%;
   text-align: center;
@@ -3470,7 +3472,8 @@ body.home #pagepiling section {
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%); }
         body.home #pagepiling section#contacto aside form input:placeholder-shown {
-          padding: 0.125em; }
+          padding: 0.125em;
+          margin-bottom: .5em; }
     body.home #pagepiling section#contacto main {
       min-height: 100%;
       margin: 60px 0 0 60px;

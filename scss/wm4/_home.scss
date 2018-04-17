@@ -5,7 +5,13 @@ body.home{
         text-align: center;
         width: 100%;
         
-        li{display: inline; color: $dark-gray; float: none; }
+        li{
+            display: inline; 
+            color: $dark-gray; 
+            float: none; 
+            
+            &:hover{color:$action-color;}
+        }
     }
     
     .main_logo{
@@ -146,7 +152,7 @@ body.home{
                     top: 50%;
                     transform:translateY(-50%);
                     
-                    input:placeholder-shown{padding: 0.125em;}
+                    input:placeholder-shown{padding: 0.125em; margin-bottom: .5em;}
                 }
             }
             main{
