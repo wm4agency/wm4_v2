@@ -153,6 +153,19 @@ body.home{
                     transform:translateY(-50%);
                     
                     input:placeholder-shown{padding: 0.125em; margin-bottom: .5em;}
+                    
+                    label.err{
+                        color:$sport_orange_dark;
+                        font-weight: 400;
+                        display:block;
+                        position: relative;
+                        
+                        &::before{font-family: 'FontAwesome'; content: "\f12a"; position: absolute; left: -.75em; font-weight: 100;}
+                    }
+                    
+                    div.success{
+                        padding: 1.25em;
+                    }
                 }
             }
             main{

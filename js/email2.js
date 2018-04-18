@@ -1,7 +1,8 @@
 var http = createRequestObject(),
     areal = Math.random() + "",
     real = areal.substring(2,6),
-    form_els =[];
+    forma,
+    inputs ={};
 
 function createRequestObject() {
     var xmlhttp;
@@ -23,54 +24,38 @@ function createRequestObject() {
     return  xmlhttp;
 }
 
-function sendRequest(forma) {
-    console.log('sending request');
-    var rnd = Math.random();
-    var nombre = escape($("#nombre",forma).val());
-    var empresa = escape($("#empresa",forma).val());
-    var email = escape($("#email",forma).val());
-    var telefono = escape($("#telefono",forma).val());
-    var ciudad = $("#ciudad",forma).val();
-    var seleccion = $("#seleccion",forma).val();
-    var intencion = $("#intencion",forma).val();
-    var grado = $("#grado",forma).val();
-    var comentarios = escape($("#comentarios",forma).val());
-    var presupuesto = escape($("#presupuesto",forma).val());
-    //    var landing = document.getElementById("landing").value;
-    //    var idempresa = document.getElementById("idempresa").value;
-    //    var tipo = document.getElementById("tipo").value;
-    //    var gracias = document.getElementById("gracias").value;
-    //    var origen = document.getElementById("origen").value;
-    //    var link = document.getElementById("link").value;
+function sendRequest() {
+    
+    if(Object.keys(inputs).length == 0) throw "no inputs registered";
+    inputs.rnd = Math.random();
+    
+    var data= JSON.stringify(inputs);
+    console.log(data);
 
     try{
-        http.open('POST',  'php/mailer.php');
+        http.open('POST',  'php/services/mailer.php');
         http.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-        http.onreadystatechange = handleResponse(forma);
-        http.send('nombre='+nombre+'&empresa='+empresa+'&email='+email+'&telefono='+telefono+'&ciudad='+ciudad+'&seleccion='+seleccion+'&intencion='+intencion+'&grado='+grado+'&comentarios='+comentarios+'&rnd='+rnd);
+        http.onreadystatechange = handleResponse();
+        http.send('inputs='+data);
     }
     catch(e){ console.log(e);}
-    finally{
-        $('#contactform').slideUp("slow").hide();
-        $('#form-wrapper').append('<div class="success"><h4>¡ENVIADO!</h4><br><p>Gracias por escribirnos <strong>'+decodeURIComponent(name)+'</strong>! Tu correo ha sido enviado con éxito y pronto te contactaremos para darle seguimiento.</p></div>');
-        //        track();
-    }
 }
 
-function checkvals(forma){
+function checkvals(givenForm){
+    forma = givenForm;
     var all_els = forma.elements,
         errors = 0;
     
     for(i=0;i<all_els.length;i++){
         var e = all_els[i];
-        
         switch (e.type){
             case "text":
             case "email":
             case "tel":
             case "select-one":
             case "checkbox":
-               if (e.value == ""){
+            case "textarea":
+                if (e.value == "" && $(e).hasClass('required')){
                    var hasClass=$("label[for='"+e.id+"']").hasClass("err");
                                  if(!hasClass){
                                      switch (e.name){
@@ -111,7 +96,7 @@ function checkvals(forma){
                                errors++;
                            }else{
                                $("label[for='"+e.id+"'].err").remove();
-                               form_els.push(e);
+                               inputs[e.name]=e.value;
                            }
                            break;
                        case "telefono":
@@ -120,12 +105,13 @@ function checkvals(forma){
                                errors++;
                            }else{
                                $("label[for='"+e.id+"'].err").remove();
-                               form_els.push(e);
+                               inputs[e.name]=e.value;
                            }
                            break;
                        default:
                            $("label[for='"+e.id+"'].err").remove();
-                           form_els.push(e);
+                           if(!e.value || e.value=="" || e.value==null || e.value>=0)break;
+                           inputs[e.name]=e.value;
                            break;
                     }
                }
@@ -133,10 +119,14 @@ function checkvals(forma){
         }
     }    
     
+    if(errors==0) {
+       $("#send",forma).disabled=true;
+        $("#send",forma).val("enviando...");
+        sendRequest();
+    }
 }
 
 function validate_email(address) {
-    console.log('validating email');
     var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
     if(reg.test(address) == false) {
         return false;
@@ -146,27 +136,40 @@ function validate_email(address) {
 }
 
 function validate_phone(phone){
-    console.log('validating phone');
     var phoneNum = phone.replace(/[^\d]/g, '');
     if(phoneNum.length > 6 && phoneNum.length < 11) {  return true;  } else {return false;}
 }
 
 function handleResponse(forma) {
-    console.log('trying handleResponse');
+    console.log('handling http response');
     try{
-        if((http.readyState == 4)&&(http.status == 200)){
-            console.log(http.readyState);
-            var response = http.responseText;
-            console.log(response);
-            $("#confirmation", forma).html = response;
-            $("#confirmation", forma).css("display","");
-        }
-        else{
-            console.log(http.readyState);
-        }
+        switch(http.readyState){
+               case 0:
+                    console.log("unsent - headers not yet sent");
+                    break;
+               case 1:
+                    console.log("opened -http channel opened");
+                    break;
+               case 2:
+                    console.log("headers received");
+                    break;
+               case 3:
+                    console.log("loading - loading http response body");
+                    break;
+               case 4:
+                    console.log("done - data transfer completed or failed");
+                   if(http.status == 200){
+                       console.log("SUCCESS: http status "+http.status);
+                        var response = http.responseText;
+                        $("fieldset",forma).slideUp("slow").hide();
+                        $(forma).append('<div class="success animate fadeInLeft"><h4>¡ENVIADO!</h4><br><p>Gracias por escribirnos <strong>'+decodeURIComponent(name)+'</strong>! Tu correo ha sido enviado con éxito y pronto te contactaremos para darle seguimiento.</p></div>');
+                        //        track();
+                    }
+                    else{ throw("ERROR: http status "+http.status);}
+                    break;
+               }
     }
-    catch(e){}
-    finally{}
+    catch(e){console.log(e);}
 }
 
 function isUndefined(a) {
