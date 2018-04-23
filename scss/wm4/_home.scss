@@ -473,12 +473,19 @@ body.home{
                     padding: .5em 0;
                 }
             }
-            form fieldset{
-                padding: 3em;
+            form {
                 
-                input:required::placeholder::after{
+                fieldset{padding: 3em;}
+                input,textarea{color: $w;font-weight: 100;}
+                input.required::placeholder::after{
                     content: "*";
                     color: $pol_green;
+                }
+                div.success{
+                    text-align: center;
+                    margin-bottom: 1.5em;
+                    overflow-y: scroll;
+                    padding: 1em;
                 }
             }
         }

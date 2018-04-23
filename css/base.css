@@ -3813,18 +3813,26 @@ body.home .monolito-wrapper {
           padding: .5em 0; }
       body.home section#contacto form fieldset {
         padding: 3em; }
-        body.home section#contacto form fieldset input:required::-webkit-input-placeholder::after {
-          content: "*";
-          color: #cdc200; }
-        body.home section#contacto form fieldset input:required:-ms-input-placeholder::after {
-          content: "*";
-          color: #cdc200; }
-        body.home section#contacto form fieldset input:required::-ms-input-placeholder::after {
-          content: "*";
-          color: #cdc200; }
-        body.home section#contacto form fieldset input:required::placeholder::after {
-          content: "*";
-          color: #cdc200; }
+      body.home section#contacto form input, body.home section#contacto form textarea {
+        color: #fff;
+        font-weight: 100; }
+      body.home section#contacto form input.required::-webkit-input-placeholder::after {
+        content: "*";
+        color: #cdc200; }
+      body.home section#contacto form input.required:-ms-input-placeholder::after {
+        content: "*";
+        color: #cdc200; }
+      body.home section#contacto form input.required::-ms-input-placeholder::after {
+        content: "*";
+        color: #cdc200; }
+      body.home section#contacto form input.required::placeholder::after {
+        content: "*";
+        color: #cdc200; }
+      body.home section#contacto form div.success {
+        text-align: center;
+        margin-bottom: 1.5em;
+        overflow-y: scroll;
+        padding: 1em; }
     body.home section#unidades {
       height: 150px; }
       body.home section#unidades dt.d {
