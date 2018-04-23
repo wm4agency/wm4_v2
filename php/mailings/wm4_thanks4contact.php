@@ -1,86 +1,6 @@
-<?php
-/*
-// ++++++++++++++++++++++++++++++++++++
-error_reporting(0);
-
-// configuration
-$to = "wm4 - atención a clientes";
-//$recipients = "oscar@wm4.mx,maru@wm4.mx,bety@wm4.mx, pepe@wm4.mx";
-$recipients = "oscar@wm4.mx";
-
-$error_message = "Por favor complete la información en la forma";
-
-$rnd=$_POST['rnd'];
-$nombre=$_POST['nombre'];
-$empresa=$_POST['empresa'];
-$email=$_POST['email'];
-$telefono=$_POST['telefono'];
-$ciudad=$_POST['ciudad'];
-$seleccion=$_POST['seleccion'];
-$intencion=$_POST['intencion'];
-$grado=$_POST['grado'];
-$presupuesto=$_POST['presupuesto'];
-$comentarios=$_POST['comentarios'];
-
-
-
-
-if(!isset($rnd) || !isset($nombre) || !isset($email) || !isset($telefono) || !isset($ciudad)) {
-    echo $error_message . $_POST;
-    die();
-}
-
-
-$subject = "WM4 - nuevo registro en forma de contacto ";
-$email_from = $email;
-
-
-
-$email_message="<HTML>
-		<BODY>
-		<font face='Arial, Helvetica, sans-serif'>";
-$email_message=$email_message."
-        <p><strong>Información del prospecto</strong></p>
-        <br>
-        <p>
-		<strong>NOMBRE:</strong> ".$nombre."<br>
-        <strong>EMPRESA:</strong> ".$empresa."<br>
-        <strong>EMAIL:</strong> ".$email."<br>
-		<strong>TELÉFONO:</strong> ".$telefono."<br>
-        <strong>CIUDAD:</strong> ".$ciudad."<br>
-		<strong>INTERESADOS EN:</strong> ".$seleccion."<br>
-        <strong>MOTIVO DE INTERÉS: </strong>".$intencion."<br>
-        <strong>GRADO DE INTENCIÓN: </strong>".$grado."<br>
-        <strong>Presupuesto: </strong>".$presupuesto."<br>
-        <br>
-        <strong>COMENTARIOS ADICIONALES:</strong> ".$comentarios."
-		<br>
-        </p>";
-
-$email_message=$email_message."<br><br>";
-
-$email_message=$email_message."</p><hr>";
-$email_message=$email_message."</font></BODY></HTML>";
-
-
-$email_message .="registro creado el ".date("d/m/Y")."\n\n";
-$email_message .="\n\n";
-
-// Always set content-type when sending HTML email
-
-
-$headers = "MIME-Version: 1.0" . "\r\n";
-$headers .= "Content-Type: text/html; charset=UTF-8". "\r\n";
-$headers .= 'From: "wm4.mx"<no-reply@wm4.mx>'. "\r\n";
-$headers .= 'BCC: '.$recipients.' '. "\r\n";
-
-
-//$headers .= 'From: <'.$email_from.'>' . "\r\n";
-
-if (mail($to,$subject,$email_message,$headers)){
-    $to = $email;
-    $subject = "Gracias por su contacto";
-    $wellcome_message = "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<?php 
+//echo "thank you message loaded for mailing<br /> \r\n";
+$message = "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
 <html lang='en'>
     <head>
         <title>Bienvenido a WM4</title>
@@ -285,7 +205,7 @@ if (mail($to,$subject,$email_message,$headers)){
                                 <table role='presentation' width='240' border='0' cellspacing='0' cellpadding='0'>
                                     <tr>
                                         <td align='center' height='16' width='16'>
-                                            <a href='http://wm4.mx' title='encuéntranos' target='_blank'>
+                                            <a href='https://www.google.com.mx/maps/place/Vito+Alessio+Robles+101,+Agr%C3%ADcola,+Chimalistac,+01030+Ciudad+de+M%C3%A9xico,+CDMX/@19.3511402,-99.1850127,17z/data=!4m5!3m4!1s0x85d1fff0e0e33ca7:0x4355e17e0a3580dd!8m2!3d19.351135!4d-99.182824?hl=en' title='encuéntranos' target='_blank'>
                                                 <img src='http://wm4.mx/services/mailing/img/map.png' height='16' width='16' alt='Location' style='display:block; border:0; width:16px; height:16px;'>
                                             </a>
                                         </td>
@@ -295,7 +215,7 @@ if (mail($to,$subject,$email_message,$headers)){
                                             </a>
                                         </td>
                                         <td align='center' height='16' width='16'>
-                                            <a href='http://wm4.mx' title='escríbenos' target='_blank'>
+                                            <a href='mailto:contacto@wm4.mx' title='escríbenos' target='_blank'>
                                                 <img src='http://wm4.mx/services/mailing/img/email.png' height='16' width='16' alt='e-mail' style='display:block; border:0; width:16px; height:16px;'>
                                             </a>  
                                         </td>
@@ -305,17 +225,17 @@ if (mail($to,$subject,$email_message,$headers)){
                                             </a>  
                                         </td>
                                         <td align='center' height='16' width='16'>
-                                            <a href='http://wm4.mx' title='Twitter' target='_blank'>
+                                            <a href='https://twitter.com/wm4mx' title='Twitter' target='_blank'>
                                                 <img src='http://wm4.mx/services/mailing/img/twitter.png' height='16' width='16' alt='Twitter' style='display:block; border:0; width:16px; height:16px;'>
                                             </a>
                                         </td>
                                         <td align='center' height='16' width='16'>
-                                            <a href='http://wm4.mx' title='Facebook' target='_blank'>
+                                            <a href='https://www.facebook.com/webmedia4' title='Facebook' target='_blank'>
                                                 <img src='http://wm4.mx/services/mailing/img/facebook.png' height='16' width='16' alt='Facebook' style='display:block; border:0; width:16px; height:16px;'>
                                             </a>
                                         </td>
                                         <td align='center' height='16' width='16'>
-                                            <a href='http://wm4.mx' title='Instagram' target='_blank'>
+                                            <a href='https://www.instagram.com/wm4agency/' title='Instagram' target='_blank'>
                                                 <img src='http://wm4.mx/services/mailing/img/instagram.png' height='16' width='16' alt='Instagram' style='display:block; border:0; width:16px; height:16px;'>
                                             </a>  
                                         </td>
@@ -341,20 +261,3 @@ if (mail($to,$subject,$email_message,$headers)){
         </table>
     </body>
 </html>";
-        
-    $headers = "MIME-Version: 1.0" . "\r\n";
-    $headers .= "Content-Type: text/html; charset=UTF-8". "\r\n";
-    $headers .= 'From: "wm4.mx"<no-reply@wm4.mx>'. "\r\n";
-    $headers .= 'to: '.$to.' '. "\r\n";
-    
-    if (mail($to,$subject,$wellcome_message,$headers)){
-        echo "Gracias, su solicitud ha sido enviada";
-    }else{echo "error de envío de bienvenida";}
-}
-else{
-    echo "hemos tenido algún problema con tu envío, por favor intenta nuevamente";
-   //echo "no enviado" . " | PARAMETERS INTENDED: to= ".$to." / subject= ".$subject." / email_mesagge= ".$email_message." / headers= ".$headers;
-    die();
-}
-
-?>

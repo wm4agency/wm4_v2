@@ -30,22 +30,23 @@ function sendRequest() {
     inputs.rnd = Math.random();
     
     var data= JSON.stringify(inputs);
-    console.log(data);
 
     try{
         http.open('POST',  'php/services/mailer.php');
         http.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-        http.onreadystatechange = handleResponse();
+        http.onreadystatechange = handleResponse;
         http.send('inputs='+data);
     }
     catch(e){ console.log(e);}
+    finally{
+        
+    }
 }
 
 function checkvals(givenForm){
     forma = givenForm;
     var all_els = forma.elements,
         errors = 0;
-    
     for(i=0;i<all_els.length;i++){
         var e = all_els[i];
         switch (e.type){
@@ -110,15 +111,18 @@ function checkvals(givenForm){
                            break;
                        default:
                            $("label[for='"+e.id+"'].err").remove();
-                           if(!e.value || e.value=="" || e.value==null || e.value>=0)break;
+                           if(!e.value || e.value=="" || e.value==null || e.value<=0)break;
                            inputs[e.name]=e.value;
                            break;
                     }
                }
             break;
+            case "hidden":
+                if(!e.value || e.value=="" || e.value==null || e.value<=0){console.log(e);break};
+                inputs[e.name]=e.value;
+                break;
         }
     }    
-    
     if(errors==0) {
        $("#send",forma).disabled=true;
         $("#send",forma).val("enviando...");
@@ -136,40 +140,47 @@ function validate_email(address) {
 }
 
 function validate_phone(phone){
-    var phoneNum = phone.replace(/[^\d]/g, '');
-    if(phoneNum.length > 6 && phoneNum.length < 11) {  return true;  } else {return false;}
+    /*var phoneNum = phone.replace(/[^\d]/g, '');
+    if(phoneNum.length > 6 && phoneNum.length < 11) {  return true;  } else {return false;}*/
+    var reg = /^\+((?:9[679]|8[035789]|6[789]|5[90]|42|3[578]|2[1-689])|9[0-58]|8[1246]|6[0-6]|5[1-8]|4[013-9]|3[0-469]|2[70]|7|1)(?:\W*\d){0,13}\d$/;
+    if(reg.test(phone) == false) {
+        //return false;
+        if(phone.length > 6 && phone.length < 11) {  return true;  } 
+        else 
+        return false;
+    }
+    else
+    return true;
 }
 
-function handleResponse(forma) {
+function handleResponse() {
     console.log('handling http response');
-    try{
-        switch(http.readyState){
-               case 0:
-                    console.log("unsent - headers not yet sent");
-                    break;
-               case 1:
-                    console.log("opened -http channel opened");
-                    break;
-               case 2:
-                    console.log("headers received");
-                    break;
-               case 3:
-                    console.log("loading - loading http response body");
-                    break;
-               case 4:
-                    console.log("done - data transfer completed or failed");
-                   if(http.status == 200){
-                       console.log("SUCCESS: http status "+http.status);
-                        var response = http.responseText;
-                        $("fieldset",forma).slideUp("slow").hide();
-                        $(forma).append('<div class="success animate fadeInLeft"><h4>¡ENVIADO!</h4><br><p>Gracias por escribirnos <strong>'+decodeURIComponent(name)+'</strong>! Tu correo ha sido enviado con éxito y pronto te contactaremos para darle seguimiento.</p></div>');
-                        //        track();
-                    }
-                    else{ throw("ERROR: http status "+http.status);}
-                    break;
-               }
-    }
-    catch(e){console.log(e);}
+    switch(http.readyState){
+        /*case 0:
+            console.log("unsent - headers not yet sent");
+            break;
+        case 1:
+            console.log("opened -http channel opened");
+            break;
+        case 2:
+            console.log("headers received");
+            break;
+        case 3:
+            console.log("loading - loading http response body");
+            break;*/
+        case 4:
+            //console.log("done - data transfer completed or failed");
+            if(http.status == 200){
+                console.log("SUCCESS: http status "+http.status);
+                var respuesta = http.responseText;
+                $("fieldset",forma).slideUp("slow").hide();
+                $(forma).append('<div class="success animate fadeInLeft">'+respuesta+'</div>')
+            }
+            else{ 
+                respuesta = "No hemos podido procesar tu envío, por favor inténtalo nuevamente.";
+                throw("ERROR: http status "+http.status);}
+            break;
+                          }
 }
 
 function isUndefined(a) {

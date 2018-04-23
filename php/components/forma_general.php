@@ -19,7 +19,7 @@
             <option>general</option>
         </select>
         <select id="grado" name="grado" placeholder="lapso para tomar decisión" class="required">
-            <option value="0">seleccione una opción</option>
+            <option value="">seleccione una opción</option>
             <option>de inmediato</option>
             <option>éste mes</option>
             <option>próximos 3 meses</option>
@@ -29,6 +29,6 @@
         <textarea id="mensaje" name="mensaje" placeholder="comentarios"></textarea>
 <!--        <input id="send" type="button" value="Enviar" onClick="return check_values();">-->
         <input id="send" type="button" value="Enviar" class="sendform">
-        <input type="hidden" id="cat" value="general">
+        <input type="hidden" id="cat" name="cat" value="general">
     </fieldset>
 </form>
