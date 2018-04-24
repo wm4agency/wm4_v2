@@ -8,7 +8,7 @@
     include 'header-desktop.php'; 
 ?>
 
-<main class="row">
+<section id="main" class="row">
     <article itemscope itemtype="http://schema.org/Service" class="container">
         <meta itemprop="provider" itemscope itemtype="http://schema.org/LocalBusiness" content="WM4" />
         <h1 itemprop="serviceType" itemprop="name" class="span-12 animated fadeInLeft">Marketing<br> Político</h1>
@@ -35,7 +35,7 @@
         </div>
         <aside class="span-5"><a href="#contacto" class="linktext" data-destination="contacto">Solicitar información</a></aside> 
     </article>      
-</main>
+</section>
 <section id="stats" class="<?php echo $role; ?> row prearrow">
    <div class="container">
        <h1 class="span-12">estrategias y acciones que generan resultados</h1>

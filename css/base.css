@@ -4022,29 +4022,6 @@ body.portada-seccion {
   width: 100vw !important;
   overflow-x: hidden;
   position: absolute; }
-  body.portada-seccion main {
-    margin-top: -6em;
-    overflow: hidden; }
-    body.portada-seccion main summary {
-      text-align: justify; }
-    body.portada-seccion main h1 {
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 4em;
-      line-height: .8em;
-      margin-bottom: .5em; }
-    @media only screen and (max-width: 480px) {
-      body.portada-seccion main {
-        font-size: .85em;
-        border: none;
-        border-bottom: 1px dashed #000;
-        padding-bottom: 1em; }
-        body.portada-seccion main h1 {
-          font-size: 2em;
-          line-height: 1em; }
-        body.portada-seccion main ul li {
-          line-height: .95em;
-          padding-bottom: .5em; } }
   body.portada-seccion section.precontacto {
     padding-bottom: 14%; }
   body.portada-seccion section.postcontacto {
@@ -4053,6 +4030,77 @@ body.portada-seccion {
     padding-bottom: 2.5%; }
   body.portada-seccion section.postarrow {
     padding-top: 2.5%; }
+  body.portada-seccion section#main {
+    margin-top: 6em;
+    overflow: hidden; }
+    body.portada-seccion section#main summary {
+      text-align: justify; }
+    body.portada-seccion section#main h1 {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 4em;
+      line-height: .8em;
+      margin-bottom: .5em; }
+    body.portada-seccion section#main #servicios {
+      position: relative;
+      background: #FBAE17;
+      /* default color */
+      -webkit-box-shadow: 0 1px 2px #777;
+      box-shadow: 0 2px 1px #777;
+      color: white;
+      font-size: .9em;
+      padding: 1.5em 2.5em;
+      text-transform: uppercase;
+      letter-spacing: .125em; }
+      body.portada-seccion section#main #servicios::before, body.portada-seccion section#main #servicios::after, body.portada-seccion section#main #servicios > .content::before {
+        position: absolute;
+        z-index: 2;
+        content: ''; }
+      body.portada-seccion section#main #servicios::before {
+        bottom: -36.8421052632px;
+        right: -36.8421052632px;
+        width: 70px;
+        height: 70px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        z-index: 1;
+        background: #e6e6e6; }
+      body.portada-seccion section#main #servicios::after {
+        bottom: 0;
+        right: 0;
+        border: solid 23px #bc8311;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+        -webkit-box-shadow: -1px -1px 2px #777;
+        box-shadow: -1px -1px 2px #777;
+        z-index: 0; }
+      body.portada-seccion section#main #servicios .content::before {
+        right: 0;
+        bottom: 22px;
+        width: 47px;
+        -webkit-box-shadow: 0 0 3px 0 #666;
+        box-shadow: 0 0 3px 0 #666;
+        -webkit-transform: skewY(-45deg);
+        transform: skewY(-45deg); }
+      body.portada-seccion section#main #servicios dt {
+        position: relative;
+        display: block;
+        line-height: 1.5em;
+        margin-left: 1.5em;
+        font-weight: 100; }
+        body.portada-seccion section#main #servicios dt::before {
+          content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 281.3 500'%3E%3Cstyle type='text/css'%3E .marker%7Bfill:%23FFF;%7D%0A%3C/style%3E%3Cpath class='marker' d='M272 272L53.2 490.7c-5.9 5.9-13.7 9.3-22 9.3C14.2 500 0 485.9 0 468.8V31.3C0 14.1 14.2 0 31.3 0c8.3 0 16.1 3.4 22 9.3L272 228c5.9 5.9 9.3 13.7 9.3 22C281.3 258.3 277.8 266.1 272 272z'/%3E%3C/svg%3E");
+          position: absolute;
+          left: -1.5em;
+          width: .35em;
+          margin-top: -.15em; }
+      body.portada-seccion section#main #servicios h3 {
+        font-size: 2em;
+        line-height: 1.5em;
+        border-bottom-color: #006f9e; }
+        body.portada-seccion section#main #servicios h3::before {
+          content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 433 500'%3E%3Cstyle type='text/css'%3E .marker%7Bfill:%23006f9e;%7D%0A%3C/style%3E%3Cpolygon class='marker' points='433 375 216.5 500 0 375 0 125 216.5 0 433 125 '/%3E%3C/svg%3E");
+          position: absolute; }
   body.portada-seccion section#stats {
     text-align: center;
     background: white; }
@@ -4208,69 +4256,9 @@ body.portada-seccion {
       font-size: 2.5em;
       font-weight: 100;
       text-transform: uppercase; }
-  body.portada-seccion #servicios {
-    position: relative;
-    background: #FBAE17;
-    /* default color */
-    -webkit-box-shadow: 0 1px 2px #777;
-    box-shadow: 0 2px 1px #777;
-    color: white;
-    font-size: .9em;
-    padding: 1.5em 2.5em;
-    text-transform: uppercase;
-    letter-spacing: .125em; }
-    body.portada-seccion #servicios::before, body.portada-seccion #servicios::after, body.portada-seccion #servicios > .content::before {
-      position: absolute;
-      z-index: 2;
-      content: ''; }
-    body.portada-seccion #servicios::before {
-      bottom: -36.8421052632px;
-      right: -36.8421052632px;
-      width: 70px;
-      height: 70px;
-      -webkit-transform: rotate(45deg);
-      transform: rotate(45deg);
-      z-index: 1;
-      background: #e6e6e6; }
-    body.portada-seccion #servicios::after {
-      bottom: 0;
-      right: 0;
-      border: solid 23px #bc8311;
-      border-bottom-color: transparent;
-      border-right-color: transparent;
-      -webkit-box-shadow: -1px -1px 2px #777;
-      box-shadow: -1px -1px 2px #777;
-      z-index: 0; }
-    body.portada-seccion #servicios .content::before {
-      right: 0;
-      bottom: 22px;
-      width: 47px;
-      -webkit-box-shadow: 0 0 3px 0 #666;
-      box-shadow: 0 0 3px 0 #666;
-      -webkit-transform: skewY(-45deg);
-      transform: skewY(-45deg); }
-    body.portada-seccion #servicios dt {
-      position: relative;
-      display: block;
-      line-height: 1.5em;
-      margin-left: 1.5em;
-      font-weight: 100; }
-      body.portada-seccion #servicios dt::before {
-        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 281.3 500'%3E%3Cstyle type='text/css'%3E .marker%7Bfill:%23FFF;%7D%0A%3C/style%3E%3Cpath class='marker' d='M272 272L53.2 490.7c-5.9 5.9-13.7 9.3-22 9.3C14.2 500 0 485.9 0 468.8V31.3C0 14.1 14.2 0 31.3 0c8.3 0 16.1 3.4 22 9.3L272 228c5.9 5.9 9.3 13.7 9.3 22C281.3 258.3 277.8 266.1 272 272z'/%3E%3C/svg%3E");
-        position: absolute;
-        left: -1.5em;
-        width: .35em;
-        margin-top: -.15em; }
-    body.portada-seccion #servicios h3 {
-      font-size: 2em;
-      line-height: 1.5em;
-      border-bottom-color: #006f9e; }
-      body.portada-seccion #servicios h3::before {
-        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 433 500'%3E%3Cstyle type='text/css'%3E .marker%7Bfill:%23006f9e;%7D%0A%3C/style%3E%3Cpolygon class='marker' points='433 375 216.5 500 0 375 0 125 216.5 0 433 125 '/%3E%3C/svg%3E");
-        position: absolute; }
-  body.portada-seccion.mkt_d main h1, body.portada-seccion.mkt_d .linktext {
+  body.portada-seccion.mkt_d section#main h1, body.portada-seccion.mkt_d section#main .linktext {
     color: #006f9e; }
-  body.portada-seccion.mkt_d #servicios {
+  body.portada-seccion.mkt_d section#main #servicios {
     position: relative;
     background: -webkit-gradient(linear, right top, left bottom, from(#1797cd), color-stop(#1797cd), to(#006f9e));
     background: linear-gradient(to bottom left, #1797cd, #1797cd, #006f9e);
@@ -4278,11 +4266,11 @@ body.portada-seccion {
     -webkit-box-shadow: 0 1px 2px #777;
     box-shadow: 0 2px 1px #777;
     margin: 0; }
-    body.portada-seccion.mkt_d #servicios::before, body.portada-seccion.mkt_d #servicios::after, body.portada-seccion.mkt_d #servicios > .content::before {
+    body.portada-seccion.mkt_d section#main #servicios::before, body.portada-seccion.mkt_d section#main #servicios::after, body.portada-seccion.mkt_d section#main #servicios > .content::before {
       position: absolute;
       z-index: 2;
       content: ''; }
-    body.portada-seccion.mkt_d #servicios::before {
+    body.portada-seccion.mkt_d section#main #servicios::before {
       bottom: -36.8421052632px;
       right: -36.8421052632px;
       width: 70px;
@@ -4291,7 +4279,7 @@ body.portada-seccion {
       transform: rotate(45deg);
       z-index: 1;
       background: #e6e6e6; }
-    body.portada-seccion.mkt_d #servicios::after {
+    body.portada-seccion.mkt_d section#main #servicios::after {
       bottom: 0;
       right: 0;
       border: solid 23px #11719a;
@@ -4300,7 +4288,7 @@ body.portada-seccion {
       -webkit-box-shadow: -1px -1px 2px #777;
       box-shadow: -1px -1px 2px #777;
       z-index: 0; }
-    body.portada-seccion.mkt_d #servicios .content::before {
+    body.portada-seccion.mkt_d section#main #servicios .content::before {
       right: 0;
       bottom: 22px;
       width: 47px;
@@ -4308,9 +4296,9 @@ body.portada-seccion {
       box-shadow: 0 0 3px 0 #666;
       -webkit-transform: skewY(-45deg);
       transform: skewY(-45deg); }
-    body.portada-seccion.mkt_d #servicios h3 {
+    body.portada-seccion.mkt_d section#main #servicios h3 {
       border-bottom-color: #006f9e; }
-      body.portada-seccion.mkt_d #servicios h3::before {
+      body.portada-seccion.mkt_d section#main #servicios h3::before {
         content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 433 500'%3E%3Cstyle type='text/css'%3E .marker%7Bfill:%23006f9e;%7D%0A%3C/style%3E%3Cpolygon class='marker' points='433 375 216.5 500 0 375 0 125 216.5 0 433 125 '/%3E%3C/svg%3E");
         position: absolute;
         width: 1em;
@@ -4365,9 +4353,9 @@ body.portada-seccion {
       position: absolute; }
   body.portada-seccion.mkt_d section#stats {
     color: #1797cd; }
-  body.portada-seccion.mkt_p main h1, body.portada-seccion.mkt_p .linktext {
+  body.portada-seccion.mkt_p section#main h1, body.portada-seccion.mkt_p section#main .linktext {
     color: #8f8700; }
-  body.portada-seccion.mkt_p #servicios {
+  body.portada-seccion.mkt_p section#main #servicios {
     position: relative;
     background: -webkit-gradient(linear, right top, left bottom, from(#cdc200), color-stop(#cdc200), to(#8f8700));
     background: linear-gradient(to bottom left, #cdc200, #cdc200, #8f8700);
@@ -4375,11 +4363,11 @@ body.portada-seccion {
     -webkit-box-shadow: 0 1px 2px #777;
     box-shadow: 0 2px 1px #777;
     margin: 0; }
-    body.portada-seccion.mkt_p #servicios::before, body.portada-seccion.mkt_p #servicios::after, body.portada-seccion.mkt_p #servicios > .content::before {
+    body.portada-seccion.mkt_p section#main #servicios::before, body.portada-seccion.mkt_p section#main #servicios::after, body.portada-seccion.mkt_p section#main #servicios > .content::before {
       position: absolute;
       z-index: 2;
       content: ''; }
-    body.portada-seccion.mkt_p #servicios::before {
+    body.portada-seccion.mkt_p section#main #servicios::before {
       bottom: -36.8421052632px;
       right: -36.8421052632px;
       width: 70px;
@@ -4388,7 +4376,7 @@ body.portada-seccion {
       transform: rotate(45deg);
       z-index: 1;
       background: #e6e6e6; }
-    body.portada-seccion.mkt_p #servicios::after {
+    body.portada-seccion.mkt_p section#main #servicios::after {
       bottom: 0;
       right: 0;
       border: solid 23px #9a9200;
@@ -4397,7 +4385,7 @@ body.portada-seccion {
       -webkit-box-shadow: -1px -1px 2px #777;
       box-shadow: -1px -1px 2px #777;
       z-index: 0; }
-    body.portada-seccion.mkt_p #servicios .content::before {
+    body.portada-seccion.mkt_p section#main #servicios .content::before {
       right: 0;
       bottom: 22px;
       width: 47px;
@@ -4405,9 +4393,9 @@ body.portada-seccion {
       box-shadow: 0 0 3px 0 #666;
       -webkit-transform: skewY(-45deg);
       transform: skewY(-45deg); }
-    body.portada-seccion.mkt_p #servicios h3 {
+    body.portada-seccion.mkt_p section#main #servicios h3 {
       border-bottom-color: #8f8700; }
-      body.portada-seccion.mkt_p #servicios h3::before {
+      body.portada-seccion.mkt_p section#main #servicios h3::before {
         content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 433 500'%3E%3Cstyle type='text/css'%3E .marker%7Bfill:%238f8700;%7D%0A%3C/style%3E%3Cpolygon class='marker' points='433 375 216.5 500 0 375 0 125 216.5 0 433 125 '/%3E%3C/svg%3E");
         position: absolute;
         width: 1em;
@@ -4464,6 +4452,26 @@ body.portada-seccion {
         position: absolute; }
   body.portada-seccion.mkt_p section#stats {
     color: #cdc200; }
+  @media only screen and (max-width: 480px) {
+    body.portada-seccion section, body.portada-seccion main {
+      display: table !important;
+      width: 100%; }
+    body.portada-seccion main > section {
+      position: relative !important; }
+    body.portada-seccion section#main {
+      font-size: .85em;
+      border: none;
+      border-bottom: 1px dashed #000;
+      padding-bottom: 1em;
+      margin-top: 0em;
+      top: 0;
+      background: #e6e6e6; }
+      body.portada-seccion section#main h1 {
+        font-size: 2.5em;
+        line-height: 1em; }
+      body.portada-seccion section#main ul li {
+        line-height: .95em;
+        padding-bottom: .5em; } }
 
 .animated {
   -webkit-animation-duration: 1s;

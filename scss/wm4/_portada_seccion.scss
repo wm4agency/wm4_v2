@@ -4,42 +4,6 @@ body.portada-seccion {
     width: 100vw!important;
     overflow-x: hidden;
     position: absolute;
-
-    main{    
-        margin-top: -6em;
-        overflow: hidden;
-
-        summary{
-            text-align: justify;
-            //padding-right: 1.5em;
-        }
-
-        h1{
-            text-transform: uppercase;
-            font-weight: 700;
-            font-size: 4em;
-            line-height:.8em;
-            margin-bottom: .5em;
-            //@include fadeInLeft();
-        }
-
-        @include max-width($mobile) {
-            font-size: .85em; 
-            border: none;
-            border-bottom: 1px dashed $b;
-            padding-bottom: 1em;
-            
-            h1{
-                font-size: 2.5em;
-                line-height: 1em;
-            }
-
-            ul li{
-                line-height: .95em;
-                padding-bottom: .5em;
-            }
-        }
-    }
     
     section{
         
@@ -48,6 +12,63 @@ body.portada-seccion {
         &.prearrow{padding-bottom: 2.5%;}
         &.postarrow{padding-top: 2.5%;}
 
+        &#main{    
+            margin-top: 6em;
+            overflow: hidden;
+
+            summary{
+                text-align: justify;
+                //padding-right: 1.5em;
+            }
+
+            h1{
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 4em;
+                line-height:.8em;
+                margin-bottom: .5em;
+                //@include fadeInLeft();
+            }
+            #servicios{
+                @include tipped($action-color, $action-color, $grey_base);
+                color:white;
+                font-size: .9em;
+                padding: 1.5em 2.5em;
+                text-transform: uppercase;
+                letter-spacing: .125em;
+                //@include fadeIn(null, null, 1s);
+
+                dt{
+                    position: relative;
+                    display: block;
+                    line-height: 1.5em;
+                    margin-left: 1.5em;
+                    font-weight: 100;
+
+                    &::before{
+                        @include arrow_marker(#FFF);
+                        left:-1.5em;
+                        width: .35em;
+                        margin-top: -.15em;
+                    }
+                }
+
+                h3{
+                    font-size: 2em;
+                    line-height: 1.5em;
+                    border-bottom-color: $digital_blue_dark;
+
+                    &::before{
+                        @include hexa_marker($digital_blue_dark);
+                    }
+                }
+                .linktext{
+                    //@include fadeInDown(null, null, 1s);
+                }
+
+            }
+        }
+        
         &#stats{
             text-align: center;
             background: white;
@@ -202,70 +223,35 @@ body.portada-seccion {
         }
     }
     
-    #servicios{
-        @include tipped($action-color, $action-color, $grey_base);
-        color:white;
-        font-size: .9em;
-        padding: 1.5em 2.5em;
-        text-transform: uppercase;
-        letter-spacing: .125em;
-        //@include fadeIn(null, null, 1s);
-
-        dt{
-            position: relative;
-            display: block;
-            line-height: 1.5em;
-            margin-left: 1.5em;
-            font-weight: 100;
-
-            &::before{
-                @include arrow_marker(#FFF);
-                left:-1.5em;
-                width: .35em;
-                margin-top: -.15em;
-            }
-        }
-
-        h3{
-            font-size: 2em;
-            line-height: 1.5em;
-            border-bottom-color: $digital_blue_dark;
-
-            &::before{
-                @include hexa_marker($digital_blue_dark);
-            }
-        }
-        .linktext{
-            //@include fadeInDown(null, null, 1s);
-        }
-
-    }     
+     
     
     &.mkt_d{
-        main h1, .linktext{
-            color: $digital_blue_dark;
-        }
-        
-        main h1{        }
-        
-        #servicios{
-            @include tipped(linear-gradient(to bottom left,$digital_blue,$digital_blue,$digital_blue_dark),$digital_blue,$grey_base);
-            margin: 0;
-            //background:$digital_blue;
-
-            h3{
-                border-bottom-color: $digital_blue_dark;
-
-                &::before{
-                    @include hexa_marker($digital_blue_dark);
-                    width: 1em;
-                    text-align: center;
-                }
-            }
-
-        }
         
         section{
+            &#main{
+                
+                h1, .linktext{
+                    color: $digital_blue_dark;
+                }
+                
+                #servicios{
+                    @include tipped(linear-gradient(to bottom left,$digital_blue,$digital_blue,$digital_blue_dark),$digital_blue,$grey_base);
+                    margin: 0;
+                    //background:$digital_blue;
+
+                    h3{
+                        border-bottom-color: $digital_blue_dark;
+
+                        &::before{
+                            @include hexa_marker($digital_blue_dark);
+                            width: 1em;
+                            text-align: center;
+                        }
+                    }
+
+                }
+            }
+            
             &#portfolio{
                 .hexatitle.right{
                     color: $digital_blue;
@@ -308,29 +294,32 @@ body.portada-seccion {
     }
     
     &.mkt_p{
-        main h1, .linktext{
-            color: $pol_green_dark;
-        }
-        
-        #servicios{
-            @include tipped(linear-gradient(to bottom left,$pol_green,$pol_green,$pol_green_dark),$pol_green,$grey_base);
-            margin: 0;
-            //background:$digital_blue;
-
-            h3{
-                border-bottom-color: $pol_green_dark;
-
-                &::before{
-                    @include hexa_marker($pol_green_dark);
-                    width: 1em;
-                    text-align: center;
-                }
-            }
-
-        }
         
         section{
 
+            &#main{
+                h1, .linktext{
+                    color: $pol_green_dark;
+                }
+
+                #servicios{
+                    @include tipped(linear-gradient(to bottom left,$pol_green,$pol_green,$pol_green_dark),$pol_green,$grey_base);
+                    margin: 0;
+                    //background:$digital_blue;
+
+                    h3{
+                        border-bottom-color: $pol_green_dark;
+
+                        &::before{
+                            @include hexa_marker($pol_green_dark);
+                            width: 1em;
+                            text-align: center;
+                        }
+                    }
+
+                }
+            }
+            
             &#portfolio{
                 h1.hexatitle.right.sub{
                     color: $pol_green;
@@ -370,6 +359,38 @@ body.portada-seccion {
             }
             
             &#stats{ color: $pol_green;}
+        }
+    }
+    
+    @include max-width($mobile) {
+        section,main{
+            display: table!important;
+            width: 100%;
+        } 
+        
+        & main > section{
+            position: relative!important;
+        }
+        section{
+            &#main{
+                font-size: .85em; 
+                border: none;
+                border-bottom: 1px dashed $b;
+                padding-bottom: 1em;
+                margin-top: 0em;
+                top:0;
+                background: $grey_base;
+
+                h1{
+                    font-size: 2.5em;
+                    line-height: 1em;
+                }
+
+                ul li{
+                    line-height: .95em;
+                    padding-bottom: .5em;
+                }
+            }
         }
     }
 }

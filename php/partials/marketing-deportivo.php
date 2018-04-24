@@ -6,7 +6,7 @@
     include 'header-desktop.php'; 
 ?>
 
-<main class="<?php echo $role; ?> container row">
+<section id="main" class="<?php echo $role; ?> container row">
     <h1 class="span-12">marketing <br> deportivo</h1>
     <p role="definition" class="span-5">Construimos y hacemos crecer marcas y lealtades que encienden pasiones y provocan fidelidad. Desarrollamos comunidades involucradas de seguidores leales que participan y colaboran en la construcción de franquicias exitosas</p>
     <div class="span-7 omega">
@@ -23,7 +23,7 @@
             <li>Producción de contenido</li>
         </ul>
     </div>
-</main>
+</section>
 <!--
 <section id="stats" class="<?php echo $role; ?> container row">
     <h1 class="span-12">Resultados Medibles</h1>
