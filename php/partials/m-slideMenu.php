@@ -2,7 +2,7 @@
     <figure class="fa fa-bars m-nav-toggler">&nbsp;</figure>
     <div class="nav-wrapper">
         <nav>
-            <figure><?php include'logosvg.php'; ?></figure>
+            <figure data-target="<?php echo $root;?>" class="wm4"></figure>
             <ul class="unidades">
                 <li data-target="?d=marketing-digital" class="d">Marketing Digital</li>
                 <li data-target="?d=marketing-digital" class="p">Marketing Político</li>

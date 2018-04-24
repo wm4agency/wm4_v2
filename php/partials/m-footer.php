@@ -9,22 +9,14 @@ if (isset($footer) && $footer == "full"): /*echo "full footer";*/
 <footer class="fullwidth">
     <div class="container">
         <figure data-target="#main" class="fa fa-arrow-up gotop">arriba</figure>
-        <figure><?php include'logosvg.php'; ?></figure>
+        <figure data-target="<?php echo $root;?>" class="wm4"></figure>
         <h3>Hacemos estrategias | entregamos resultados</h3>
     </div>
 </footer>
 <?php elseif(isset($footer) && $footer =="minimal"): /*echo "minimal footer";*/ ?>
 <footer class="fullwidth">
     <div class="container">
-        <div class="span-4">
-            <figure class="span-4 logo"> <img src="img/wm4.png"></figure>
-            <nav class="span-4">:
-            </nav>
-            <nav class="span-4 omega">
-            </nav>
-        </div>
-        <span class="span-4">
-        </span>
+        <figure data-target="<?php echo $root;?>" class="wm4"></figure>
         <?php 
         include_once('nav_contactPoints_footer.php'); 
         ?>

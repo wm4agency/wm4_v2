@@ -21,7 +21,7 @@ var pswpGalleries = [];
 
 function delegateEvents(){
     document.addEventListener('click', function (event) {
-        
+        //console.log(event.target);
         // botones en formas de contacto 
         if ( event.target.classList.contains( 'sendform' ) ) {
             var forma = event.target.form;
@@ -31,10 +31,19 @@ function delegateEvents(){
         
         // objetos que disparan navegación 
         if(event.target.getAttribute("data-target")){
-            var e = event.target;
+            var e = event.target,
+                t = e.getAttribute('data-target'),
+                at;
             e.preventDefault;
-            var actiontarget = rootpath+'/'+e.getAttribute('data-target');
-            window.location=actiontarget;
+
+
+            //actiontarget = rootpath+'/'+e.getAttribute('data-target');
+            console.log(t);
+                if( t.startsWith("#")|| t.startsWith("http")) {at = t;}
+                else if(t.startsWith("?")){at = rootpath+'/'+e.getAttribute('data-target');}
+
+            //console.log(at);
+            window.location=at;
         }
         
     }, false);
