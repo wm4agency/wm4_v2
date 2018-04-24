@@ -87,16 +87,6 @@ body.portada-seccion {
                 //@include fadeInDown();
             }
 
-            @include max-width($mobile) {
-                li{
-                    font-size: 1.5em;
-                    line-height: .85em;
-                }
-
-                span{
-
-                }
-            }
         }
 
         &#portfolio{
@@ -363,6 +353,15 @@ body.portada-seccion {
     }
     
     @include max-width($mobile) {
+        
+        .pswp__top-bar{
+            padding-right: 50px;
+        }
+        
+        hgroup{
+            padding:1em;
+        }
+        
         section,main{
             display: table!important;
             width: 100%;
@@ -373,7 +372,6 @@ body.portada-seccion {
         }
         section{
             &#main{
-                font-size: .85em; 
                 border: none;
                 border-bottom: 1px dashed $b;
                 padding-bottom: 1em;
@@ -390,6 +388,55 @@ body.portada-seccion {
                     line-height: .95em;
                     padding-bottom: .5em;
                 }
+                
+                summary{
+                    margin-bottom: 1.5em;
+                }
+                
+                aside{
+                    margin-top: 2.5em;
+                }
+            }
+            
+            &#stats{
+                li{
+                    font-size: 2.5em;
+                    line-height: .85em;
+                    margin-bottom: 1.5em;
+                }
+
+                span{
+
+                }
+            }
+            
+            &#portfolio{
+                .grid-item{
+                    height: 30em;
+                    height:60vh;
+                }
+                
+                a.unslider-arrow{
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Cstyle type='text/css'%3E .arrow%7Bfill:#ffffff;%7D%0A%3C/style%3E%3Cpath class='arrow' d='M121.7 66.6c0-4 1.8-7.5 4.4-10.1l22-22c2.6-2.6 6.6-4.4 10.1-4.4 3.5 0 7.5 1.8 10.1 4.4l205.5 205.5c2.6 2.6 4.4 6.6 4.4 10.1s-1.8 7.5-4.4 10.1L168.4 465.6c-2.6 2.6-6.6 4.4-10.1 4.4 -3.5 0-7.5-1.8-10.1-4.4l-22-22c-2.6-2.6-4.4-6.6-4.4-10.1 0-3.5 1.8-7.5 4.4-10.1L299.4 250 126.1 76.7C123.5 74.1 121.7 70.1 121.7 66.6z'/%3E%3C/svg%3E");
+                    opacity: 1;
+                }
+            }
+            
+            &#clientes{
+                ul li{
+                    max-width: 40%;
+                    margin-right: 10%;
+                }
+                
+                ul span{
+                    line-height: 5em;
+                }
+                
+                figure img{
+                    max-width: 8em;
+                    min-height: 5em;
+                }
+                
             }
         }
     }

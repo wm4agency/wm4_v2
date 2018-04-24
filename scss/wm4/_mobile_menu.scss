@@ -1,6 +1,7 @@
 body.mobile{
     position: relative;
     background-color: $darkest!important;
+    
 
     aside#slideMenu, main#panel{
         width: 100%;
@@ -35,6 +36,8 @@ body.mobile{
         width: 100vw;
         color: $w; 
         z-index: 0;
+        
+        .wm4{@include wm4($w);width: 70%;margin: 1em auto;}
         
         div.nav-wrapper{
             min-height: 100%;

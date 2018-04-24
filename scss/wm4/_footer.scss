@@ -2,6 +2,8 @@ footer{
     display: table;
     background-color: $b;
     
+    .wm4{@include wm4($w);width: 30%;margin: 1em auto;}
+
     nav#footer-icons{
         text-align: center;
         padding: 1.5em;
