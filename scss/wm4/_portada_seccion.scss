@@ -30,7 +30,7 @@ body.portada-seccion {
             padding-bottom: 1em;
             
             h1{
-                font-size: 2em;
+                font-size: 2.5em;
                 line-height: 1em;
             }
 
@@ -245,6 +245,8 @@ body.portada-seccion {
         main h1, .linktext{
             color: $digital_blue_dark;
         }
+        
+        main h1{        }
         
         #servicios{
             @include tipped(linear-gradient(to bottom left,$digital_blue,$digital_blue,$digital_blue_dark),$digital_blue,$grey_base);
