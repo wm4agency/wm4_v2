@@ -1,9 +1,7 @@
 $(document).ready(function($){
     document.getElementById('preloader')&&$(".se-pre-con").fadeOut("slow");
-    //document.querySelectorAll('body.mobile')&&navtogglers();
-   
+    
     delegateEvents();
-    //navlinks();
     cycleInit();
     pagepilingInit();
     modalInit();
@@ -24,11 +22,8 @@ function delegateEvents(){
         var e = event.target;
         e.preventDefault
         
-        
         if (e.classList.contains( 'm-nav-toggler' ) ) { // botones en formas de contacto 
-            var panel = document.getElementById('panel');
-            console.log('toggle!');
-            panel.classList.toggle("sliding");
+            togglenav();
         } 
         else if (e.classList.contains( 'sendform' ) ) { //envíos de formas
             var forma = e.form;
@@ -41,66 +36,22 @@ function delegateEvents(){
     }, false);
 }
 
-function linktexts(){
-    var lintexts = document.querySelectorAll(".linktext"), 
-        mapTargets = function() {
-            this.preventDefault;
-            console.log('click!');
-            var target = this.getAttribute('data-target');
-            console.log(target);
-            //window.location.hash = "#" + dest;
-            
-            ////////
-            var url = /^(?:(?:https?|ftp):\/\/)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:\.(?:[a-z\u00a1-\uffff]{2,})))(?::\d{2,5})?(?:\/\S*)?$/;             
-            regex.exec(target)?window.location = dest:location.hash = "#" + target;
-            
-        };
-    [].map.call(lintexts, function(elem) {
-        elem.addEventListener("click", mapTargets, false);
-    });
-}
-
 function navegar(e){
     var t = e.getAttribute('data-target'),
         at;
 
-    //actiontarget = rootpath+'/'+e.getAttribute('data-target');
-    console.log(t);
-    if( t.startsWith("#")|| t.startsWith("http")) {at = t;}
+    if( t.startsWith("#")){at = t;togglenav();}
+    else if(t.startsWith("http")) {at = t;}
     else if(t.startsWith("?")){at = rootpath+'/'+e.getAttribute('data-target');}
     else if(t=="home"){at = rootpath;}
-
-    //console.log(at);
+    console.log(t);
     window.location=at;
 }
 
-function navlinks(){
-    var navlinks = document.querySelectorAll("[data-target]");
-    if(!navlinks || navlinks == null) return;
-    mapTargets = function() {
-        this.preventDefault;
-        var target = rootpath+'/'+this.getAttribute('data-target');
-        window.location=target;
-    };
-    [].map.call(navlinks, function(elem) {
-        elem.addEventListener("click", mapTargets,false);
-    });       
-}
-
-function navtogglers(){
-    var navtogs = document.getElementsByClassName("m-nav-toggler"),
-        panel = document.getElementById('panel'),
-        menu = document.getElementById('slideMenu');
-    if(!navtogs || navtogs == null) return;
-    toggleNav = function() {
-        this.preventDefault;
-        console.log('toggle!');
-        panel.classList.toggle("sliding");
-        //panel.classList.contains("sliding")&&window.scrollTo(0,0);
-    };
-    [].map.call(navtogs, function(elem) {
-        elem.addEventListener("click", toggleNav,false);
-    });       
+function togglenav(){
+    var panel = document.getElementById('panel');
+    console.log('toggle!');
+    panel.classList.toggle("sliding");
 }
 
 function modalInit(){
