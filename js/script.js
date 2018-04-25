@@ -309,7 +309,6 @@ function photoSwipeFromDIR(datareferer,diritems){
                     tags    :   pic.tag
                 }
                 break;
-                
             case "video":
                 var video = '<div class="wrapper"><div class="video-wrapper"><video width="'+pic.width+'" height="'+pic.height+' class="pswp__video" src="'+pic.dir+'" controls></video></div></div>'
                 item = {html: video}
