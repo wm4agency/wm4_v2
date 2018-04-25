@@ -39,8 +39,9 @@ function delegateEvents(){
 
             //actiontarget = rootpath+'/'+e.getAttribute('data-target');
             console.log(t);
-                if( t.startsWith("#")|| t.startsWith("http")) {at = t;}
-                else if(t.startsWith("?")){at = rootpath+'/'+e.getAttribute('data-target');}
+            if( t.startsWith("#")|| t.startsWith("http")) {at = t;}
+            else if(t.startsWith("?")){at = rootpath+'/'+e.getAttribute('data-target');}
+            else if(t=="home"){at = rootpath;}
 
             //console.log(at);
             window.location=at;
