@@ -67,7 +67,7 @@
                         <p>Bahía Príncipe Golf & Residences</p>
                     </article>
                 </a>
-                <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/digital/tuinforma/TuInforma-01.JPG)" data-sourcedir="portafolio/digital/tuinforma">
+                <a href="javascript:void(0)" class="grid-item portfolio-item"  style="background-image: url(img/portafolio/digital/tuinforma/TuInforma-01.jpg)" data-sourcedir="portafolio/digital/tuinforma">
                     <article>
                         <h1>Estrategia y arquitectura</h1>
                         <p>Portal Tu Informa</p>
