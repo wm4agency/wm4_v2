@@ -3499,17 +3499,6 @@ body.home #pagepiling section {
           margin-bottom: .5em; }
         body.home #pagepiling section#contacto aside form input[type=button] {
           background-color: #1e1e1e; }
-        body.home #pagepiling section#contacto aside form label.err {
-          color: #a62700;
-          font-weight: 400;
-          display: block;
-          position: relative; }
-          body.home #pagepiling section#contacto aside form label.err::before {
-            font-family: 'FontAwesome';
-            content: "\f12a";
-            position: absolute;
-            left: -.75em;
-            font-weight: 100; }
         body.home #pagepiling section#contacto aside form div.success {
           padding: 1.25em; }
     body.home #pagepiling section#contacto main {
@@ -4372,7 +4361,7 @@ body.portada-seccion {
     body.portada-seccion.mkt_d section#contacto .hexatitle.centered::before {
       content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 433 500'%3E%3Cstyle type='text/css'%3E .marker%7Bfill:%23fff;%7D%0A%3C/style%3E%3Cpolygon class='marker' points='433 375 216.5 500 0 375 0 125 216.5 0 433 125 '/%3E%3C/svg%3E");
       position: absolute; }
-  body.portada-seccion.mkt_d section#contacto input, body.portada-seccion.mkt_d section#contacto select, body.portada-seccion.mkt_d section#contacto textarea {
+  body.portada-seccion.mkt_d section#contacto input, body.portada-seccion.mkt_d section#contacto textarea {
     color: #fff; }
   body.portada-seccion.mkt_d section#contacto ::-webkit-input-placeholder {
     color: #006f9e;
