@@ -1,6 +1,6 @@
 $(document).ready(function($){
     document.getElementById('preloader')&&$(".se-pre-con").fadeOut("slow");
-    document.querySelectorAll('body.mobile')&&navtogglers();
+    //document.querySelectorAll('body.mobile')&&navtogglers();
    
     delegateEvents();
     //navlinks();
@@ -21,32 +21,23 @@ var pswpGalleries = [];
 
 function delegateEvents(){
     document.addEventListener('click', function (event) {
-        //console.log(event.target);
-        // botones en formas de contacto 
-        if ( event.target.classList.contains( 'sendform' ) ) {
-            var forma = event.target.form;
-            //check_values(forma);
+        var e = event.target;
+        e.preventDefault
+        
+        
+        if (e.classList.contains( 'm-nav-toggler' ) ) { // botones en formas de contacto 
+            var panel = document.getElementById('panel');
+            console.log('toggle!');
+            panel.classList.toggle("sliding");
+        } 
+        else if (e.classList.contains( 'sendform' ) ) { //envíos de formas
+            var forma = e.form;
             checkvals(forma);
         }
-        
-        // objetos que disparan navegación 
-        if(event.target.getAttribute("data-target")){
-            var e = event.target,
-                t = e.getAttribute('data-target'),
-                at;
-            e.preventDefault;
-
-
-            //actiontarget = rootpath+'/'+e.getAttribute('data-target');
-            console.log(t);
-            if( t.startsWith("#")|| t.startsWith("http")) {at = t;}
-            else if(t.startsWith("?")){at = rootpath+'/'+e.getAttribute('data-target');}
-            else if(t=="home"){at = rootpath;}
-
-            //console.log(at);
-            window.location=at;
+        else if(e.getAttribute("data-target")){// objetos que disparan navegación 
+            navegar(e);
         }
-        
+                
     }, false);
 }
 
@@ -67,6 +58,20 @@ function linktexts(){
     [].map.call(lintexts, function(elem) {
         elem.addEventListener("click", mapTargets, false);
     });
+}
+
+function navegar(e){
+    var t = e.getAttribute('data-target'),
+        at;
+
+    //actiontarget = rootpath+'/'+e.getAttribute('data-target');
+    console.log(t);
+    if( t.startsWith("#")|| t.startsWith("http")) {at = t;}
+    else if(t.startsWith("?")){at = rootpath+'/'+e.getAttribute('data-target');}
+    else if(t=="home"){at = rootpath;}
+
+    //console.log(at);
+    window.location=at;
 }
 
 function navlinks(){
