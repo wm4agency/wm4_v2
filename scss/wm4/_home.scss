@@ -150,9 +150,11 @@ body.home{
                     width: 100%;
                     position: absolute;
                     top: 50%;
-                    transform:translateY(-50%);
+                    transform:translateY(-40%);
+                    overflow-y: scroll;
                     
                     input:placeholder-shown{padding: 0.125em; margin-bottom: .5em;}
+                    input[type=button]{background-color: $darkest;}
                     
                     label.err{
                         color:$sport_orange_dark;

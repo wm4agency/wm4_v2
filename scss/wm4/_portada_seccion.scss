@@ -13,7 +13,7 @@ body.portada-seccion {
         &.postarrow{padding-top: 2.5%;}
 
         &#main{    
-            margin-top: 6em;
+            margin-top: -6em;
             overflow: hidden;
 
             summary{
@@ -277,6 +277,12 @@ body.portada-seccion {
                         @include hexa_marker(#fff);
                     }
                 }
+                
+                input,select,textarea{color:$w;}
+                & ::placeholder {color: $digital_blue_dark;font-weight: 400;}
+                & :-ms-input-placeholder {color: $digital_blue_dark;font-weight: 400;}
+                & ::-ms-input-placeholderr {color: $digital_blue_dark;font-weight: 400;}
+                input[type=button]{background-color: $digital_blue_dark;}
             }
             
             &#stats{ color: $digital_blue;}
@@ -346,6 +352,12 @@ body.portada-seccion {
                         @include hexa_marker(#fff);
                     }
                 }
+                input,select,textarea{color:$w;}
+                & ::placeholder {color: $pol_green_dark;font-weight: 400;}
+                & :-ms-input-placeholder {color: $pol_green_dark;font-weight: 400;}
+                & ::-ms-input-placeholderr {color: $pol_green_dark;font-weight: 400;}
+                input[type=button]{background-color: $pol_green_dark;}
+                
             }
             
             &#stats{ color: $pol_green;}

@@ -166,8 +166,8 @@
 </section>
 <section id="contacto" name="contacto" class="<?php echo $role; ?> row">
     <div class="container">
-        <div class="span-4">&nbsp;</div>
-        <div class="span-4">
+        <div class="span-3">&nbsp;</div>
+        <div class="span-6">
             <hgroup>
                 <h1 class="hexatitle centered sub">Contáctanos</h1>
                 <h2 >Transforma hoy tu estrategia digital</h2>

@@ -17,30 +17,32 @@
                     echo "<input type='hidden' id='seleccion' name='seleccion' value='Marketing Deportivo'>";
                     break;
                 default:
-                    echo "<select id='seleccion' name='seleccion' class='required'>
-                        <option value=''>Servicio de su interés</option>
-                        <option>Marketing Digtal</option>
-                        <option>Marketing Político</option>
-                        <option>Marketing Deportivo</option>
-                        </select>";
+                    echo "<div class='selectwrap'>
+                        <select id='seleccion' name='seleccion' class='required'>
+                            <option value=''>Servicio de su interés</option>
+                            <option>Marketing Digtal</option>
+                            <option>Marketing Político</option>
+                            <option>Marketing Deportivo</option>
+                        </select>
+                    </div>";
                     break;
             }
         
         ?>
-        <select id="intencion"  name="intencion" class="required">
+        <div class='selectwrap'><select id="intencion"  name="intencion" class="required">
             <option value="">motivo de su contacto</option>
             <option>contratar un servicio</option>
             <option>rfp / solicitar cotización</option>
             <option>solicitar información</option>
             <option>general</option>
-        </select>
-        <select id="grado" name="grado" class="required">
+            </select></div>
+        <div class='selectwrap'><select id="grado" name="grado" class="required">
             <option value="">plazo para decidir</option>
             <option>de inmediato</option>
             <option>éste mes</option>
             <option>próximos 3 meses</option>
             <option>no definido</option>
-        </select>
+            </select></div>
         <input type=text id="presupuesto" name="presupuesto" placeholder="presupuesto disponible">
         <textarea id="mensaje" name="mensaje" placeholder="comentarios"></textarea>
 <!--        <input id="send" type="button" value="Enviar" onClick="return check_values();">-->
