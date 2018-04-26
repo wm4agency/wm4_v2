@@ -2211,7 +2211,7 @@ img {
   src: url("fonts/RobotoSlab-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal; }
-body, body.home #unidades dt + *, form fieldset input, form fieldset select, form fieldset textarea, ul.hex li, footer.fullwidth h3, body.home #pagepiling section#modelo aside .dtwrapper dt, body.home #unidades h1, body.mobile section#mvp h1, body.mobile section#valores article h1, body.portada-seccion section#portfolio .grid-item article h1 {
+body, body.home #unidades dt + *, form fieldset input, form fieldset select, form fieldset textarea, ul.hex li, footer.fullwidth h3, body.home #pagepiling section#modelo aside .dtwrapper dt, body.home #unidades h1, body.mobile section#mvp h1, body.mobile section#valores article h1, body.portada-seccion section#hero h2, body.portada-seccion section#portfolio .grid-item article h1 {
   font-family: 'Roboto', sans-serif; }
 
 form fieldset label, .linktext, body.mobile aside#slideMenu nav ul.unidades li, body.home #pagepiling section#contacto main ul.links.unidades li, body.home #unidades dt {
@@ -3202,8 +3202,9 @@ header.centered-navigation {
 header.minimal-navigation {
   display: block;
   height: 9em;
-  position: relative;
-  top: 0; }
+  position: absolute;
+  top: 0;
+  z-index: 999; }
   header.minimal-navigation div.container {
     width: 100%;
     max-width: 68em;
@@ -4044,8 +4045,51 @@ body.portada-seccion {
     padding-bottom: 2.5%; }
   body.portada-seccion section.postarrow {
     padding-top: 2.5%; }
+  body.portada-seccion section#hero {
+    height: 70%;
+    height: 70vh;
+    min-height: 500px;
+    background-color: #1e1e1e;
+    color: #999; }
+    body.portada-seccion section#hero hgroup {
+      position: absolute;
+      top: 120px;
+      left: 0;
+      width: 100%;
+      z-index: 998; }
+    body.portada-seccion section#hero h1 {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 4em;
+      line-height: .8em;
+      color: #fff; }
+    body.portada-seccion section#hero h2 {
+      color: #fff;
+      font-size: 2em;
+      text-transform: uppercase;
+      margin-bottom: 0; }
+    body.portada-seccion section#hero p {
+      font-size: 1.15em;
+      width: 70%; }
+    body.portada-seccion section#hero article {
+      width: 100%;
+      height: 70%;
+      height: 70vh;
+      min-height: 500px;
+      background: rgba(251, 174, 23, .5) no-repeat center;
+      background-size: cover; }
+      body.portada-seccion section#hero article .shading {
+        background: rgba(30, 30, 30, .75); }
+      body.portada-seccion section#hero article .slider-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%; }
+      body.portada-seccion section#hero article .slider-content {
+        position: absolute;
+        top: 300px;
+        display: block;
+        max-width: 70%; }
   body.portada-seccion section#main {
-    margin-top: -6em;
     overflow: hidden; }
     body.portada-seccion section#main summary {
       text-align: justify; }
@@ -4266,6 +4310,8 @@ body.portada-seccion {
       font-size: 2.5em;
       font-weight: 100;
       text-transform: uppercase; }
+  body.portada-seccion.mkt_d section#hero h1 {
+    color: #1797cd; }
   body.portada-seccion.mkt_d section#main h1, body.portada-seccion.mkt_d section#main .linktext {
     color: #006f9e; }
   body.portada-seccion.mkt_d section#main #servicios {
@@ -4385,53 +4431,57 @@ body.portada-seccion {
     background-color: #006f9e; }
   body.portada-seccion.mkt_d section#stats {
     color: #1797cd; }
-  body.portada-seccion.mkt_p section#main h1, body.portada-seccion.mkt_p section#main .linktext {
-    color: #8f8700; }
-  body.portada-seccion.mkt_p section#main #servicios {
-    position: relative;
-    background: -webkit-gradient(linear, right top, left bottom, from(#cdc200), color-stop(#cdc200), to(#8f8700));
-    background: linear-gradient(to bottom left, #cdc200, #cdc200, #8f8700);
-    /* default color */
-    -webkit-box-shadow: 0 1px 2px #777;
-    box-shadow: 0 2px 1px #777;
-    margin: 0; }
-    body.portada-seccion.mkt_p section#main #servicios::before, body.portada-seccion.mkt_p section#main #servicios::after, body.portada-seccion.mkt_p section#main #servicios > .content::before {
-      position: absolute;
-      z-index: 2;
-      content: ''; }
-    body.portada-seccion.mkt_p section#main #servicios::before {
-      bottom: -36.8421052632px;
-      right: -36.8421052632px;
-      width: 70px;
-      height: 70px;
-      -webkit-transform: rotate(45deg);
-      transform: rotate(45deg);
-      z-index: 1;
-      background: #e6e6e6; }
-    body.portada-seccion.mkt_p section#main #servicios::after {
-      bottom: 0;
-      right: 0;
-      border: solid 23px #9a9200;
-      border-bottom-color: transparent;
-      border-right-color: transparent;
-      -webkit-box-shadow: -1px -1px 2px #777;
-      box-shadow: -1px -1px 2px #777;
-      z-index: 0; }
-    body.portada-seccion.mkt_p section#main #servicios .content::before {
-      right: 0;
-      bottom: 22px;
-      width: 47px;
-      -webkit-box-shadow: 0 0 3px 0 #666;
-      box-shadow: 0 0 3px 0 #666;
-      -webkit-transform: skewY(-45deg);
-      transform: skewY(-45deg); }
-    body.portada-seccion.mkt_p section#main #servicios h3 {
-      border-bottom-color: #8f8700; }
-      body.portada-seccion.mkt_p section#main #servicios h3::before {
-        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 433 500'%3E%3Cstyle type='text/css'%3E .marker%7Bfill:%238f8700;%7D%0A%3C/style%3E%3Cpolygon class='marker' points='433 375 216.5 500 0 375 0 125 216.5 0 433 125 '/%3E%3C/svg%3E");
+  body.portada-seccion.mkt_p section#hero h1 {
+    color: #cdc200; }
+  body.portada-seccion.mkt_p section#main {
+    margin-top: 0; }
+    body.portada-seccion.mkt_p section#main h1, body.portada-seccion.mkt_p section#main .linktext {
+      color: #8f8700; }
+    body.portada-seccion.mkt_p section#main #servicios {
+      position: relative;
+      background: -webkit-gradient(linear, right top, left bottom, from(#cdc200), color-stop(#cdc200), to(#8f8700));
+      background: linear-gradient(to bottom left, #cdc200, #cdc200, #8f8700);
+      /* default color */
+      -webkit-box-shadow: 0 1px 2px #777;
+      box-shadow: 0 2px 1px #777;
+      margin: 0; }
+      body.portada-seccion.mkt_p section#main #servicios::before, body.portada-seccion.mkt_p section#main #servicios::after, body.portada-seccion.mkt_p section#main #servicios > .content::before {
         position: absolute;
-        width: 1em;
-        text-align: center; }
+        z-index: 2;
+        content: ''; }
+      body.portada-seccion.mkt_p section#main #servicios::before {
+        bottom: -36.8421052632px;
+        right: -36.8421052632px;
+        width: 70px;
+        height: 70px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        z-index: 1;
+        background: #e6e6e6; }
+      body.portada-seccion.mkt_p section#main #servicios::after {
+        bottom: 0;
+        right: 0;
+        border: solid 23px #9a9200;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+        -webkit-box-shadow: -1px -1px 2px #777;
+        box-shadow: -1px -1px 2px #777;
+        z-index: 0; }
+      body.portada-seccion.mkt_p section#main #servicios .content::before {
+        right: 0;
+        bottom: 22px;
+        width: 47px;
+        -webkit-box-shadow: 0 0 3px 0 #666;
+        box-shadow: 0 0 3px 0 #666;
+        -webkit-transform: skewY(-45deg);
+        transform: skewY(-45deg); }
+      body.portada-seccion.mkt_p section#main #servicios h3 {
+        border-bottom-color: #8f8700; }
+        body.portada-seccion.mkt_p section#main #servicios h3::before {
+          content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 433 500'%3E%3Cstyle type='text/css'%3E .marker%7Bfill:%238f8700;%7D%0A%3C/style%3E%3Cpolygon class='marker' points='433 375 216.5 500 0 375 0 125 216.5 0 433 125 '/%3E%3C/svg%3E");
+          position: absolute;
+          width: 1em;
+          text-align: center; }
   body.portada-seccion.mkt_p section#portfolio h1.hexatitle.right.sub {
     color: #cdc200; }
     body.portada-seccion.mkt_p section#portfolio h1.hexatitle.right.sub::before {
@@ -6095,7 +6145,8 @@ e.g. when user taps to toggle visibility of controls
 .unslider {
   overflow: auto;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  position: relative; }
   .unslider-wrap {
     position: relative; }
     .unslider-wrap.unslider-carousel > * {

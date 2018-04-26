@@ -11,9 +11,76 @@ body.portada-seccion {
         &.postcontacto{padding-top: 14%;}        
         &.prearrow{padding-bottom: 2.5%;}
         &.postarrow{padding-top: 2.5%;}
+        
+        &#hero{
+            height: 70%;
+            height: 70vh;
+            min-height: 500px;
+            background-color: $darkest;
+            color: $grey;
+
+            hgroup{
+                position: absolute;
+                top: 120px;
+                left: 0;
+                width: 100%;
+                z-index: 998;
+            }
+            
+            h1{
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 4em;
+                line-height:.8em;
+                color: $w;
+            }
+            
+            h2{
+                color: $w;
+                @extend %sans;
+                font-size: 2em;
+                text-transform: uppercase;
+                margin-bottom: 0;
+            }
+            
+            p{
+                font-size: 1.15em;
+                width: 70%;
+            }
+            
+            article{
+                width: 100%;
+                height: 70%;
+                height: 70vh;
+                min-height: 500px;
+                @include fullbackimg;
+                
+                
+                .shading{
+                    background: transparentize($darkest,.25);
+                }
+                
+                .container{
+                }
+                
+                .slider-wrapper{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                }
+                .slider-content{
+                    position: absolute;
+                    top: 300px;
+                    display: block;
+                    //left: 6em;
+                    max-width: 70%;
+                }
+            }
+            
+        }
 
         &#main{    
-            margin-top: -6em;
+            //margin-top: 60px;
             overflow: hidden;
 
             summary{
@@ -218,6 +285,11 @@ body.portada-seccion {
     &.mkt_d{
         
         section{
+            &#hero{
+                h1{
+                    color: $digital_blue;
+                }
+            }
             &#main{
                 
                 h1, .linktext{
@@ -292,8 +364,16 @@ body.portada-seccion {
     &.mkt_p{
         
         section{
-
+            
+            &#hero{
+                h1{
+                    color: $pol_green;
+                }
+            }
+            
             &#main{
+                margin-top: 0;
+                
                 h1, .linktext{
                     color: $pol_green_dark;
                 }

@@ -30,6 +30,7 @@ $unslider-namespace: 'unslider';
     overflow: auto;
     margin: 0;
     padding: 0;
+    position: relative;
 
     &-wrap {
         position: relative;

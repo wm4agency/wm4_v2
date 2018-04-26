@@ -73,8 +73,9 @@ header.centered-navigation{
 header.minimal-navigation{
     display: block;
     height: 9em;
-    position: relative;
+    position: absolute;
     top:0;
+    z-index: 999;
     
     div.container{
         width: 100%;

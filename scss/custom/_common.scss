@@ -207,6 +207,11 @@ body, p, li, small, blockquote {
     }
 }
 
+@mixin fullbackimg{
+    background: transparentize($action-color,.5) no-repeat center;
+    background-size: cover;
+}
+
 .hidden{
     display: none!important;
 }
