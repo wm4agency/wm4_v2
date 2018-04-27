@@ -1,268 +1,196 @@
-
-//var $ = $();
-
-var http = createRequestObject();
-var areal = Math.random() + "";
-var real = areal.substring(2,6);
+var http = createRequestObject(),
+    areal = Math.random() + "",
+    real = areal.substring(2,6),
+    forma,
+    inputs ={};
 
 function createRequestObject() {
-	var xmlhttp;
-	try {
-	var xmlhttp = null;if (window.XMLHttpRequest) { xmlhttp = new XMLHttpRequest();}else{  if (window.ActiveXObject) {     xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');  } }
+    var xmlhttp;
+    try {
+        var xmlhttp = null;if (window.XMLHttpRequest) { xmlhttp = new XMLHttpRequest();}else{  if (window.ActiveXObject) {     xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');  } }
 
-// xmlhttp=new ActiveXObject("Msxml2.XMLHTTP"); 
-	}
-  catch(e) {
-    try { 
-    var xmlhttp = null;if (window.XMLHttpRequest) { xmlhttp = new XMLHttpRequest();}else{  if (window.ActiveXObject) {     xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');  } }
-    	//xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        // xmlhttp=new ActiveXObject("Msxml2.XMLHTTP"); 
     }
-    catch(f) { xmlhttp=null; }
-  }
-  if(!xmlhttp&&typeof XMLHttpRequest!="undefined") {
-  	xmlhttp=new XMLHttpRequest();
-  }
-	return  xmlhttp;
+    catch(e) {
+        try { 
+            var xmlhttp = null;if (window.XMLHttpRequest) { xmlhttp = new XMLHttpRequest();}else{  if (window.ActiveXObject) {     xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');  } }
+            //xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        catch(f) { xmlhttp=null; }
+    }
+    if(!xmlhttp&&typeof XMLHttpRequest!="undefined") {
+        xmlhttp=new XMLHttpRequest();
+    }
+    return  xmlhttp;
 }
 
 function sendRequest() {
-	console.log('sending request');
-	var rnd = Math.random();
-	var nombre = escape(document.getElementById("nombre").value);
-    var empresa = escape(document.getElementById("empresa").value);
-	var email = escape(document.getElementById("email").value);
-	var telefono = escape(document.getElementById("telefono").value);
-	var ciudad = document.getElementById("ciudad").value;
-    var seleccion = document.getElementById("seleccion").value;
-    var intencion = document.getElementById("intencion").value;
-    var grado = document.getElementById("grado").value;
-    var comentarios = escape(document.getElementById("comentarios").value);
-//    var landing = document.getElementById("landing").value;
-//    var idempresa = document.getElementById("idempresa").value;
-//    var tipo = document.getElementById("tipo").value;
-//    var gracias = document.getElementById("gracias").value;
-//    var origen = document.getElementById("origen").value;
-//    var link = document.getElementById("link").value;
     
+    if(Object.keys(inputs).length == 0) throw "no inputs registered";
+    inputs.rnd = Math.random();
+    
+    var data= JSON.stringify(inputs);
+
     try{
-    http.open('POST',  'php/mailer.php');
-    http.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    http.onreadystatechange = handleResponse;
- http.send('nombre='+nombre+'&empresa='+empresa+'&email='+email+'&telefono='+telefono+'&ciudad='+ciudad+'&seleccion='+seleccion+'&intencion='+intencion+'&grado='+grado+'&comentarios='+comentarios+'&rnd='+rnd);
-	}
-	catch(e){ console.log(e);}
-	finally{
-        $('#contactform').slideUp("slow").hide();
-        $('#form-wrapper').append('<div class="success"><h4>¡ENVIADO!</h4><br><p>Gracias por escribirnos <strong>'+decodeURIComponent(name)+'</strong>! Tu correo ha sido enviado con éxito y pronto te contactaremos para darle seguimiento.</p></div>');
-//        track();
-	}
+        http.open('POST',  'php/services/mailer.php');
+        http.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        http.onreadystatechange = handleResponse;
+        http.send('inputs='+data);
+    }
+    catch(e){ console.log(e);}
+    finally{
+        
+    }
 }
 
-function validate_email(address) {
-    console.log('validating email');
-   var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-   if(reg.test(address) == false) {
-      return false;
-   }
-   else
-   return true;
-}
-
-function validate_phone(phone){
-    console.log('validating phone');
-    var phoneNum = phone.replace(/[^\d]/g, '');
-    if(phoneNum.length > 6 && phoneNum.length < 11) {  return true;  } else {return false;}
-}
-
-function check_values() {
-    //Form
-    var valid = '';
-
-
-//    var $ = $.noConflict();
-
-    var nombre = '';
-    var email = '';
-    var telefono = '';
-    var ciudad = '';
-    var seleccion = '';
-    var intencion = '';
-    var grado = '';
-
-
-    if(typeof $('#contactform #nombre').val() != "undefined" )
-    {
-        nombre = document.getElementById("nombre").value;
-    }
-    if(typeof $('#contactform #email').val() != "undefined" )
-    {
-        email = document.getElementById("email").value;
-    }
-    if(typeof $('#contactform #telefono').val() != "undefined" )
-    {
-        telefono = document.getElementById("telefono").value;
-    }
-    if(typeof $('#contactform #ciudad').val() != "undefined" )
-    {
-        ciudad = document.getElementById("ciudad").value;
-    }
-    if(typeof $('#contactform #seleccion').val() != "undefined" )
-    {
-        seleccion = document.getElementById("seleccion").value;
-        console.log (seleccion);
-    }
-    if(typeof $('#contactform #intencion').val() != "undefined" )
-    {
-        intencion = document.getElementById("intencion").value;
-        console.log (intencion);
-    }
-    if(typeof $('#contactform #grado').val() != "undefined" )
-    {
-        grado = document.getElementById("grado").value;
-        console.log (grado);
-    }
-
-
-    var errors=0;
-    if($('#contactform #nombre').val()!=undefined)
-        if($('#contactform #nombre').val()=='') {
-            var hasClass=$('#contactform #nombre').parent().find(".error").hasClass("error");
-            if(!hasClass){
-                $('#contactform #nombre').parent().prepend('<label for="contactname" generated="true" class="error">Por favor escriba su nombre</label>');
-            $('#contactform #nombre').focus();
-            }
-//            return false;
-            errors++;
+function checkvals(givenForm){
+    forma = givenForm;
+    var all_els = forma.elements,
+        errors = 0;
+    for(i=0;i<all_els.length;i++){
+        var e = all_els[i];
+        switch (e.type){
+            case "text":
+            case "email":
+            case "tel":
+            case "select-one":
+            case "checkbox":
+            case "textarea":
+                if (e.value == "" && $(e).hasClass('required')){
+                   var hasClass=$("label[for='"+e.id+"']").hasClass("err");
+                                 if(!hasClass){
+                                     switch (e.name){
+                                         case "nombre":
+                                             $(e).before("<label for='nombre' generated='true' class='err' >Por favor escriba su nombre</label>");
+                                             break;
+                                         case "empresa":
+                                             $(e).before("<label for='empresa' generated='true' class='err'>Por favor escriba la empresa o dependencia a a la que pertenece</label>");
+                                             break;
+                                         case "ciudad":
+                                             $(e).before("<label for='ciudad' generated='true' class='err'>Por favor escriba la ciudad desde la que nos contacta</label>");
+                                             break;
+                                         case "correo":
+                                             $(e).before("<label for='ciudad' generated='true' class='err'>Por favor ingrese un correo de contacto</label>");
+                                             break;
+                                         case "telefono":
+                                             $(e).before("<label for='ciudad' generated='true' class='err'>Por favor ingrese un número telefónico de contacto</label>");
+                                             break;
+                                         case "seleccion":
+                                             $(e).before("<label for='ciudad' generated='true' class='err'>Por favor seleccione el servicio de su interés</label>");
+                                             break;
+                                         case "intencion":
+                                             $(e).before("<label for='ciudad' generated='true' class='err'>Por favor defina el motivo de su contacto</label>");
+                                             break;
+                                         case "grado":
+                                             $(e).before("<label for='ciudad' generated='true' class='err'>Por favor seleccione una opción</label>");
+                                             break;
+                                        }
+                                 }
+                                 //            return false;
+                                 errors++;
+               }
+               else{ 
+                   switch(e.name){
+                       case "correo":
+                           if(validate_email($(e).val())==false){
+                               $(e).before("<label for='ciudad' generated='true' class='err'>Por favor ingrese un correo válido</label>");
+                               errors++;
+                           }else{
+                               $("label[for='"+e.id+"'].err").remove();
+                               inputs[e.name]=e.value;
+                           }
+                           break;
+                       case "telefono":
+                           if(validate_phone($(e).val())==false){
+                               $(e).before("<label for='ciudad' generated='true' class='err'>Por favor ingrese un teléfono válido</label>");
+                               errors++;
+                           }else{
+                               $("label[for='"+e.id+"'].err").remove();
+                               inputs[e.name]=e.value;
+                           }
+                           break;
+                       default:
+                           $("label[for='"+e.id+"'].err").remove();
+                           if(!e.value || e.value=="" || e.value==null || e.value<=0)break;
+                           inputs[e.name]=e.value;
+                           break;
+                    }
+               }
+            break;
+            case "hidden":
+                if(!e.value || e.value=="" || e.value==null || e.value<=0){console.log(e);break};
+                inputs[e.name]=e.value;
+                break;
         }
-        else
-            $('#contactform #nombre').parent().find(".error").remove();
-
-    
-    if($('#contactform #empresa').val()!=undefined)
-        if($('#contactform #empresa').val()=='') {
-            var hasClass=$('#contactform #empresa').parent().find(".error").hasClass("error");
-            if(!hasClass){
-                $('#contactform #empresa').parent().prepend('<label for="contactname" generated="true" class="error">Por favor escriba la empresa a la que pertenece</label>');
-                $('#contactform #empresa').focus();
-            }
-//            return false;
-            errors++;
-        }
-        else
-            $('#contactform #empresa').parent().find(".error").remove();
-
-    
-    
-    if($('#contactform #ciudad').val()!=undefined)
-        if($('#contactform #ciudad').val()=='') {
-            var hasClass=$('#contactform #ciudad').parent().find(".error").hasClass("error");
-            if(!hasClass)
-                $('#contactform #ciudad').parent().prepend('<label for="ciudad" generated="true" class="error">Por favor ingrese la ciudad en que reside</label>');
-            $('#contactform #ciudad').focus();
-//            return false;
-            errors++;
-        }
-        else
-            $('#contactform #ciudad').parent().find(".error").remove();
-
-    if($('#contactform #email').val()!=undefined)
-        if(validate_email($('#contactform #email').val())==false ) {
-            var hasClass=$('#contactform #email').parent().find(".error").hasClass("error");
-            if(!hasClass)
-                $('#contactform #email').parent().prepend('<label for="email" generated="true" class="error">Por favor ingrese un correo válido</label>');	
-            $('#contactform #email').focus();
-//            return false;
-            errors++;
-        }
-        else
-            $('#contactform #email').parent().find(".error").remove();
-    
-    if($('#contactform #telefono').val()!=undefined)
-        if(validate_phone($('#contactform #telefono').val())==false ) {
-            var hasClass=$('#contactform #telefono').parent().find(".error").hasClass("error");
-            if(!hasClass)
-                $('#contactform #telefono').parent().prepend('<label for="telefono" generated="true" class="error">Por favor ingrese un teléfono válido</label>');	
-            $('#contactform #telefono').focus();
-//            return false;
-            errors++;
-        }
-        else
-            $('#contactform #telefono').parent().find(".error").remove();
-    
-    if($('#contactform #seleccion').val()!=undefined)
-        if($('#contactform #seleccion').val()=='0') {
-            console.log($('#contactform #seleccion').val());
-            var hasClass=$('#contactform #seleccion').parent().find(".error").hasClass("error");
-            if(!hasClass)
-                $('#contactform #seleccion').parent().prepend('<label for="seleccion" generated="true" class="error">Por favor seleccione el servicio de su interés</label>');
-            $('#contactform #intencion').focus();
-//            return false;
-            errors++;
-        }
-        else
-            $('#contactform #seleccion').parent().find(".error").remove();
-    
-    if($('#contactform #intencion').val()!=undefined)
-        if($('#contactform #intencion').val()=='0') {
-            console.log($('#contactform #intencion').val());
-            var hasClass=$('#contactform #intencion').parent().find(".error").hasClass("error");
-            if(!hasClass)
-                $('#contactform #intencion').parent().prepend('<label for="intencion" generated="true" class="error">Por favor defina la intención de su contacto</label>');
-            $('#contactform #intencion').focus();
-//            return false;
-            errors++;
-        }
-        else
-            $('#contactform #intencion').parent().find(".error").remove();
-    
-    if($('#contactform #grado').val()!=undefined)
-        if($('#contactform #grado').val()=='0') {
-            console.log($('#contactform #grado').val());
-            var hasClass=$('#contactform #periodo').parent().find(".error").hasClass("error");
-            if(!hasClass)
-                $('#contactform #grado').parent().prepend('<label for="grado" generated="true" class="error">Por favor indique grado de prioridad que tiene para usted este proyecto</label>');
-            $('#contactform #periodo').focus();
-//            return false;
-            errors++;
-        }
-        else
-            $('#contactform #grado').parent().find(".error").remove();
-
+    }    
     if(errors==0) {
-        document.getElementById("send").disabled=true;
-        document.getElementById("send").value='Please Wait..';
+       $("#send",forma).disabled=true;
+        $("#send",forma).val("enviando...");
         sendRequest();
     }
 }
 
+function validate_email(address) {
+    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    if(reg.test(address) == false) {
+        return false;
+    }
+    else
+        return true;
+}
+
+function validate_phone(phone){
+    /*var phoneNum = phone.replace(/[^\d]/g, '');
+    if(phoneNum.length > 6 && phoneNum.length < 11) {  return true;  } else {return false;}*/
+    var reg = /^\+((?:9[679]|8[035789]|6[789]|5[90]|42|3[578]|2[1-689])|9[0-58]|8[1246]|6[0-6]|5[1-8]|4[013-9]|3[0-469]|2[70]|7|1)(?:\W*\d){0,13}\d$/;
+    if(reg.test(phone) == false) {
+        //return false;
+        if(phone.length > 6 && phone.length < 11) {  return true;  } 
+        else 
+        return false;
+    }
+    else
+    return true;
+}
+
 function handleResponse() {
-    console.log('trying handleResponse');
-	try{
-    if((http.readyState == 4)&&(http.status == 200)){
-        console.log(http.readyState);
-    	var response = http.responseText;
-        console.log(response);
-          document.getElementById("confirmation").innerHTML = response;
-          document.getElementById("confirmation").style.display ="";$
-		}
-        else{
-//            console.log(http.readyState);
-        }
-  }
-	catch(e){}
-	finally{}
+    console.log('handling http response');
+    switch(http.readyState){
+        /*case 0:
+            console.log("unsent - headers not yet sent");
+            break;
+        case 1:
+            console.log("opened -http channel opened");
+            break;
+        case 2:
+            console.log("headers received");
+            break;
+        case 3:
+            console.log("loading - loading http response body");
+            break;*/
+        case 4:
+            //console.log("done - data transfer completed or failed");
+            if(http.status == 200){
+                console.log("SUCCESS: http status "+http.status);
+                var respuesta = http.responseText;
+                $("fieldset",forma).slideUp("slow").hide();
+                $(forma).append('<div class="success animate fadeInLeft">'+respuesta+'</div>')
+            }
+            else{ 
+                respuesta = "No hemos podido procesar tu envío, por favor inténtalo nuevamente.";
+                throw("ERROR: http status "+http.status);}
+            break;
+                          }
 }
 
 function isUndefined(a) {
-   return typeof a == 'undefined';
+    return typeof a == 'undefined';
 }
 
 function trim(a) {
-	return a.replace(/^s*(S*(s+S+)*)s*$/, "$1");
+    return a.replace(/^s*(S*(s+S+)*)s*$/, "$1");
 }
 
 function isEmail(a) {
-   return (a.indexOf(".") > 0) && (a.indexOf("@") > 0);
+    return (a.indexOf(".") > 0) && (a.indexOf("@") > 0);
 }
-
-
