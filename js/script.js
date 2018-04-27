@@ -22,7 +22,7 @@ function delegateEvents(){
         var e = event.target;
         e.preventDefault
         
-        if (e.classList.contains( 'm-nav-toggler' ) ) { // botones en formas de contacto 
+        if (e.classList.contains( "m-nav-toggler" ) ) { // botones en formas de contacto 
             togglenav();
         } 
         else if (e.classList.contains( 'sendform' ) ) { //envíos de formas
@@ -40,7 +40,10 @@ function navegar(e){
     var t = e.getAttribute('data-target'),
         at;
 
-    if( t.startsWith("#")){at = t;togglenav();}
+    if( t.startsWith("#")){
+        if(document.body.classList.contains('tablet'))togglenav();;
+        at = t;
+    }
     else if(t.startsWith("http")) {at = t;}
     else if(t.startsWith("?")){at = rootpath+'/'+e.getAttribute('data-target');}
     else if(t=="home"){at = rootpath;}
@@ -103,16 +106,22 @@ function pagepilingInit(){
         loopBottom: true,
         afterRender: function(){
             document.getElementById('nav_sections').classList.add('hidden');
+            document.getElementById('logostrip').classList.add('hidden');
         },
         anchors: anchors,
         afterLoad: function(anchorLink, index){            
             if(anchorLink == 'modelo' || anchorLink == 'contacto') document.getElementById('nav_sections').classList.remove('hidden');
+            document.getElementById('logostrip').classList.remove('hidden');
+
             var navleft = document.querySelectorAll('#nav_sections > .nav-left');
             navleft[0].classList.add('hidden');
         },
         onLeave: function(index, nextIndex, direction){
             //after leaving section 2
-            if(nextIndex == 1) document.getElementById('nav_sections').classList.add('hidden');
+            if(nextIndex == 1) {
+                document.getElementById('logostrip').classList.add('hidden');
+                document.getElementById('nav_sections').classList.add('hidden');
+            }
         }
     });
 }

@@ -112,7 +112,7 @@ ul.hex {
 }
 
 .modal{
-    @include max-width($mobile) {
+    @include max-width($tablet) {
 
         .modal-content{
             padding: 10px;

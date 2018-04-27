@@ -2,7 +2,7 @@
     $title = 'Marketing Digital'; 
     $localclass= 'mkt_d';
     $localScripts = array("odometer","photoswipe","unslider");
-    $header = 'minimal'; 
+    $header = 'full'; 
     $role = 'portada-seccion'; 
     $color_space = "#1797cd";
     include 'header-desktop.php'; 

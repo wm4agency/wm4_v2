@@ -10,10 +10,47 @@
 
 <main id="panel" class="">
     <figure class="fa fa-bars m-nav-toggler">&nbsp;</figure>
-    <section id="main" class="row">
-        <article itemscope itemtype="http://schema.org/Service" class="container">
+    <section id="hero" class="unslider" data-unslider_options='{"speed":1000,"autoplay":true,"delay":12000,"animation":"horizontal","selectors":{"container":"main","slides":"article"},"infinite":true}'>
+        <hgroup class="">
+            <figure data-target="<?php echo $root;?>" class="wm4"></figure>
             <meta itemprop="provider" itemscope itemtype="http://schema.org/LocalBusiness" content="WM4" />
-            <h1 itemprop="serviceType" itemprop="name" class="span-12 animated fadeInLeft">Marketing<br> Digital</h1>
+            <h1 itemprop="serviceType" itemprop="name" class="container animated fadeInLeft">Marketing<br> Digital</h1>
+        </hgroup>
+        <main>
+            <article style="background-image:url(<?php $root;?>'img/stock/business-computer-device-35550.jpg')">
+                <div class="shading">
+                    <div class="container slider-wrapper">
+                        <div class="slider-content animated fadeInLeft">
+                            <h2>Estrategia y operación</h2>
+                            <p>Desarrollamos negocios en internet</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article style="background-image:url(<?php $root;?>'img/stock/background-blur-chat-433617.jpg')">
+                <div class="shading">
+                    <div class="container slider-wrapper ">
+                        <div class="slider-content animated fadeInLeft">
+                            <h2>Social Media Optimization</h2>
+                            <p>Construimos comunidades activas y rentables</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article style="background-image:url(<?php $root;?>'img/stock/code-coding-computer-270373.jpg')">
+                <div class="shading">
+                    <div class="container slider-wrapper">
+                        <div class="slider-content animated fadeInLeft">
+                            <h2>Desarrollo</h2>
+                            <p>Desde una landing page hasta tu próxima aplicación</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </section>
+    <section id="main" class="row prearrow">
+        <article itemscope itemtype="http://schema.org/Service" class="container">
             <summary id="intro" class="span-5 animated fadeIn">
                 Desarrollamos e implementamos estrategias que permiten al cliente concretar objetivos de negocio a través de internet, analizando y optimizando constantemente para entregar resultados tangibles que se traducen en oportunidades de ingreso para el cliente
             </summary>

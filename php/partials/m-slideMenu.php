@@ -2,11 +2,11 @@
     <figure class="fa fa-bars m-nav-toggler">&nbsp;</figure>
     <div class="nav-wrapper">
         <nav>
-            <figure data-target="<?php echo $root;?>" class="wm4"></figure>
+            <figure data-target="home" class="wm4"></figure>
             <ul class="unidades">
                 <li data-target="?d=marketing-digital" class="d">Marketing Digital</li>
-                <li data-target="?d=marketing-digital" class="p">Marketing Político</li>
-                <li data-target="?d=marketing-digital" class="s">Marketing Deportivo</li>
+                <li data-target="?d=marketing-politico" class="p">Marketing Político</li>
+                <li data-target="?d=marketing-deportivo" class="s">Marketing Deportivo</li>
                 <li data-target="#contacto">contacto</li>
             </ul>
             <hr>

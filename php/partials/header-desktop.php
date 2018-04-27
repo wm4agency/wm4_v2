@@ -55,7 +55,7 @@
     <div class="centered-navigation-wrapper">
         <?php include 'nav_contactPoints.php'; ?>
         <?php include 'nav_sections.php'; ?>
-
+        <div id="logostrip" class="container"><figure data-target="home" class="wm4"></figure>
     </div>
 
 </header><!--/.container-->
@@ -63,7 +63,8 @@
     <?php elseif ($header == 'minimal'): ?>
     <header class="minimal-navigation fullwidth">
         <?php include 'nav_sections.php'; ?>
-        <div class="container"><figure class="logo"><a href="index.php"><img src="img/wm4.png"></a></figure></div>
-        <div class="hexa-tip-right"><figure>&nbsp;</figure></div>
+        <div id="logostrip" class="container"><figure data-target="home" class="logo wm4"></figure>
+        </div>
+        <!--<div class="hexa-tip-right"><figure>&nbsp;</figure></div>-->
     </header>
     <?php endif; ?>

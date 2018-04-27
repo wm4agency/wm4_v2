@@ -1,3 +1,17 @@
+header{
+    #logostrip{
+        width: 100%;
+        @include outer-container;
+        max-width: $w1150;
+        display: block;
+        position: relative;
+        height: 100%;
+        //margin-top: 120px;
+
+        figure.wm4{width: 12em;float: right;}
+    }
+}
+
 header.centered-navigation{
 //    background: rgba(0,0,0,.1);
     position: absolute;
@@ -77,15 +91,6 @@ header.minimal-navigation{
     top:0;
     z-index: 999;
     
-    div.container{
-        width: 100%;
-        @include outer-container;
-        max-width: $w1150;
-        display: block;
-        position: relative;
-        height: 100%;
-    }
-    
     nav{
         //background: orange;
         
@@ -163,13 +168,13 @@ header nav#nav_sections{
             margin: 0  1.5em;
 
             &:hover{
-                color: $darkest;
+                color: $action-color;
                 //border-bottom: 1px solid $darkest;
                 cursor: pointer;
             }
         }
 
         &.nav-left li{ float: left; }
-        &.nav-right li{ float: right; }
+        &.nav-right {float: right; li{display: inline-block;}}
     }
 }

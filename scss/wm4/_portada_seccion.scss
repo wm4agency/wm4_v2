@@ -4,7 +4,13 @@ body.portada-seccion {
     width: 100vw!important;
     overflow-x: hidden;
     position: absolute;
+    .unslider-nav{margin-top: -3em;}
     
+    header{
+        &.centered-navigation ul li.nav-link a{color:$w;}
+        figure.wm4{@include wm4($w);}
+    }
+        
     section{
         
         &.precontacto{padding-bottom: 14%;}
@@ -18,7 +24,6 @@ body.portada-seccion {
             min-height: 500px;
             background-color: $darkest;
             color: $grey;
-
             hgroup{
                 position: absolute;
                 top: 120px;
@@ -113,10 +118,10 @@ body.portada-seccion {
                     font-weight: 100;
 
                     &::before{
-                        @include arrow_marker(#FFF);
-                        left:-1.5em;
-                        width: .35em;
-                        margin-top: -.15em;
+                        @include arrow_marker($w);
+                        left:-.8em;
+                        width: .3em;
+                        margin-top: .25em;
                     }
                 }
 
@@ -218,7 +223,7 @@ body.portada-seccion {
                     }
                 }
                 
-                @include max-width($mobile) {
+                @include max-width($tablet) {
                     width: 100%;
                     //float: none;
                 }
@@ -279,9 +284,7 @@ body.portada-seccion {
             }
         }
     }
-    
      
-    
     &.mkt_d{
         
         section{
@@ -373,7 +376,7 @@ body.portada-seccion {
             
             &#main{
                 margin-top: 0;
-                
+                padding-bottom: 4em;
                 h1, .linktext{
                     color: $pol_green_dark;
                 }
@@ -542,8 +545,8 @@ body.portada-seccion {
         }
     }
     
-    @include max-width($mobile) {
-        
+    @include max-width($tablet) {
+    
         .pswp__top-bar{
             padding-right: 50px;
         }
@@ -561,6 +564,14 @@ body.portada-seccion {
             position: relative!important;
         }
         section{
+            
+            &#hero{
+                hgroup{top:50px;}
+                figure.wm4{width: 70%;@include wm4($w)}
+                h1{font-size: 3em;}
+                .slider-wrapper{padding: 0 1.5em;}
+            }
+            
             &#main{
                 border: none;
                 border-bottom: 1px dashed $b;
@@ -585,6 +596,22 @@ body.portada-seccion {
                 
                 aside{
                     margin-top: 2.5em;
+                }
+                
+                dt{
+                    font-size: 1.5em;
+                    text-transform: initial;
+                    border-bottom: 1px dotted transparentize($darkest,.75);
+                    padding-bottom: .75em;
+
+                    &::before{
+                        width: .25em;
+                        margin-top: .25em;
+                        line-height: 1.5em;
+                        left: -.95em;
+                        width: .3em;
+                        margin-top: .45em;
+                    }
                 }
             }
             
@@ -628,6 +655,16 @@ body.portada-seccion {
                 }
                 
             }
+        }
+        
+        &.mkt_d{
+            .m-nav-toggler{color:$digital_blue;}
+        }
+        &.mkt_p{
+            .m-nav-toggler{color:$pol_green;}
+        }
+        &.mkt_s{
+            .m-nav-toggler{color:$sport_orange;}
         }
     }
 }

@@ -333,7 +333,7 @@ body.home{
         &:last-child{float: right;}
     }
 
-    @include max-width($mobile) {
+    @include max-width($tablet) {
         background-color: rgba(255,255,255,.5);    
         padding-top:120px;
         font-weight: 300;
@@ -511,13 +511,13 @@ body.home{
 
 
 .centered-navigation ul li.nav-link{
-    @include max-width($mobile) {
+    @include max-width($tablet) {
         padding-right: 0;
     }
 }
 
 html.pagepiled{
-    @include max-width($mobile){
+    @include max-width($tablet){
         header{ 
             padding-right: 50px;
         }
@@ -543,7 +543,7 @@ html.pagepiled{
 }
 
 
-body.mobile{
+body.tablet{
     $mobile-padding: 1.5em;
 
     section,main{
