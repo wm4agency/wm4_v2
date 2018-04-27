@@ -409,6 +409,14 @@ body.portada-seccion {
                         border-bottom-color: white;
 
                     }
+                    
+                    .grid-item{
+                        background-color: $pol_green;
+                        border-bottom-color: $pol_green;
+                        border-right-color: $pol_green;
+                        
+                        article:hover{background-color: $pol_green;}
+                    }
                 }
             }
             
@@ -441,6 +449,96 @@ body.portada-seccion {
             }
             
             &#stats{ color: $pol_green;}
+        }
+    }
+    
+    &.mkt_s{
+
+        section{
+            &#hero{
+                h1{
+                    color: $sport_orange;
+                }
+            }
+            &#main{
+
+                h1, .linktext{
+                    color: $sport_orange;
+                }
+
+                #servicios{
+                    @include tipped(linear-gradient(to bottom left,$sport_orange,$sport_orange,$sport_orange_dark),$sport_orange,$grey_base);
+                    margin: 0;
+                    //background:$digital_blue;
+
+                    h3{
+                        border-bottom-color: $sport_orange_dark;
+
+                        &::before{
+                            @include hexa_marker($sport_orange_dark);
+                            width: 1em;
+                            text-align: center;
+                        }
+                    }
+
+                }
+            }
+            
+            &.prearrow{padding-bottom: 5%;}
+
+            &#portfolio{
+                .hexatitle.right{
+                    color: $sport_orange;
+
+                    &::before{
+                        @include hexa_marker($sport_orange);
+                    }
+
+                    &.sub + h2{
+                        color: white;
+                        border-bottom-color: white;
+
+                    }
+                }
+                
+                .grid-item{
+                    background-color: $sport_orange;
+                    border-bottom-color: $sport_orange;
+                    border-right-color: $sport_orange;
+
+                    article:hover{background-color: $sport_orange;}
+                }
+            }
+
+            &#clientes{
+                .hexatitle.left{
+                    color: $sport_orange;
+                    &::before{
+                        @include hexa_marker($sport_orange);
+                    }
+                }
+            }
+
+            &#contacto{
+                background-color: $sport_orange;
+                @include f_jagged_v($sport_orange, $sport_orange_dark);
+
+                .hexatitle.centered{
+                    color: white;
+
+                    &::before{
+                        @include hexa_marker(#fff);
+                    }
+                }
+
+                input,textarea{color:$w;}
+                & ::placeholder {color: $sport_orange_dark;font-weight: 400;}
+                & :-ms-input-placeholder {color: $sport_orange_dark;font-weight: 400;}
+                & ::-ms-input-placeholderr {color: $sport_orange_dark;font-weight: 400;}
+                input[type=button]{background-color: $sport_orange_dark;}
+            }
+
+            &#stats{ color: $sport_orange;}
         }
     }
     
