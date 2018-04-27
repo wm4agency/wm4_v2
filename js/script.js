@@ -1,7 +1,9 @@
 $(document).ready(function($){
     document.getElementById('preloader')&&$(".se-pre-con").fadeOut("slow");
     
-    delegateEvents();
+    document.body.classList.contains("desktop") && delegateEvents();
+    document.body.classList.contains("tablet") && delegateEventsMobile();
+
     cycleInit();
     pagepilingInit();
     modalInit();
@@ -19,6 +21,24 @@ var pswpGalleries = [];
 
 function delegateEvents(){
     document.addEventListener('click', function (event) {
+        var e = event.target;
+        e.preventDefault
+        
+        if (e.classList.contains( "m-nav-toggler" ) ) { // botones en formas de contacto 
+            togglenav();
+        } 
+        else if (e.classList.contains( 'sendform' ) ) { //envíos de formas
+            var forma = e.form;
+            checkvals(forma);
+        }
+        else if(e.getAttribute("data-target")){// objetos que disparan navegación 
+            navegar(e);
+        }
+                
+    }, false);
+}
+function delegateEventsMobile(){
+    document.addEventListener('touchstart', function (event) {
         var e = event.target;
         e.preventDefault
         

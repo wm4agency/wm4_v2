@@ -43,7 +43,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
 </head>
-    <body class="<?php echo $role; echo " "; echo $localclass; ?>">
+    <body class="desktop <?php echo $role; echo " "; echo $localclass; ?>">
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7Q6HD8"
                           height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
