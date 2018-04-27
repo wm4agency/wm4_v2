@@ -27,7 +27,7 @@ $unslider-namespace: 'unslider';
     //  as long as it's not static, but we'll
     //  set it using jQuery
     // position: relative;
-    overflow: auto;
+    overflow: hidden;
     margin: 0;
     padding: 0;
     position: relative;

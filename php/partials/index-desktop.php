@@ -1,7 +1,14 @@
 <?php  
 if(isset ($_GET['d'])){
     $d = $_GET['d'];
-    $target = $d.'.php';
+    switch($d){
+        case "home":
+            $target='home.php';
+            break;
+        default:
+            $target = $d.'.php';
+            break;
+    }
 }
 
 

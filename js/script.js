@@ -47,6 +47,7 @@ function navegar(e){
     else if(t.startsWith("http")) {at = t;}
     else if(t.startsWith("?")){at = rootpath+'/'+e.getAttribute('data-target');}
     else if(t=="home"){at = rootpath;}
+    else if(t=="contacto"){at = rootpath+'/#contacto';}
     console.log(t);
     window.location=at;
 }
